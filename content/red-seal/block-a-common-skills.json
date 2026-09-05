@@ -1,0 +1,1355 @@
+{
+  "block": "A",
+  "title": "Performs common occupational skills",
+  "exam_weight_pct": 16,
+  "exam_questions_on_test": 20,
+  "questions": [
+    {
+      "id": "A-1.01-Q001",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "According to industry practice for hand tool inspection, when should a welder remove a striking tool (chipping hammer, ball-peen) from service?",
+      "choices": {
+        "A": "Only when the head is loose on the handle",
+        "B": "Once per year regardless of condition",
+        "C": "When the striking face is mushroomed, chipped, or cracked",
+        "D": "Only when directed by a supervisor"
+      },
+      "correct": "C",
+      "explanation": "A mushroomed, chipped, or cracked striking face can shed metal shards on impact \u2014 a leading cause of eye injury. RSOS A-1.01 requires identifying worn, damaged, and defective tools and removing them from service. A loose head (A) is also a defect but not the only trigger; annual (B) and supervisor-directed (D) inspection alone are not sufficient.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.01.03P identify worn, damaged and defective tools"
+        },
+        {
+          "doc": "CSA Z432 Safeguarding of Machinery",
+          "ref": "General tool inspection"
+        }
+      ],
+      "tags": [
+        "hand-tools",
+        "inspection",
+        "safety"
+      ]
+    },
+    {
+      "id": "A-1.01-Q002",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder needs to measure a 3/16\" root opening on a groove weld. Which measuring tool is most appropriate?",
+      "choices": {
+        "A": "A 12\" combination square",
+        "B": "A framing square",
+        "C": "A dial caliper",
+        "D": "A gap gauge (welding fillet/groove gauge)"
+      },
+      "correct": "D",
+      "explanation": "A welding gap/fillet gauge is designed for exactly this measurement and is the standard shop tool for root opening and fillet leg length. A combination square (A) and framing square (B) cannot fit into a groove root. A dial caliper (C) can measure it but is fragile in a welding environment and slower to use than the purpose-built gauge.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.01.01P select and use tools and equipment"
+        },
+        {
+          "doc": "CWB Learning",
+          "ref": "Weld inspection tools reference"
+        }
+      ],
+      "tags": [
+        "measuring-tools",
+        "gap-gauge"
+      ]
+    },
+    {
+      "id": "A-1.01-Q003",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the correct procedure for storing steel measuring tapes and machinist rules to preserve accuracy?",
+      "choices": {
+        "A": "Clean, lightly oil, and store in a dry location protected from impact",
+        "B": "Store loose in the bottom of the tool box",
+        "C": "Store submerged in cutting fluid",
+        "D": "Store outdoors to allow temperature stabilization"
+      },
+      "correct": "A",
+      "explanation": "Precision measuring tools must be cleaned, lightly oiled to prevent corrosion, and stored where they cannot be dented or bent. Loose storage (B) leads to edge damage. Cutting fluid (C) will corrode the etched markings. Outdoor storage (D) exposes tools to moisture and temperature swings that degrade accuracy.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.01.05P store tools and equipment"
+        },
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Care of precision measuring tools"
+        }
+      ],
+      "tags": [
+        "measuring-tools",
+        "storage",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "A-1.01-Q004",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.01",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A grinder's disc wobbles slightly when spinning but appears undamaged. What is the correct next action?",
+      "choices": {
+        "A": "Continue using \u2014 a slight wobble is normal",
+        "B": "Tighten the retaining nut harder until wobble stops",
+        "C": "Remove the disc, inspect the disc, backing flanges, and spindle for damage or debris, and replace any damaged component",
+        "D": "Reduce grinder RPM and continue using"
+      },
+      "correct": "C",
+      "explanation": "Wobble is never normal \u2014 it indicates a damaged disc, contaminated or worn flanges, a bent spindle, or an improperly seated disc. Any of these can cause the disc to shatter at speed. Over-tightening (B) can crack the disc. Continued use (A) or reduced RPM (D) leaves an unsafe condition. RSOS A-1.02 requires maintaining power tools per manufacturer's specifications.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.02 Maintains power tools"
+        },
+        {
+          "doc": "CSA W117.2",
+          "ref": "Grinding disc safety"
+        }
+      ],
+      "tags": [
+        "power-tools",
+        "grinder",
+        "safety",
+        "inspection"
+      ]
+    },
+    {
+      "id": "A-1.02-Q001",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What information on a grinding wheel label must a welder verify before mounting the wheel on a portable angle grinder?",
+      "choices": {
+        "A": "Maximum RPM rating equal to or greater than the grinder's rated RPM",
+        "B": "Only the abrasive type",
+        "C": "Only the diameter",
+        "D": "Only the manufacturer's colour code"
+      },
+      "correct": "A",
+      "explanation": "A grinding wheel must be rated for at least the grinder's maximum RPM; running a wheel above its rated speed can cause it to burst. Diameter, abrasive type, and arbor size all matter too but the RPM rating is the single most safety-critical value to verify. CSA W117.2 and OSHA/ANSI B7.1 all require this check.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Grinding wheel selection and speed"
+        },
+        {
+          "doc": "ANSI B7.1",
+          "ref": "Safety requirements for abrasive wheels"
+        }
+      ],
+      "tags": [
+        "power-tools",
+        "grinder",
+        "wheel-selection",
+        "safety"
+      ]
+    },
+    {
+      "id": "A-1.02-Q002",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder finds that a SMAW power source shows an intermittent output \u2014 the arc extinguishes randomly under load. After confirming electrode and ground connections are tight, what is the next reasonable maintenance step?",
+      "choices": {
+        "A": "Increase the amperage setting",
+        "B": "Change to a smaller electrode",
+        "C": "Replace the machine",
+        "D": "Inspect and clean electrical connections inside the machine (lockout/tagout first), check the work lead clamp and power cable for damage"
+      },
+      "correct": "D",
+      "explanation": "Intermittent output almost always traces to a loose or dirty electrical connection, damaged cables, or a worn work-lead clamp. After external checks pass, the next step is internal inspection \u2014 always with the machine locked out and tagged out first. Increasing amperage (A) or downsizing the electrode (B) masks the fault. Replacement (C) is premature.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.03 Maintains welding equipment"
+        },
+        {
+          "doc": "Miller Welding Handbook",
+          "ref": "Power source troubleshooting"
+        }
+      ],
+      "tags": [
+        "welding-equipment",
+        "troubleshooting",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "A-1.03-Q001",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "When performing routine maintenance on a GTAW torch, which component is inspected for pitting and contamination and replaced when the flow-cooling passage or gas passage is restricted?",
+      "choices": {
+        "A": "Foot pedal",
+        "B": "Torch body / collet body assembly",
+        "C": "Power source contactor",
+        "D": "Regulator"
+      },
+      "correct": "B",
+      "explanation": "The GTAW torch body and collet body carry both gas flow and, on water-cooled torches, cooling water. Restrictions cause overheating and gas coverage problems. Foot pedal (A), contactor (C), and regulator (D) are separate assemblies with different failure modes.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.03 Maintains welding equipment"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Torch maintenance"
+        }
+      ],
+      "tags": [
+        "gtaw",
+        "torch",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "A-1.03-Q002",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A GMAW wire feeder is delivering wire erratically \u2014 surging and stubbing. Drive rolls are the correct size for the wire, and tension appears set correctly. What is the next likely cause to check?",
+      "choices": {
+        "A": "The shielding gas cylinder is empty",
+        "B": "A worn or kinked liner in the gun cable causing high feed resistance",
+        "C": "The power source is on the wrong polarity",
+        "D": "The wire spool is too new"
+      },
+      "correct": "B",
+      "explanation": "Erratic wire feed with correct roll size and tension is almost always a liner problem \u2014 worn, kinked, contaminated, or wrong-sized for the wire. Empty gas (A) causes porosity, not feed problems. Wrong polarity (C) affects arc characteristics. Spool age (D) is irrelevant if the wire is clean.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.03 Maintains welding equipment"
+        },
+        {
+          "doc": "Lincoln Electric GMAW Guide",
+          "ref": "Wire feeder troubleshooting"
+        }
+      ],
+      "tags": [
+        "gmaw",
+        "wire-feeder",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "A-1.04-Q001",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which log or record is typically maintained for shop cranes, slings, and rigging hardware?",
+      "choices": {
+        "A": "Personal PPE log only",
+        "B": "Purchase price log",
+        "C": "Periodic inspection log with date, inspector, condition, and any defects found",
+        "D": "No log is required by code"
+      },
+      "correct": "C",
+      "explanation": "CSA B335 (mobile equipment) and ASME B30 series require documented periodic inspections of lifting equipment. Records include date, inspector, condition, and defects. Purchase price (B) is a business record, not a safety one. No-log (D) is incorrect \u2014 inspection records are mandatory.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.04 Maintains maintenance records"
+        },
+        {
+          "doc": "ASME B30.9",
+          "ref": "Slings \u2014 inspection records"
+        }
+      ],
+      "tags": [
+        "records",
+        "rigging",
+        "inspection"
+      ]
+    },
+    {
+      "id": "A-1.04-Q002",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Why is it important to record shielding gas cylinder change-outs and lot numbers on jobs performed under a CSA W47.1-certified WPS?",
+      "choices": {
+        "A": "For traceability so that if a weld fails inspection later, the gas lot and cylinder used can be linked to the weld",
+        "B": "For inventory tracking only",
+        "C": "Because the gas supplier requires it",
+        "D": "It is not required"
+      },
+      "correct": "A",
+      "explanation": "CSA W47.1 and W59 require traceability of consumables (filler metal lots, gas lots, fluxes) so that if a defect is later discovered, the root cause can be traced back to a specific batch of material. Inventory (B) and supplier requirements (C) are incidental. Traceability is a hard requirement, not optional (D).",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Quality control \u2014 consumable traceability"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.04 records maintenance"
+        }
+      ],
+      "tags": [
+        "records",
+        "traceability",
+        "csa-w47.1"
+      ]
+    },
+    {
+      "id": "A-2.01-Q001",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "According to CSA B354 (elevated work platforms), what is the maximum wind speed at which most self-propelled boom lifts may be operated outdoors, unless the manufacturer's rating is different?",
+      "choices": {
+        "A": "No wind speed limit if the platform is inside a barrier",
+        "B": "22 m/s (49 mph)",
+        "C": "5 m/s (11 mph)",
+        "D": "12.5 m/s (28 mph)"
+      },
+      "correct": "D",
+      "explanation": "CSA B354 and most manufacturers set 12.5 m/s (approximately 28 mph or Beaufort 6) as the operating limit for outdoor use of self-propelled elevated work platforms unless the specific unit is rated differently. Always verify the load/wind chart posted in the platform. Answer B is above the tip-over threshold for most units; C is unnecessarily conservative; D ignores the wind loading on the platform occupants and materials.",
+      "sources": [
+        {
+          "doc": "CSA B354.6 / B354.7",
+          "ref": "Operation of elevated work platforms \u2014 wind speed limits"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.01 Uses access equipment"
+        }
+      ],
+      "tags": [
+        "access-equipment",
+        "boom-lift",
+        "wind-limits",
+        "csa-b354"
+      ]
+    },
+    {
+      "id": "A-2.01-Q002",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder needs to weld overhead beams 8 m off the shop floor. Which access equipment offers the best combination of stability, reach, and hot-work suitability?",
+      "choices": {
+        "A": "A single extension ladder",
+        "B": "A rope-and-harness rappel setup",
+        "C": "A stack of pallets and a step ladder",
+        "D": "A scissor lift or boom lift with a rated platform"
+      },
+      "correct": "D",
+      "explanation": "Elevated work platforms (scissor or boom) provide a stable working surface, guardrails, and a load rating for tools and materials \u2014 the correct choice for extended hot work at height. Ladders (A) are not stable enough for both hands to weld and violate most shop hot-work procedures. Pallet stacks (C) are prohibited. Rope access (B) is for specialized inspection, not welding.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.01 Uses access equipment"
+        },
+        {
+          "doc": "CSA B354",
+          "ref": "Elevated work platform selection"
+        }
+      ],
+      "tags": [
+        "access-equipment",
+        "hot-work",
+        "elevated-work"
+      ]
+    },
+    {
+      "id": "A-2.01-Q003",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Before using a scaffold to perform welding, what documentation should be checked?",
+      "choices": {
+        "A": "The manufacturer's original bill of sale",
+        "B": "The scaffold tag showing it has been inspected and released for use by a competent person",
+        "C": "The scaffold's paint colour",
+        "D": "No documentation is required"
+      },
+      "correct": "B",
+      "explanation": "CSA S269.2 and provincial OHS require scaffolds to be inspected by a competent person and tagged (green = released; yellow = restricted use; red = do not use). Welders must verify the tag before mounting. Purchase records (A), paint colour (C), and the no-check option (D) are all incorrect.",
+      "sources": [
+        {
+          "doc": "CSA S269.2",
+          "ref": "Access scaffolding \u2014 inspection tags"
+        },
+        {
+          "doc": "Alberta OHS Code Part 23",
+          "ref": "Scaffolds and temporary work platforms"
+        }
+      ],
+      "tags": [
+        "scaffold",
+        "inspection",
+        "documentation"
+      ]
+    },
+    {
+      "id": "A-2.02-Q001",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A rigger is preparing to lift a 3 m long, 500 kg steel plate using a two-leg wire-rope sling in a basket hitch. If the included angle between the sling legs at the hook is 60\u00b0, what is the load on each sling leg? (Ignore sling weight.)",
+      "choices": {
+        "A": "250 kg",
+        "B": "500 kg",
+        "C": "289 kg",
+        "D": "1000 kg"
+      },
+      "correct": "C",
+      "explanation": "Load per leg = (Total load \u00f7 2) \u00f7 cos(\u03b8/2), where \u03b8 is the included angle. = (500 \u00f7 2) \u00f7 cos(30\u00b0) = 250 \u00f7 0.866 \u2248 289 kg per leg. Answer A ignores sling angle. C treats each leg as carrying the full load. D doubles the load. ASME B30.9 tabulates these load factors.",
+      "sources": [
+        {
+          "doc": "ASME B30.9",
+          "ref": "Sling load calculations and angle factors"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.02 Uses material handling equipment"
+        }
+      ],
+      "tags": [
+        "rigging",
+        "sling-angle",
+        "calculation"
+      ]
+    },
+    {
+      "id": "A-2.02-Q002",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the correct hand signal for 'stop' when signalling a crane operator?",
+      "choices": {
+        "A": "Waving both hands overhead",
+        "B": "Both arms crossed above the head",
+        "C": "Thumb pointing up",
+        "D": "One arm extended horizontally, palm down, moved side-to-side"
+      },
+      "correct": "D",
+      "explanation": "ASME B30.5 standardizes crane signals. 'Stop' is one arm extended horizontally, palm down, moved back and forth. 'Emergency stop' is both arms extended horizontally, palms down, moved side-to-side. Crossed arms overhead (B) is not a standard signal. Thumb-up (C) means 'raise the load'.",
+      "sources": [
+        {
+          "doc": "ASME B30.5",
+          "ref": "Standard crane hand signals"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.02 material handling \u2014 signalling"
+        }
+      ],
+      "tags": [
+        "rigging",
+        "crane-signals"
+      ]
+    },
+    {
+      "id": "A-3.01-Q001",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which shade of welding filter lens is generally recommended by CSA Z94.3 for SMAW at 100\u2013200 amperes?",
+      "choices": {
+        "A": "Shade 11 or 12",
+        "B": "Shade 8",
+        "C": "Shade 5",
+        "D": "Shade 14"
+      },
+      "correct": "A",
+      "explanation": "CSA Z94.3 / ANSI Z87.1 recommend shade 10 for SMAW under 60 A, shade 11 for 60\u2013160 A, and shade 12 for 160\u2013250 A. Shade 5 (C) is oxy-fuel light cutting only. Shade 8 (B) is oxy-fuel heavy cutting. Shade 14 (D) is for very high-current processes or arc gouging above 500 A.",
+      "sources": [
+        {
+          "doc": "CSA Z94.3",
+          "ref": "Industrial eye and face protection \u2014 welding filter shades"
+        },
+        {
+          "doc": "AWS F2.2",
+          "ref": "Lens shade selector chart"
+        }
+      ],
+      "tags": [
+        "ppe",
+        "eye-protection",
+        "lens-shade"
+      ]
+    },
+    {
+      "id": "A-3.01-Q002",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is preparing to weld galvanized steel indoors. Which PPE and engineering control combination is required?",
+      "choices": {
+        "A": "Standard welding helmet only",
+        "B": "No additional PPE needed",
+        "C": "Welding helmet and a dust mask",
+        "D": "Welding helmet plus supplied-air respirator or approved P100 fume respirator, plus local exhaust ventilation"
+      },
+      "correct": "D",
+      "explanation": "Galvanized coatings produce zinc oxide fumes that cause metal fume fever and, at chronic exposure, more serious pulmonary effects. CSA W117.2 and provincial OHS require local exhaust ventilation and an approved respirator (supplied-air preferred, P100 minimum) whenever welding on galvanized or coated steel. A dust mask (C) does not filter metal fumes; standard helmet alone (A) or no PPE (B) exposes the welder.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Ventilation and respiratory protection for welding"
+        },
+        {
+          "doc": "Alberta OHS Code Part 4",
+          "ref": "Chemical hazards"
+        }
+      ],
+      "tags": [
+        "ppe",
+        "respiratory",
+        "galvanized",
+        "ventilation"
+      ]
+    },
+    {
+      "id": "A-3.01-Q003",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.01",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A welder feels a mild sunburn-like sensation on the neck at the end of a long day of GTAW. What is the most likely cause and correct response?",
+      "choices": {
+        "A": "Skin allergy to filler metal \u2014 apply antihistamine",
+        "B": "Contact with hot metal \u2014 no action needed",
+        "C": "Heat exhaustion \u2014 take a break and drink water",
+        "D": "Arc flash burn from UV radiation exposure at the neck opening of the hood \u2014 cover exposed skin, add a bib or leather neck guard tomorrow"
+      },
+      "correct": "D",
+      "explanation": "GTAW produces high levels of UV radiation. Any exposed skin \u2014 neck, wrists, back of hands where gloves gap \u2014 burns like severe sunburn after hours of exposure. CSA W117.2 requires all exposed skin to be covered when arc welding. Skin allergy (A) presents as itching/rash, not burn. Heat exhaustion (C) has other symptoms. Hot metal contact (B) is a localized point burn, not diffuse redness.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "UV radiation protection during arc welding"
+        },
+        {
+          "doc": "AWS Safety Fact Sheet",
+          "ref": "Arc rays and skin burns"
+        }
+      ],
+      "tags": [
+        "ppe",
+        "uv-exposure",
+        "gtaw",
+        "safety"
+      ]
+    },
+    {
+      "id": "A-3.02-Q001",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Under WHMIS 2015, which pictogram appears on a container of a compressed gas cylinder?",
+      "choices": {
+        "A": "Flame over circle",
+        "B": "Exploding bomb",
+        "C": "Gas cylinder pictogram (a cylinder in a circle)",
+        "D": "Corrosion pictogram"
+      },
+      "correct": "C",
+      "explanation": "WHMIS 2015 aligns with GHS. Compressed gases carry the 'gas cylinder' pictogram \u2014 a cylinder outline in a red-bordered diamond. Flame-over-circle (A) is oxidizers. Exploding bomb (B) is explosives or self-reactive substances. Corrosion (D) is corrosive substances. A single cylinder can carry multiple pictograms if it also poses those hazards (e.g. an oxidizing gas like O2 shows both gas cylinder and flame-over-circle).",
+      "sources": [
+        {
+          "doc": "WHMIS 2015 / Hazardous Products Regulations",
+          "ref": "GHS pictograms"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-3.02 identifies hazardous materials"
+        }
+      ],
+      "tags": [
+        "whmis",
+        "compressed-gas",
+        "pictograms"
+      ]
+    },
+    {
+      "id": "A-3.02-Q002",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Where should a Safety Data Sheet (SDS) for a filler metal used on the shop floor be kept, according to WHMIS 2015?",
+      "choices": {
+        "A": "Readily accessible to workers at or near the worksite (paper or electronic)",
+        "B": "Locked in the safety manager's office only",
+        "C": "Only at the supplier's warehouse",
+        "D": "Only on the SDS website"
+      },
+      "correct": "A",
+      "explanation": "WHMIS 2015 requires SDSs to be readily accessible to workers. This can be a binder near the shop, a computer terminal, or a scannable QR code \u2014 as long as workers can access it during their shift without barriers. Locked storage (B), off-site storage (C), or website-only (D) that requires internet access outside worker control do not meet the accessibility test.",
+      "sources": [
+        {
+          "doc": "WHMIS 2015",
+          "ref": "SDS accessibility requirements"
+        },
+        {
+          "doc": "Alberta OHS Code Part 29",
+          "ref": "WHMIS"
+        }
+      ],
+      "tags": [
+        "whmis",
+        "sds",
+        "workplace-access"
+      ]
+    },
+    {
+      "id": "A-3.03-Q001",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Before entering a confined space to perform hot work, what atmospheric test values are typically required?",
+      "choices": {
+        "A": "Oxygen above 15%, any LEL is acceptable",
+        "B": "Oxygen between 19.5% and 23%, LEL below 10%, no toxics above OEL",
+        "C": "Only carbon monoxide needs to be tested",
+        "D": "No testing is required if PPE is worn"
+      },
+      "correct": "B",
+      "explanation": "CSA Z1006 and provincial OHS confined-space regulations require pre-entry atmospheric tests: O2 between 19.5% and 23% (below 19.5% is oxygen-deficient, above 23% is oxygen-enriched and a fire risk), LEL below 10% for hot work, and toxics below the applicable OEL. Continuous monitoring during work is also required.",
+      "sources": [
+        {
+          "doc": "CSA Z1006",
+          "ref": "Management of work in confined spaces"
+        },
+        {
+          "doc": "Alberta OHS Code Part 5",
+          "ref": "Confined spaces"
+        }
+      ],
+      "tags": [
+        "confined-space",
+        "hot-work",
+        "atmospheric-testing"
+      ]
+    },
+    {
+      "id": "A-3.03-Q002",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is about to grind on a piece of steel that was previously used to store an unknown liquid. What is the correct pre-work step?",
+      "choices": {
+        "A": "Proceed \u2014 grinding is not a hot-work activity",
+        "B": "Weld a small test bead first to see what happens",
+        "C": "Fill the vessel with water and grind while wet",
+        "D": "Verify the contents of the previous liquid, ensure the vessel is emptied, cleaned, and vented per API 2015 or equivalent before any hot work"
+      },
+      "correct": "D",
+      "explanation": "Hot work (including grinding, which produces sparks and heat) on a vessel that held flammable or unknown liquids has caused multiple fatal explosions. API 2015 / OSHA / CSA W117.2 all require the vessel to be identified, emptied, cleaned, and either purged with inert gas or filled with water above the hot-work zone before any hot work. 'Grinding is not hot work' (A) is dangerously wrong \u2014 grinding sparks ignite vapours the same as welding.",
+      "sources": [
+        {
+          "doc": "API 2015",
+          "ref": "Safe entry and cleaning of tanks"
+        },
+        {
+          "doc": "CSA W117.2",
+          "ref": "Hot work on containers"
+        }
+      ],
+      "tags": [
+        "hot-work",
+        "vessels",
+        "safety",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "A-4.01-Q001",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the primary purpose of a pre-job hazard assessment (also called Field Level Hazard Assessment or FLHA)?",
+      "choices": {
+        "A": "To assign blame after an incident",
+        "B": "To satisfy insurance paperwork only",
+        "C": "To identify hazards specific to the job and establish controls before work begins",
+        "D": "To track work hours"
+      },
+      "correct": "C",
+      "explanation": "FLHAs are a proactive safety tool \u2014 the crew identifies job-specific hazards (weather, proximity, tools, energies) and controls before starting. Blame assignment (A), insurance (B), and time tracking (D) are unrelated functions. Alberta OHS Code Part 2 requires hazard assessments.",
+      "sources": [
+        {
+          "doc": "Alberta OHS Code Part 2",
+          "ref": "Hazard assessment"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-4.01 Plans work"
+        }
+      ],
+      "tags": [
+        "planning",
+        "flha",
+        "hazard-assessment"
+      ]
+    },
+    {
+      "id": "A-4.01-Q002",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is given a WPS (Welding Procedure Specification) for a job. What is the first check to make before starting?",
+      "choices": {
+        "A": "Confirm the WPS was signed by the welding engineer",
+        "B": "Confirm the WPS covers the base metal, thickness, process, filler, position, and joint design that match this job",
+        "C": "Ignore the WPS and use personal preference",
+        "D": "Check the paper quality of the WPS"
+      },
+      "correct": "B",
+      "explanation": "A WPS is only valid for the ranges of variables it specifies. Before using it, confirm the base metal (P-number), thickness range, process (SMAW/GTAW/etc), filler classification (F/A-number), position, and joint design all match the job. If any variable is outside the WPS range, a new procedure is required. Signature (A) is important but secondary to fit-for-purpose. C is unsafe. D is trivial.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "WPS essential variables"
+        },
+        {
+          "doc": "AWS D1.1",
+          "ref": "Welding procedure qualification"
+        }
+      ],
+      "tags": [
+        "planning",
+        "wps",
+        "essential-variables"
+      ]
+    },
+    {
+      "id": "A-4.02-Q001",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is meant by 'housekeeping' in a welding shop context?",
+      "choices": {
+        "A": "Keeping the work area free of trip hazards, combustibles, and cable tangles, with tools returned to storage",
+        "B": "Cleaning the office",
+        "C": "Painting the walls",
+        "D": "Restocking the vending machine"
+      },
+      "correct": "A",
+      "explanation": "Shop housekeeping directly affects safety and productivity: trip hazards cause falls, combustibles cause fires, cable tangles cause pinch and pull injuries, and lost tools waste time. CSA W117.2 and OHS codes require welding areas to be kept clear.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Housekeeping in welding areas"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-4.02 Organizes work area"
+        }
+      ],
+      "tags": [
+        "housekeeping",
+        "workplace-organization"
+      ]
+    },
+    {
+      "id": "A-4.02-Q002",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder finishes a job and disconnects the SMAW electrode from the holder. What should happen to the electrode stub?",
+      "choices": {
+        "A": "Place it in a designated stub container so it does not become a slip/trip/burn hazard and can be recycled",
+        "B": "Drop it on the floor \u2014 the next crew will sweep",
+        "C": "Kick it under the workbench",
+        "D": "Store it in a pocket for the next job"
+      },
+      "correct": "A",
+      "explanation": "Hot electrode stubs on the floor are trip hazards and can cause burn injuries or ignite combustibles. Designated stub containers keep the area safe and allow scrap collection. Options A, C, and D all leave the hazard uncontrolled. Good housekeeping is called out in most WHMIS-adjacent shop procedures.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Housekeeping of welding consumables"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-4.02"
+        }
+      ],
+      "tags": [
+        "housekeeping",
+        "smaw",
+        "workplace-safety"
+      ]
+    },
+    {
+      "id": "A-5.01-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the correct storage temperature range for low-hydrogen SMAW electrodes (e.g. E7018) once they are removed from the sealed original container?",
+      "choices": {
+        "A": "Room temperature",
+        "B": "Rod oven at approximately 120\u00b0C (250\u00b0F)",
+        "C": "Refrigerated at 4\u00b0C",
+        "D": "Freezer at -18\u00b0C"
+      },
+      "correct": "B",
+      "explanation": "Low-hydrogen electrodes must be stored in a heated rod oven at approximately 120\u00b0C (250\u00b0F) once opened to prevent moisture pickup in the flux coating. Moisture becomes hydrogen in the arc, which causes hydrogen-induced cracking. AWS A5.1 and manufacturer data specify the temperature. Room-temperature (A) exposure is limited to a few hours. Cold storage (C, D) actually promotes condensation.",
+      "sources": [
+        {
+          "doc": "AWS A5.1/A5.1M",
+          "ref": "Low-hydrogen electrode storage"
+        },
+        {
+          "doc": "CSA W48",
+          "ref": "Filler metals \u2014 storage and handling"
+        }
+      ],
+      "tags": [
+        "consumables",
+        "smaw",
+        "low-hydrogen",
+        "storage"
+      ]
+    },
+    {
+      "id": "A-5.01-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder receives a new bulk container of ER70S-6 GMAW wire. Which handling practice is correct?",
+      "choices": {
+        "A": "Keep the wire in its sealed packaging until installed, keep spools covered when not in use, and store in a dry area",
+        "B": "Leave the wire uncovered in the shop to acclimate",
+        "C": "Wipe the wire with cutting oil before use",
+        "D": "Freeze the wire before use"
+      },
+      "correct": "A",
+      "explanation": "Solid GMAW wire is copper-coated for conductivity and corrosion resistance. Exposure to shop air, moisture, or oils causes surface contamination that leads to porosity and feed problems. Keep sealed until use, cover between uses, store dry. Oil (C) contaminates. Freezing (D) causes condensation.",
+      "sources": [
+        {
+          "doc": "AWS A5.18",
+          "ref": "GMAW carbon steel wire storage"
+        },
+        {
+          "doc": "Lincoln Electric GMAW Guide",
+          "ref": "Wire handling"
+        }
+      ],
+      "tags": [
+        "consumables",
+        "gmaw",
+        "wire",
+        "storage"
+      ]
+    },
+    {
+      "id": "A-5.02-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Under CSA W47.1, what is a 'tack weld'?",
+      "choices": {
+        "A": "The final finish pass on a groove weld",
+        "B": "A weld made without filler metal",
+        "C": "Any weld under 6 mm long",
+        "D": "A small, temporary or permanent weld used to hold parts in alignment during subsequent welding"
+      },
+      "correct": "D",
+      "explanation": "A tack weld holds parts in place while the joint is welded. It may be consumed by later passes (temporary) or left in place and incorporated into the final weld (permanent, in which case it must meet the same quality as the joint). CSA W59 clause 5.5 covers tack weld requirements \u2014 size, quality, and inspection.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Clause 5.5 Tack welds"
+        },
+        {
+          "doc": "AWS A3.0",
+          "ref": "Standard welding terms \u2014 tack weld"
+        }
+      ],
+      "tags": [
+        "terminology",
+        "tack-welds"
+      ]
+    },
+    {
+      "id": "A-5.02-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "When performing setup for a groove weld on 12 mm plate, what is a reasonable maximum tack weld spacing?",
+      "choices": {
+        "A": "50 mm",
+        "B": "One tack at each end only",
+        "C": "Approximately 150\u2013300 mm depending on plate size and stiffness",
+        "D": "1 metre"
+      },
+      "correct": "C",
+      "explanation": "Practical tack spacing on 12 mm plate is typically 150\u2013300 mm, closer on thinner material or where distortion is a concern, farther on stiff assemblies. Very close tacks (A, 50 mm) waste time and may overheat. End-only tacks (B) cause bowing during welding. 1 m spacing (D) is too far and allows the joint to open. WPS documents typically specify.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Fit-up and tack welding practice"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Fit-up techniques"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "tack-welds",
+        "practice"
+      ]
+    },
+    {
+      "id": "A-5.03-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the purpose of preheat applied before welding thick carbon steel sections?",
+      "choices": {
+        "A": "To burn off surface paint",
+        "B": "To slow the cooling rate of the weld and HAZ, reducing hardness and hydrogen retention",
+        "C": "To make the metal easier to cut",
+        "D": "To expand the metal so the joint is easier to fit"
+      },
+      "correct": "B",
+      "explanation": "Preheat serves three linked purposes: (1) reduces the cooling rate, which reduces peak hardness of the HAZ; (2) allows hydrogen to diffuse out of the weld before it cools; (3) reduces thermal shock and residual stress. Preheat temperatures come from CSA W59 Annex E or AWS D1.1 Annex I based on carbon-equivalent, thickness, and process. Paint burning (A) is a side effect, not the purpose.",
+      "sources": [
+        {
+          "doc": "CSA W59 Annex E",
+          "ref": "Preheat and interpass temperature"
+        },
+        {
+          "doc": "AWS D1.1 Annex I",
+          "ref": "Preheat calculation"
+        }
+      ],
+      "tags": [
+        "preheat",
+        "haz",
+        "hydrogen"
+      ]
+    },
+    {
+      "id": "A-5.03-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A WPS specifies preheat of 100\u00b0C minimum and maximum interpass of 250\u00b0C. During welding, the welder measures the interpass temperature as 280\u00b0C. What is the correct action?",
+      "choices": {
+        "A": "Stop welding, allow the joint to cool below 250\u00b0C, then continue",
+        "B": "Continue welding \u2014 30\u00b0C over is acceptable",
+        "C": "Increase amperage to compensate",
+        "D": "Reduce preheat to 80\u00b0C to offset"
+      },
+      "correct": "A",
+      "explanation": "Maximum interpass temperature is an essential WPS variable. Exceeding it can cause excessive grain growth, reduced toughness, and, in quenched-and-tempered steels, loss of mechanical properties. The correct response is to stop, let the joint cool below the specified max, then resume. Ignoring the limit (B), changing parameters (C), or reducing preheat (D) all deviate from the qualified WPS.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "WPS essential variables \u2014 interpass temperature"
+        },
+        {
+          "doc": "AWS D1.1 Clause 5",
+          "ref": "Preheat and interpass control"
+        }
+      ],
+      "tags": [
+        "interpass",
+        "wps",
+        "preheat"
+      ]
+    },
+    {
+      "id": "A-5.04-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is a 'stringer bead'?",
+      "choices": {
+        "A": "A bead deposited with a side-to-side weaving motion",
+        "B": "A narrow bead deposited without significant side-to-side motion, following a straight travel path",
+        "C": "A bead used only in overhead position",
+        "D": "The first pass in any multi-pass weld"
+      },
+      "correct": "B",
+      "explanation": "A stringer bead is a narrow bead deposited with little or no oscillation. Weave beads (A) use lateral motion. Stringers give lower heat input per pass and are preferred for many code-compliant welds on high-strength steels and stainless. First-pass (D) usage is called a root pass, not stringer.",
+      "sources": [
+        {
+          "doc": "AWS A3.0",
+          "ref": "Standard welding terms \u2014 stringer bead"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Bead types"
+        }
+      ],
+      "tags": [
+        "terminology",
+        "bead-types"
+      ]
+    },
+    {
+      "id": "A-5.05-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.05",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A CSA W47.1 shop is running a job. Who is authorized to sign the final weld inspection report?",
+      "choices": {
+        "A": "Any welder in the shop",
+        "B": "The client's project manager",
+        "C": "The shop apprentice",
+        "D": "The Welding Engineer or a CWB-certified inspector as required by the QA/QC program"
+      },
+      "correct": "D",
+      "explanation": "CSA W47.1 Division 1/2 shops require a Welding Engineer, and inspection is performed by CWB-certified inspectors (Level 1, 2, or 3 as appropriate). The QA/QC program defines exact sign-off authority. Welders (A, C) can perform in-process visual checks but are not the inspection authority. The client (B) may review the report but does not issue it.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Division 1/2/3 requirements \u2014 inspection authority"
+        },
+        {
+          "doc": "CSA W178.1/W178.2",
+          "ref": "Certification of welding inspectors and inspection organizations"
+        }
+      ],
+      "tags": [
+        "qaqc",
+        "inspection",
+        "csa-w47.1"
+      ]
+    },
+    {
+      "id": "A-5.06-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.06",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What must a welder record when performing production welding under a CSA W47.1 program?",
+      "choices": {
+        "A": "Nothing \u2014 the WPS is enough",
+        "B": "Only the number of electrodes used",
+        "C": "Weld ID, welder ID/stamp, WPS reference, date, and any deviations from the WPS",
+        "D": "Only the total welding time"
+      },
+      "correct": "C",
+      "explanation": "Weld tracking under a certified program requires enough information to trace each weld back to who made it, when, and under which procedure. This is essential for both quality control and for corrective action if a weld fails inspection later. Consumable count (B) and time (D) alone are insufficient.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Welding records and traceability"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-5.06 documentation"
+        }
+      ],
+      "tags": [
+        "records",
+        "traceability",
+        "csa-w47.1"
+      ]
+    },
+    {
+      "id": "A-5.07-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.07",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A welder notices during a job that the WPS calls for E7018 with 25 mm A516 Gr 70, but the shop only stocks E7018-1 H4R electrodes in that diameter. What is the correct action?",
+      "choices": {
+        "A": "Use E7018-1 H4R without checking \u2014 it's stronger, so it's fine",
+        "B": "Substitute a GMAW wire",
+        "C": "Check with the welding supervisor and confirm whether E7018-1 H4R is acceptable under the qualified WPS or whether a supplementary essential variable change requires re-qualification",
+        "D": "Skip the job"
+      },
+      "correct": "C",
+      "explanation": "Filler metal classification is an essential variable in most codes. E7018-1 H4R has additional impact toughness and diffusible hydrogen requirements beyond plain E7018 \u2014 often it can substitute freely, but this depends on the WPS and code. The right move is always to check with the welding supervisor rather than assume. Blind substitution (A) or process change (B) can invalidate qualification and expose the shop to liability. Skipping (D) doesn't solve the problem.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Essential variables and filler metal substitution"
+        },
+        {
+          "doc": "AWS A5.1",
+          "ref": "E7018 vs E7018-1 designations"
+        }
+      ],
+      "tags": [
+        "wps",
+        "filler-metal",
+        "substitution",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "A-2.02-Q003",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For a synthetic (nylon or polyester) web sling in a vertical hitch, the working load limit (WLL) marked on the tag is the maximum load for which configuration?",
+      "choices": {
+        "A": "Choker hitch at any angle",
+        "B": "Basket hitch with legs parallel",
+        "C": "Vertical hitch only",
+        "D": "All hitches at any angle"
+      },
+      "correct": "C",
+      "explanation": "ASME B30.9 requires sling tags to show WLL for the three main configurations: vertical, basket, and choker. The vertical rating is the base. Basket hitch with parallel legs is typically 2\u00d7 vertical; choker hitch is typically ~0.75\u00d7 vertical. Loading at an angle further reduces capacity.",
+      "sources": [
+        {
+          "doc": "ASME B30.9",
+          "ref": "Slings \u2014 sling tag marking requirements"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.02"
+        }
+      ],
+      "tags": [
+        "rigging",
+        "sling",
+        "wll"
+      ]
+    },
+    {
+      "id": "A-3.03-Q003",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the primary purpose of a fire watch during and after hot work in areas where combustibles cannot be moved more than 11 m away?",
+      "choices": {
+        "A": "To watch the welder for safe technique",
+        "B": "To supervise the apprentice",
+        "C": "To detect and extinguish spot fires or smoldering material that may ignite during or after welding \u2014 typically maintained for at least 30\u201360 min after hot work stops",
+        "D": "To count electrodes used"
+      },
+      "correct": "C",
+      "explanation": "NFPA 51B and CSA W117.2 require a fire watch when hot work is performed within 11 m of combustibles that cannot be removed. The fire watch has extinguishing means at hand and maintains watch during work and for 30 minutes (NFPA baseline; some jurisdictions 60 min) after work ends to catch delayed ignition from smoldering material.",
+      "sources": [
+        {
+          "doc": "NFPA 51B",
+          "ref": "Fire prevention during welding, cutting, and other hot work"
+        },
+        {
+          "doc": "CSA W117.2",
+          "ref": "Fire watch requirements"
+        }
+      ],
+      "tags": [
+        "hot-work",
+        "fire-watch",
+        "nfpa-51b"
+      ]
+    },
+    {
+      "id": "A-4.01-Q003",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "During job planning, which sequence best represents a proper hazard control hierarchy from most to least effective?",
+      "choices": {
+        "A": "Elimination \u2192 substitution \u2192 engineering controls \u2192 administrative controls \u2192 PPE",
+        "B": "PPE \u2192 administrative controls \u2192 engineering controls \u2192 substitution \u2192 elimination",
+        "C": "Administrative controls \u2192 PPE \u2192 engineering controls \u2192 elimination \u2192 substitution",
+        "D": "Substitution \u2192 PPE \u2192 elimination \u2192 engineering controls \u2192 administrative controls"
+      },
+      "correct": "A",
+      "explanation": "The hierarchy of controls (CSA Z1000, NIOSH) ranks elimination first (remove the hazard entirely), then substitution (replace with something safer), then engineering controls (isolate people from the hazard), then administrative controls (procedures, training), and PPE last as the final barrier. PPE is the least effective because it depends entirely on the worker wearing it correctly at all times.",
+      "sources": [
+        {
+          "doc": "CSA Z1000",
+          "ref": "Occupational health and safety management \u2014 hierarchy of controls"
+        },
+        {
+          "doc": "NIOSH",
+          "ref": "Hierarchy of controls"
+        }
+      ],
+      "tags": [
+        "planning",
+        "hierarchy-of-controls"
+      ]
+    },
+    {
+      "id": "A-4.02-Q003",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder's work area contains a gas cylinder cart with oxygen and acetylene cylinders. What is the minimum separation required between the cylinders in storage if they cannot be moved?",
+      "choices": {
+        "A": "6.1 m (20 ft) apart, or separated by a non-combustible barrier at least 1.5 m (5 ft) high with a fire rating of at least 30 min",
+        "B": "No separation required if they are in a cart",
+        "C": "1 m separation is always enough",
+        "D": "Only separation between full and empty cylinders is required"
+      },
+      "correct": "A",
+      "explanation": "CSA Z94.7 / NFPA 55 / CGA P-1 require oxygen and fuel-gas cylinders in storage to be either 6.1 m apart or separated by a 1.5 m high non-combustible barrier with 30-min fire rating. This prevents a fuel-gas leak from being ignited by oxygen enrichment (or vice versa). Cylinders in active use on a cart are exempt while in use but must be properly separated when stored.",
+      "sources": [
+        {
+          "doc": "NFPA 55",
+          "ref": "Compressed gases storage"
+        },
+        {
+          "doc": "CGA P-1",
+          "ref": "Safe handling of compressed gases"
+        }
+      ],
+      "tags": [
+        "gas-cylinders",
+        "storage",
+        "separation"
+      ]
+    },
+    {
+      "id": "A-5.04-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Which technique is generally required for welding austenitic stainless steel to minimize sensitization?",
+      "choices": {
+        "A": "Weave beads with high heat input",
+        "B": "Post-weld heat treatment at 800\u00b0C for all welds",
+        "C": "Preheat above 200\u00b0C",
+        "D": "Stringer beads with controlled low heat input and interpass temperature typically \u2264 175\u00b0C"
+      },
+      "correct": "D",
+      "explanation": "Austenitic stainless steels (300-series) are prone to chromium-carbide precipitation (sensitization) if held in the 450\u2013870\u00b0C range too long. Stringer beads and controlled low heat input, with interpass typically limited to 175\u00b0C or lower, keep the HAZ out of that range as much as possible. Weave beads (A) and high preheat (C) increase time-at-temperature. PWHT at 800\u00b0C (B) is exactly the sensitization range and is not standard for austenitic SS.",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "Structural welding \u2014 stainless steel"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Stainless steel weld technique"
+        }
+      ],
+      "tags": [
+        "stainless-steel",
+        "sensitization",
+        "heat-input"
+      ]
+    },
+    {
+      "id": "A-5.06-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.06",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A CWB-certified inspector rejects a weld for excessive porosity. The welder's stamp is on the joint. What is the typical first step in a shop CAR (corrective action request)?",
+      "choices": {
+        "A": "Fire the welder",
+        "B": "Investigate root cause \u2014 check consumables lot, gas flow, technique, WPS compliance, base metal condition \u2014 and record findings before deciding on rework and preventive action",
+        "C": "Re-weld the joint immediately without investigation",
+        "D": "Ignore the defect and ship"
+      },
+      "correct": "B",
+      "explanation": "CSA W47.1 and ISO 9001 require corrective action to address root cause, not symptoms. Porosity has many possible causes (moisture, contamination, gas coverage, technique) and jumping to rework (C) without understanding cause means the defect will recur. Firing the welder (A) is neither corrective nor lawful without investigation. Ignoring the defect (D) is fraud and a safety liability.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Corrective action program"
+        },
+        {
+          "doc": "ISO 9001",
+          "ref": "Corrective and preventive action"
+        }
+      ],
+      "tags": [
+        "qaqc",
+        "corrective-action",
+        "critical-thinking"
+      ]
+    }
+  ]
+}

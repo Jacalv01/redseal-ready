@@ -1,0 +1,3699 @@
+{
+  "exam_type": "red-seal-mock",
+  "trade": "welder",
+  "total_questions": 125,
+  "pass_mark_pct": 70,
+  "duration_hours": 4,
+  "seed": 42,
+  "questions": [
+    {
+      "id": "D-15.01-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GTAW, what polarity is used for welding aluminum?",
+      "choices": {
+        "A": "DCEN (electrode negative)",
+        "B": "DCEP (electrode positive)",
+        "C": "AC (alternating current) with high-frequency stabilization",
+        "D": "Any polarity"
+      },
+      "correct": "C",
+      "explanation": "GTAW aluminum requires AC. The electrode-negative half-cycle penetrates and preserves the tungsten; the electrode-positive half-cycle provides cathodic cleaning (removes the tenacious aluminum oxide from the puddle surface). Balance and frequency of the AC are adjustable on modern inverters to optimize cleaning vs penetration. DCEP (B) melts tungsten. DCEN (A) is used for stainless and mild steel.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "GTAW aluminum \u2014 AC parameters"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Polarity selection"
+        }
+      ]
+    },
+    {
+      "id": "C-9.05-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.05",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A cold saw cutting 50 mm \u00d7 50 mm \u00d7 6 mm angle iron produces excessive burr and dulls the blade quickly. What is the most likely cause?",
+      "choices": {
+        "A": "Blade speed too high for the material",
+        "B": "Ambient temperature too low",
+        "C": "The angle iron is too soft",
+        "D": "Blade speed too high, insufficient coolant, or wrong tooth pitch for the section"
+      },
+      "correct": "D",
+      "explanation": "Cold saws require correct SFM (surface feet per minute) for the material, coolant/lubricant to remove heat, and correct TPI so 3+ teeth stay in contact. Any of these being wrong causes overheating, burr, and rapid blade wear. Ambient temperature (B) has no significant effect. Material softness (C) causes different problems (loading, not burr).",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Cold saw troubleshooting"
+        },
+        {
+          "doc": "Kalamazoo/Everett/Cosen product data",
+          "ref": "Cold saw parameters"
+        }
+      ],
+      "tags": [
+        "cold-saw",
+        "troubleshooting",
+        "mechanical-cutting"
+      ]
+    },
+    {
+      "id": "D-14.04-Q005",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which defect appears as a linear crack originating at the weld crater when the arc is broken abruptly?",
+      "choices": {
+        "A": "Crater crack",
+        "B": "Undercut",
+        "C": "Porosity",
+        "D": "Sugaring"
+      },
+      "correct": "A",
+      "explanation": "Crater cracks form when the weld pool solidifies from all sides toward the crater, concentrating shrinkage stress at the last liquid. Cracks often radiate in a star pattern. Prevention: use a crater-fill routine (taper current down as you back into the crater, or restart the arc to fill it), or grind out the crater and cap it. Some codes prohibit crater cracks on production welds entirely.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Crater cracks \u2014 acceptance and prevention"
+        },
+        {
+          "doc": "Miller/Lincoln GMAW Guides",
+          "ref": "Crater-fill function"
+        }
+      ]
+    },
+    {
+      "id": "A-5.06-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.06",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A CWB-certified inspector rejects a weld for excessive porosity. The welder's stamp is on the joint. What is the typical first step in a shop CAR (corrective action request)?",
+      "choices": {
+        "A": "Fire the welder",
+        "B": "Investigate root cause \u2014 check consumables lot, gas flow, technique, WPS compliance, base metal condition \u2014 and record findings before deciding on rework and preventive action",
+        "C": "Re-weld the joint immediately without investigation",
+        "D": "Ignore the defect and ship"
+      },
+      "correct": "B",
+      "explanation": "CSA W47.1 and ISO 9001 require corrective action to address root cause, not symptoms. Porosity has many possible causes (moisture, contamination, gas coverage, technique) and jumping to rework (C) without understanding cause means the defect will recur. Firing the welder (A) is neither corrective nor lawful without investigation. Ignoring the defect (D) is fraud and a safety liability.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Corrective action program"
+        },
+        {
+          "doc": "ISO 9001",
+          "ref": "Corrective and preventive action"
+        }
+      ],
+      "tags": [
+        "qaqc",
+        "corrective-action",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "A-2.02-Q003",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For a synthetic (nylon or polyester) web sling in a vertical hitch, the working load limit (WLL) marked on the tag is the maximum load for which configuration?",
+      "choices": {
+        "A": "Choker hitch at any angle",
+        "B": "Basket hitch with legs parallel",
+        "C": "Vertical hitch only",
+        "D": "All hitches at any angle"
+      },
+      "correct": "C",
+      "explanation": "ASME B30.9 requires sling tags to show WLL for the three main configurations: vertical, basket, and choker. The vertical rating is the base. Basket hitch with parallel legs is typically 2\u00d7 vertical; choker hitch is typically ~0.75\u00d7 vertical. Loading at an angle further reduces capacity.",
+      "sources": [
+        {
+          "doc": "ASME B30.9",
+          "ref": "Slings \u2014 sling tag marking requirements"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.02"
+        }
+      ],
+      "tags": [
+        "rigging",
+        "sling",
+        "wll"
+      ]
+    },
+    {
+      "id": "B-7.02-Q007",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "You need to lay out a hexagonal plate with a 200 mm distance across flats (F). What is the distance across corners (C)?",
+      "choices": {
+        "A": "173 mm",
+        "B": "200 mm",
+        "C": "231 mm",
+        "D": "400 mm"
+      },
+      "correct": "C",
+      "explanation": "For a regular hexagon, C = F / cos(30\u00b0) = F / 0.866 = 200 / 0.866 \u2248 231 mm. Alternatively C = F \u00d7 2/\u221a3. Answer A applies cos backwards. Layout of hex from flats requires this conversion whenever the drawing specifies one and the material is bought/marked in the other.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Hexagon geometry \u2014 across flats vs corners"
+        }
+      ],
+      "tags": [
+        "layout",
+        "geometry",
+        "hexagon"
+      ]
+    },
+    {
+      "id": "C-9.02-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which mechanical cutting process is best suited for cutting long straight lines on plate stock in a shop?",
+      "choices": {
+        "A": "Hacksaw",
+        "B": "Guillotine shear or plate saw (depending on thickness)",
+        "C": "Rotary grinder",
+        "D": "Nibbler"
+      },
+      "correct": "B",
+      "explanation": "Guillotine shears handle up to ~25 mm mild steel with square edges and high speed. Plate saws (portable or fixed) handle thicker sections with a clean cut. Hacksaws (A) are slow for long cuts. Rotary grinders (C) work but leave rougher edges. Nibblers (D) suit curves and thinner material.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Mechanical shearing"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Shop cutting methods"
+        }
+      ],
+      "tags": [
+        "mechanical-cutting",
+        "process-selection"
+      ]
+    },
+    {
+      "id": "A-4.01-Q001",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the primary purpose of a pre-job hazard assessment (also called Field Level Hazard Assessment or FLHA)?",
+      "choices": {
+        "A": "To assign blame after an incident",
+        "B": "To satisfy insurance paperwork only",
+        "C": "To identify hazards specific to the job and establish controls before work begins",
+        "D": "To track work hours"
+      },
+      "correct": "C",
+      "explanation": "FLHAs are a proactive safety tool \u2014 the crew identifies job-specific hazards (weather, proximity, tools, energies) and controls before starting. Blame assignment (A), insurance (B), and time tracking (D) are unrelated functions. Alberta OHS Code Part 2 requires hazard assessments.",
+      "sources": [
+        {
+          "doc": "Alberta OHS Code Part 2",
+          "ref": "Hazard assessment"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-4.01 Plans work"
+        }
+      ],
+      "tags": [
+        "planning",
+        "flha",
+        "hazard-assessment"
+      ]
+    },
+    {
+      "id": "A-3.02-Q001",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Under WHMIS 2015, which pictogram appears on a container of a compressed gas cylinder?",
+      "choices": {
+        "A": "Flame over circle",
+        "B": "Exploding bomb",
+        "C": "Gas cylinder pictogram (a cylinder in a circle)",
+        "D": "Corrosion pictogram"
+      },
+      "correct": "C",
+      "explanation": "WHMIS 2015 aligns with GHS. Compressed gases carry the 'gas cylinder' pictogram \u2014 a cylinder outline in a red-bordered diamond. Flame-over-circle (A) is oxidizers. Exploding bomb (B) is explosives or self-reactive substances. Corrosion (D) is corrosive substances. A single cylinder can carry multiple pictograms if it also poses those hazards (e.g. an oxidizing gas like O2 shows both gas cylinder and flame-over-circle).",
+      "sources": [
+        {
+          "doc": "WHMIS 2015 / Hazardous Products Regulations",
+          "ref": "GHS pictograms"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-3.02 identifies hazardous materials"
+        }
+      ],
+      "tags": [
+        "whmis",
+        "compressed-gas",
+        "pictograms"
+      ]
+    },
+    {
+      "id": "C-10.04-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "After finishing OFC work, what is the correct shutdown sequence?",
+      "choices": {
+        "A": "Close both cylinder valves, then release regulator adjusting screws and bleed lines",
+        "B": "Close cylinder valves first, then open torch valves briefly to bleed both lines to zero, then close torch valves and back out both regulator adjusting screws",
+        "C": "Leave regulators pressurized for the next job",
+        "D": "Just close the torch and walk away"
+      },
+      "correct": "B",
+      "explanation": "Proper shutdown: (1) close both cylinder valves; (2) open each torch valve one at a time until pressure gauges read zero (bleeds line pressure); (3) close torch valves; (4) back out (loosen) both regulator adjusting screws until they turn freely. This depressurizes the whole system, protects regulator diaphragms, and prevents overnight leak buildup in a hazardous mix. Leaving regs pressurized (C) risks a leak or diaphragm creep; just closing the torch (D) leaves the whole system pressurized.",
+      "sources": [
+        {
+          "doc": "CGA P-1",
+          "ref": "Safe handling of compressed gases"
+        },
+        {
+          "doc": "CSA W117.2",
+          "ref": "OFC equipment shutdown procedure"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "shutdown",
+        "safety"
+      ]
+    },
+    {
+      "id": "B-7.01-Q007",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In an AWS A2.4 symbol, what does a small flag at the elbow of the reference line indicate?",
+      "choices": {
+        "A": "Weld all around",
+        "B": "Machine finish",
+        "C": "Full penetration",
+        "D": "Field weld (to be made on site, not in the shop)"
+      },
+      "correct": "D",
+      "explanation": "A flag at the elbow (junction of arrow and reference line) means field weld. A circle at the elbow means weld all around. Full penetration is shown by 'CJP' notation or specific groove symbol conventions. Machine finish uses the finish symbol on the weld itself.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Supplementary symbols"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "field-weld"
+      ]
+    },
+    {
+      "id": "C-9.03-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.03",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A welder is cutting stainless steel plate with an angle grinder. Which practice should be followed to avoid heat-tinting damage that could later corrode?",
+      "choices": {
+        "A": "Use maximum RPM and heavy pressure",
+        "B": "Cut only when the metal is hot",
+        "C": "Heat the material red first",
+        "D": "Use light, steady passes to keep the cut cool, use a thin cutting disc (1\u20131.5 mm), and consider water cooling if allowed"
+      },
+      "correct": "D",
+      "explanation": "Excess heat during cutting causes chromium-depleted heat-tint zones that corrode preferentially in service. Light passes, thin discs, and cooling limit heat input. Aggressive cutting (A) creates heat tint and can dishwarp the plate. Heating (C, D) is exactly the opposite of what's needed.",
+      "sources": [
+        {
+          "doc": "AWS D18.1",
+          "ref": "Stainless steel surface preparation"
+        },
+        {
+          "doc": "Nickel Institute Publication 11 007",
+          "ref": "Preventing stainless steel corrosion during fabrication"
+        }
+      ],
+      "tags": [
+        "stainless-steel",
+        "grinding",
+        "heat-tint"
+      ]
+    },
+    {
+      "id": "C-10.04-Q002",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What safety device is required between the torch and the hose on both fuel and oxygen lines to prevent flashback into the hose?",
+      "choices": {
+        "A": "A flow meter",
+        "B": "Flashback arrestors (with reverse-flow check valve function)",
+        "C": "A pressure gauge",
+        "D": "None \u2014 flashback is a myth"
+      },
+      "correct": "B",
+      "explanation": "Flashback arrestors contain a sintered filter to quench a flashback flame and a reverse-flow check valve to prevent oxygen entering the fuel hose (or vice versa). Both fuel and oxygen lines need them, mounted at the torch handle and often at the regulator too. CSA W117.2 requires them on all OFC apparatus.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Flashback arrestors required"
+        },
+        {
+          "doc": "CGA P-1",
+          "ref": "Safety devices for OFC"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "safety",
+        "flashback"
+      ]
+    },
+    {
+      "id": "B-7.02-Q004",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A right cone with 300 mm base diameter and 400 mm slant height is developed for pattern layout. What is the arc length of the developed sector (i.e. the flat pattern's outer edge)?",
+      "choices": {
+        "A": "300 mm",
+        "B": "\u03c0 \u00d7 300 \u2248 942 mm",
+        "C": "400 mm",
+        "D": "\u03c0 \u00d7 400 \u2248 1257 mm"
+      },
+      "correct": "B",
+      "explanation": "The arc length of a cone's developed sector equals the circumference of the base = \u03c0 \u00d7 D = \u03c0 \u00d7 300 \u2248 942 mm. The radius of the developed sector equals the slant height (400 mm). Together these give the angle of the sector: \u03b8 = arc/radius = 942/400 \u2248 2.36 rad \u2248 135\u00b0. Answer D confuses arc length with slant-height circumference.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Radial-line pattern development"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Cone development"
+        }
+      ],
+      "tags": [
+        "pattern-development",
+        "cone",
+        "calculation"
+      ]
+    },
+    {
+      "id": "C-9.05-Q003",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.05",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the safety concern with using a magnetic drill press on painted or coated structural steel overhead?",
+      "choices": {
+        "A": "The paint may catch fire",
+        "B": "There is no safety concern",
+        "C": "The paint colour changes",
+        "D": "The magnet may not achieve full holding force on paint/coatings, causing the drill to fall \u2014 always confirm holding force, and use safety chain/strap as backup"
+      },
+      "correct": "D",
+      "explanation": "Magnetic drill press holding force depends on direct steel-to-magnet contact and steel thickness. Paint, coatings, curved surfaces, or thin plate reduce holding force. Overhead or vertical use requires a safety chain/strap in case the magnet releases. This is called out in Alberta OHS Code Part 18 and all mag-drill operator manuals.",
+      "sources": [
+        {
+          "doc": "Alberta OHS Code Part 18",
+          "ref": "Powered tool safety"
+        },
+        {
+          "doc": "Hougen/Milwaukee product manuals",
+          "ref": "Magnetic drill safety chain"
+        }
+      ],
+      "tags": [
+        "mag-drill",
+        "safety",
+        "structural"
+      ]
+    },
+    {
+      "id": "D-15.02-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For GTAW of carbon and stainless steels, what shielding gas is standard?",
+      "choices": {
+        "A": "100% CO2",
+        "B": "100% argon (Ar-He mixes for thicker stainless or aluminum)",
+        "C": "75Ar/25CO2",
+        "D": "Nitrogen"
+      },
+      "correct": "B",
+      "explanation": "GTAW shielding: 100% argon is the workhorse for carbon and stainless. Helium added (25\u201375%) increases arc energy for thicker material or higher travel speed. Pure helium is rarely used (harder starting). Never CO2 or oxygen-bearing gases \u2014 they oxidize the tungsten and contaminate the puddle. Backing/purge gas for open-root stainless is typically argon or nitrogen (with H2 optional for austenitics).",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "GTAW shielding for stainless"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Shielding gas selection"
+        }
+      ]
+    },
+    {
+      "id": "D-13.03-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For SMAW on 304 austenitic stainless steel, which electrode class is typically used?",
+      "choices": {
+        "A": "E7018",
+        "B": "E6010",
+        "C": "E308-16 or E308L-16 (low-carbon)",
+        "D": "ENiCrFe-3"
+      },
+      "correct": "C",
+      "explanation": "AWS A5.4 classifies stainless SMAW electrodes. 304 base metal is matched with 308 filler (higher chromium and nickel to compensate for dilution). The 'L' (low-carbon, <0.03%) variant is preferred where post-weld sensitization is a concern. E7018 (A) and E6010 (B) are carbon-steel electrodes. ENiCrFe-3 (D) is a nickel-based filler for Inconel or dissimilar joints.",
+      "sources": [
+        {
+          "doc": "AWS A5.4",
+          "ref": "Stainless SMAW electrode classification"
+        },
+        {
+          "doc": "Nickel Institute Publication 11007",
+          "ref": "Filler selection for austenitic stainless"
+        }
+      ]
+    },
+    {
+      "id": "B-8.01-Q005",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'back-step welding'?",
+      "choices": {
+        "A": "Welding from left to right",
+        "B": "Removing weld metal in preparation for the next pass",
+        "C": "Welding vertical-down",
+        "D": "Depositing short weld lengths whose direction of travel is opposite to the overall welding progression"
+      },
+      "correct": "D",
+      "explanation": "Back-step welding: the welder makes a short bead ending at the start point of the previous bead, then jumps ahead and welds another short bead back to the previous start. The overall direction of progression is opposite to the direction of each short bead. This is a distortion-control technique that spreads and cancels contraction forces.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Welding sequence"
+        }
+      ],
+      "tags": [
+        "distortion",
+        "back-step"
+      ]
+    },
+    {
+      "id": "A-5.01-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the correct storage temperature range for low-hydrogen SMAW electrodes (e.g. E7018) once they are removed from the sealed original container?",
+      "choices": {
+        "A": "Room temperature",
+        "B": "Rod oven at approximately 120\u00b0C (250\u00b0F)",
+        "C": "Refrigerated at 4\u00b0C",
+        "D": "Freezer at -18\u00b0C"
+      },
+      "correct": "B",
+      "explanation": "Low-hydrogen electrodes must be stored in a heated rod oven at approximately 120\u00b0C (250\u00b0F) once opened to prevent moisture pickup in the flux coating. Moisture becomes hydrogen in the arc, which causes hydrogen-induced cracking. AWS A5.1 and manufacturer data specify the temperature. Room-temperature (A) exposure is limited to a few hours. Cold storage (C, D) actually promotes condensation.",
+      "sources": [
+        {
+          "doc": "AWS A5.1/A5.1M",
+          "ref": "Low-hydrogen electrode storage"
+        },
+        {
+          "doc": "CSA W48",
+          "ref": "Filler metals \u2014 storage and handling"
+        }
+      ],
+      "tags": [
+        "consumables",
+        "smaw",
+        "low-hydrogen",
+        "storage"
+      ]
+    },
+    {
+      "id": "A-2.01-Q001",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "According to CSA B354 (elevated work platforms), what is the maximum wind speed at which most self-propelled boom lifts may be operated outdoors, unless the manufacturer's rating is different?",
+      "choices": {
+        "A": "No wind speed limit if the platform is inside a barrier",
+        "B": "22 m/s (49 mph)",
+        "C": "5 m/s (11 mph)",
+        "D": "12.5 m/s (28 mph)"
+      },
+      "correct": "D",
+      "explanation": "CSA B354 and most manufacturers set 12.5 m/s (approximately 28 mph or Beaufort 6) as the operating limit for outdoor use of self-propelled elevated work platforms unless the specific unit is rated differently. Always verify the load/wind chart posted in the platform. Answer B is above the tip-over threshold for most units; C is unnecessarily conservative; D ignores the wind loading on the platform occupants and materials.",
+      "sources": [
+        {
+          "doc": "CSA B354.6 / B354.7",
+          "ref": "Operation of elevated work platforms \u2014 wind speed limits"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.01 Uses access equipment"
+        }
+      ],
+      "tags": [
+        "access-equipment",
+        "boom-lift",
+        "wind-limits",
+        "csa-b354"
+      ]
+    },
+    {
+      "id": "C-9.05-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.05",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is a 'chop saw' used for in fabrication?",
+      "choices": {
+        "A": "Cutting concrete only",
+        "B": "Grinding surface finish",
+        "C": "Cutting curves",
+        "D": "Making straight abrasive-wheel or cold-saw cuts on stock (angle iron, tube, small pipe, rebar)"
+      },
+      "correct": "D",
+      "explanation": "Chop saws (abrasive-wheel or cold-saw / carbide-tipped) make quick straight cuts on structural stock. Abrasive-wheel chop saws are common in shops for mild steel; cold-saws (metal-cutting circular saw with carbide/HSS blade and coolant) give cleaner cuts and blade life on production runs.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Abrasive and cold saw cutting"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "C-9.05 mechanical cutting equipment"
+        }
+      ],
+      "tags": [
+        "chop-saw",
+        "mechanical-cutting"
+      ]
+    },
+    {
+      "id": "D-16.04-Q002",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "SAW is typically limited to which welding positions?",
+      "choices": {
+        "A": "All positions",
+        "B": "Flat groove (1G) and horizontal fillet (2F) \u2014 the flux blanket must sit on the joint, so out-of-position welding is generally not possible",
+        "C": "Overhead only",
+        "D": "Vertical only"
+      },
+      "correct": "B",
+      "explanation": "SAW's granular flux must rest on the joint under gravity, so it is confined to flat and near-flat positions: 1G groove, 1F fillet, 2F horizontal fillet, and pipe in the 1G rolled position. Specialty 'strip' cladding and circumferential vessel welding use rotating positioners to keep the joint horizontal. True out-of-position SAW does not exist.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW position limitations"
+        }
+      ]
+    },
+    {
+      "id": "D-15.02-Q003",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which AWS spec covers GTAW filler rods for stainless steel (e.g. ER308L, ER316L)?",
+      "choices": {
+        "A": "AWS A5.1",
+        "B": "AWS A5.9 (bare stainless steel rods and electrodes)",
+        "C": "AWS A5.10 (aluminum)",
+        "D": "AWS A5.20 (FCAW carbon)"
+      },
+      "correct": "B",
+      "explanation": "AWS A5.9 covers bare stainless steel wire and rod for GMAW, GTAW, and SAW. Common: ER308L (for 304), ER316L (for 316), ER309L (for dissimilar or overlay onto carbon), ER347 (stabilized). 'L' = low-carbon (<0.03%) for sensitization control.",
+      "sources": [
+        {
+          "doc": "AWS A5.9/A5.9M",
+          "ref": "Stainless bare filler classification"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q004",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For vertical-up SMAW with E7018 on 12 mm plate, which electrode diameter is standard for the fill passes?",
+      "choices": {
+        "A": "2.5 mm (3/32\")",
+        "B": "4.0 mm (5/32\")",
+        "C": "3.2 mm (1/8\")",
+        "D": "5.0 mm (3/16\")"
+      },
+      "correct": "C",
+      "explanation": "3.2 mm E7018 is the workhorse size for vertical-up on plate 6\u201320 mm \u2014 small enough to control the puddle against gravity, large enough for reasonable deposition. 2.5 mm burns fast and requires many passes; 4.0 mm and larger cause pool sag vertical-up on plate.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "SMAW electrode size guidance"
+        },
+        {
+          "doc": "Lincoln SMAW Handbook",
+          "ref": "Electrode selection by position and thickness"
+        }
+      ]
+    },
+    {
+      "id": "C-11.04-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.04",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A CNC PAC table is cutting 6 mm mild steel and the finished parts show a consistent 5\u00b0 bevel on the cut edges (cut face not perpendicular). What is the most likely cause and correction?",
+      "choices": {
+        "A": "Torch height too high, or worn consumables \u2014 check pierce height and cut height, replace electrode and nozzle if worn, and verify swirl ring installation (correct rotation direction matters for kerf perpendicularity)",
+        "B": "The plate is warped",
+        "C": "The plasma gas is wrong colour",
+        "D": "The cutting speed is exactly right"
+      },
+      "correct": "A",
+      "explanation": "Consistent bevel indicates the plasma jet is not perpendicular to the plate. Common causes: torch height too high (arc column widens with distance), worn consumables (nozzle orifice enlarged or electrode pitted), incorrectly installed swirl ring (the rotational direction gives a consistent bevel to one side of the kerf \u2014 one side is 'good side', typically the right side for clockwise swirl). Correction: adjust cutting height per manufacturer chart, replace consumables, verify swirl ring orientation.",
+      "sources": [
+        {
+          "doc": "Hypertherm 'Good Side / Bad Side'",
+          "ref": "PAC kerf bevel and swirl direction"
+        },
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC cut quality troubleshooting"
+        }
+      ],
+      "tags": [
+        "pac",
+        "cut-quality",
+        "bevel",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "B-7.02-Q001",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A layout requires a 90\u00b0 elbow made from a 6\" (168 mm OD) schedule 40 pipe using two mitred sections. What is the mitre angle for each cut?",
+      "choices": {
+        "A": "22.5\u00b0 from perpendicular",
+        "B": "45\u00b0 from perpendicular",
+        "C": "60\u00b0 from perpendicular",
+        "D": "90\u00b0 from perpendicular"
+      },
+      "correct": "B",
+      "explanation": "For a two-piece mitre elbow, the mitre angle at each cut = total angle \u00f7 2 = 90\u00b0 \u00f7 2 = 45\u00b0 from perpendicular to the pipe axis. Three-piece elbows use 22.5\u00b0; four-piece use 15\u00b0; more pieces = smoother flow but more welds.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Pipe layout \u2014 mitre elbow calculation"
+        },
+        {
+          "doc": "ASME B31.3",
+          "ref": "Mitre bend geometry"
+        }
+      ],
+      "tags": [
+        "pipe-layout",
+        "mitre",
+        "calculation"
+      ]
+    },
+    {
+      "id": "D-16.02-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "SAW deposition rate is typically much higher than SMAW because:",
+      "choices": {
+        "A": "SAW uses more expensive equipment",
+        "B": "SAW uses smaller electrodes",
+        "C": "SAW is done underwater",
+        "D": "SAW runs at higher currents (500\u20131000+ A vs 200 A typical SMAW), has near-100% deposition efficiency, and eliminates arc radiation losses since the arc is submerged. Deposition rates of 5\u201320 kg/h vs 1\u20133 kg/h for SMAW"
+      },
+      "correct": "D",
+      "explanation": "SAW's advantages come from (1) very high current handling (submerged arc allows currents that would radiate away most heat if exposed), (2) minimal spatter/stub loss (efficiency 95%+ vs SMAW ~60%), and (3) mechanized consistency. Typical deposition: 5\u201310 kg/h single-wire, 10\u201320+ kg/h tandem or twin-wire. This is why SAW dominates thick-plate pressure vessel and structural work.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW deposition rates"
+        },
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "Productivity comparison"
+        }
+      ]
+    },
+    {
+      "id": "C-11.03-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'pilot arc' in PAC?",
+      "choices": {
+        "A": "The main cutting arc",
+        "B": "An arc that pilots the operator to the cut line",
+        "C": "A low-current auxiliary arc between electrode and nozzle that ionizes the gas so the main arc can transfer to the workpiece when the torch is brought close",
+        "D": "The arc that persists after cutting stops"
+      },
+      "correct": "C",
+      "explanation": "Most PAC systems use a pilot arc: a small arc struck between the electrode and nozzle by high-frequency start or contact start, which ionizes the plasma gas. When the torch approaches the workpiece (within transfer distance), the main arc transfers from nozzle to workpiece and cutting begins. Pilot arc allows piercing without tip contact and starts on painted/rusty surfaces where transfer might otherwise fail.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "Pilot arc initiation"
+        },
+        {
+          "doc": "Hypertherm Technical Guide",
+          "ref": "Arc transfer sequence"
+        }
+      ],
+      "tags": [
+        "pac",
+        "pilot-arc",
+        "arc-starting"
+      ]
+    },
+    {
+      "id": "C-10.01-Q002",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Why can OFC not cut austenitic stainless steel effectively?",
+      "choices": {
+        "A": "The chromium in stainless forms a stable chromium oxide (Cr\u2082O\u2083) with a higher melting point than the steel itself, blocking the oxidation reaction",
+        "B": "Stainless has a lower melting point",
+        "C": "Stainless is too soft",
+        "D": "Stainless doesn't conduct heat"
+      },
+      "correct": "A",
+      "explanation": "OFC needs the metal oxide's melting point to be BELOW the metal's own melting point so the oxide can flow out as slag. Cr\u2082O\u2083 melts at ~2435\u00b0C \u2014 higher than stainless steel \u2014 so it forms a refractory scale that prevents the oxidation reaction from progressing. This is why stainless (and aluminum, high-alloy steels, cast iron) require plasma or powder-injection OFC instead.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC material limitations"
+        },
+        {
+          "doc": "TWI Knowledge Base",
+          "ref": "OFC of alloyed and stainless steels"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "stainless-steel",
+        "process-limits"
+      ]
+    },
+    {
+      "id": "D-13.02-Q005",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'arc blow' in SMAW?",
+      "choices": {
+        "A": "Deflection of the arc from its intended path by magnetic fields \u2014 especially when welding with DC near steel edges, corners, or the work-lead attachment point",
+        "B": "Wind blowing away shielding gas",
+        "C": "The sound of the arc",
+        "D": "Slag ejection"
+      },
+      "correct": "A",
+      "explanation": "Arc blow is arc deflection caused by uneven magnetic field distribution around the arc (residual magnetism, work-lead position, edges). Symptoms: erratic arc, poor bead placement, excessive spatter. Mitigations: switch to AC (magnetic fields alternate and self-cancel), demagnetize the workpiece, split the work-lead to two points, wrap the work lead around the workpiece, reduce arc length. SMAW is more susceptible than wire processes because of longer arc length.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Arc blow causes and remedies"
+        },
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SMAW arc characteristics"
+        }
+      ]
+    },
+    {
+      "id": "D-15.03-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GTAW on 1.6 mm (16 gauge) stainless sheet, DCEN, argon shielding at 8 L/min, what is a typical current setting range?",
+      "choices": {
+        "A": "10 A",
+        "B": "No current \u2014 use gas only",
+        "C": "300 A",
+        "D": "50\u201380 A (rule of thumb: ~40\u201350 A per mm of thickness for stainless GTAW)"
+      },
+      "correct": "D",
+      "explanation": "Stainless GTAW rule of thumb: ~40\u201350 A per mm of thickness. 1.6 mm \u2192 65\u201380 A. Rules of thumb are starting points; final value tuned by observing puddle behaviour. Too low won't establish a good puddle; too high burns through thin sheet and causes wide HAZ. Manufacturer parameter charts refine these values by joint type and technique.",
+      "sources": [
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Current selection for stainless"
+        },
+        {
+          "doc": "Lincoln GTAW Guide",
+          "ref": "Parameters for thin stainless"
+        }
+      ]
+    },
+    {
+      "id": "A-1.04-Q002",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Why is it important to record shielding gas cylinder change-outs and lot numbers on jobs performed under a CSA W47.1-certified WPS?",
+      "choices": {
+        "A": "For traceability so that if a weld fails inspection later, the gas lot and cylinder used can be linked to the weld",
+        "B": "For inventory tracking only",
+        "C": "Because the gas supplier requires it",
+        "D": "It is not required"
+      },
+      "correct": "A",
+      "explanation": "CSA W47.1 and W59 require traceability of consumables (filler metal lots, gas lots, fluxes) so that if a defect is later discovered, the root cause can be traced back to a specific batch of material. Inventory (B) and supplier requirements (C) are incidental. Traceability is a hard requirement, not optional (D).",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Quality control \u2014 consumable traceability"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.04 records maintenance"
+        }
+      ],
+      "tags": [
+        "records",
+        "traceability",
+        "csa-w47.1"
+      ]
+    },
+    {
+      "id": "B-8.02-Q006",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "The same job in the previous question is quoted for labour at 3 kg/hour deposition rate. What is the estimated arc-on time?",
+      "choices": {
+        "A": "8.3 hours",
+        "B": "14 hours",
+        "C": "25 hours",
+        "D": "42 hours"
+      },
+      "correct": "A",
+      "explanation": "Arc-on time = deposit weight \u00f7 deposition rate = 25 \u00f7 3 \u2248 8.3 hours. This is arc-on only \u2014 actual labour hours are higher due to operator factor (arc-on time as % of shift, typically 20\u201340% for SMAW). Answer C reflects labour hours assuming a low operator factor.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 1",
+          "ref": "Labour estimating \u2014 operator factor"
+        },
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Deposition rates"
+        }
+      ],
+      "tags": [
+        "estimating",
+        "labour",
+        "calculation"
+      ]
+    },
+    {
+      "id": "D-13.01-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which SMAW electrode is a fast-freeze cellulosic type used extensively for open-root pipe welding downhill (5G downhill)?",
+      "choices": {
+        "A": "E7018",
+        "B": "E6010",
+        "C": "E7024",
+        "D": "E308-16"
+      },
+      "correct": "B",
+      "explanation": "E6010 has a high-cellulose sodium coating, DCEP only, produces a deep-penetrating fast-freezing arc suited to open-root and out-of-position work \u2014 the standard for pipe root passes downhill in cross-country pipeline welding. E7018 (A) is low-hydrogen for structural. E7024 (C) is iron-powder heavy-deposit flat/horizontal only. E308-16 (D) is stainless.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "E6010 characteristics"
+        },
+        {
+          "doc": "API 1104",
+          "ref": "Pipeline welding practice"
+        }
+      ]
+    },
+    {
+      "id": "B-8.01-Q003",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Two 12 mm plates are being fit up for a single-V groove weld with 3 mm root opening. The gap is measured as 5 mm along one edge. What is the correct action?",
+      "choices": {
+        "A": "Accept the gap \u2014 it will fill in during welding",
+        "B": "Add more filler pass",
+        "C": "Correct the fit-up (adjust clamping, add backing, or trim) to bring root opening within the WPS tolerance before welding",
+        "D": "Weld it and grind afterward"
+      },
+      "correct": "C",
+      "explanation": "Root opening is an essential variable on most WPSs. A gap outside tolerance can cause burn-through, weld-metal cracking, and incomplete penetration. The correct step is always to fix fit-up before welding. Filling gaps with weld metal is called 'buttering' and is only allowed by specific WPS provisions; even then it must be documented. Grinding after (D) can't fix an out-of-tolerance root.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Fit-up tolerance limits"
+        },
+        {
+          "doc": "AWS D1.1 Clause 5",
+          "ref": "Fit-up requirements"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "root-opening",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "C-10.02-Q003",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is cutting 12 mm mild steel with OFC and the cut is producing heavy hard dross that clings to the bottom edge. Which parameter is most likely wrong?",
+      "choices": {
+        "A": "Travel speed too fast",
+        "B": "Fuel gas has spoiled",
+        "C": "Travel speed too slow, or oxygen pressure/tip size wrong for the thickness",
+        "D": "Ambient humidity"
+      },
+      "correct": "C",
+      "explanation": "Heavy hanging dross usually means travel speed too slow (too much heat, deep penetration but poor slag ejection) OR cutting oxygen pressure too low / tip too small (insufficient stream to blow slag). Correct speed shows fine light spray from the bottom of the cut. Too fast (A) causes the opposite \u2014 cut doesn't complete through. Fuel spoilage (B) is unusual and would show as poor flame; humidity (D) has minimal effect.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC troubleshooting"
+        },
+        {
+          "doc": "Victor Cutting Handbook",
+          "ref": "Cut defects and causes"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "troubleshooting",
+        "dross"
+      ]
+    },
+    {
+      "id": "B-8.01-Q004",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which distortion-control technique involves welding a joint in short segments that skip ahead, then returning to fill the gaps?",
+      "choices": {
+        "A": "Back-step welding",
+        "B": "Cascade welding",
+        "C": "Skip welding (also called wandering or intermittent sequence)",
+        "D": "Vertical-up progression"
+      },
+      "correct": "C",
+      "explanation": "Skip (wandering) welding deposits short segments spaced along the joint, then returns to fill between them. This spreads heat input over time and reduces continuous longitudinal contraction. Back-step (A) welds short lengths against the direction of travel. Cascade (B) is a multi-pass sequencing technique. Vertical-up (D) is a position, not a distortion technique.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Distortion control sequences"
+        },
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control"
+        }
+      ],
+      "tags": [
+        "distortion",
+        "welding-sequence",
+        "skip-welding"
+      ]
+    },
+    {
+      "id": "D-15.01-Q003",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For DCEN GTAW of stainless steel with 2.4 mm (3/32\") EWTh-2 tungsten, tip geometry is typically:",
+      "choices": {
+        "A": "Balled (round)",
+        "B": "Chisel edge",
+        "C": "Pointed with a taper of approximately 2\u00d7 diameter (angle ~30\u00b0), truncated slightly to a small flat",
+        "D": "No specific shape"
+      },
+      "correct": "C",
+      "explanation": "DCEN tungsten grinding: pointed taper 2\u00d7 diameter (about 30\u00b0 included angle for 2.4 mm), with a small flat (truncated tip) to prevent point melting under current. Grind marks parallel to the electrode axis (longitudinal), not perpendicular (transverse marks focus current at the tip and cause instability). For AC on aluminum, ball or truncate the tip.",
+      "sources": [
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Tungsten grinding for DC/AC"
+        },
+        {
+          "doc": "Lincoln GTAW Guide",
+          "ref": "Tip geometry effects on arc stability"
+        }
+      ]
+    },
+    {
+      "id": "D-16.04-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A SAW weld on a pressure vessel shell shows excessive convexity and hard slag that will not detach easily. Which parameter adjustment is most likely to help?",
+      "choices": {
+        "A": "Increase travel speed",
+        "B": "Change to a different metal",
+        "C": "Adjust voltage \u2014 voltage low relative to current gives narrow, ropy, convex beads with tight-adhering slag. Increasing voltage widens the bead and improves slag release; also check flux depth and correct wire-to-flux ratio",
+        "D": "Add more flux"
+      },
+      "correct": "C",
+      "explanation": "SAW bead profile is voltage-dependent. Low voltage = narrow, convex, ropy bead with tight slag. Correct voltage = flatter bead, slag lifts freely (self-releasing on cooling). Excess voltage = wide flat bead, undercut, and potentially cracking. Flux depth also matters: too shallow allows arc breakthrough; too deep chokes the arc and worsens bead shape.",
+      "sources": [
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "Bead shape vs voltage"
+        },
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW parameter effects"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q005",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For GMAW of aluminum, which wire feed system is generally preferred to avoid feeding problems (bird-nesting)?",
+      "choices": {
+        "A": "Standard push feeder with steel liner",
+        "B": "No feeder",
+        "C": "Push-pull feeder or spool gun with Teflon/nylon liner and U-groove aluminum-specific drive rolls",
+        "D": "Gravity feed"
+      },
+      "correct": "C",
+      "explanation": "Aluminum wire is soft and buckles under drive-roll pressure in a long cable. Push-only systems > 3\u20134 m usually bird-nest. Push-pull feeders (small motor at the gun assists the main feeder) or spool guns (spool mounted on the gun itself) eliminate long push distances. Liner must be low-friction (Teflon or nylon), and drive rolls use U-groove (not V-groove or knurled) to grip without deforming the wire. Standard steel liner on push feeder (A) causes rapid bird-nesting on aluminum.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "Aluminum GMAW equipment"
+        },
+        {
+          "doc": "Miller MigGun/SpoolMate documentation",
+          "ref": "Aluminum feeding configurations"
+        }
+      ]
+    },
+    {
+      "id": "A-2.01-Q002",
+      "mwa": "A",
+      "task": "A-2",
+      "sub_task": "A-2.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder needs to weld overhead beams 8 m off the shop floor. Which access equipment offers the best combination of stability, reach, and hot-work suitability?",
+      "choices": {
+        "A": "A single extension ladder",
+        "B": "A rope-and-harness rappel setup",
+        "C": "A stack of pallets and a step ladder",
+        "D": "A scissor lift or boom lift with a rated platform"
+      },
+      "correct": "D",
+      "explanation": "Elevated work platforms (scissor or boom) provide a stable working surface, guardrails, and a load rating for tools and materials \u2014 the correct choice for extended hot work at height. Ladders (A) are not stable enough for both hands to weld and violate most shop hot-work procedures. Pallet stacks (C) are prohibited. Rope access (B) is for specialized inspection, not welding.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-2.01 Uses access equipment"
+        },
+        {
+          "doc": "CSA B354",
+          "ref": "Elevated work platform selection"
+        }
+      ],
+      "tags": [
+        "access-equipment",
+        "hot-work",
+        "elevated-work"
+      ]
+    },
+    {
+      "id": "D-13.03-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "SMAW on austenitic stainless with E308L-16 requires interpass temperature limits typically:",
+      "choices": {
+        "A": "\u2264 175\u00b0C to minimize time in the 450\u2013870\u00b0C sensitization range and to control distortion (austenitic SS has ~50% higher thermal expansion than carbon steel)",
+        "B": "Above 300\u00b0C",
+        "C": "No limit needed",
+        "D": "Below room temperature"
+      },
+      "correct": "A",
+      "explanation": "Austenitic SS interpass typically \u2264 175\u00b0C (some codes \u2264 150\u00b0C for critical service). Two reasons: (1) minimize time in the sensitization range (450\u2013870\u00b0C) where chromium carbides can precipitate at grain boundaries; (2) manage distortion \u2014 austenitic SS expands ~50% more than carbon steel per \u00b0C. Stringer beads and limited interpass are the standard technique.",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "Structural welding \u2014 stainless steel"
+        },
+        {
+          "doc": "ASME Section II Part C",
+          "ref": "Stainless welding practice"
+        }
+      ]
+    },
+    {
+      "id": "A-5.06-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.06",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What must a welder record when performing production welding under a CSA W47.1 program?",
+      "choices": {
+        "A": "Nothing \u2014 the WPS is enough",
+        "B": "Only the number of electrodes used",
+        "C": "Weld ID, welder ID/stamp, WPS reference, date, and any deviations from the WPS",
+        "D": "Only the total welding time"
+      },
+      "correct": "C",
+      "explanation": "Weld tracking under a certified program requires enough information to trace each weld back to who made it, when, and under which procedure. This is essential for both quality control and for corrective action if a weld fails inspection later. Consumable count (B) and time (D) alone are insufficient.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Welding records and traceability"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-5.06 documentation"
+        }
+      ],
+      "tags": [
+        "records",
+        "traceability",
+        "csa-w47.1"
+      ]
+    },
+    {
+      "id": "D-13.04-Q005",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In SMAW, what is 'incomplete fusion'?",
+      "choices": {
+        "A": "Weld metal did not fuse completely with the base metal or previous bead (lack of bonding at the interface) \u2014 a rejectable defect on almost all codes",
+        "B": "The weld colour doesn't match",
+        "C": "The weld is too small",
+        "D": "The weld is too shiny"
+      },
+      "correct": "A",
+      "explanation": "Incomplete fusion (formerly 'lack of fusion' or 'cold lap') = the weld metal did not achieve metallurgical bonding with the base metal or a prior pass. Causes: insufficient heat, wrong angle (electrode pointing at previous bead not sidewall), arc directed away from cold metal, oxide/scale not cleaned between passes. Detected by UT, RT, or destructive testing. AWS D1.1 and CSA W59 reject any incomplete fusion on the joint.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 6",
+          "ref": "Weld defect definitions"
+        },
+        {
+          "doc": "CSA W59 Clause 11",
+          "ref": "Acceptance criteria"
+        }
+      ]
+    },
+    {
+      "id": "C-11.01-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In plasma arc cutting (PAC), what mechanism removes metal?",
+      "choices": {
+        "A": "Chemical oxidation like OFC",
+        "B": "Vaporization by microwave energy",
+        "C": "Melting by a highly constricted, high-temperature (~20,000\u00b0C+) plasma arc jet, and blowing molten metal out of the kerf by the gas velocity",
+        "D": "Mechanical grinding"
+      },
+      "correct": "C",
+      "explanation": "PAC uses an electric arc constricted through a small nozzle orifice with high-velocity gas flow. The gas ionizes into plasma at temperatures far above OFC (up to 30,000\u00b0C), melting the metal, and the gas jet blows the molten metal out. Because it is thermal (melting) rather than chemical (oxidation), PAC cuts ANY electrically conductive material \u2014 stainless, aluminum, copper, cast iron \u2014 not just steel.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC operating principles"
+        },
+        {
+          "doc": "Hypertherm 'How Plasma Cutting Works'",
+          "ref": "Plasma process technology"
+        }
+      ],
+      "tags": [
+        "pac",
+        "process-principles"
+      ]
+    },
+    {
+      "id": "D-13.04-Q006",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "SMAW acceptable undercut per AWS D1.1 (structural) for statically loaded connections is typically:",
+      "choices": {
+        "A": "Any depth",
+        "B": "\u2264 1 mm depth generally; for material \u2265 25 mm, up to 2 mm may be acceptable when the length is limited per code \u2014 always verify current edition and specific joint type",
+        "C": "5 mm always",
+        "D": "10 mm"
+      },
+      "correct": "B",
+      "explanation": "AWS D1.1 clause 6 gives detailed acceptance criteria. Undercut general limit for statically loaded is ~1 mm (1/32\"); for thicker material some allowances exist. Cyclically loaded (fatigue) service has stricter limits. Always look up the current edition's table and the exact joint/loading category before signing off.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 6.9",
+          "ref": "Undercut acceptance criteria"
+        },
+        {
+          "doc": "CSA W59 Clause 11",
+          "ref": "Undercut limits"
+        }
+      ]
+    },
+    {
+      "id": "B-7.01-Q003",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welding symbol shows a fillet weld with '6' to the left of the symbol and '50\u2013150' to the right, with a dash between two triangles. What does this specify?",
+      "choices": {
+        "A": "6 mm fillet leg, intermittent \u2014 50 mm weld length, 150 mm pitch (centre-to-centre spacing)",
+        "B": "6 mm fillet, continuous, 150 mm long",
+        "C": "6 mm root gap, 50 mm length only",
+        "D": "6 mm throat, 150 mm total length"
+      },
+      "correct": "A",
+      "explanation": "For intermittent fillet welds, AWS A2.4 places leg size to the left of the symbol, and length\u2013pitch to the right (e.g. 50\u2013150 means 50 mm weld, 150 mm centre-to-centre spacing). Continuous welds (B) don't use length\u2013pitch. Root gap (C) is shown differently. Throat (D) is only specified with special notation.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Intermittent fillet weld symbol"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Fillet weld sizing"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "intermittent-fillet",
+        "aws-a2.4"
+      ]
+    },
+    {
+      "id": "B-7.02-Q009",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For structural drawing interpretation, the abbreviation 'TYP.' on a dimension means:",
+      "choices": {
+        "A": "The dimension is typographic only",
+        "B": "The dimension is typical \u2014 applies to all similar features unless otherwise dimensioned",
+        "C": "The dimension is a tolerance value",
+        "D": "The dimension is theoretical"
+      },
+      "correct": "B",
+      "explanation": "TYP. (typical) means the dimension applies to all similar features on the drawing. This saves clutter \u2014 dimension one, note TYP., and apply to all. Widely used on repetitive stiffener/hole patterns. Typographic (A) is unrelated. Tolerance (C) uses \u00b1 or GD&T. Theoretical (D) uses TDS or TED notation.",
+      "sources": [
+        {
+          "doc": "ASME Y14.5",
+          "ref": "Drawing dimension conventions"
+        },
+        {
+          "doc": "AISC Detailing",
+          "ref": "Structural drawing abbreviations"
+        }
+      ],
+      "tags": [
+        "drawings",
+        "abbreviations"
+      ]
+    },
+    {
+      "id": "D-14.02-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What shielding gas is typically used for GMAW of aluminum?",
+      "choices": {
+        "A": "75Ar/25CO2",
+        "B": "100% argon (thicker sections may add helium \u2014 Ar/He mixes 25\u201375% He)",
+        "C": "100% CO2",
+        "D": "Nitrogen"
+      },
+      "correct": "B",
+      "explanation": "Aluminum GMAW uses 100% argon; helium added (25\u201375% He) increases arc energy for thicker aluminum. CO2 (C) reacts with aluminum forming defects. Nitrogen (D) causes porosity in aluminum. 75/25 (A) is for carbon steel.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "Structural welding \u2014 aluminum"
+        },
+        {
+          "doc": "Aluminum Association",
+          "ref": "GMAW shielding for aluminum"
+        }
+      ]
+    },
+    {
+      "id": "B-8.01-Q008",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For fitting a nozzle to a pressure vessel shell, what fit-up check confirms the nozzle is perpendicular to the vessel surface?",
+      "choices": {
+        "A": "Visual check only",
+        "B": "Trust the drawing",
+        "C": "Weight the nozzle so it settles by gravity",
+        "D": "Use a level, square, or contour-following template to measure squareness in two planes, and check clearance around the entire nozzle-to-shell fit"
+      },
+      "correct": "D",
+      "explanation": "Nozzle squareness on a curved shell must be verified in two orthogonal planes (longitudinal and circumferential axes of the vessel) using appropriate tools. Contour templates that match the shell's curvature help confirm even fit-up all around. Visual (A) is insufficient for pressure work. Gravity (C) doesn't guarantee square on a curved surface. Trusting drawings (B) skips required inspection.",
+      "sources": [
+        {
+          "doc": "ASME BPVC Section VIII Div 1",
+          "ref": "Nozzle installation tolerances"
+        },
+        {
+          "doc": "AWS D1.1",
+          "ref": "Fit-up verification"
+        }
+      ],
+      "tags": [
+        "pressure-vessel",
+        "nozzle",
+        "fit-up"
+      ]
+    },
+    {
+      "id": "D-14.02-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GMAW on 5 mm 6061-T6 aluminum, which filler wire is a common choice?",
+      "choices": {
+        "A": "ER70S-6",
+        "B": "ER4043 (Al-5%Si) or ER5356 (Al-5%Mg), depending on service requirements",
+        "C": "ER308L",
+        "D": "Pure aluminum"
+      },
+      "correct": "B",
+      "explanation": "6061 is commonly welded with ER4043 (Al-Si, good weldability, moderate strength, minimal crack sensitivity, silver appearance) or ER5356 (Al-Mg, higher strength, better colour match after anodizing, better for structural). Filler selection depends on strength, corrosion, colour match, and anodizing requirements \u2014 see AWS D1.2 Table 5.5 for the standard selection chart.",
+      "sources": [
+        {
+          "doc": "AWS D1.2 Table 5.5",
+          "ref": "Filler alloy selection for aluminum"
+        },
+        {
+          "doc": "AWS A5.10",
+          "ref": "Aluminum filler classification"
+        }
+      ]
+    },
+    {
+      "id": "D-13.03-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is a common SMAW electrode used for welding grey cast iron for repair, when the joint is expected to remain machinable?",
+      "choices": {
+        "A": "E7018",
+        "B": "ENiFe-CI (nickel-iron flux-coated, per AWS A5.15)",
+        "C": "E308L",
+        "D": "E6010"
+      },
+      "correct": "B",
+      "explanation": "AWS A5.15 covers cast iron SMAW electrodes: ENi-CI (pure Ni), ENiFe-CI (Ni-Fe, most common \u2014 good machinability and colour match), and ENiCu (Ni-Cu). Cast iron cracks easily due to graphite structure and low ductility; nickel-based fillers form a soft, machinable, crack-resistant weld metal. Preheat 200\u2013320\u00b0C, low heat input, peening between passes, slow cooling. Carbon steel electrodes (A, D) form brittle white iron at the fusion boundary.",
+      "sources": [
+        {
+          "doc": "AWS A5.15",
+          "ref": "Cast iron SMAW electrodes"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Cast iron welding procedures"
+        }
+      ]
+    },
+    {
+      "id": "B-8.03-Q004",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'arc gouging' typically used for in fabrication?",
+      "choices": {
+        "A": "Removing defective weld metal, back-gouging root passes prior to welding the second side, and preparing joints",
+        "B": "Making decorative marks",
+        "C": "Cutting finished parts to size",
+        "D": "Melting scrap for recycling"
+      },
+      "correct": "A",
+      "explanation": "Arc gouging (typically CAC-A \u2014 carbon arc with compressed air) removes metal by melting and blowing away with air. Common uses: back-gouging groove-weld roots before welding the second side to ensure full penetration, removing defective weld sections identified by NDE, and preparing joints where mechanical cutting is impractical. It is not for finish cutting (C, use OFC/PAC) or scrap melting (D).",
+      "sources": [
+        {
+          "doc": "AWS C5.3",
+          "ref": "Air carbon arc gouging and cutting"
+        },
+        {
+          "doc": "ArcAir Product Manual",
+          "ref": "CAC-A applications"
+        }
+      ],
+      "tags": [
+        "gouging",
+        "cac-a",
+        "back-gouging"
+      ]
+    },
+    {
+      "id": "A-4.02-Q003",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder's work area contains a gas cylinder cart with oxygen and acetylene cylinders. What is the minimum separation required between the cylinders in storage if they cannot be moved?",
+      "choices": {
+        "A": "6.1 m (20 ft) apart, or separated by a non-combustible barrier at least 1.5 m (5 ft) high with a fire rating of at least 30 min",
+        "B": "No separation required if they are in a cart",
+        "C": "1 m separation is always enough",
+        "D": "Only separation between full and empty cylinders is required"
+      },
+      "correct": "A",
+      "explanation": "CSA Z94.7 / NFPA 55 / CGA P-1 require oxygen and fuel-gas cylinders in storage to be either 6.1 m apart or separated by a 1.5 m high non-combustible barrier with 30-min fire rating. This prevents a fuel-gas leak from being ignited by oxygen enrichment (or vice versa). Cylinders in active use on a cart are exempt while in use but must be properly separated when stored.",
+      "sources": [
+        {
+          "doc": "NFPA 55",
+          "ref": "Compressed gases storage"
+        },
+        {
+          "doc": "CGA P-1",
+          "ref": "Safe handling of compressed gases"
+        }
+      ],
+      "tags": [
+        "gas-cylinders",
+        "storage",
+        "separation"
+      ]
+    },
+    {
+      "id": "B-8.02-Q001",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For a fillet weld, what is the 'throat' dimension?",
+      "choices": {
+        "A": "The length of the weld",
+        "B": "The shortest distance from the joint root to the weld face (theoretical throat = leg \u00d7 0.707 for equal-leg 90\u00b0 fillet)",
+        "C": "The leg length",
+        "D": "The plate thickness"
+      },
+      "correct": "B",
+      "explanation": "Fillet weld strength is calculated on the throat, not the leg. For an equal-leg 90\u00b0 fillet, theoretical throat = leg \u00d7 sin(45\u00b0) = leg \u00d7 0.707. Actual throat (measured) may differ due to convexity/concavity of the face. CSA W59 and AWS D1.1 use throat area \u00d7 filler metal shear strength for capacity calculations.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Fillet weld throat definition"
+        },
+        {
+          "doc": "AWS D1.1",
+          "ref": "Fillet weld strength calculation"
+        }
+      ],
+      "tags": [
+        "fillet-weld",
+        "throat",
+        "geometry"
+      ]
+    },
+    {
+      "id": "D-14.04-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A production GMAW weld shows widespread porosity across the length. Which single check most often uncovers the cause?",
+      "choices": {
+        "A": "Check for shielding gas problems: cylinder pressure, flow rate at the torch (not just at the regulator), draft in the work area, damaged gas hose, or blocked/damaged gas nozzle",
+        "B": "Increase amperage",
+        "C": "Change wire brand",
+        "D": "Reduce voltage"
+      },
+      "correct": "A",
+      "explanation": "Porosity in GMAW is nearly always a shielding-gas failure. Check: gas flow at the torch nozzle (use a flow meter that fits the nozzle) \u2014 regulator may read fine while a leak elsewhere drops flow; draft or wind removing shielding; cracked/burned gas hose; nozzle spattered shut. Only after gas checks pass do you look at wire condition, base metal cleanliness, and parameters.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW porosity causes"
+        },
+        {
+          "doc": "Miller Troubleshooting Guide",
+          "ref": "Porosity checklist"
+        }
+      ]
+    },
+    {
+      "id": "C-9.01-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For grinding stainless steel, which abrasive material is generally preferred to avoid contamination that could cause corrosion?",
+      "choices": {
+        "A": "Standard aluminum oxide with iron content",
+        "B": "Any grinding wheel \u2014 abrasive material does not matter",
+        "C": "Silicon carbide chosen for concrete grinding",
+        "D": "Zirconia alumina or ceramic abrasive rated 'contamination-free / stainless-safe' (Fe/S/Cl-free)"
+      },
+      "correct": "D",
+      "explanation": "Standard grinding wheels can contain iron and sulfur/chloride that transfer to the stainless surface. Iron initiates rust; chlorides initiate pitting/SCC. Stainless-safe wheels are certified Fe/S/Cl-free (< specified ppm) \u2014 required by many food/pharma/pressure specs. Dedicated stainless-only grinders and brushes should be used to prevent cross-contamination.",
+      "sources": [
+        {
+          "doc": "AWS D18.1",
+          "ref": "Sanitary weld surface preparation"
+        },
+        {
+          "doc": "3M/Norton abrasive product data",
+          "ref": "Stainless-safe abrasive designation"
+        }
+      ],
+      "tags": [
+        "stainless-steel",
+        "abrasives",
+        "contamination"
+      ]
+    },
+    {
+      "id": "D-15.04-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GTAW, 'pulsed current' means:",
+      "choices": {
+        "A": "The current alternates between a high peak (melting) and a low background (freezing/solidifying) at a controlled rate \u2014 used to control heat input, reduce distortion on thin material, and give an overlapping-dime bead appearance",
+        "B": "AC current",
+        "C": "The current oscillates in the mains supply",
+        "D": "Random current spikes"
+      },
+      "correct": "A",
+      "explanation": "Pulsed GTAW: peak current for melting, background for cooling. Frequency, peak, background, and duty cycle are adjustable. Benefits: lower total heat input than continuous current at the same peak, less distortion on thin sections, better control on aluminum and thin stainless, and the characteristic overlapping-ripple bead. Modern inverter power sources make pulsed GTAW routine.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GTAW pulsed current"
+        },
+        {
+          "doc": "Miller Dynasty/Syncrowave Manual",
+          "ref": "Pulse parameters"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "GMAW wire feeder delivers wire erratically \u2014 surging and stubbing \u2014 even though drive rolls are correct size and tension appears set. What is the most likely cause?",
+      "choices": {
+        "A": "Empty gas cylinder",
+        "B": "New spool of wire",
+        "C": "Wrong polarity",
+        "D": "Worn or kinked liner in the gun cable, or wrong-sized liner for the wire"
+      },
+      "correct": "D",
+      "explanation": "Erratic wire feed with correct rolls almost always traces to the liner: worn, kinked, contaminated with debris/copper flakes, or wrong ID for the wire. Symptoms: bird-nesting at drive rolls, arc surging, stubbing. Fix: replace liner, or blow it out with compressed air if lightly contaminated. Empty gas (A) causes porosity, not feed problems.",
+      "sources": [
+        {
+          "doc": "Lincoln GMAW Troubleshooting Guide",
+          "ref": "Wire feed problems"
+        },
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Wire feeder maintenance"
+        }
+      ]
+    },
+    {
+      "id": "B-7.01-Q001",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In an AWS A2.4 welding symbol, what does a symbol placed on the reference line below the arrow indicate?",
+      "choices": {
+        "A": "A field weld",
+        "B": "The weld is on the other side of the joint (opposite the arrow)",
+        "C": "A weld all around",
+        "D": "The weld is on the arrow side of the joint"
+      },
+      "correct": "D",
+      "explanation": "In AWS A2.4, a weld symbol below the reference line = arrow side, above the line = other side. Weld-all-around (C) is shown as a circle at the elbow. Field weld (A) is a flag at the elbow.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Standard symbols for welding, brazing, and NDE"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Ch. 5 welding symbols"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "aws-a2.4"
+      ]
+    },
+    {
+      "id": "D-14.03-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GMAW drive rolls, what tension setting is generally correct?",
+      "choices": {
+        "A": "Maximum tension always",
+        "B": "Zero tension",
+        "C": "Just enough to feed the wire without slipping, but not so much it deforms the wire or crushes it \u2014 a common test is to feed wire against a solid object; the drive rolls should slip before the wire deforms",
+        "D": "Set by weight of the spool"
+      },
+      "correct": "C",
+      "explanation": "Excess tension: deforms/flattens wire (increases friction in liner, hastens liner and tip wear, causes feed problems). Insufficient tension: slippage, erratic feed. Correct test: feed wire against a firm surface (e.g. brick); rolls should slip before wire deforms/coils. This is manufacturer-specified in all GMAW machine manuals.",
+      "sources": [
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Drive roll tension setting"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Wire feeder setup"
+        }
+      ]
+    },
+    {
+      "id": "D-14.01-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In AWS A5.18 GMAW wire classification ER70S-6, what does the 'S' indicate?",
+      "choices": {
+        "A": "Stainless",
+        "B": "Small diameter",
+        "C": "Solid wire (as opposed to composite/metal-cored)",
+        "D": "Short arc"
+      },
+      "correct": "C",
+      "explanation": "AWS A5.18: 'ER' = electrode/rod, '70' = 70 ksi minimum tensile, 'S' = solid wire, '6' = chemistry designation (S-6 has higher Mn+Si deoxidizers, tolerates mill scale, good general-purpose). Composite/metal-cored wires use 'C' instead of 'S' (per A5.18/A5.36). FCAW wires (A5.20) use 'T' for tubular.",
+      "sources": [
+        {
+          "doc": "AWS A5.18/A5.18M",
+          "ref": "GMAW solid wire classification"
+        }
+      ]
+    },
+    {
+      "id": "C-11.02-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In a PAC torch, what are the two main replaceable consumables in the cutting nozzle assembly?",
+      "choices": {
+        "A": "Only the tip",
+        "B": "The electrode (typically hafnium-tipped copper for air plasma) and the nozzle (copper orifice)",
+        "C": "The gas cylinder and hose",
+        "D": "The power source and cable"
+      },
+      "correct": "B",
+      "explanation": "The two main wear items in a PAC torch are the electrode (a copper body with a hafnium insert that emits electrons and gradually erodes) and the nozzle (a copper part with a precisely-sized orifice that constricts the arc). Both are consumables that must be replaced together \u2014 worn electrodes damage nozzles and vice versa. Swirl rings and retaining caps are also part of the assembly but wear less often.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC torch components"
+        },
+        {
+          "doc": "Hypertherm/Miller PAC Manuals",
+          "ref": "Consumable inspection and replacement"
+        }
+      ],
+      "tags": [
+        "pac",
+        "consumables",
+        "torch"
+      ]
+    },
+    {
+      "id": "D-14.04-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "For GMAW pipe welding (2G fixed vertical pipe axis, groove weld on 10 mm wall), which transfer mode is typically preferred?",
+      "choices": {
+        "A": "Spray transfer",
+        "B": "SMAW only",
+        "C": "Globular only",
+        "D": "Short-circuit for root; pulsed spray or short-circuit for fill and cap, depending on WPS"
+      },
+      "correct": "D",
+      "explanation": "2G pipe on 10 mm wall requires out-of-position welding for the root (horizontal in 2G) and controlled fill/cap. Short-circuit or a modified short-circuit mode (RMD, STT) is standard for the root \u2014 low heat, controls the puddle for open-root work. Pulsed spray or continued short-circuit is used for fill/cap depending on WPS. Pure spray (A) is flat-position only and cannot be run on a horizontal pipe axis in 2G.",
+      "sources": [
+        {
+          "doc": "ASME B31.3",
+          "ref": "Pipe welding procedures"
+        },
+        {
+          "doc": "Miller RMD/Lincoln STT product literature",
+          "ref": "Modified short-arc for pipe roots"
+        }
+      ]
+    },
+    {
+      "id": "B-7.02-Q008",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A fabricator needs to lay out a 6:12 pitch (rise:run) roof beam brace angle. What is the angle from horizontal?",
+      "choices": {
+        "A": "18.4\u00b0",
+        "B": "45\u00b0",
+        "C": "30\u00b0",
+        "D": "26.6\u00b0"
+      },
+      "correct": "D",
+      "explanation": "Angle = arctan(rise/run) = arctan(6/12) = arctan(0.5) \u2248 26.57\u00b0. Roofing pitches are given as rise-over-run so this conversion appears constantly in structural layout. Answer A is arctan(1/3); C and D are common false intuitions.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Trigonometry \u2014 right triangles"
+        }
+      ],
+      "tags": [
+        "layout",
+        "trigonometry",
+        "structural"
+      ]
+    },
+    {
+      "id": "C-10.02-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For OFC of 25 mm mild steel plate with acetylene fuel, which cutting tip size and oxygen pressure range is typical?",
+      "choices": {
+        "A": "Size 000, 15 psi",
+        "B": "Size 6, 100 psi",
+        "C": "Size 1\u20132 (medium), approximately 40\u201360 psi (275\u2013415 kPa) cutting oxygen",
+        "D": "Any tip and pressure works"
+      },
+      "correct": "C",
+      "explanation": "Typical acetylene OFC on 25 mm mild steel uses a medium tip (Victor size 1, Harris equivalent 1-101) with cutting oxygen at ~40\u201360 psi and fuel at ~5\u201310 psi. Manufacturer tip charts (Victor, Harris, Smith) tabulate exact recipes by thickness. Tiny tips (A) can't sustain the cut; oversize (B) wastes gas and widens kerf.",
+      "sources": [
+        {
+          "doc": "Victor Cutting Tip Chart",
+          "ref": "Tip size vs plate thickness"
+        },
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC operating parameters"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "tip-selection",
+        "pressure"
+      ]
+    },
+    {
+      "id": "D-13.04-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'stringer bead' technique in SMAW pipe welding?",
+      "choices": {
+        "A": "A narrow bead deposited without significant side-to-side motion \u2014 preferred on high-strength, alloy, or thick pipe to control heat input",
+        "B": "A weave bead",
+        "C": "The last pass only",
+        "D": "The tack weld"
+      },
+      "correct": "A",
+      "explanation": "Stringer beads (narrow, straight-travel, no weave) keep heat input low, control interpass build-up, and are required by many pipeline and pressure specifications on high-strength or alloy pipe. Weave beads (B) increase heat input per pass and can cause grain coarsening. Multi-pass caps and hot passes use stringers stacked side-by-side rather than one wide weave.",
+      "sources": [
+        {
+          "doc": "API 1104",
+          "ref": "Pipeline welding technique"
+        },
+        {
+          "doc": "ASME B31.3",
+          "ref": "Process piping welding"
+        }
+      ]
+    },
+    {
+      "id": "A-5.07-Q001",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.07",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A welder notices during a job that the WPS calls for E7018 with 25 mm A516 Gr 70, but the shop only stocks E7018-1 H4R electrodes in that diameter. What is the correct action?",
+      "choices": {
+        "A": "Use E7018-1 H4R without checking \u2014 it's stronger, so it's fine",
+        "B": "Substitute a GMAW wire",
+        "C": "Check with the welding supervisor and confirm whether E7018-1 H4R is acceptable under the qualified WPS or whether a supplementary essential variable change requires re-qualification",
+        "D": "Skip the job"
+      },
+      "correct": "C",
+      "explanation": "Filler metal classification is an essential variable in most codes. E7018-1 H4R has additional impact toughness and diffusible hydrogen requirements beyond plain E7018 \u2014 often it can substitute freely, but this depends on the WPS and code. The right move is always to check with the welding supervisor rather than assume. Blind substitution (A) or process change (B) can invalidate qualification and expose the shop to liability. Skipping (D) doesn't solve the problem.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "Essential variables and filler metal substitution"
+        },
+        {
+          "doc": "AWS A5.1",
+          "ref": "E7018 vs E7018-1 designations"
+        }
+      ],
+      "tags": [
+        "wps",
+        "filler-metal",
+        "substitution",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "A-3.02-Q002",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Where should a Safety Data Sheet (SDS) for a filler metal used on the shop floor be kept, according to WHMIS 2015?",
+      "choices": {
+        "A": "Readily accessible to workers at or near the worksite (paper or electronic)",
+        "B": "Locked in the safety manager's office only",
+        "C": "Only at the supplier's warehouse",
+        "D": "Only on the SDS website"
+      },
+      "correct": "A",
+      "explanation": "WHMIS 2015 requires SDSs to be readily accessible to workers. This can be a binder near the shop, a computer terminal, or a scannable QR code \u2014 as long as workers can access it during their shift without barriers. Locked storage (B), off-site storage (C), or website-only (D) that requires internet access outside worker control do not meet the accessibility test.",
+      "sources": [
+        {
+          "doc": "WHMIS 2015",
+          "ref": "SDS accessibility requirements"
+        },
+        {
+          "doc": "Alberta OHS Code Part 29",
+          "ref": "WHMIS"
+        }
+      ],
+      "tags": [
+        "whmis",
+        "sds",
+        "workplace-access"
+      ]
+    },
+    {
+      "id": "D-14.02-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GMAW spray transfer on mild steel with 1.2 mm (0.045 in) ER70S-6 wire, which shielding gas is required to actually achieve spray transfer?",
+      "choices": {
+        "A": "100% CO2",
+        "B": "Nitrogen",
+        "C": "100% helium",
+        "D": "Argon-rich mixture with at least ~80% argon (e.g. 90Ar/10CO2 or 98Ar/2O2) so the arc column can sustain axial spray"
+      },
+      "correct": "D",
+      "explanation": "True axial spray transfer requires an argon-rich shielding (typically \u2265 80% Ar). Pure CO2 (A) forces globular transfer regardless of parameters. Helium (C) or nitrogen (B) are not standard for carbon-steel GMAW. Common spray-capable mixes: 90/10, 95/5, and 98Ar/2O2. Above the transition current (which depends on wire diameter, e.g. ~220 A for 0.9 mm and ~275 A for 1.2 mm), transfer becomes axial spray with fine droplets.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "Spray transfer shielding requirements"
+        },
+        {
+          "doc": "Praxair/Linde Shielding Gas Guide",
+          "ref": "Ar/CO2 transition currents"
+        }
+      ]
+    },
+    {
+      "id": "D-13.01-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A WPS calls for E7018 at 130 A on 3.2 mm (1/8\") electrode for a 3G groove weld. The welder finds the arc is difficult to strike and tends to stub. What is the first parameter to check?",
+      "choices": {
+        "A": "Increase amperage to 200 A",
+        "B": "Add more voltage",
+        "C": "Change to E6010",
+        "D": "Verify polarity is DCEP (electrode positive) or AC, not DCEN"
+      },
+      "correct": "D",
+      "explanation": "E7018 runs on AC or DCEP. On DCEN (electrode negative), the arc is unstable, hard to strike, and produces poor bead shape and mechanical properties. Wrong polarity is one of the most common SMAW setup errors. Amperage change (A) or process change (C) won't fix a polarity mismatch.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "E7018 polarity requirements"
+        },
+        {
+          "doc": "Miller Handbook",
+          "ref": "SMAW polarity troubleshooting"
+        }
+      ]
+    },
+    {
+      "id": "A-3.01-Q001",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which shade of welding filter lens is generally recommended by CSA Z94.3 for SMAW at 100\u2013200 amperes?",
+      "choices": {
+        "A": "Shade 11 or 12",
+        "B": "Shade 8",
+        "C": "Shade 5",
+        "D": "Shade 14"
+      },
+      "correct": "A",
+      "explanation": "CSA Z94.3 / ANSI Z87.1 recommend shade 10 for SMAW under 60 A, shade 11 for 60\u2013160 A, and shade 12 for 160\u2013250 A. Shade 5 (C) is oxy-fuel light cutting only. Shade 8 (B) is oxy-fuel heavy cutting. Shade 14 (D) is for very high-current processes or arc gouging above 500 A.",
+      "sources": [
+        {
+          "doc": "CSA Z94.3",
+          "ref": "Industrial eye and face protection \u2014 welding filter shades"
+        },
+        {
+          "doc": "AWS F2.2",
+          "ref": "Lens shade selector chart"
+        }
+      ],
+      "tags": [
+        "ppe",
+        "eye-protection",
+        "lens-shade"
+      ]
+    },
+    {
+      "id": "D-13.02-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What welding position is designated '3G'?",
+      "choices": {
+        "A": "Vertical groove",
+        "B": "Horizontal groove",
+        "C": "Flat groove",
+        "D": "Overhead groove"
+      },
+      "correct": "A",
+      "explanation": "AWS/CSA position codes: 1G flat groove, 2G horizontal groove, 3G vertical groove, 4G overhead groove. Fillet positions use 'F': 1F, 2F, 3F, 4F. Pipe positions: 1G (rotated), 2G (fixed vertical axis), 5G (fixed horizontal axis, welded around), 6G (45\u00b0 inclined fixed).",
+      "sources": [
+        {
+          "doc": "AWS A3.0",
+          "ref": "Standard welding positions"
+        },
+        {
+          "doc": "CSA W59 Clause 4",
+          "ref": "Positions of welding"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q006",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For SMAW pipe root pass with E6010 downhill, typical current polarity is:",
+      "choices": {
+        "A": "AC only",
+        "B": "DCEP (electrode positive)",
+        "C": "DCEN (electrode negative)",
+        "D": "Any"
+      },
+      "correct": "B",
+      "explanation": "E6010 requires DCEP for its characteristic deep-penetrating arc. Cellulose coating decomposes to form CO/CO2/H2 shielding; DCEP concentrates arc heat at the tip for the fast-freezing puddle needed on open-root pipe.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "E6010 polarity"
+        },
+        {
+          "doc": "API 1104",
+          "ref": "Pipeline root technique"
+        }
+      ]
+    },
+    {
+      "id": "A-3.01-Q002",
+      "mwa": "A",
+      "task": "A-3",
+      "sub_task": "A-3.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is preparing to weld galvanized steel indoors. Which PPE and engineering control combination is required?",
+      "choices": {
+        "A": "Standard welding helmet only",
+        "B": "No additional PPE needed",
+        "C": "Welding helmet and a dust mask",
+        "D": "Welding helmet plus supplied-air respirator or approved P100 fume respirator, plus local exhaust ventilation"
+      },
+      "correct": "D",
+      "explanation": "Galvanized coatings produce zinc oxide fumes that cause metal fume fever and, at chronic exposure, more serious pulmonary effects. CSA W117.2 and provincial OHS require local exhaust ventilation and an approved respirator (supplied-air preferred, P100 minimum) whenever welding on galvanized or coated steel. A dust mask (C) does not filter metal fumes; standard helmet alone (A) or no PPE (B) exposes the welder.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Ventilation and respiratory protection for welding"
+        },
+        {
+          "doc": "Alberta OHS Code Part 4",
+          "ref": "Chemical hazards"
+        }
+      ],
+      "tags": [
+        "ppe",
+        "respiratory",
+        "galvanized",
+        "ventilation"
+      ]
+    },
+    {
+      "id": "B-7.01-Q006",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Two carbon steel plates 12 mm thick are to be joined by a single-V groove weld with a 60\u00b0 included angle, 3 mm root opening, and 1.5 mm root face. Approximately how much weld metal cross-section (mm\u00b2) is required to fill the groove (ignore reinforcement)?",
+      "choices": {
+        "A": "\u2248 40 mm\u00b2",
+        "B": "\u2248 108 mm\u00b2",
+        "C": "\u2248 76 mm\u00b2",
+        "D": "\u2248 200 mm\u00b2"
+      },
+      "correct": "B",
+      "explanation": "Groove area = (root opening \u00d7 depth) + (\u00bd \u00d7 depth \u00d7 2 \u00d7 depth \u00d7 tan(bevel angle)). Depth above root face = 12 \u2212 1.5 = 10.5 mm. Root opening rectangle = 3 \u00d7 10.5 = 31.5 mm\u00b2. Bevel area both sides = 10.5 \u00d7 10.5 \u00d7 tan(30\u00b0) \u00d7 2 halves \u00f7 2 total = 10.5\u00b2 \u00d7 tan(30\u00b0) = 110.25 \u00d7 0.577 \u2248 63.6 mm\u00b2. Sum \u2248 95 mm\u00b2. Adding a small root reinforcement pass area brings it to \u2248 108 mm\u00b2 for practical estimates. Answer A underestimates; B forgets one side; D roughly doubles.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Weld metal deposition estimating"
+        },
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Groove weld area formulas"
+        }
+      ],
+      "tags": [
+        "calculation",
+        "groove-area",
+        "estimating"
+      ]
+    },
+    {
+      "id": "B-8.01-Q006",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A fabricated I-beam shows angular distortion \u2014 the flanges have rotated inward after the fillet welds attaching them to the web cooled. Which of these is the best mitigation for the next assembly?",
+      "choices": {
+        "A": "Weld both fillets simultaneously with two welders",
+        "B": "Weld only one side and leave the other unwelded",
+        "C": "Pre-set the flanges rotated outward by an estimated amount so they return to square after welding, and/or weld with balanced passes on alternating sides",
+        "D": "Use a larger fillet"
+      },
+      "correct": "C",
+      "explanation": "The two standard responses to predictable angular distortion are (1) pre-set \u2014 cambering or angling the assembly opposite the expected distortion so it returns to true after welding \u2014 and (2) balanced welding \u2014 alternating passes on opposite sides of the neutral axis so contraction forces cancel. Simultaneous welding with two operators (A) can help but is often impractical; single-side welding (B) doesn't complete the joint; larger fillets (D) worsen distortion.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control \u2014 pre-setting and balanced welding"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Angular distortion mitigation"
+        }
+      ],
+      "tags": [
+        "distortion",
+        "pre-setting",
+        "balanced-welding"
+      ]
+    },
+    {
+      "id": "B-8.02-Q002",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A 10 mm equal-leg fillet weld is specified. What is the theoretical throat and approximate deposited weld-metal cross-section per unit length?",
+      "choices": {
+        "A": "Throat 7.07 mm, area \u2248 50 mm\u00b2/mm",
+        "B": "Throat 5 mm, area 25 mm\u00b2",
+        "C": "Throat 10 mm, area 100 mm\u00b2",
+        "D": "Throat 7.07 mm, area \u2248 50 mm\u00b2 (per mm of length)"
+      },
+      "correct": "D",
+      "explanation": "Throat = 10 \u00d7 0.707 = 7.07 mm. Cross-section of the triangle = \u00bd \u00d7 leg \u00d7 leg = \u00bd \u00d7 10 \u00d7 10 = 50 mm\u00b2 per mm of length. This value is used for deposit rate and consumable estimating. Options A and B express the same numbers; B is the properly-stated per-mm length form.",
+      "sources": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Fillet weld deposit area"
+        },
+        {
+          "doc": "AWS Handbook Vol 1",
+          "ref": "Weld metal deposition"
+        }
+      ],
+      "tags": [
+        "fillet-weld",
+        "calculation",
+        "estimating"
+      ]
+    },
+    {
+      "id": "D-15.04-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "A GTAW 6G qualification pipe test on 6\" schedule 80 carbon steel is being welded with ER70S-2 root, then hot pass, fill, and cap. What is the primary purpose of the 'walking-the-cup' technique in the fill and cap passes?",
+      "choices": {
+        "A": "Just tradition",
+        "B": "The gas cup rests on and rocks between the joint sidewalls, giving the welder a consistent stand-off, arc length, weave rhythm, and hands-free stability \u2014 critical for out-of-position pipe work",
+        "C": "It's the only allowed technique",
+        "D": "To scratch-start the arc"
+      },
+      "correct": "B",
+      "explanation": "'Walking the cup' means the gas cup physically rides on the joint sidewalls or previous bead and rocks side to side as the welder advances. Advantages: constant arc length (cup stand-off is fixed by geometry), consistent oscillation rate, less operator fatigue for long pipe welds, and reliable technique in 5G/6G out-of-position work. Freehand is used where geometry doesn't permit cup contact.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "GTAW pipe welding techniques"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Walk-the-cup technique"
+        }
+      ]
+    },
+    {
+      "id": "A-1.02-Q001",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What information on a grinding wheel label must a welder verify before mounting the wheel on a portable angle grinder?",
+      "choices": {
+        "A": "Maximum RPM rating equal to or greater than the grinder's rated RPM",
+        "B": "Only the abrasive type",
+        "C": "Only the diameter",
+        "D": "Only the manufacturer's colour code"
+      },
+      "correct": "A",
+      "explanation": "A grinding wheel must be rated for at least the grinder's maximum RPM; running a wheel above its rated speed can cause it to burst. Diameter, abrasive type, and arbor size all matter too but the RPM rating is the single most safety-critical value to verify. CSA W117.2 and OSHA/ANSI B7.1 all require this check.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Grinding wheel selection and speed"
+        },
+        {
+          "doc": "ANSI B7.1",
+          "ref": "Safety requirements for abrasive wheels"
+        }
+      ],
+      "tags": [
+        "power-tools",
+        "grinder",
+        "wheel-selection",
+        "safety"
+      ]
+    },
+    {
+      "id": "C-11.02-Q002",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For PAC on 12 mm mild steel with a 60 A machine, what is a typical cutting speed range?",
+      "choices": {
+        "A": "50 mm/min (very slow)",
+        "B": "10,000 mm/min",
+        "C": "Approximately 500\u2013800 mm/min",
+        "D": "Speed doesn't matter for PAC"
+      },
+      "correct": "C",
+      "explanation": "Manufacturer cut charts (Hypertherm/Miller/ESAB) for a 60A PAC on 12 mm mild steel typically show 500\u2013800 mm/min (20\u201330 ipm) for quality cuts. Too slow (A) causes wide kerf, dross, and consumable wear; too fast (B) drops the cut and leaves a trailing edge. Always consult the machine's specific cut chart \u2014 speed is critical (D is wrong).",
+      "sources": [
+        {
+          "doc": "Hypertherm PowerMax 65 Cut Chart",
+          "ref": "Speed vs thickness for mild steel"
+        },
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC cutting parameters"
+        }
+      ],
+      "tags": [
+        "pac",
+        "cut-speed",
+        "parameters"
+      ]
+    },
+    {
+      "id": "B-8.02-Q003",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A structural connection requires an 8 mm fillet weld continuous around a 100 \u00d7 200 mm rectangular hollow section, both sides of a base plate. What is the total length of weld?",
+      "choices": {
+        "A": "300 mm",
+        "B": "1200 mm",
+        "C": "800 mm",
+        "D": "600 mm"
+      },
+      "correct": "D",
+      "explanation": "Perimeter of 100 \u00d7 200 = 2(100+200) = 600 mm per side. 'Both sides of a base plate' typically means the HSS is only welded on the outside of the connection (from one accessible side); 'both sides of the base plate' as written would double it to 1200. In common practice, an HSS to base-plate connection welds only the exposed perimeter = 600 mm. Answer D accepts the standard reading; D reflects the doubled reading if truly two-sided. When ambiguous, always confirm with the drawing.",
+      "sources": [
+        {
+          "doc": "CISC Handbook",
+          "ref": "HSS to base plate connections"
+        },
+        {
+          "doc": "AISC Manual",
+          "ref": "HSS connection design"
+        }
+      ],
+      "tags": [
+        "fillet-weld",
+        "calculation",
+        "structural"
+      ]
+    },
+    {
+      "id": "D-13.02-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A SMAW E7018 weld on 25 mm A516-70 shows longitudinal cracking down the weld centreline ~24 hours after welding. Most likely cause?",
+      "choices": {
+        "A": "Insufficient amperage causing slag inclusions",
+        "B": "Excessive travel speed causing undercut",
+        "C": "Hydrogen-induced cracking from moisture in electrode coating and/or insufficient preheat",
+        "D": "Wrong polarity causing arc blow"
+      },
+      "correct": "C",
+      "explanation": "Delayed cracking hours-to-days after welding on thicker carbon steel is the signature of hydrogen-induced (cold) cracking. Sources: moist E7018 coating (must be stored in 120\u00b0C rod oven once opened), insufficient preheat, high restraint. Immediate defects like slag (A) or undercut (B) show at once, not delayed.",
+      "sources": [
+        {
+          "doc": "CSA W59 Annex E",
+          "ref": "Preheat and hydrogen control"
+        },
+        {
+          "doc": "AWS A5.1",
+          "ref": "Low-hydrogen electrode storage"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'burnback' in GMAW?",
+      "choices": {
+        "A": "The wire fusing to the contact tip at the end of a weld, caused by wire retract stopping before the arc extinguishes",
+        "B": "The wire feed reversing",
+        "C": "The arc reflecting off the workpiece",
+        "D": "A hot workpiece burning the operator"
+      },
+      "correct": "A",
+      "explanation": "Burnback: at end of weld, wire feeder stops but current continues briefly and the arc travels up the wire, fusing wire to contact tip. Prevented by proper burnback timer setting (extends current-off after wire-feed stops by a few ms), or by trimming the wire back after each weld. Excessive burnback ruins tips and requires frequent replacement.",
+      "sources": [
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Burnback timer and consumable life"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Contact tip protection"
+        }
+      ]
+    },
+    {
+      "id": "C-12.02-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "CAC-A is extremely noisy. What hearing protection is required?",
+      "choices": {
+        "A": "Combined ear plugs + ear muffs, because CAC-A produces sound levels of 105\u2013115 dB(A) at the operator position",
+        "B": "None",
+        "C": "Cotton balls",
+        "D": "Only earbuds"
+      },
+      "correct": "A",
+      "explanation": "CAC-A sound levels of 105\u2013115 dB(B) exceed the safe daily exposure limit (85 dB(B) TWA per Alberta OHS Code Part 16) within seconds. Dual hearing protection (plugs + muffs, combined NRR typically ~35 dB) is required. CSA Z94.2 specifies hearing protector selection based on measured noise exposure. This is one of the most damaging noise environments in the trade.",
+      "sources": [
+        {
+          "doc": "Alberta OHS Code Part 16",
+          "ref": "Noise exposure limits"
+        },
+        {
+          "doc": "CSA Z94.2",
+          "ref": "Hearing protector selection"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "noise",
+        "hearing-protection"
+      ]
+    },
+    {
+      "id": "C-12.01-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In air carbon arc gouging (CAC-A), what is the electrode and what is the role of compressed air?",
+      "choices": {
+        "A": "Copper-coated carbon (graphite) electrode; compressed air (typically 80\u2013100 psi) blows molten metal out of the arc zone continuously",
+        "B": "Steel electrode; air cools the electrode",
+        "C": "Tungsten electrode; air shields the arc",
+        "D": "Copper wire electrode; air prevents oxidation"
+      },
+      "correct": "A",
+      "explanation": "CAC-A uses a copper-coated carbon (graphite) electrode. The arc melts base metal; two air jets built into the torch nozzle (fed at 80\u2013100 psi / 550\u2013700 kPa) continuously blow the molten metal out of the gouge. Without the air, CAC becomes ineffective as a metal-removal process. Electrode sizes range 4\u201319 mm; larger diameter = wider, deeper gouge.",
+      "sources": [
+        {
+          "doc": "AWS C5.3",
+          "ref": "CAC-A process description"
+        },
+        {
+          "doc": "ArcAir Operator Manual",
+          "ref": "CAC-A air pressure and technique"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "process-principles",
+        "compressed-air"
+      ]
+    },
+    {
+      "id": "D-14.01-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What does the 'T-1' in AWS A5.20 FCAW wire E71T-1 indicate?",
+      "choices": {
+        "A": "Tubular (T), usability designator 1 = gas-shielded, rutile, all-position, DCEP",
+        "B": "Flat position only",
+        "C": "The wire is one metre long",
+        "D": "Type 1 electrode holder required"
+      },
+      "correct": "A",
+      "explanation": "AWS A5.20 (carbon-steel FCAW): 'E' electrode, '7' 70 ksi, '1' all positions, 'T' tubular (flux-cored), '-1' usability designator specifying shielding (gas-shielded with CO2 or 75/25), flux type (rutile), and polarity (DCEP). T-5 is basic slag, T-4 self-shielded, T-8 self-shielded low-hydrogen, etc.",
+      "sources": [
+        {
+          "doc": "AWS A5.20/A5.20M",
+          "ref": "FCAW carbon-steel wire classification"
+        }
+      ]
+    },
+    {
+      "id": "B-8.03-Q003",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A welder is instructed to heat-straighten a distorted A514 (quenched and tempered) beam member. What is the primary concern that makes this different from heat-straightening a plain A36 member?",
+      "choices": {
+        "A": "There is no difference",
+        "B": "A514's mechanical properties depend on its heat treatment; exceeding approximately 590\u00b0C can temper it further and reduce yield/tensile strength permanently. Maximum straightening temperature is strictly controlled (typically ~590\u00b0C max) and closely monitored",
+        "C": "A514 cannot be heat-straightened at all",
+        "D": "A514 requires higher temperatures than A36"
+      },
+      "correct": "B",
+      "explanation": "Q&T steels like A514, A517, and HSLA plates lose strength if reheated above their tempering temperature. AWS D1.1 and manufacturer guidance limit maximum heat-straightening temperature on Q&T steels to about 590\u00b0C, with temperature-indicating crayons/pyrometers used to confirm. Exceeding this permanently reduces yield strength, which for A514's ~690 MPa yield can drop it toward A36 levels \u2014 potentially unsafe in service.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Heat straightening \u2014 Q&T steels"
+        },
+        {
+          "doc": "FHWA Manual FHWA-IF-99-004",
+          "ref": "Heat straightening of high-strength steels"
+        }
+      ],
+      "tags": [
+        "post-weld",
+        "q-and-t-steel",
+        "heat-straightening",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "A-5.03-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A WPS specifies preheat of 100\u00b0C minimum and maximum interpass of 250\u00b0C. During welding, the welder measures the interpass temperature as 280\u00b0C. What is the correct action?",
+      "choices": {
+        "A": "Stop welding, allow the joint to cool below 250\u00b0C, then continue",
+        "B": "Continue welding \u2014 30\u00b0C over is acceptable",
+        "C": "Increase amperage to compensate",
+        "D": "Reduce preheat to 80\u00b0C to offset"
+      },
+      "correct": "A",
+      "explanation": "Maximum interpass temperature is an essential WPS variable. Exceeding it can cause excessive grain growth, reduced toughness, and, in quenched-and-tempered steels, loss of mechanical properties. The correct response is to stop, let the joint cool below the specified max, then resume. Ignoring the limit (B), changing parameters (C), or reducing preheat (D) all deviate from the qualified WPS.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "WPS essential variables \u2014 interpass temperature"
+        },
+        {
+          "doc": "AWS D1.1 Clause 5",
+          "ref": "Preheat and interpass control"
+        }
+      ],
+      "tags": [
+        "interpass",
+        "wps",
+        "preheat"
+      ]
+    },
+    {
+      "id": "B-7.01-Q005",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "The 'tail' of a welding symbol is used to specify what?",
+      "choices": {
+        "A": "The finish contour",
+        "B": "The base metal type",
+        "C": "A reference to a specification, process, WPS, or note (e.g. 'WPS-101' or 'SMAW')",
+        "D": "The number of passes"
+      },
+      "correct": "C",
+      "explanation": "The tail (angled fork at the end of the reference line, opposite the arrow) references a WPS, process, or note. If nothing is referenced, the tail is omitted. Finish contour (A) is shown at the weld symbol itself. Base metal (B) is on the drawing legend. Pass count (D) is not standard symbol content.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Reference line and tail"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "tail-reference"
+      ]
+    },
+    {
+      "id": "D-13.02-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For SMAW with E7018 at 150 A, 24 V, travel speed 200 mm/min, what is the heat input in kJ/mm?",
+      "choices": {
+        "A": "0.54",
+        "B": "1.08",
+        "C": "1.80",
+        "D": "3.60"
+      },
+      "correct": "B",
+      "explanation": "HI (kJ/mm) = (V \u00d7 A \u00d7 60) / (mm/min \u00d7 1000) = (24 \u00d7 150 \u00d7 60) / (200 \u00d7 1000) = 216000/200000 = 1.08 kJ/mm. Standard formula from AWS D1.1 and CSA W59.",
+      "sources": [
+        {
+          "doc": "CSA W59 Clause 5.7",
+          "ref": "Heat input calculation"
+        },
+        {
+          "doc": "AWS D1.1 Annex",
+          "ref": "Heat input"
+        }
+      ]
+    },
+    {
+      "id": "D-15.03-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.03",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A GTAW weld on stainless shows dark inclusions along the toe and reduced ductility. On inspection the tungsten tip is contaminated. What is the most likely error?",
+      "choices": {
+        "A": "Shielding gas too high",
+        "B": "Wrong colour tungsten",
+        "C": "The tungsten touched the filler rod or workpiece during welding, transferring tungsten into the puddle and, conversely, transferring molten metal onto the tungsten. Fix: regrind or replace tungsten, and maintain correct arc gap (~1\u00d7 electrode diameter)",
+        "D": "Amperage too low"
+      },
+      "correct": "C",
+      "explanation": "Tungsten inclusions come from contact with the puddle or filler rod. They act as hard particles in the weld, initiating cracks and reducing fatigue life. AWS D1.6 and ASME IX include tungsten inclusions as rejectable defects on radiography. Prevention: never touch the tungsten to the puddle (dip-and-lift filler technique), maintain proper arc gap, use HF or lift-arc start rather than scratch start.",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "GTAW weld defects \u2014 tungsten inclusions"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Tungsten contamination prevention"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q004",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "A SMAW butt weld on 12 mm A36 plate qualified per AWS D1.1 requires a bend test. The face and root bend specimens show a 3 mm long open discontinuity on the tension surface. Is this acceptable?",
+      "choices": {
+        "A": "Yes \u2014 anything under 5 mm is fine",
+        "B": "No. AWS D1.1 clause 4 typically requires no single discontinuity exceeding 3 mm in any direction, and the sum of the greatest dimensions of discontinuities > 1 mm not to exceed 10 mm on the specimen tension surface. Right at the limit \u2014 likely fail, and always verify against the exact edition",
+        "C": "Yes \u2014 bend tests don't measure discontinuities",
+        "D": "Yes \u2014 always pass"
+      },
+      "correct": "B",
+      "explanation": "AWS D1.1 clause 4.9.3.3 (bend test acceptance) limits single discontinuity length to 3 mm max and total (of discontinuities >1 mm) to 10 mm max on tension surface. 3 mm is at the boundary \u2014 depending on other discontinuities, this may just pass or fail. Correct interpretation requires the whole rule; guessing (A, D) or dismissing (C) fails the qualification.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 4.9.3.3",
+          "ref": "Bend test acceptance criteria"
+        },
+        {
+          "doc": "CSA W47.1",
+          "ref": "Welder qualification bend test"
+        }
+      ]
+    },
+    {
+      "id": "B-8.01-Q002",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "When fitting two plates for a butt joint, which measurement is checked with a taper gauge or wedge?",
+      "choices": {
+        "A": "Root opening (gap between the two plates)",
+        "B": "Plate thickness",
+        "C": "Plate flatness",
+        "D": "Bevel angle"
+      },
+      "correct": "A",
+      "explanation": "A taper gauge or step wedge is designed to measure the root opening \u2014 the gap between prepared edges at the root. Thickness (B) uses a micrometer or caliper. Flatness (C) uses a straightedge and feeler gauge. Bevel angle (D) uses a bevel protractor or template.",
+      "sources": [
+        {
+          "doc": "AWS QC1",
+          "ref": "Fit-up inspection tools"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Joint fit-up"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "measurement",
+        "root-opening"
+      ]
+    },
+    {
+      "id": "D-13.01-Q004",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What does the 'H' suffix in AWS SMAW electrode designations (e.g. E7018-H4R) indicate?",
+      "choices": {
+        "A": "High strength",
+        "B": "Horizontal position",
+        "C": "High voltage",
+        "D": "Diffusible hydrogen limit \u2014 H4 = 4 mL/100g max, H8 = 8 mL/100g max, H16 = 16 mL/100g max"
+      },
+      "correct": "D",
+      "explanation": "The optional H designator specifies maximum diffusible hydrogen in mL per 100g of deposited weld metal. H4 is the strictest (used for high-strength or crack-sensitive service), H8 is intermediate, H16 is standard. Lower diffusible hydrogen reduces risk of hydrogen-induced cracking. 'R' suffix means moisture-resistant coating.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "Optional supplemental designators H and R"
+        }
+      ]
+    },
+    {
+      "id": "A-4.01-Q002",
+      "mwa": "A",
+      "task": "A-4",
+      "sub_task": "A-4.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is given a WPS (Welding Procedure Specification) for a job. What is the first check to make before starting?",
+      "choices": {
+        "A": "Confirm the WPS was signed by the welding engineer",
+        "B": "Confirm the WPS covers the base metal, thickness, process, filler, position, and joint design that match this job",
+        "C": "Ignore the WPS and use personal preference",
+        "D": "Check the paper quality of the WPS"
+      },
+      "correct": "B",
+      "explanation": "A WPS is only valid for the ranges of variables it specifies. Before using it, confirm the base metal (P-number), thickness range, process (SMAW/GTAW/etc), filler classification (F/A-number), position, and joint design all match the job. If any variable is outside the WPS range, a new procedure is required. Signature (A) is important but secondary to fit-for-purpose. C is unsafe. D is trivial.",
+      "sources": [
+        {
+          "doc": "CSA W47.1",
+          "ref": "WPS essential variables"
+        },
+        {
+          "doc": "AWS D1.1",
+          "ref": "Welding procedure qualification"
+        }
+      ],
+      "tags": [
+        "planning",
+        "wps",
+        "essential-variables"
+      ]
+    },
+    {
+      "id": "D-14.01-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which GMAW transfer mode uses high voltage and current to project small droplets across a long stable arc, requires argon-rich shielding (typically >80% Ar), and is limited to flat and horizontal positions?",
+      "choices": {
+        "A": "Short-circuit",
+        "B": "Globular",
+        "C": "Spray transfer",
+        "D": "Pulsed spray"
+      },
+      "correct": "C",
+      "explanation": "Spray transfer: current above the transition threshold (varies by wire diameter and shielding), high voltage, argon-rich gas. Metal transfers as fine droplets in a continuous stream. High heat input and gravity effects restrict it to flat/horizontal only. Globular (B) is between short-arc and spray \u2014 chunky drops, more spatter. Pulsed spray (D) modulates current to give spray-like transfer at lower average heat, usable in all positions.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW metal transfer modes"
+        },
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Transfer mode selection"
+        }
+      ]
+    },
+    {
+      "id": "B-7.02-Q002",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For a 10 mm thick mild steel plate being bent 90\u00b0 on a press brake with an inside bend radius of 10 mm, what is the approximate bend allowance (length of metal consumed in the bend)?",
+      "choices": {
+        "A": "\u2248 23.6 mm",
+        "B": "10 mm",
+        "C": "\u2248 47.1 mm",
+        "D": "31.4 mm"
+      },
+      "correct": "A",
+      "explanation": "Bend allowance = \u03b8 \u00d7 (R + K\u00b7T), where \u03b8 is in radians, R is inside radius, K is neutral axis factor (\u2248 0.44 for mild steel with R = T), T is thickness. = (\u03c0/2) \u00d7 (10 + 0.44 \u00d7 10) = 1.5708 \u00d7 14.4 \u2248 22.6 mm. Round up to 23 mm for practical layout. A ignores the K factor; C uses outside radius; D uses mean radius but wrong angle.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Bend allowance formulas"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Sheet metal layout"
+        }
+      ],
+      "tags": [
+        "calculation",
+        "bend-allowance",
+        "layout"
+      ]
+    },
+    {
+      "id": "D-14.02-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A GMAW weld with 100% CO2 shielding on mild steel shows excessive spatter compared to the same wire with 75Ar/25CO2. Explanation?",
+      "choices": {
+        "A": "CO2 is a poor conductor",
+        "B": "Nothing \u2014 CO2 gives less spatter than argon",
+        "C": "CO2 is contaminated",
+        "D": "100% CO2 promotes globular transfer with larger droplets and more spatter than argon-rich mixes. 75/25 gives more spray-like transfer at similar parameters. CO2 is cheaper and gives deeper penetration but more cleanup"
+      },
+      "correct": "D",
+      "explanation": "Pure CO2 forces globular transfer at typical voltages; 75/25 mixes can achieve spray-like or axial-spray transfer with less spatter. CO2 remains popular for structural work because it's cheap and gives deep penetration. Trade-off: more post-weld cleanup for anti-spatter spray and grinding.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW shielding gas selection"
+        },
+        {
+          "doc": "Praxair/Linde shielding gas guides",
+          "ref": "CO2 vs mixed gas performance"
+        }
+      ]
+    },
+    {
+      "id": "C-11.01-Q002",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A shop needs to cut 6 mm aluminum plate with clean straight edges. Which process is most appropriate?",
+      "choices": {
+        "A": "Oxyfuel cutting (OFC)",
+        "B": "SMAW gouging",
+        "C": "Plasma arc cutting (PAC) with appropriate gas (e.g. N\u2082/H\u2082 or air depending on system)",
+        "D": "Hacksaw only"
+      },
+      "correct": "C",
+      "explanation": "OFC (A) cannot cut aluminum \u2014 the oxide melting point is above the metal melting point. PAC handles aluminum well; systems designed for aluminum often use N\u2082/H\u2082 mixtures or compressed air with special consumables to prevent hydrogen absorption/pitting on the cut edge. SMAW gouging (B) is used to remove weld metal, not to cut plate. Hacksaw (D) works but is slow for production.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC of non-ferrous materials"
+        },
+        {
+          "doc": "Hypertherm PowerMax Manual",
+          "ref": "Consumable selection by material"
+        }
+      ],
+      "tags": [
+        "pac",
+        "aluminum",
+        "process-selection"
+      ]
+    },
+    {
+      "id": "B-8.01-Q007",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In fit-up terminology, what is a 'backing bar' (or 'backing strip')?",
+      "choices": {
+        "A": "A strip of material placed at the root of a groove weld to support molten weld metal during the root pass",
+        "B": "A stiffener welded across the back of a distorted assembly",
+        "C": "A tool used to grind out defects",
+        "D": "A jig handle"
+      },
+      "correct": "A",
+      "explanation": "A backing bar is a strip (often mild steel matching base metal, or ceramic, or copper) placed at the root to support molten metal on the first pass and allow full penetration without burn-through. Steel backing may be left in place (as part of the joint per WPS) or removed after welding. Ceramic backing is removed. Copper is used when heat must be sunk away \u2014 never fused.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Backing definitions and requirements"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Root support techniques"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "backing",
+        "root-pass"
+      ]
+    },
+    {
+      "id": "D-14.04-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GMAW, 'contact-tip-to-work distance' (CTWD) is measured from:",
+      "choices": {
+        "A": "Contact tip inside the nozzle to the workpiece",
+        "B": "Nozzle to workpiece",
+        "C": "Power source to workpiece",
+        "D": "Welder's eye to workpiece"
+      },
+      "correct": "A",
+      "explanation": "CTWD (a.k.a. electrical stickout for spray, or contact tube-to-work) is from the tip of the contact tube (inside the nozzle) to the workpiece. It controls electrode extension, which controls current and heat. Longer CTWD reduces current (I\u00b2R heating in the extended wire), shorter increases it. Nozzle-to-work (B) is a different distance (visible outside the nozzle) \u2014 the two are related by nozzle-to-tip recess.",
+      "sources": [
+        {
+          "doc": "AWS A3.0",
+          "ref": "Standard welding terminology"
+        },
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "CTWD effect on parameters"
+        }
+      ]
+    },
+    {
+      "id": "D-15.04-Q004",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GTAW of nickel alloys (e.g. Inconel 625 with ERNiCrMo-3), which technique adjustments compared to stainless are typical?",
+      "choices": {
+        "A": "None \u2014 treat exactly like stainless",
+        "B": "No filler rod",
+        "C": "Higher amperage and heavy weave",
+        "D": "Lower travel speed, tighter arc gap, cleaner joint prep, and use small stringer beads with limited weave \u2014 nickel alloys are 'sluggish' (short puddle life, poor wetting) and more sensitive to impurities than stainless"
+      },
+      "correct": "D",
+      "explanation": "Nickel alloys weld sluggishly compared to stainless: puddle wets poorly, freezes fast, and demands tight technique. Standard practice: meticulous joint cleaning (grease/paint/scale = defects), stringer beads with slight weave (max ~2\u00d7 wire diameter), tight arc, matched filler (ERNiCrMo-3 for Inconel 625), and interpass < 100\u00b0C for many alloys. Contamination with sulfur or lead causes hot cracking.",
+      "sources": [
+        {
+          "doc": "Nickel Institute Publication 11 007",
+          "ref": "Welding nickel alloys"
+        },
+        {
+          "doc": "Special Metals Inconel 625 Weldability",
+          "ref": "GTAW technique for Inconel"
+        }
+      ]
+    },
+    {
+      "id": "A-1.01-Q002",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder needs to measure a 3/16\" root opening on a groove weld. Which measuring tool is most appropriate?",
+      "choices": {
+        "A": "A 12\" combination square",
+        "B": "A framing square",
+        "C": "A dial caliper",
+        "D": "A gap gauge (welding fillet/groove gauge)"
+      },
+      "correct": "D",
+      "explanation": "A welding gap/fillet gauge is designed for exactly this measurement and is the standard shop tool for root opening and fillet leg length. A combination square (A) and framing square (B) cannot fit into a groove root. A dial caliper (C) can measure it but is fragile in a welding environment and slower to use than the purpose-built gauge.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.01.01P select and use tools and equipment"
+        },
+        {
+          "doc": "CWB Learning",
+          "ref": "Weld inspection tools reference"
+        }
+      ],
+      "tags": [
+        "measuring-tools",
+        "gap-gauge"
+      ]
+    },
+    {
+      "id": "C-10.01-Q003",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which fuel gas produces the highest primary flame temperature for oxy-fuel cutting and welding preheating?",
+      "choices": {
+        "A": "Acetylene (~3160\u00b0C in oxygen)",
+        "B": "Propane (~2820\u00b0C in oxygen)",
+        "C": "MAPP / propylene (~2900\u00b0C)",
+        "D": "Natural gas (~2760\u00b0C)"
+      },
+      "correct": "A",
+      "explanation": "Acetylene reaches ~3100\u20133200\u00b0C in oxygen and produces the highest primary flame temperature of common fuel gases, giving the fastest preheat times and best piercing performance. Propane, natural gas, and MAPP are cheaper and safer to store but slower. Cutting speed on thick steel with propane can be 25\u201340% slower than with acetylene.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "Fuel gas selection for OFC"
+        },
+        {
+          "doc": "Harris/Victor product literature",
+          "ref": "Fuel gas flame temperatures"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "fuel-gas",
+        "flame-temperature"
+      ]
+    },
+    {
+      "id": "B-7.02-Q012",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A pressure vessel drawing specifies a nozzle location as 'NPS 4, Sch 80, elevation 1500 mm from bottom TL, 90\u00b0 from N azimuth'. What does 'TL' mean?",
+      "choices": {
+        "A": "Total length",
+        "B": "Top level",
+        "C": "Tangent line \u2014 the point where the head-to-shell junction begins",
+        "D": "Tag location"
+      },
+      "correct": "C",
+      "explanation": "TL = Tangent Line. On a pressure vessel, this is the reference line where a curved head (elliptical, hemispherical, torispherical) meets the cylindrical shell. All vertical dimensions on the vessel are typically referenced to bottom TL. ASME Section VIII uses this convention throughout.",
+      "sources": [
+        {
+          "doc": "ASME BPVC Section VIII Div 1",
+          "ref": "Vessel dimensioning conventions"
+        },
+        {
+          "doc": "Pressure Vessel Handbook (Megyesy)",
+          "ref": "Standard nozzle location terminology"
+        }
+      ],
+      "tags": [
+        "pressure-vessel",
+        "drawings",
+        "terminology"
+      ]
+    },
+    {
+      "id": "C-10.01-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In oxy-fuel gas cutting (OFC) of carbon steel, what chemical reaction actually removes the metal?",
+      "choices": {
+        "A": "Oxidation \u2014 high-purity oxygen jet oxidizes (burns) the preheated iron; the resulting iron oxide is blown away and its own combustion heat sustains the process",
+        "B": "Melting only, by the flame",
+        "C": "Sublimation from vaporization",
+        "D": "Mechanical erosion from gas pressure"
+      },
+      "correct": "A",
+      "explanation": "OFC is not melting \u2014 it is rapid oxidation. The fuel-gas preheat flames raise the steel to its kindling temperature (~870\u00b0C), then the central oxygen jet oxidizes iron in an exothermic reaction (Fe + O \u2192 FeO + heat). The molten oxide (kerf) is blown out and the reaction heat sustains cutting. This is why OFC works on iron/steel (which oxidize exothermically) but not on stainless (chromium oxide blocks the reaction) or aluminum (oxide melting point > metal melting point).",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC operating principles"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Oxyfuel cutting chemistry"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "oxidation",
+        "process-principles"
+      ]
+    },
+    {
+      "id": "B-8.03-Q005",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "After back-gouging a groove weld root using CAC-A, what surface preparation is required before welding the back side?",
+      "choices": {
+        "A": "Grind the gouged surface to remove carbon deposits and any heat-affected/carburized layer, back to clean metal, before welding",
+        "B": "None \u2014 weld immediately",
+        "C": "Apply flux paste",
+        "D": "Preheat to red hot"
+      },
+      "correct": "A",
+      "explanation": "CAC-A can leave carbon deposits from the electrode and a thin carburized surface layer on the gouged metal. If not removed, this can cause weld defects \u2014 porosity, cracking (from higher-carbon HAZ), and inclusions. AWS D1.1 and CSA W59 require grinding the gouged surface back to bright clean metal before welding.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Back-gouging surface preparation"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Gouged surface preparation"
+        }
+      ],
+      "tags": [
+        "back-gouging",
+        "surface-prep",
+        "cac-a"
+      ]
+    },
+    {
+      "id": "D-15.04-Q005",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'HF start' (high-frequency start) in GTAW?",
+      "choices": {
+        "A": "A high-voltage, high-frequency spark jumps the gap between electrode and workpiece, ionizing the gas so the main arc can strike without the tungsten touching the work \u2014 preserves the tungsten and prevents contamination",
+        "B": "The welder starts high in the air",
+        "C": "Fast startup time on the machine",
+        "D": "A radio in the welding hood"
+      },
+      "correct": "A",
+      "explanation": "HF start creates an ionized path across the arc gap so the main arc initiates without tungsten-to-work contact. Prevents tungsten inclusions and contamination that come from scratch/touch starts. Note: HF radiates radio-frequency noise and can interfere with electronics \u2014 some workplaces prefer 'lift-arc' start (brief contact with a controlled release) instead for that reason.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GTAW arc starting methods"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "HF vs lift-arc starting"
+        }
+      ]
+    },
+    {
+      "id": "B-8.01-Q001",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the primary purpose of a jig or fixture in weld fabrication?",
+      "choices": {
+        "A": "To speed up welding by eliminating quality checks",
+        "B": "To replace the welder",
+        "C": "To hold parts in the correct position and alignment, and often to restrain distortion, during welding",
+        "D": "To measure the finished weld"
+      },
+      "correct": "C",
+      "explanation": "Jigs and fixtures hold parts in correct alignment and often provide the mass/restraint needed to control distortion. They improve consistency, reduce measurement time on repeat parts, and can incorporate quick-clamps for productivity. They do not replace inspection (A), the welder (B), or measurement of the finished part (D).",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Jigs and fixtures"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "B-8.01 Assembles components"
+        }
+      ],
+      "tags": [
+        "fixtures",
+        "jigs",
+        "fabrication"
+      ]
+    },
+    {
+      "id": "D-13.01-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In AWS A5.1 SMAW electrode classification E7018, what does the first two digits '70' indicate?",
+      "choices": {
+        "A": "Position",
+        "B": "Coating type",
+        "C": "70,000 psi minimum tensile strength of the weld metal",
+        "D": "Amperage rating"
+      },
+      "correct": "C",
+      "explanation": "AWS A5.1: first 2 (or 3) digits = minimum tensile strength in ksi \u00d7 1000 psi. E7018 = 70 ksi minimum tensile. Third digit = position (1=all, 2=flat/horizontal). Fourth digit + third = coating/current combo (18 = low-hydrogen potassium, AC or DCEP).",
+      "sources": [
+        {
+          "doc": "AWS A5.1/A5.1M",
+          "ref": "SMAW carbon steel electrode classification"
+        }
+      ],
+      "tags": [
+        "smaw",
+        "electrode-classification"
+      ]
+    },
+    {
+      "id": "D-14.04-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A FCAW weld shows worm-track (wandering surface porosity) after cooling. Root cause?",
+      "choices": {
+        "A": "Correct behaviour",
+        "B": "Amperage too low",
+        "C": "Excess moisture in flux, wrong shielding gas for the wire, or excess voltage \u2014 worm-tracks form when gas trapped under solidifying slag escapes, leaving a channel",
+        "D": "Travel speed too slow"
+      },
+      "correct": "C",
+      "explanation": "Worm-tracks are FCAW-specific porosity that appears as trails or channels on the weld face. Causes: moisture in wire (store dry, avoid opening spool until use), wrong gas (CO2 vs 75/25 for a given wire), voltage too high (long arc pulls in air). Correction: dry storage, verify wire-gas pairing per data sheet, lower voltage slightly.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "FCAW discontinuities"
+        },
+        {
+          "doc": "Hobart FCAW Guide",
+          "ref": "Worm-track prevention"
+        }
+      ]
+    },
+    {
+      "id": "B-8.02-Q004",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In estimating consumable use, deposition efficiency (DE) accounts for what?",
+      "choices": {
+        "A": "The number of welds per hour",
+        "B": "The percentage of purchased filler metal that ends up as sound weld metal in the joint, after losses to spatter, slag, stubs, and burn-off",
+        "C": "The percentage of joints that pass inspection",
+        "D": "The efficiency of the power source"
+      },
+      "correct": "B",
+      "explanation": "Deposition efficiency = mass of weld metal deposited / mass of consumable purchased. Typical values: SMAW \u2248 55\u201365% (stubs, slag, spatter), FCAW \u2248 75\u201385%, GMAW \u2248 85\u201395%, SAW \u2248 95%+. Multiply required deposit weight by 1/DE to estimate purchase quantity. This is separate from joint pass rate (C) and power efficiency (D).",
+      "sources": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Deposition efficiency tables"
+        },
+        {
+          "doc": "AWS Handbook",
+          "ref": "Consumable estimating"
+        }
+      ],
+      "tags": [
+        "estimating",
+        "deposition-efficiency",
+        "consumables"
+      ]
+    },
+    {
+      "id": "D-14.01-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For short-circuit transfer GMAW on 3 mm mild steel with 0.9 mm (0.035\") ER70S-6 wire, typical parameters are:",
+      "choices": {
+        "A": "Approximately 100 A / 18 V with 75%Ar/25%CO2 (or CO2), wire feed ~4 m/min",
+        "B": "300 A / 30 V with pure argon",
+        "C": "500 A / 40 V with helium",
+        "D": "50 A / 12 V"
+      },
+      "correct": "A",
+      "explanation": "Short-circuit (short-arc) transfer runs at low voltage (~16\u201320 V) and moderate amperage (~90\u2013120 A for 0.9 mm wire). Shielding gas is CO2 or 75/25 Ar/CO2 (spatter reduction). This mode gives low heat input suitable for thin sections and out-of-position work. Higher voltage/amperage (B) enters globular or spray transfer, which needs thicker material and flat/horizontal position.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW transfer modes"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Short-arc parameters"
+        }
+      ]
+    },
+    {
+      "id": "C-12.04-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "After CAC-A gouging, why must the gouged surface always be inspected and, in code work, ground before rewelding?",
+      "choices": {
+        "A": "It is not required",
+        "B": "CAC-A can leave carbon deposits (from the electrode) and a thin carburized layer on the base metal. Left in place, these cause porosity, cracking, and higher HAZ hardness in the subsequent weld. AWS D1.1 and CSA W59 require grinding to bright metal before welding",
+        "C": "For appearance only",
+        "D": "To measure the depth"
+      },
+      "correct": "B",
+      "explanation": "CAC-A deposits some carbon on the gouged steel surface. When the next weld pass melts this surface, the extra carbon raises the local carbon equivalent of the weld metal, promoting hard HAZ and hydrogen-induced cracking. AWS D1.1 clause 5.15 and CSA W59 clause 5.11 explicitly require gouged surfaces to be ground to remove all carbon and any carburized layer before welding. This applies to root back-gouging and defect removal alike.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 5.15",
+          "ref": "CAC-A surface preparation before welding"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Gouged surface preparation"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "surface-prep",
+        "back-gouging",
+        "code"
+      ]
+    },
+    {
+      "id": "D-15.04-Q003",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For GTAW aluminum, why is 'cathodic cleaning' important?",
+      "choices": {
+        "A": "It's not important",
+        "B": "During the electrode-positive half of AC, ion bombardment breaks up and removes the tenacious aluminum-oxide film that would otherwise prevent fusion \u2014 this cleaning is why AC (not DCEN) is used for aluminum",
+        "C": "It cleans the tungsten",
+        "D": "It removes shielding gas"
+      },
+      "correct": "B",
+      "explanation": "Aluminum surface is always covered by Al2O3 (aluminum oxide) with a melting point (~2050\u00b0C) far above aluminum (660\u00b0C). Without removal, this oxide prevents fusion. During DCEP portion of AC, positive ions bombard the workpiece and mechanically disrupt the oxide layer \u2014 visible as the frosty 'clean band' beside the weld. On modern inverters, AC balance controls the ratio of cleaning to penetration.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "GTAW aluminum \u2014 oxide removal"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Cathodic cleaning explanation"
+        }
+      ]
+    },
+    {
+      "id": "D-15.02-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "GTAW of stainless pipe with open root requires a back-purge. If the purge is not adequate, what defect appears on the ID (root) surface?",
+      "choices": {
+        "A": "Undercut",
+        "B": "Nothing visible",
+        "C": "Porosity only",
+        "D": "Heat tint from sugar/sugaring \u2014 excessive oxidation of the hot molten root by ambient air, ranging from straw tint to heavy black scale. The oxidized surface has depleted chromium and corrodes preferentially in service"
+      },
+      "correct": "D",
+      "explanation": "Without purge, the hot stainless root oxidizes rapidly \u2014 light straw (thin, may be acceptable in some services), yellow, red, blue, purple, and finally black (heaviest, rejectable in most). AWS D18.2 and ASTM A967 include colour standards for acceptable heat tint. Sugaring (heavy oxidation) is always rejectable. Prevention: adequate purge (typically 5\u201310 volume changes before welding, 1\u20132 L/min during) with argon or nitrogen.",
+      "sources": [
+        {
+          "doc": "AWS D18.2",
+          "ref": "Heat tint acceptance in stainless"
+        },
+        {
+          "doc": "Nickel Institute 11007",
+          "ref": "Purging practices"
+        }
+      ]
+    },
+    {
+      "id": "A-5.02-Q002",
+      "mwa": "A",
+      "task": "A-5",
+      "sub_task": "A-5.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "When performing setup for a groove weld on 12 mm plate, what is a reasonable maximum tack weld spacing?",
+      "choices": {
+        "A": "50 mm",
+        "B": "One tack at each end only",
+        "C": "Approximately 150\u2013300 mm depending on plate size and stiffness",
+        "D": "1 metre"
+      },
+      "correct": "C",
+      "explanation": "Practical tack spacing on 12 mm plate is typically 150\u2013300 mm, closer on thinner material or where distortion is a concern, farther on stiff assemblies. Very close tacks (A, 50 mm) waste time and may overheat. End-only tacks (B) cause bowing during welding. 1 m spacing (D) is too far and allows the joint to open. WPS documents typically specify.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Fit-up and tack welding practice"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Fit-up techniques"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "tack-welds",
+        "practice"
+      ]
+    },
+    {
+      "id": "D-14.04-Q006",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A GMAW weld shows convex 'stacked coin' appearance and lack of penetration. Voltage was set 4 V lower than the WPS. Root cause?",
+      "choices": {
+        "A": "Voltage too low \u2014 short-circuit transfer with excessive shorts per second, cold puddle, narrow convex bead, and reduced penetration. Correct: increase voltage to WPS value or slightly above",
+        "B": "Voltage too high",
+        "C": "Amperage too high",
+        "D": "Gas flow too high"
+      },
+      "correct": "A",
+      "explanation": "In short-circuit GMAW, voltage sets arc length and shorts/second rate. Voltage too low: many shorts per second, cold flat puddle, ropy convex bead, poor penetration. Voltage too high: fewer shorts, splashy transfer, more spatter. Optimum voltage produces smooth crackling sound and even bead. WPS voltage is set for a reason \u2014 verify polarity, contact tip, and grounding first, but assume WPS parameters are correct.",
+      "sources": [
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Short-arc voltage tuning"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Bead shape diagnostics"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A SMAW 5G pipe weld (fixed horizontal axis) requires which welding progression capability?",
+      "choices": {
+        "A": "Flat only",
+        "B": "The welder must weld through flat, vertical, and overhead positions in one continuous pass around the pipe (uphill or downhill depending on procedure)",
+        "C": "Overhead only",
+        "D": "Rotating the pipe"
+      },
+      "correct": "B",
+      "explanation": "5G = pipe axis horizontal, pipe fixed (no rotation). The weld progresses around the pipe, passing through flat (12 o'clock), vertical (3 or 9), and overhead (6). Welder qualification in 5G covers all three positions on plate. 6G (45\u00b0 inclined) additionally covers all positions on plate plus overhead-vertical transitions and is the most versatile qualification.",
+      "sources": [
+        {
+          "doc": "CSA W59 Table 12.4",
+          "ref": "Position qualifications"
+        },
+        {
+          "doc": "AWS D1.1 Table 4.10",
+          "ref": "Position qualifications"
+        }
+      ]
+    },
+    {
+      "id": "A-1.01-Q001",
+      "mwa": "A",
+      "task": "A-1",
+      "sub_task": "A-1.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "According to industry practice for hand tool inspection, when should a welder remove a striking tool (chipping hammer, ball-peen) from service?",
+      "choices": {
+        "A": "Only when the head is loose on the handle",
+        "B": "Once per year regardless of condition",
+        "C": "When the striking face is mushroomed, chipped, or cracked",
+        "D": "Only when directed by a supervisor"
+      },
+      "correct": "C",
+      "explanation": "A mushroomed, chipped, or cracked striking face can shed metal shards on impact \u2014 a leading cause of eye injury. RSOS A-1.01 requires identifying worn, damaged, and defective tools and removing them from service. A loose head (A) is also a defect but not the only trigger; annual (B) and supervisor-directed (D) inspection alone are not sufficient.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "A-1.01.03P identify worn, damaged and defective tools"
+        },
+        {
+          "doc": "CSA Z432 Safeguarding of Machinery",
+          "ref": "General tool inspection"
+        }
+      ],
+      "tags": [
+        "hand-tools",
+        "inspection",
+        "safety"
+      ]
+    },
+    {
+      "id": "D-16.03-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "SAW fluxes are broadly classified as:",
+      "choices": {
+        "A": "Wet and dry",
+        "B": "Fused (glassy, low-moisture, less influence on chemistry) and Bonded/agglomerated (baked binder, can carry alloys/deoxidizers, more moisture-sensitive)",
+        "C": "Hot and cold",
+        "D": "Fast and slow"
+      },
+      "correct": "B",
+      "explanation": "Two main flux types. Fused (Type F): pre-melted, ground \u2014 hard, glassy particles, low moisture absorption, easy handling. Bonded/agglomerated (Type B or Type A): raw ingredients bonded with a silicate binder and baked \u2014 can include alloy additions and deoxidizers, but more moisture-sensitive (require drying per manufacturer instructions, e.g. 300\u00b0C for 1 hour). Correct flux storage and re-drying is essential for hydrogen control.",
+      "sources": [
+        {
+          "doc": "AWS A5.17",
+          "ref": "SAW flux classification"
+        },
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "Flux types and handling"
+        }
+      ]
+    },
+    {
+      "id": "D-15.01-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "AWS A5.12 GTAW tungsten designation EWTh-2 refers to what?",
+      "choices": {
+        "A": "Pure tungsten",
+        "B": "Lanthanated",
+        "C": "Zirconiated",
+        "D": "2% thoriated tungsten (2% thorium oxide) \u2014 historically the most common DC electrode; superior arc starting and current-carrying capacity vs pure"
+      },
+      "correct": "D",
+      "explanation": "AWS A5.12: EWP = pure (green), EWTh-2 = 2% thoriated (red), EWCe-2 = 2% ceriated (orange), EWLa-1/1.5/2 = 1/1.5/2% lanthanated (black/gold/blue), EWZr-1 = zirconiated (brown). Thoriated has been the DC workhorse but is slightly radioactive; ceriated and lanthanated are now preferred replacements with similar or better performance and no radiation concern.",
+      "sources": [
+        {
+          "doc": "AWS A5.12/A5.12M",
+          "ref": "GTAW tungsten electrode classification"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Tungsten selection"
+        }
+      ]
+    },
+    {
+      "id": "C-12.01-Q002",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For back-gouging a 12 mm groove root using CAC-A with DCEP (electrode positive), what is a typical electrode diameter and amperage range?",
+      "choices": {
+        "A": "3 mm, 50 A",
+        "B": "8 mm (5/16\"), approximately 400\u2013500 A DCEP",
+        "C": "25 mm, 100 A",
+        "D": "Any size, any current"
+      },
+      "correct": "B",
+      "explanation": "CAC-A typical parameters: an 8 mm (5/16\") copper-coated carbon electrode operates in the 400\u2013500 A range on DCEP for back-gouging medium sections. Smaller electrodes handle less current and remove less metal; larger electrodes go up to 1000+ A. Manufacturer amperage chart (ArcAir) tabulates current for each size.",
+      "sources": [
+        {
+          "doc": "ArcAir CAC-A Guide",
+          "ref": "Electrode size vs amperage"
+        },
+        {
+          "doc": "AWS C5.3",
+          "ref": "CAC-A operating parameters"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "electrode-size",
+        "amperage"
+      ]
+    },
+    {
+      "id": "D-16.01-Q002",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "AWS A5.17 covers SAW wire and flux for what base material?",
+      "choices": {
+        "A": "Aluminum",
+        "B": "Copper",
+        "C": "Stainless steel",
+        "D": "Carbon steel (A5.23 for low-alloy, A5.9 for stainless bare, A5.14 for nickel bare)"
+      },
+      "correct": "D",
+      "explanation": "A5.17: SAW carbon steel wire (EL/EM/EH prefixes) and matching flux. A5.23: SAW low-alloy. A5.9: SAW stainless (bare wire, same as GTAW rods, classified by nominal deposit composition). Flux/wire pairing determines deposited chemistry \u2014 always specify both.",
+      "sources": [
+        {
+          "doc": "AWS A5.17/A5.17M",
+          "ref": "SAW carbon steel wire and flux"
+        }
+      ]
+    }
+  ]
+}

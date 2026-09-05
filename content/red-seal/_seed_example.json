@@ -1,0 +1,73 @@
+{
+  "sub_task": "D-13.02",
+  "sub_task_title": "Performs SMAW on carbon steel",
+  "questions": [
+    {
+      "id": "D-13.02-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "According to AWS A5.1, in the electrode classification E7018, what does the digit '1' in the third position indicate?",
+      "choices": {
+        "A": "The electrode is for flat position only",
+        "B": "The electrode is usable in all positions (flat, horizontal, vertical, and overhead)",
+        "C": "The electrode requires DCEP polarity only",
+        "D": "The electrode has a minimum tensile strength of 10,000 psi"
+      },
+      "correct": "B",
+      "explanation": "In AWS A5.1 SMAW electrode classification, the third digit indicates welding position. '1' means all positions. '2' means flat and horizontal only. '4' means flat, overhead, horizontal, and vertical-down. The first two digits (70) indicate 70,000 psi minimum tensile strength; the last digit combined with the third indicates coating type and current.",
+      "sources": [
+        {"doc": "AWS A5.1/A5.1M", "ref": "SMAW carbon steel electrode classification system"},
+        {"doc": "Modern Welding (Bowditch)", "ref": "Ch. 12 SMAW electrode identification"}
+      ],
+      "tags": ["smaw", "electrode-classification", "aws-a5.1"]
+    },
+    {
+      "id": "D-13.02-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is depositing a SMAW bead using E7018 at 150 A, 24 V, with a travel speed of 200 mm/min. What is the heat input in kJ/mm?",
+      "choices": {
+        "A": "0.54 kJ/mm",
+        "B": "1.08 kJ/mm",
+        "C": "1.80 kJ/mm",
+        "D": "3.60 kJ/mm"
+      },
+      "correct": "B",
+      "explanation": "Heat input (kJ/mm) = (Volts × Amps × 60) ÷ (travel speed in mm/min × 1000). = (24 × 150 × 60) ÷ (200 × 1000) = 216,000 ÷ 200,000 = 1.08 kJ/mm. Distractor A halves the result (common if the ×60 is forgotten). C and D use wrong unit conversions.",
+      "sources": [
+        {"doc": "CSA W59", "ref": "Clause 5.7 heat input calculation"},
+        {"doc": "AWS D1.1", "ref": "Annex on heat input formula"}
+      ],
+      "tags": ["smaw", "heat-input", "calculation"]
+    },
+    {
+      "id": "D-13.02-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A welder produces a SMAW fillet weld with E7018 that shows longitudinal cracking down the centre of the weld bead approximately 24 hours after welding. The base metal is 25 mm A516 Gr 70. What is the most likely cause?",
+      "choices": {
+        "A": "Insufficient amperage causing slag inclusions",
+        "B": "Hydrogen-induced cracking from moisture in the electrode coating",
+        "C": "Excessive travel speed causing undercut",
+        "D": "Wrong polarity causing arc blow"
+      },
+      "correct": "B",
+      "explanation": "Delayed cracking (hours to days after welding) in low-hydrogen electrodes on thicker carbon steel is the signature of hydrogen-induced cracking (HIC), also called cold cracking. E7018 electrodes must be stored in a rod oven at 120°C+; if they absorb moisture, hydrogen enters the weld and diffuses to the HAZ where, combined with residual stress and susceptible microstructure, it causes delayed cracking. Slag inclusions (A) show immediately, not delayed. Undercut (C) is a geometric defect, not centreline crack. Arc blow (D) causes bead wander, not cracking.",
+      "sources": [
+        {"doc": "CSA W59", "ref": "Clause 5.8 preheat and hydrogen control"},
+        {"doc": "AWS A5.1", "ref": "Low-hydrogen electrode storage requirements"},
+        {"doc": "Modern Welding (Bowditch)", "ref": "Ch. 27 weld defects and hydrogen cracking"}
+      ],
+      "tags": ["smaw", "defect-diagnosis", "hydrogen-cracking", "critical-thinking"]
+    }
+  ]
+}

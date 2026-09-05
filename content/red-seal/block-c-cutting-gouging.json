@@ -1,0 +1,997 @@
+{
+  "block": "C",
+  "title": "Performs cutting and gouging",
+  "exam_weight_pct": 18,
+  "exam_questions_on_test": 23,
+  "questions": [
+    {
+      "id": "C-9.01-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "When selecting an abrasive wheel for a portable angle grinder, which specification must NEVER be exceeded?",
+      "choices": {
+        "A": "The wheel's maximum operating RPM",
+        "B": "The wheel's rated arbor size",
+        "C": "The wheel's colour code",
+        "D": "The wheel's package weight"
+      },
+      "correct": "A",
+      "explanation": "Exceeding a wheel's maximum RPM can cause it to burst \u2014 catastrophic failure with fragments at 8000+ RPM. Grinder RPM must equal or be less than wheel RPM. Arbor size (B) is a fit issue but wrong-size cannot even mount. Colour code (C) is manufacturer-specific and informational. Package weight (D) is unrelated to safety.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Grinding wheel selection"
+        },
+        {
+          "doc": "ANSI B7.1",
+          "ref": "Safety requirements for the use, care, and protection of abrasive wheels"
+        }
+      ],
+      "tags": [
+        "grinder",
+        "wheel-selection",
+        "safety"
+      ]
+    },
+    {
+      "id": "C-9.01-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For grinding stainless steel, which abrasive material is generally preferred to avoid contamination that could cause corrosion?",
+      "choices": {
+        "A": "Standard aluminum oxide with iron content",
+        "B": "Any grinding wheel \u2014 abrasive material does not matter",
+        "C": "Silicon carbide chosen for concrete grinding",
+        "D": "Zirconia alumina or ceramic abrasive rated 'contamination-free / stainless-safe' (Fe/S/Cl-free)"
+      },
+      "correct": "D",
+      "explanation": "Standard grinding wheels can contain iron and sulfur/chloride that transfer to the stainless surface. Iron initiates rust; chlorides initiate pitting/SCC. Stainless-safe wheels are certified Fe/S/Cl-free (< specified ppm) \u2014 required by many food/pharma/pressure specs. Dedicated stainless-only grinders and brushes should be used to prevent cross-contamination.",
+      "sources": [
+        {
+          "doc": "AWS D18.1",
+          "ref": "Sanitary weld surface preparation"
+        },
+        {
+          "doc": "3M/Norton abrasive product data",
+          "ref": "Stainless-safe abrasive designation"
+        }
+      ],
+      "tags": [
+        "stainless-steel",
+        "abrasives",
+        "contamination"
+      ]
+    },
+    {
+      "id": "C-9.01-Q003",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What PPE is required when using a portable grinder?",
+      "choices": {
+        "A": "Safety glasses only",
+        "B": "No PPE for short jobs",
+        "C": "Sunglasses",
+        "D": "Impact-rated face shield over safety glasses, hearing protection, cut-resistant gloves, and appropriate respirator if creating dust"
+      },
+      "correct": "D",
+      "explanation": "Grinding produces high-velocity metal and abrasive fragments, sparks, noise > 100 dB, and dust. CSA Z94.3 requires full-face protection (safety glasses PLUS face shield), hearing protection, cut/heat gloves, and respiratory protection sized to the material being ground.",
+      "sources": [
+        {
+          "doc": "CSA Z94.3",
+          "ref": "Face and eye protection"
+        },
+        {
+          "doc": "CSA W117.2",
+          "ref": "PPE for grinding operations"
+        }
+      ],
+      "tags": [
+        "grinder",
+        "ppe",
+        "safety"
+      ]
+    },
+    {
+      "id": "C-9.02-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A bandsaw is set to cut mild steel. Which blade characteristics are appropriate?",
+      "choices": {
+        "A": "Coarse tooth (4\u20136 TPI) for the material thickness, moderate speed with cutting fluid, and at least 3 teeth engaged with the work at all times",
+        "B": "Fine tooth (24 TPI), high speed",
+        "C": "No teeth (abrasive band), highest speed",
+        "D": "Diamond blade, no fluid"
+      },
+      "correct": "A",
+      "explanation": "Bandsaw practice: TPI selected so 3+ teeth stay in contact with the work at all times (thicker work = coarser TPI). Speed chosen for material (typically 60\u2013100 m/min for mild steel). Cutting fluid extends blade life and improves finish. Fine tooth at high speed (B) glazes and overheats. Abrasive (C) is for hardened material only. Diamond (D) is for masonry.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Bandsaw blade selection"
+        },
+        {
+          "doc": "Lenox/Starrett product data",
+          "ref": "TPI selection guides"
+        }
+      ],
+      "tags": [
+        "bandsaw",
+        "blade-selection",
+        "mechanical-cutting"
+      ]
+    },
+    {
+      "id": "C-9.02-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which mechanical cutting process is best suited for cutting long straight lines on plate stock in a shop?",
+      "choices": {
+        "A": "Hacksaw",
+        "B": "Guillotine shear or plate saw (depending on thickness)",
+        "C": "Rotary grinder",
+        "D": "Nibbler"
+      },
+      "correct": "B",
+      "explanation": "Guillotine shears handle up to ~25 mm mild steel with square edges and high speed. Plate saws (portable or fixed) handle thicker sections with a clean cut. Hacksaws (A) are slow for long cuts. Rotary grinders (C) work but leave rougher edges. Nibblers (D) suit curves and thinner material.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Mechanical shearing"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Shop cutting methods"
+        }
+      ],
+      "tags": [
+        "mechanical-cutting",
+        "process-selection"
+      ]
+    },
+    {
+      "id": "C-9.03-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.03",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A welder is cutting stainless steel plate with an angle grinder. Which practice should be followed to avoid heat-tinting damage that could later corrode?",
+      "choices": {
+        "A": "Use maximum RPM and heavy pressure",
+        "B": "Cut only when the metal is hot",
+        "C": "Heat the material red first",
+        "D": "Use light, steady passes to keep the cut cool, use a thin cutting disc (1\u20131.5 mm), and consider water cooling if allowed"
+      },
+      "correct": "D",
+      "explanation": "Excess heat during cutting causes chromium-depleted heat-tint zones that corrode preferentially in service. Light passes, thin discs, and cooling limit heat input. Aggressive cutting (A) creates heat tint and can dishwarp the plate. Heating (C, D) is exactly the opposite of what's needed.",
+      "sources": [
+        {
+          "doc": "AWS D18.1",
+          "ref": "Stainless steel surface preparation"
+        },
+        {
+          "doc": "Nickel Institute Publication 11 007",
+          "ref": "Preventing stainless steel corrosion during fabrication"
+        }
+      ],
+      "tags": [
+        "stainless-steel",
+        "grinding",
+        "heat-tint"
+      ]
+    },
+    {
+      "id": "C-9.03-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For pipe cutting on-site, what tool cuts a square end on pipe up to about 300 mm diameter without heat input?",
+      "choices": {
+        "A": "Handheld angle grinder",
+        "B": "Oxyfuel torch",
+        "C": "Rotary pipe cutter (single-wheel or chain-type)",
+        "D": "Sledge hammer"
+      },
+      "correct": "C",
+      "explanation": "Chain-type rotary pipe cutters wrap around the pipe and cut a square end mechanically without heat \u2014 important for stainless, alloy, or lined pipe where heat is undesirable, and for tie-ins where a heat-affected zone would fail QA. Angle grinders (A) can't guarantee square. Oxyfuel (B) adds heat and works only on carbon steel. Sledge hammer (D) is not a cutting tool.",
+      "sources": [
+        {
+          "doc": "RSOS 2023",
+          "ref": "C-9 non-thermal cutting"
+        },
+        {
+          "doc": "Reed/Ridgid product data",
+          "ref": "Chain pipe cutters"
+        }
+      ],
+      "tags": [
+        "pipe-cutting",
+        "mechanical",
+        "cold-cutting"
+      ]
+    },
+    {
+      "id": "C-9.04-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder needs to bevel-prep a 20 mm mild steel plate edge for a groove weld. Which mechanical method is most efficient for a straight edge on a long plate?",
+      "choices": {
+        "A": "Handheld angle grinder freehand",
+        "B": "Oxy-acetylene torch only",
+        "C": "Chisel and hammer",
+        "D": "Portable edge-mill or plate beveller (rotary end mill on a self-guided carriage) or planer"
+      },
+      "correct": "D",
+      "explanation": "Portable edge-milling machines (Miller/Trumpf/CS Unitec bevellers) mount to the plate and mill a consistent, controlled bevel angle in a single pass. This is the standard for consistent-quality bevel prep on plates > 15 mm. Angle grinder (A) is possible but produces variable angles. Chisel (C) is impractical. Oxyfuel (B) requires post-cut cleaning and is thermal, not mechanical.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Bevel preparation methods"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "C-9.04 preparing edges"
+        }
+      ],
+      "tags": [
+        "bevelling",
+        "mechanical",
+        "joint-prep"
+      ]
+    },
+    {
+      "id": "C-9.05-Q001",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.05",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is a 'chop saw' used for in fabrication?",
+      "choices": {
+        "A": "Cutting concrete only",
+        "B": "Grinding surface finish",
+        "C": "Cutting curves",
+        "D": "Making straight abrasive-wheel or cold-saw cuts on stock (angle iron, tube, small pipe, rebar)"
+      },
+      "correct": "D",
+      "explanation": "Chop saws (abrasive-wheel or cold-saw / carbide-tipped) make quick straight cuts on structural stock. Abrasive-wheel chop saws are common in shops for mild steel; cold-saws (metal-cutting circular saw with carbide/HSS blade and coolant) give cleaner cuts and blade life on production runs.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Abrasive and cold saw cutting"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "C-9.05 mechanical cutting equipment"
+        }
+      ],
+      "tags": [
+        "chop-saw",
+        "mechanical-cutting"
+      ]
+    },
+    {
+      "id": "C-9.05-Q002",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.05",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A cold saw cutting 50 mm \u00d7 50 mm \u00d7 6 mm angle iron produces excessive burr and dulls the blade quickly. What is the most likely cause?",
+      "choices": {
+        "A": "Blade speed too high for the material",
+        "B": "Ambient temperature too low",
+        "C": "The angle iron is too soft",
+        "D": "Blade speed too high, insufficient coolant, or wrong tooth pitch for the section"
+      },
+      "correct": "D",
+      "explanation": "Cold saws require correct SFM (surface feet per minute) for the material, coolant/lubricant to remove heat, and correct TPI so 3+ teeth stay in contact. Any of these being wrong causes overheating, burr, and rapid blade wear. Ambient temperature (B) has no significant effect. Material softness (C) causes different problems (loading, not burr).",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Cold saw troubleshooting"
+        },
+        {
+          "doc": "Kalamazoo/Everett/Cosen product data",
+          "ref": "Cold saw parameters"
+        }
+      ],
+      "tags": [
+        "cold-saw",
+        "troubleshooting",
+        "mechanical-cutting"
+      ]
+    },
+    {
+      "id": "C-9.05-Q003",
+      "mwa": "C",
+      "task": "C-9",
+      "sub_task": "C-9.05",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the safety concern with using a magnetic drill press on painted or coated structural steel overhead?",
+      "choices": {
+        "A": "The paint may catch fire",
+        "B": "There is no safety concern",
+        "C": "The paint colour changes",
+        "D": "The magnet may not achieve full holding force on paint/coatings, causing the drill to fall \u2014 always confirm holding force, and use safety chain/strap as backup"
+      },
+      "correct": "D",
+      "explanation": "Magnetic drill press holding force depends on direct steel-to-magnet contact and steel thickness. Paint, coatings, curved surfaces, or thin plate reduce holding force. Overhead or vertical use requires a safety chain/strap in case the magnet releases. This is called out in Alberta OHS Code Part 18 and all mag-drill operator manuals.",
+      "sources": [
+        {
+          "doc": "Alberta OHS Code Part 18",
+          "ref": "Powered tool safety"
+        },
+        {
+          "doc": "Hougen/Milwaukee product manuals",
+          "ref": "Magnetic drill safety chain"
+        }
+      ],
+      "tags": [
+        "mag-drill",
+        "safety",
+        "structural"
+      ]
+    },
+    {
+      "id": "C-10.01-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In oxy-fuel gas cutting (OFC) of carbon steel, what chemical reaction actually removes the metal?",
+      "choices": {
+        "A": "Oxidation \u2014 high-purity oxygen jet oxidizes (burns) the preheated iron; the resulting iron oxide is blown away and its own combustion heat sustains the process",
+        "B": "Melting only, by the flame",
+        "C": "Sublimation from vaporization",
+        "D": "Mechanical erosion from gas pressure"
+      },
+      "correct": "A",
+      "explanation": "OFC is not melting \u2014 it is rapid oxidation. The fuel-gas preheat flames raise the steel to its kindling temperature (~870\u00b0C), then the central oxygen jet oxidizes iron in an exothermic reaction (Fe + O \u2192 FeO + heat). The molten oxide (kerf) is blown out and the reaction heat sustains cutting. This is why OFC works on iron/steel (which oxidize exothermically) but not on stainless (chromium oxide blocks the reaction) or aluminum (oxide melting point > metal melting point).",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC operating principles"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Oxyfuel cutting chemistry"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "oxidation",
+        "process-principles"
+      ]
+    },
+    {
+      "id": "C-10.01-Q002",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Why can OFC not cut austenitic stainless steel effectively?",
+      "choices": {
+        "A": "The chromium in stainless forms a stable chromium oxide (Cr\u2082O\u2083) with a higher melting point than the steel itself, blocking the oxidation reaction",
+        "B": "Stainless has a lower melting point",
+        "C": "Stainless is too soft",
+        "D": "Stainless doesn't conduct heat"
+      },
+      "correct": "A",
+      "explanation": "OFC needs the metal oxide's melting point to be BELOW the metal's own melting point so the oxide can flow out as slag. Cr\u2082O\u2083 melts at ~2435\u00b0C \u2014 higher than stainless steel \u2014 so it forms a refractory scale that prevents the oxidation reaction from progressing. This is why stainless (and aluminum, high-alloy steels, cast iron) require plasma or powder-injection OFC instead.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC material limitations"
+        },
+        {
+          "doc": "TWI Knowledge Base",
+          "ref": "OFC of alloyed and stainless steels"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "stainless-steel",
+        "process-limits"
+      ]
+    },
+    {
+      "id": "C-10.01-Q003",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which fuel gas produces the highest primary flame temperature for oxy-fuel cutting and welding preheating?",
+      "choices": {
+        "A": "Acetylene (~3160\u00b0C in oxygen)",
+        "B": "Propane (~2820\u00b0C in oxygen)",
+        "C": "MAPP / propylene (~2900\u00b0C)",
+        "D": "Natural gas (~2760\u00b0C)"
+      },
+      "correct": "A",
+      "explanation": "Acetylene reaches ~3100\u20133200\u00b0C in oxygen and produces the highest primary flame temperature of common fuel gases, giving the fastest preheat times and best piercing performance. Propane, natural gas, and MAPP are cheaper and safer to store but slower. Cutting speed on thick steel with propane can be 25\u201340% slower than with acetylene.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "Fuel gas selection for OFC"
+        },
+        {
+          "doc": "Harris/Victor product literature",
+          "ref": "Fuel gas flame temperatures"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "fuel-gas",
+        "flame-temperature"
+      ]
+    },
+    {
+      "id": "C-10.02-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For OFC of 25 mm mild steel plate with acetylene fuel, which cutting tip size and oxygen pressure range is typical?",
+      "choices": {
+        "A": "Size 000, 15 psi",
+        "B": "Size 6, 100 psi",
+        "C": "Size 1\u20132 (medium), approximately 40\u201360 psi (275\u2013415 kPa) cutting oxygen",
+        "D": "Any tip and pressure works"
+      },
+      "correct": "C",
+      "explanation": "Typical acetylene OFC on 25 mm mild steel uses a medium tip (Victor size 1, Harris equivalent 1-101) with cutting oxygen at ~40\u201360 psi and fuel at ~5\u201310 psi. Manufacturer tip charts (Victor, Harris, Smith) tabulate exact recipes by thickness. Tiny tips (A) can't sustain the cut; oversize (B) wastes gas and widens kerf.",
+      "sources": [
+        {
+          "doc": "Victor Cutting Tip Chart",
+          "ref": "Tip size vs plate thickness"
+        },
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC operating parameters"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "tip-selection",
+        "pressure"
+      ]
+    },
+    {
+      "id": "C-10.02-Q002",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What are the three flame types in oxy-acetylene work, and which is used for standard OFC of mild steel?",
+      "choices": {
+        "A": "Only one flame type exists",
+        "B": "Cold, hot, super-hot",
+        "C": "Blue, orange, red",
+        "D": "Neutral (used for cutting), carburizing, oxidizing"
+      },
+      "correct": "D",
+      "explanation": "Three flames: (1) Neutral \u2014 equal O2 and fuel, one bright cone, used for welding and standard OFC preheating; (2) Carburizing (reducing) \u2014 fuel-rich, feather at cone tip, used for surface hardening or brazing; (3) Oxidizing \u2014 O2-rich, short sharp cone, hissing, used for brass welding or slightly for high-speed OFC. Standard OFC preheat is neutral, then the cutting oxygen lever adds the cutting stream.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "Flame types"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Oxy-acetylene flame identification"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "flame-types"
+      ]
+    },
+    {
+      "id": "C-10.02-Q003",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is cutting 12 mm mild steel with OFC and the cut is producing heavy hard dross that clings to the bottom edge. Which parameter is most likely wrong?",
+      "choices": {
+        "A": "Travel speed too fast",
+        "B": "Fuel gas has spoiled",
+        "C": "Travel speed too slow, or oxygen pressure/tip size wrong for the thickness",
+        "D": "Ambient humidity"
+      },
+      "correct": "C",
+      "explanation": "Heavy hanging dross usually means travel speed too slow (too much heat, deep penetration but poor slag ejection) OR cutting oxygen pressure too low / tip too small (insufficient stream to blow slag). Correct speed shows fine light spray from the bottom of the cut. Too fast (A) causes the opposite \u2014 cut doesn't complete through. Fuel spoilage (B) is unusual and would show as poor flame; humidity (D) has minimal effect.",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC troubleshooting"
+        },
+        {
+          "doc": "Victor Cutting Handbook",
+          "ref": "Cut defects and causes"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "troubleshooting",
+        "dross"
+      ]
+    },
+    {
+      "id": "C-10.03-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For OFC piercing, what is the correct starting procedure?",
+      "choices": {
+        "A": "Full cutting oxygen from the start with tip touching the plate",
+        "B": "Preheat until a small spot glows red-orange, raise tip slightly, then slowly open the cutting oxygen \u2014 the pierce should blow through downward, not spray upward at the operator",
+        "C": "Angle the torch away and hope for the best",
+        "D": "Start the cut at the edge only \u2014 piercing is not allowed"
+      },
+      "correct": "B",
+      "explanation": "Safe piercing: preheat a small area to red-orange, raise the tip 3\u20136 mm to avoid tip blow-back, and open cutting oxygen slowly so the molten pool blows down through the plate. Rushing the cutting oxygen (A) causes molten slag to spray up onto the operator. Piercing is a standard OFC skill (D is wrong).",
+      "sources": [
+        {
+          "doc": "AWS C4.2M",
+          "ref": "OFC piercing technique"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Piercing procedure"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "piercing"
+      ]
+    },
+    {
+      "id": "C-10.04-Q001",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "After finishing OFC work, what is the correct shutdown sequence?",
+      "choices": {
+        "A": "Close both cylinder valves, then release regulator adjusting screws and bleed lines",
+        "B": "Close cylinder valves first, then open torch valves briefly to bleed both lines to zero, then close torch valves and back out both regulator adjusting screws",
+        "C": "Leave regulators pressurized for the next job",
+        "D": "Just close the torch and walk away"
+      },
+      "correct": "B",
+      "explanation": "Proper shutdown: (1) close both cylinder valves; (2) open each torch valve one at a time until pressure gauges read zero (bleeds line pressure); (3) close torch valves; (4) back out (loosen) both regulator adjusting screws until they turn freely. This depressurizes the whole system, protects regulator diaphragms, and prevents overnight leak buildup in a hazardous mix. Leaving regs pressurized (C) risks a leak or diaphragm creep; just closing the torch (D) leaves the whole system pressurized.",
+      "sources": [
+        {
+          "doc": "CGA P-1",
+          "ref": "Safe handling of compressed gases"
+        },
+        {
+          "doc": "CSA W117.2",
+          "ref": "OFC equipment shutdown procedure"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "shutdown",
+        "safety"
+      ]
+    },
+    {
+      "id": "C-10.04-Q002",
+      "mwa": "C",
+      "task": "C-10",
+      "sub_task": "C-10.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What safety device is required between the torch and the hose on both fuel and oxygen lines to prevent flashback into the hose?",
+      "choices": {
+        "A": "A flow meter",
+        "B": "Flashback arrestors (with reverse-flow check valve function)",
+        "C": "A pressure gauge",
+        "D": "None \u2014 flashback is a myth"
+      },
+      "correct": "B",
+      "explanation": "Flashback arrestors contain a sintered filter to quench a flashback flame and a reverse-flow check valve to prevent oxygen entering the fuel hose (or vice versa). Both fuel and oxygen lines need them, mounted at the torch handle and often at the regulator too. CSA W117.2 requires them on all OFC apparatus.",
+      "sources": [
+        {
+          "doc": "CSA W117.2",
+          "ref": "Flashback arrestors required"
+        },
+        {
+          "doc": "CGA P-1",
+          "ref": "Safety devices for OFC"
+        }
+      ],
+      "tags": [
+        "ofc",
+        "safety",
+        "flashback"
+      ]
+    },
+    {
+      "id": "C-11.01-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In plasma arc cutting (PAC), what mechanism removes metal?",
+      "choices": {
+        "A": "Chemical oxidation like OFC",
+        "B": "Vaporization by microwave energy",
+        "C": "Melting by a highly constricted, high-temperature (~20,000\u00b0C+) plasma arc jet, and blowing molten metal out of the kerf by the gas velocity",
+        "D": "Mechanical grinding"
+      },
+      "correct": "C",
+      "explanation": "PAC uses an electric arc constricted through a small nozzle orifice with high-velocity gas flow. The gas ionizes into plasma at temperatures far above OFC (up to 30,000\u00b0C), melting the metal, and the gas jet blows the molten metal out. Because it is thermal (melting) rather than chemical (oxidation), PAC cuts ANY electrically conductive material \u2014 stainless, aluminum, copper, cast iron \u2014 not just steel.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC operating principles"
+        },
+        {
+          "doc": "Hypertherm 'How Plasma Cutting Works'",
+          "ref": "Plasma process technology"
+        }
+      ],
+      "tags": [
+        "pac",
+        "process-principles"
+      ]
+    },
+    {
+      "id": "C-11.01-Q002",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A shop needs to cut 6 mm aluminum plate with clean straight edges. Which process is most appropriate?",
+      "choices": {
+        "A": "Oxyfuel cutting (OFC)",
+        "B": "SMAW gouging",
+        "C": "Plasma arc cutting (PAC) with appropriate gas (e.g. N\u2082/H\u2082 or air depending on system)",
+        "D": "Hacksaw only"
+      },
+      "correct": "C",
+      "explanation": "OFC (A) cannot cut aluminum \u2014 the oxide melting point is above the metal melting point. PAC handles aluminum well; systems designed for aluminum often use N\u2082/H\u2082 mixtures or compressed air with special consumables to prevent hydrogen absorption/pitting on the cut edge. SMAW gouging (B) is used to remove weld metal, not to cut plate. Hacksaw (D) works but is slow for production.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC of non-ferrous materials"
+        },
+        {
+          "doc": "Hypertherm PowerMax Manual",
+          "ref": "Consumable selection by material"
+        }
+      ],
+      "tags": [
+        "pac",
+        "aluminum",
+        "process-selection"
+      ]
+    },
+    {
+      "id": "C-11.02-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In a PAC torch, what are the two main replaceable consumables in the cutting nozzle assembly?",
+      "choices": {
+        "A": "Only the tip",
+        "B": "The electrode (typically hafnium-tipped copper for air plasma) and the nozzle (copper orifice)",
+        "C": "The gas cylinder and hose",
+        "D": "The power source and cable"
+      },
+      "correct": "B",
+      "explanation": "The two main wear items in a PAC torch are the electrode (a copper body with a hafnium insert that emits electrons and gradually erodes) and the nozzle (a copper part with a precisely-sized orifice that constricts the arc). Both are consumables that must be replaced together \u2014 worn electrodes damage nozzles and vice versa. Swirl rings and retaining caps are also part of the assembly but wear less often.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC torch components"
+        },
+        {
+          "doc": "Hypertherm/Miller PAC Manuals",
+          "ref": "Consumable inspection and replacement"
+        }
+      ],
+      "tags": [
+        "pac",
+        "consumables",
+        "torch"
+      ]
+    },
+    {
+      "id": "C-11.02-Q002",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For PAC on 12 mm mild steel with a 60 A machine, what is a typical cutting speed range?",
+      "choices": {
+        "A": "50 mm/min (very slow)",
+        "B": "10,000 mm/min",
+        "C": "Approximately 500\u2013800 mm/min",
+        "D": "Speed doesn't matter for PAC"
+      },
+      "correct": "C",
+      "explanation": "Manufacturer cut charts (Hypertherm/Miller/ESAB) for a 60A PAC on 12 mm mild steel typically show 500\u2013800 mm/min (20\u201330 ipm) for quality cuts. Too slow (A) causes wide kerf, dross, and consumable wear; too fast (B) drops the cut and leaves a trailing edge. Always consult the machine's specific cut chart \u2014 speed is critical (D is wrong).",
+      "sources": [
+        {
+          "doc": "Hypertherm PowerMax 65 Cut Chart",
+          "ref": "Speed vs thickness for mild steel"
+        },
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC cutting parameters"
+        }
+      ],
+      "tags": [
+        "pac",
+        "cut-speed",
+        "parameters"
+      ]
+    },
+    {
+      "id": "C-11.03-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'pilot arc' in PAC?",
+      "choices": {
+        "A": "The main cutting arc",
+        "B": "An arc that pilots the operator to the cut line",
+        "C": "A low-current auxiliary arc between electrode and nozzle that ionizes the gas so the main arc can transfer to the workpiece when the torch is brought close",
+        "D": "The arc that persists after cutting stops"
+      },
+      "correct": "C",
+      "explanation": "Most PAC systems use a pilot arc: a small arc struck between the electrode and nozzle by high-frequency start or contact start, which ionizes the plasma gas. When the torch approaches the workpiece (within transfer distance), the main arc transfers from nozzle to workpiece and cutting begins. Pilot arc allows piercing without tip contact and starts on painted/rusty surfaces where transfer might otherwise fail.",
+      "sources": [
+        {
+          "doc": "AWS C5.2",
+          "ref": "Pilot arc initiation"
+        },
+        {
+          "doc": "Hypertherm Technical Guide",
+          "ref": "Arc transfer sequence"
+        }
+      ],
+      "tags": [
+        "pac",
+        "pilot-arc",
+        "arc-starting"
+      ]
+    },
+    {
+      "id": "C-11.04-Q001",
+      "mwa": "C",
+      "task": "C-11",
+      "sub_task": "C-11.04",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A CNC PAC table is cutting 6 mm mild steel and the finished parts show a consistent 5\u00b0 bevel on the cut edges (cut face not perpendicular). What is the most likely cause and correction?",
+      "choices": {
+        "A": "Torch height too high, or worn consumables \u2014 check pierce height and cut height, replace electrode and nozzle if worn, and verify swirl ring installation (correct rotation direction matters for kerf perpendicularity)",
+        "B": "The plate is warped",
+        "C": "The plasma gas is wrong colour",
+        "D": "The cutting speed is exactly right"
+      },
+      "correct": "A",
+      "explanation": "Consistent bevel indicates the plasma jet is not perpendicular to the plate. Common causes: torch height too high (arc column widens with distance), worn consumables (nozzle orifice enlarged or electrode pitted), incorrectly installed swirl ring (the rotational direction gives a consistent bevel to one side of the kerf \u2014 one side is 'good side', typically the right side for clockwise swirl). Correction: adjust cutting height per manufacturer chart, replace consumables, verify swirl ring orientation.",
+      "sources": [
+        {
+          "doc": "Hypertherm 'Good Side / Bad Side'",
+          "ref": "PAC kerf bevel and swirl direction"
+        },
+        {
+          "doc": "AWS C5.2",
+          "ref": "PAC cut quality troubleshooting"
+        }
+      ],
+      "tags": [
+        "pac",
+        "cut-quality",
+        "bevel",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "C-12.01-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In air carbon arc gouging (CAC-A), what is the electrode and what is the role of compressed air?",
+      "choices": {
+        "A": "Copper-coated carbon (graphite) electrode; compressed air (typically 80\u2013100 psi) blows molten metal out of the arc zone continuously",
+        "B": "Steel electrode; air cools the electrode",
+        "C": "Tungsten electrode; air shields the arc",
+        "D": "Copper wire electrode; air prevents oxidation"
+      },
+      "correct": "A",
+      "explanation": "CAC-A uses a copper-coated carbon (graphite) electrode. The arc melts base metal; two air jets built into the torch nozzle (fed at 80\u2013100 psi / 550\u2013700 kPa) continuously blow the molten metal out of the gouge. Without the air, CAC becomes ineffective as a metal-removal process. Electrode sizes range 4\u201319 mm; larger diameter = wider, deeper gouge.",
+      "sources": [
+        {
+          "doc": "AWS C5.3",
+          "ref": "CAC-A process description"
+        },
+        {
+          "doc": "ArcAir Operator Manual",
+          "ref": "CAC-A air pressure and technique"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "process-principles",
+        "compressed-air"
+      ]
+    },
+    {
+      "id": "C-12.01-Q002",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For back-gouging a 12 mm groove root using CAC-A with DCEP (electrode positive), what is a typical electrode diameter and amperage range?",
+      "choices": {
+        "A": "3 mm, 50 A",
+        "B": "8 mm (5/16\"), approximately 400\u2013500 A DCEP",
+        "C": "25 mm, 100 A",
+        "D": "Any size, any current"
+      },
+      "correct": "B",
+      "explanation": "CAC-A typical parameters: an 8 mm (5/16\") copper-coated carbon electrode operates in the 400\u2013500 A range on DCEP for back-gouging medium sections. Smaller electrodes handle less current and remove less metal; larger electrodes go up to 1000+ A. Manufacturer amperage chart (ArcAir) tabulates current for each size.",
+      "sources": [
+        {
+          "doc": "ArcAir CAC-A Guide",
+          "ref": "Electrode size vs amperage"
+        },
+        {
+          "doc": "AWS C5.3",
+          "ref": "CAC-A operating parameters"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "electrode-size",
+        "amperage"
+      ]
+    },
+    {
+      "id": "C-12.02-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "CAC-A is extremely noisy. What hearing protection is required?",
+      "choices": {
+        "A": "Combined ear plugs + ear muffs, because CAC-A produces sound levels of 105\u2013115 dB(A) at the operator position",
+        "B": "None",
+        "C": "Cotton balls",
+        "D": "Only earbuds"
+      },
+      "correct": "A",
+      "explanation": "CAC-A sound levels of 105\u2013115 dB(B) exceed the safe daily exposure limit (85 dB(B) TWA per Alberta OHS Code Part 16) within seconds. Dual hearing protection (plugs + muffs, combined NRR typically ~35 dB) is required. CSA Z94.2 specifies hearing protector selection based on measured noise exposure. This is one of the most damaging noise environments in the trade.",
+      "sources": [
+        {
+          "doc": "Alberta OHS Code Part 16",
+          "ref": "Noise exposure limits"
+        },
+        {
+          "doc": "CSA Z94.2",
+          "ref": "Hearing protector selection"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "noise",
+        "hearing-protection"
+      ]
+    },
+    {
+      "id": "C-12.03-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welder is performing CAC-A back-gouging and notices the groove profile is irregular \u2014 depth varies and the surface is rough with visible carbon deposits. What is the most likely cause?",
+      "choices": {
+        "A": "Amperage is too high",
+        "B": "Wrong colour of copper coating",
+        "C": "Inconsistent travel speed and electrode angle, or insufficient air pressure \u2014 technique must be steady, electrode angle ~35\u00b0 push angle, air on before striking arc, and travel just fast enough to keep the molten pool moving",
+        "D": "Only the workpiece can be blamed"
+      },
+      "correct": "C",
+      "explanation": "CAC-A quality depends on consistent technique: electrode angle around 35\u00b0 (push angle so air blows in front of arc), travel speed matched to melting rate, and air pressure sufficient to eject metal fully. Erratic technique gives irregular grooves and carbon pickup. Increasing amperage (A) doesn't fix technique. Colour (B) is cosmetic. Blaming workpiece (D) avoids the diagnostic.",
+      "sources": [
+        {
+          "doc": "AWS C5.3",
+          "ref": "CAC-A technique"
+        },
+        {
+          "doc": "ArcAir Handbook",
+          "ref": "Troubleshooting gouge quality"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "technique",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "C-12.04-Q001",
+      "mwa": "C",
+      "task": "C-12",
+      "sub_task": "C-12.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "After CAC-A gouging, why must the gouged surface always be inspected and, in code work, ground before rewelding?",
+      "choices": {
+        "A": "It is not required",
+        "B": "CAC-A can leave carbon deposits (from the electrode) and a thin carburized layer on the base metal. Left in place, these cause porosity, cracking, and higher HAZ hardness in the subsequent weld. AWS D1.1 and CSA W59 require grinding to bright metal before welding",
+        "C": "For appearance only",
+        "D": "To measure the depth"
+      },
+      "correct": "B",
+      "explanation": "CAC-A deposits some carbon on the gouged steel surface. When the next weld pass melts this surface, the extra carbon raises the local carbon equivalent of the weld metal, promoting hard HAZ and hydrogen-induced cracking. AWS D1.1 clause 5.15 and CSA W59 clause 5.11 explicitly require gouged surfaces to be ground to remove all carbon and any carburized layer before welding. This applies to root back-gouging and defect removal alike.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 5.15",
+          "ref": "CAC-A surface preparation before welding"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Gouged surface preparation"
+        }
+      ],
+      "tags": [
+        "cac-a",
+        "surface-prep",
+        "back-gouging",
+        "code"
+      ]
+    }
+  ]
+}

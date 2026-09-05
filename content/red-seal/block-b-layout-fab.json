@@ -1,0 +1,1230 @@
+{
+  "block": "B",
+  "title": "Performs layout and fabrication of components for welding",
+  "exam_weight_pct": 22,
+  "exam_questions_on_test": 28,
+  "questions": [
+    {
+      "id": "B-7.01-Q001",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In an AWS A2.4 welding symbol, what does a symbol placed on the reference line below the arrow indicate?",
+      "choices": {
+        "A": "A field weld",
+        "B": "The weld is on the other side of the joint (opposite the arrow)",
+        "C": "A weld all around",
+        "D": "The weld is on the arrow side of the joint"
+      },
+      "correct": "D",
+      "explanation": "In AWS A2.4, a weld symbol below the reference line = arrow side, above the line = other side. Weld-all-around (C) is shown as a circle at the elbow. Field weld (A) is a flag at the elbow.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Standard symbols for welding, brazing, and NDE"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Ch. 5 welding symbols"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "aws-a2.4"
+      ]
+    },
+    {
+      "id": "B-7.01-Q002",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What weld type is indicated by a right-triangle symbol on a welding symbol?",
+      "choices": {
+        "A": "Groove weld",
+        "B": "Fillet weld",
+        "C": "Plug weld",
+        "D": "Seam weld"
+      },
+      "correct": "B",
+      "explanation": "AWS A2.4 assigns a right-triangle (with vertical leg on the left) to the fillet weld symbol. Groove welds (A) use square/V/bevel/U/J shapes. Plug welds (C) are shown as filled rectangles. Seam welds (D) are shown as double parallel lines with a circle.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Basic weld type symbols"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "fillet-weld"
+      ]
+    },
+    {
+      "id": "B-7.01-Q003",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A welding symbol shows a fillet weld with '6' to the left of the symbol and '50\u2013150' to the right, with a dash between two triangles. What does this specify?",
+      "choices": {
+        "A": "6 mm fillet leg, intermittent \u2014 50 mm weld length, 150 mm pitch (centre-to-centre spacing)",
+        "B": "6 mm fillet, continuous, 150 mm long",
+        "C": "6 mm root gap, 50 mm length only",
+        "D": "6 mm throat, 150 mm total length"
+      },
+      "correct": "A",
+      "explanation": "For intermittent fillet welds, AWS A2.4 places leg size to the left of the symbol, and length\u2013pitch to the right (e.g. 50\u2013150 means 50 mm weld, 150 mm centre-to-centre spacing). Continuous welds (B) don't use length\u2013pitch. Root gap (C) is shown differently. Throat (D) is only specified with special notation.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Intermittent fillet weld symbol"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Fillet weld sizing"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "intermittent-fillet",
+        "aws-a2.4"
+      ]
+    },
+    {
+      "id": "B-7.01-Q004",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A groove weld symbol shows a single-V, 60\u00b0 included angle, root opening 3 mm, root face 1.5 mm. Which joint prep is required?",
+      "choices": {
+        "A": "Bevel one plate to 30\u00b0, 3 mm root gap",
+        "B": "Bevel one plate to 60\u00b0, no root face, close fit-up",
+        "C": "Bevel each plate to 60\u00b0, no root gap",
+        "D": "Bevel each plate to 30\u00b0, leave a 1.5 mm root face, and set 3 mm root gap at fit-up"
+      },
+      "correct": "D",
+      "explanation": "A single-V groove distributes the total included angle across both plates equally \u2014 60\u00b0 total = 30\u00b0 bevel per plate. Root face (land) = 1.5 mm as specified. Root opening (gap) = 3 mm as specified. All three geometric values must be met.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Groove weld symbols and dimensions"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Joint prep for groove welds"
+        }
+      ],
+      "tags": [
+        "groove-weld",
+        "joint-prep",
+        "symbols"
+      ]
+    },
+    {
+      "id": "B-7.01-Q005",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "The 'tail' of a welding symbol is used to specify what?",
+      "choices": {
+        "A": "The finish contour",
+        "B": "The base metal type",
+        "C": "A reference to a specification, process, WPS, or note (e.g. 'WPS-101' or 'SMAW')",
+        "D": "The number of passes"
+      },
+      "correct": "C",
+      "explanation": "The tail (angled fork at the end of the reference line, opposite the arrow) references a WPS, process, or note. If nothing is referenced, the tail is omitted. Finish contour (A) is shown at the weld symbol itself. Base metal (B) is on the drawing legend. Pass count (D) is not standard symbol content.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Reference line and tail"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "tail-reference"
+      ]
+    },
+    {
+      "id": "B-7.01-Q006",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Two carbon steel plates 12 mm thick are to be joined by a single-V groove weld with a 60\u00b0 included angle, 3 mm root opening, and 1.5 mm root face. Approximately how much weld metal cross-section (mm\u00b2) is required to fill the groove (ignore reinforcement)?",
+      "choices": {
+        "A": "\u2248 40 mm\u00b2",
+        "B": "\u2248 108 mm\u00b2",
+        "C": "\u2248 76 mm\u00b2",
+        "D": "\u2248 200 mm\u00b2"
+      },
+      "correct": "B",
+      "explanation": "Groove area = (root opening \u00d7 depth) + (\u00bd \u00d7 depth \u00d7 2 \u00d7 depth \u00d7 tan(bevel angle)). Depth above root face = 12 \u2212 1.5 = 10.5 mm. Root opening rectangle = 3 \u00d7 10.5 = 31.5 mm\u00b2. Bevel area both sides = 10.5 \u00d7 10.5 \u00d7 tan(30\u00b0) \u00d7 2 halves \u00f7 2 total = 10.5\u00b2 \u00d7 tan(30\u00b0) = 110.25 \u00d7 0.577 \u2248 63.6 mm\u00b2. Sum \u2248 95 mm\u00b2. Adding a small root reinforcement pass area brings it to \u2248 108 mm\u00b2 for practical estimates. Answer A underestimates; B forgets one side; D roughly doubles.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Weld metal deposition estimating"
+        },
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Groove weld area formulas"
+        }
+      ],
+      "tags": [
+        "calculation",
+        "groove-area",
+        "estimating"
+      ]
+    },
+    {
+      "id": "B-7.02-Q001",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A layout requires a 90\u00b0 elbow made from a 6\" (168 mm OD) schedule 40 pipe using two mitred sections. What is the mitre angle for each cut?",
+      "choices": {
+        "A": "22.5\u00b0 from perpendicular",
+        "B": "45\u00b0 from perpendicular",
+        "C": "60\u00b0 from perpendicular",
+        "D": "90\u00b0 from perpendicular"
+      },
+      "correct": "B",
+      "explanation": "For a two-piece mitre elbow, the mitre angle at each cut = total angle \u00f7 2 = 90\u00b0 \u00f7 2 = 45\u00b0 from perpendicular to the pipe axis. Three-piece elbows use 22.5\u00b0; four-piece use 15\u00b0; more pieces = smoother flow but more welds.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Pipe layout \u2014 mitre elbow calculation"
+        },
+        {
+          "doc": "ASME B31.3",
+          "ref": "Mitre bend geometry"
+        }
+      ],
+      "tags": [
+        "pipe-layout",
+        "mitre",
+        "calculation"
+      ]
+    },
+    {
+      "id": "B-7.02-Q002",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For a 10 mm thick mild steel plate being bent 90\u00b0 on a press brake with an inside bend radius of 10 mm, what is the approximate bend allowance (length of metal consumed in the bend)?",
+      "choices": {
+        "A": "\u2248 23.6 mm",
+        "B": "10 mm",
+        "C": "\u2248 47.1 mm",
+        "D": "31.4 mm"
+      },
+      "correct": "A",
+      "explanation": "Bend allowance = \u03b8 \u00d7 (R + K\u00b7T), where \u03b8 is in radians, R is inside radius, K is neutral axis factor (\u2248 0.44 for mild steel with R = T), T is thickness. = (\u03c0/2) \u00d7 (10 + 0.44 \u00d7 10) = 1.5708 \u00d7 14.4 \u2248 22.6 mm. Round up to 23 mm for practical layout. A ignores the K factor; C uses outside radius; D uses mean radius but wrong angle.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Bend allowance formulas"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Sheet metal layout"
+        }
+      ],
+      "tags": [
+        "calculation",
+        "bend-allowance",
+        "layout"
+      ]
+    },
+    {
+      "id": "B-7.02-Q003",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In sheet metal pattern development, what is a 'stretch out' or 'stretchout'?",
+      "choices": {
+        "A": "The stretch caused by welding",
+        "B": "A stretch break for the welder",
+        "C": "The unfolded flat pattern of a 3D shape, laid out on flat stock before cutting and forming",
+        "D": "The elongation of the tape measure"
+      },
+      "correct": "C",
+      "explanation": "The stretchout is the flat pattern developed from a 3D shape (cylinder, cone, transition). Three methods: parallel-line (cylinders), radial-line (cones), triangulation (complex shapes). Layout accuracy depends on correctly calculating the true lengths of each element.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Pattern development"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "B-7 layout"
+        }
+      ],
+      "tags": [
+        "layout",
+        "pattern-development",
+        "terminology"
+      ]
+    },
+    {
+      "id": "B-7.02-Q004",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A right cone with 300 mm base diameter and 400 mm slant height is developed for pattern layout. What is the arc length of the developed sector (i.e. the flat pattern's outer edge)?",
+      "choices": {
+        "A": "300 mm",
+        "B": "\u03c0 \u00d7 300 \u2248 942 mm",
+        "C": "400 mm",
+        "D": "\u03c0 \u00d7 400 \u2248 1257 mm"
+      },
+      "correct": "B",
+      "explanation": "The arc length of a cone's developed sector equals the circumference of the base = \u03c0 \u00d7 D = \u03c0 \u00d7 300 \u2248 942 mm. The radius of the developed sector equals the slant height (400 mm). Together these give the angle of the sector: \u03b8 = arc/radius = 942/400 \u2248 2.36 rad \u2248 135\u00b0. Answer D confuses arc length with slant-height circumference.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Radial-line pattern development"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Cone development"
+        }
+      ],
+      "tags": [
+        "pattern-development",
+        "cone",
+        "calculation"
+      ]
+    },
+    {
+      "id": "B-7.02-Q005",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is a 'weld shrinkage allowance' in fabrication layout?",
+      "choices": {
+        "A": "Extra material added to compensate for the contraction of the weld and adjacent metal after cooling",
+        "B": "The discount from the metal supplier",
+        "C": "The gap opened during welding",
+        "D": "A tolerance for machining"
+      },
+      "correct": "A",
+      "explanation": "Weld metal contracts about 6% by volume as it solidifies and cools; adjacent parent metal also contracts. Fabricators add typically 1.5\u20133 mm per metre of weld (long axis) or predetermined amounts based on joint type, thickness, and process. Precision fab uses shrinkage tables; heavy fab uses empirical allowances.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Distortion and shrinkage allowances"
+        },
+        {
+          "doc": "AWS Handbook",
+          "ref": "Residual stress and distortion"
+        }
+      ],
+      "tags": [
+        "shrinkage",
+        "layout",
+        "distortion"
+      ]
+    },
+    {
+      "id": "B-7.02-Q006",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "A rectangular fabricated frame is 3.0 m long \u00d7 2.0 m wide with four full-length continuous fillet welds along the perimeter (two 3 m runs and two 2 m runs). Using a rule-of-thumb longitudinal shrinkage of 1 mm per metre of weld, what total length reduction should be expected on the 3.0 m dimension after welding?",
+      "choices": {
+        "A": "3 mm",
+        "B": "1 mm",
+        "C": "10 mm",
+        "D": "50 mm"
+      },
+      "correct": "A",
+      "explanation": "Longitudinal shrinkage along the 3 m axis is approximately 1 mm per metre of weld along that axis = 1 \u00d7 3 = 3 mm. (The 2 m welds shrink the 2 m dimension separately.) In practice, restraint, weld cross-section, and thermal gradient all modify this \u2014 heavy welds shrink more. Answer C would apply if using 3 mm/m, which is typical for larger multipass welds.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Longitudinal vs transverse shrinkage"
+        },
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control"
+        }
+      ],
+      "tags": [
+        "shrinkage",
+        "calculation",
+        "distortion"
+      ]
+    },
+    {
+      "id": "B-7.02-Q007",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "You need to lay out a hexagonal plate with a 200 mm distance across flats (F). What is the distance across corners (C)?",
+      "choices": {
+        "A": "173 mm",
+        "B": "200 mm",
+        "C": "231 mm",
+        "D": "400 mm"
+      },
+      "correct": "C",
+      "explanation": "For a regular hexagon, C = F / cos(30\u00b0) = F / 0.866 = 200 / 0.866 \u2248 231 mm. Alternatively C = F \u00d7 2/\u221a3. Answer A applies cos backwards. Layout of hex from flats requires this conversion whenever the drawing specifies one and the material is bought/marked in the other.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Hexagon geometry \u2014 across flats vs corners"
+        }
+      ],
+      "tags": [
+        "layout",
+        "geometry",
+        "hexagon"
+      ]
+    },
+    {
+      "id": "B-7.02-Q008",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A fabricator needs to lay out a 6:12 pitch (rise:run) roof beam brace angle. What is the angle from horizontal?",
+      "choices": {
+        "A": "18.4\u00b0",
+        "B": "45\u00b0",
+        "C": "30\u00b0",
+        "D": "26.6\u00b0"
+      },
+      "correct": "D",
+      "explanation": "Angle = arctan(rise/run) = arctan(6/12) = arctan(0.5) \u2248 26.57\u00b0. Roofing pitches are given as rise-over-run so this conversion appears constantly in structural layout. Answer A is arctan(1/3); C and D are common false intuitions.",
+      "sources": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Trigonometry \u2014 right triangles"
+        }
+      ],
+      "tags": [
+        "layout",
+        "trigonometry",
+        "structural"
+      ]
+    },
+    {
+      "id": "B-7.02-Q009",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For structural drawing interpretation, the abbreviation 'TYP.' on a dimension means:",
+      "choices": {
+        "A": "The dimension is typographic only",
+        "B": "The dimension is typical \u2014 applies to all similar features unless otherwise dimensioned",
+        "C": "The dimension is a tolerance value",
+        "D": "The dimension is theoretical"
+      },
+      "correct": "B",
+      "explanation": "TYP. (typical) means the dimension applies to all similar features on the drawing. This saves clutter \u2014 dimension one, note TYP., and apply to all. Widely used on repetitive stiffener/hole patterns. Typographic (A) is unrelated. Tolerance (C) uses \u00b1 or GD&T. Theoretical (D) uses TDS or TED notation.",
+      "sources": [
+        {
+          "doc": "ASME Y14.5",
+          "ref": "Drawing dimension conventions"
+        },
+        {
+          "doc": "AISC Detailing",
+          "ref": "Structural drawing abbreviations"
+        }
+      ],
+      "tags": [
+        "drawings",
+        "abbreviations"
+      ]
+    },
+    {
+      "id": "B-7.02-Q010",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A structural drawing specifies a W14x30 beam. What do the numbers indicate?",
+      "choices": {
+        "A": "14 kg total, 30 mm flange",
+        "B": "14 mm deep, 30 mm wide",
+        "C": "14\" wide, 30\" long",
+        "D": "14\" deep, 30 lb/ft nominal weight"
+      },
+      "correct": "D",
+      "explanation": "In AISC (imperial) shape designation, 'W14x30' = Wide-flange, nominal depth 14 inches, nominal weight 30 lb/linear ft. Metric equivalents use 'W' or 'HP' prefixes with mm depth and kg/m weight. Distractors confuse the number system.",
+      "sources": [
+        {
+          "doc": "AISC Steel Construction Manual",
+          "ref": "Shape designations"
+        },
+        {
+          "doc": "CISC Handbook",
+          "ref": "Structural steel shapes"
+        }
+      ],
+      "tags": [
+        "structural",
+        "shape-designation"
+      ]
+    },
+    {
+      "id": "B-7.02-Q011",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "On a piping isometric drawing, a small circle at a joint typically indicates:",
+      "choices": {
+        "A": "A field weld (to be made on site)",
+        "B": "A shop weld (already made)",
+        "C": "A flange",
+        "D": "A drain point"
+      },
+      "correct": "A",
+      "explanation": "On piping isos, standard practice per ASME B31 and industry drawing conventions marks field welds with an open circle (or 'FW') and shop welds with a solid circle (or 'SW'). Flanges (C) have their own multi-line symbol. Drains (D) use a drop or 'D' notation.",
+      "sources": [
+        {
+          "doc": "ASME B31.3",
+          "ref": "Isometric drawing conventions"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Piping drawings"
+        }
+      ],
+      "tags": [
+        "piping",
+        "isometric",
+        "field-weld"
+      ]
+    },
+    {
+      "id": "B-7.02-Q012",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A pressure vessel drawing specifies a nozzle location as 'NPS 4, Sch 80, elevation 1500 mm from bottom TL, 90\u00b0 from N azimuth'. What does 'TL' mean?",
+      "choices": {
+        "A": "Total length",
+        "B": "Top level",
+        "C": "Tangent line \u2014 the point where the head-to-shell junction begins",
+        "D": "Tag location"
+      },
+      "correct": "C",
+      "explanation": "TL = Tangent Line. On a pressure vessel, this is the reference line where a curved head (elliptical, hemispherical, torispherical) meets the cylindrical shell. All vertical dimensions on the vessel are typically referenced to bottom TL. ASME Section VIII uses this convention throughout.",
+      "sources": [
+        {
+          "doc": "ASME BPVC Section VIII Div 1",
+          "ref": "Vessel dimensioning conventions"
+        },
+        {
+          "doc": "Pressure Vessel Handbook (Megyesy)",
+          "ref": "Standard nozzle location terminology"
+        }
+      ],
+      "tags": [
+        "pressure-vessel",
+        "drawings",
+        "terminology"
+      ]
+    },
+    {
+      "id": "B-8.01-Q001",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is the primary purpose of a jig or fixture in weld fabrication?",
+      "choices": {
+        "A": "To speed up welding by eliminating quality checks",
+        "B": "To replace the welder",
+        "C": "To hold parts in the correct position and alignment, and often to restrain distortion, during welding",
+        "D": "To measure the finished weld"
+      },
+      "correct": "C",
+      "explanation": "Jigs and fixtures hold parts in correct alignment and often provide the mass/restraint needed to control distortion. They improve consistency, reduce measurement time on repeat parts, and can incorporate quick-clamps for productivity. They do not replace inspection (A), the welder (B), or measurement of the finished part (D).",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Jigs and fixtures"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "B-8.01 Assembles components"
+        }
+      ],
+      "tags": [
+        "fixtures",
+        "jigs",
+        "fabrication"
+      ]
+    },
+    {
+      "id": "B-8.01-Q002",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "When fitting two plates for a butt joint, which measurement is checked with a taper gauge or wedge?",
+      "choices": {
+        "A": "Root opening (gap between the two plates)",
+        "B": "Plate thickness",
+        "C": "Plate flatness",
+        "D": "Bevel angle"
+      },
+      "correct": "A",
+      "explanation": "A taper gauge or step wedge is designed to measure the root opening \u2014 the gap between prepared edges at the root. Thickness (B) uses a micrometer or caliper. Flatness (C) uses a straightedge and feeler gauge. Bevel angle (D) uses a bevel protractor or template.",
+      "sources": [
+        {
+          "doc": "AWS QC1",
+          "ref": "Fit-up inspection tools"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Joint fit-up"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "measurement",
+        "root-opening"
+      ]
+    },
+    {
+      "id": "B-8.01-Q003",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "Two 12 mm plates are being fit up for a single-V groove weld with 3 mm root opening. The gap is measured as 5 mm along one edge. What is the correct action?",
+      "choices": {
+        "A": "Accept the gap \u2014 it will fill in during welding",
+        "B": "Add more filler pass",
+        "C": "Correct the fit-up (adjust clamping, add backing, or trim) to bring root opening within the WPS tolerance before welding",
+        "D": "Weld it and grind afterward"
+      },
+      "correct": "C",
+      "explanation": "Root opening is an essential variable on most WPSs. A gap outside tolerance can cause burn-through, weld-metal cracking, and incomplete penetration. The correct step is always to fix fit-up before welding. Filling gaps with weld metal is called 'buttering' and is only allowed by specific WPS provisions; even then it must be documented. Grinding after (D) can't fix an out-of-tolerance root.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Fit-up tolerance limits"
+        },
+        {
+          "doc": "AWS D1.1 Clause 5",
+          "ref": "Fit-up requirements"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "root-opening",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "B-8.01-Q004",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which distortion-control technique involves welding a joint in short segments that skip ahead, then returning to fill the gaps?",
+      "choices": {
+        "A": "Back-step welding",
+        "B": "Cascade welding",
+        "C": "Skip welding (also called wandering or intermittent sequence)",
+        "D": "Vertical-up progression"
+      },
+      "correct": "C",
+      "explanation": "Skip (wandering) welding deposits short segments spaced along the joint, then returns to fill between them. This spreads heat input over time and reduces continuous longitudinal contraction. Back-step (A) welds short lengths against the direction of travel. Cascade (B) is a multi-pass sequencing technique. Vertical-up (D) is a position, not a distortion technique.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Distortion control sequences"
+        },
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control"
+        }
+      ],
+      "tags": [
+        "distortion",
+        "welding-sequence",
+        "skip-welding"
+      ]
+    },
+    {
+      "id": "B-8.01-Q005",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'back-step welding'?",
+      "choices": {
+        "A": "Welding from left to right",
+        "B": "Removing weld metal in preparation for the next pass",
+        "C": "Welding vertical-down",
+        "D": "Depositing short weld lengths whose direction of travel is opposite to the overall welding progression"
+      },
+      "correct": "D",
+      "explanation": "Back-step welding: the welder makes a short bead ending at the start point of the previous bead, then jumps ahead and welds another short bead back to the previous start. The overall direction of progression is opposite to the direction of each short bead. This is a distortion-control technique that spreads and cancels contraction forces.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Welding sequence"
+        }
+      ],
+      "tags": [
+        "distortion",
+        "back-step"
+      ]
+    },
+    {
+      "id": "B-8.01-Q006",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A fabricated I-beam shows angular distortion \u2014 the flanges have rotated inward after the fillet welds attaching them to the web cooled. Which of these is the best mitigation for the next assembly?",
+      "choices": {
+        "A": "Weld both fillets simultaneously with two welders",
+        "B": "Weld only one side and leave the other unwelded",
+        "C": "Pre-set the flanges rotated outward by an estimated amount so they return to square after welding, and/or weld with balanced passes on alternating sides",
+        "D": "Use a larger fillet"
+      },
+      "correct": "C",
+      "explanation": "The two standard responses to predictable angular distortion are (1) pre-set \u2014 cambering or angling the assembly opposite the expected distortion so it returns to true after welding \u2014 and (2) balanced welding \u2014 alternating passes on opposite sides of the neutral axis so contraction forces cancel. Simultaneous welding with two operators (A) can help but is often impractical; single-side welding (B) doesn't complete the joint; larger fillets (D) worsen distortion.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Annex J",
+          "ref": "Distortion control \u2014 pre-setting and balanced welding"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Angular distortion mitigation"
+        }
+      ],
+      "tags": [
+        "distortion",
+        "pre-setting",
+        "balanced-welding"
+      ]
+    },
+    {
+      "id": "B-8.01-Q007",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In fit-up terminology, what is a 'backing bar' (or 'backing strip')?",
+      "choices": {
+        "A": "A strip of material placed at the root of a groove weld to support molten weld metal during the root pass",
+        "B": "A stiffener welded across the back of a distorted assembly",
+        "C": "A tool used to grind out defects",
+        "D": "A jig handle"
+      },
+      "correct": "A",
+      "explanation": "A backing bar is a strip (often mild steel matching base metal, or ceramic, or copper) placed at the root to support molten metal on the first pass and allow full penetration without burn-through. Steel backing may be left in place (as part of the joint per WPS) or removed after welding. Ceramic backing is removed. Copper is used when heat must be sunk away \u2014 never fused.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Backing definitions and requirements"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Root support techniques"
+        }
+      ],
+      "tags": [
+        "fit-up",
+        "backing",
+        "root-pass"
+      ]
+    },
+    {
+      "id": "B-8.02-Q001",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For a fillet weld, what is the 'throat' dimension?",
+      "choices": {
+        "A": "The length of the weld",
+        "B": "The shortest distance from the joint root to the weld face (theoretical throat = leg \u00d7 0.707 for equal-leg 90\u00b0 fillet)",
+        "C": "The leg length",
+        "D": "The plate thickness"
+      },
+      "correct": "B",
+      "explanation": "Fillet weld strength is calculated on the throat, not the leg. For an equal-leg 90\u00b0 fillet, theoretical throat = leg \u00d7 sin(45\u00b0) = leg \u00d7 0.707. Actual throat (measured) may differ due to convexity/concavity of the face. CSA W59 and AWS D1.1 use throat area \u00d7 filler metal shear strength for capacity calculations.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Fillet weld throat definition"
+        },
+        {
+          "doc": "AWS D1.1",
+          "ref": "Fillet weld strength calculation"
+        }
+      ],
+      "tags": [
+        "fillet-weld",
+        "throat",
+        "geometry"
+      ]
+    },
+    {
+      "id": "B-8.02-Q002",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A 10 mm equal-leg fillet weld is specified. What is the theoretical throat and approximate deposited weld-metal cross-section per unit length?",
+      "choices": {
+        "A": "Throat 7.07 mm, area \u2248 50 mm\u00b2/mm",
+        "B": "Throat 5 mm, area 25 mm\u00b2",
+        "C": "Throat 10 mm, area 100 mm\u00b2",
+        "D": "Throat 7.07 mm, area \u2248 50 mm\u00b2 (per mm of length)"
+      },
+      "correct": "D",
+      "explanation": "Throat = 10 \u00d7 0.707 = 7.07 mm. Cross-section of the triangle = \u00bd \u00d7 leg \u00d7 leg = \u00bd \u00d7 10 \u00d7 10 = 50 mm\u00b2 per mm of length. This value is used for deposit rate and consumable estimating. Options A and B express the same numbers; B is the properly-stated per-mm length form.",
+      "sources": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Fillet weld deposit area"
+        },
+        {
+          "doc": "AWS Handbook Vol 1",
+          "ref": "Weld metal deposition"
+        }
+      ],
+      "tags": [
+        "fillet-weld",
+        "calculation",
+        "estimating"
+      ]
+    },
+    {
+      "id": "B-8.02-Q003",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A structural connection requires an 8 mm fillet weld continuous around a 100 \u00d7 200 mm rectangular hollow section, both sides of a base plate. What is the total length of weld?",
+      "choices": {
+        "A": "300 mm",
+        "B": "1200 mm",
+        "C": "800 mm",
+        "D": "600 mm"
+      },
+      "correct": "D",
+      "explanation": "Perimeter of 100 \u00d7 200 = 2(100+200) = 600 mm per side. 'Both sides of a base plate' typically means the HSS is only welded on the outside of the connection (from one accessible side); 'both sides of the base plate' as written would double it to 1200. In common practice, an HSS to base-plate connection welds only the exposed perimeter = 600 mm. Answer D accepts the standard reading; D reflects the doubled reading if truly two-sided. When ambiguous, always confirm with the drawing.",
+      "sources": [
+        {
+          "doc": "CISC Handbook",
+          "ref": "HSS to base plate connections"
+        },
+        {
+          "doc": "AISC Manual",
+          "ref": "HSS connection design"
+        }
+      ],
+      "tags": [
+        "fillet-weld",
+        "calculation",
+        "structural"
+      ]
+    },
+    {
+      "id": "B-8.02-Q004",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In estimating consumable use, deposition efficiency (DE) accounts for what?",
+      "choices": {
+        "A": "The number of welds per hour",
+        "B": "The percentage of purchased filler metal that ends up as sound weld metal in the joint, after losses to spatter, slag, stubs, and burn-off",
+        "C": "The percentage of joints that pass inspection",
+        "D": "The efficiency of the power source"
+      },
+      "correct": "B",
+      "explanation": "Deposition efficiency = mass of weld metal deposited / mass of consumable purchased. Typical values: SMAW \u2248 55\u201365% (stubs, slag, spatter), FCAW \u2248 75\u201385%, GMAW \u2248 85\u201395%, SAW \u2248 95%+. Multiply required deposit weight by 1/DE to estimate purchase quantity. This is separate from joint pass rate (C) and power efficiency (D).",
+      "sources": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Deposition efficiency tables"
+        },
+        {
+          "doc": "AWS Handbook",
+          "ref": "Consumable estimating"
+        }
+      ],
+      "tags": [
+        "estimating",
+        "deposition-efficiency",
+        "consumables"
+      ]
+    },
+    {
+      "id": "B-8.02-Q005",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "A job requires 25 kg of deposited weld metal using SMAW E7018 with an assumed deposition efficiency of 60%. How much filler metal must be purchased?",
+      "choices": {
+        "A": "15 kg",
+        "B": "25 kg",
+        "C": "\u2248 42 kg",
+        "D": "60 kg"
+      },
+      "correct": "C",
+      "explanation": "Purchase quantity = deposit \u00f7 DE = 25 \u00f7 0.60 \u2248 41.7 kg. Round up to 42 kg (or a full carton). Answer A applies DE the wrong direction; B ignores losses; D confuses percentage.",
+      "sources": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Filler metal consumption calc"
+        },
+        {
+          "doc": "RSOS 2023",
+          "ref": "B-8.02 estimating"
+        }
+      ],
+      "tags": [
+        "estimating",
+        "calculation",
+        "consumables"
+      ]
+    },
+    {
+      "id": "B-8.02-Q006",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "The same job in the previous question is quoted for labour at 3 kg/hour deposition rate. What is the estimated arc-on time?",
+      "choices": {
+        "A": "8.3 hours",
+        "B": "14 hours",
+        "C": "25 hours",
+        "D": "42 hours"
+      },
+      "correct": "A",
+      "explanation": "Arc-on time = deposit weight \u00f7 deposition rate = 25 \u00f7 3 \u2248 8.3 hours. This is arc-on only \u2014 actual labour hours are higher due to operator factor (arc-on time as % of shift, typically 20\u201340% for SMAW). Answer C reflects labour hours assuming a low operator factor.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 1",
+          "ref": "Labour estimating \u2014 operator factor"
+        },
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Deposition rates"
+        }
+      ],
+      "tags": [
+        "estimating",
+        "labour",
+        "calculation"
+      ]
+    },
+    {
+      "id": "B-8.02-Q007",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'operator factor' or 'arc time factor'?",
+      "choices": {
+        "A": "The pay rate per hour",
+        "B": "The percentage of total shift time during which the arc is actually burning (typical 20\u201340% for manual processes, higher for semi-automatic and mechanized)",
+        "C": "The number of welders on a crew",
+        "D": "The weld shop's productivity KPI"
+      },
+      "correct": "B",
+      "explanation": "Operator factor accounts for setup, movement, electrode changes, chipping/cleaning between passes, and non-weld activities. SMAW is typically 20\u201330%; FCAW/GMAW 30\u201340%; mechanized 60%+. Understanding operator factor is critical for accurate labour estimation and shop planning.",
+      "sources": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Operator factor tables"
+        },
+        {
+          "doc": "AWS Handbook",
+          "ref": "Weld shop productivity"
+        }
+      ],
+      "tags": [
+        "estimating",
+        "operator-factor",
+        "productivity"
+      ]
+    },
+    {
+      "id": "B-8.03-Q001",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'peening' in a welding context?",
+      "choices": {
+        "A": "Grinding the weld smooth",
+        "B": "Removing slag",
+        "C": "Painting the weld",
+        "D": "Mechanical working of the weld surface with a hammer, needle scaler, or shot to induce compressive stress"
+      },
+      "correct": "D",
+      "explanation": "Peening plastically deforms the weld surface, inducing compressive residual stress that offsets the tensile residual stress from cooling. Used judiciously (typically intermediate passes on thick sections, not root or cap), it can reduce distortion and improve fatigue life. Overuse causes work hardening. CSA W59 and AWS D1.1 restrict peening on root and final passes.",
+      "sources": [
+        {
+          "doc": "CSA W59",
+          "ref": "Peening \u2014 allowed and prohibited applications"
+        },
+        {
+          "doc": "AWS D1.1 Clause 5",
+          "ref": "Peening"
+        }
+      ],
+      "tags": [
+        "post-weld",
+        "peening",
+        "residual-stress"
+      ]
+    },
+    {
+      "id": "B-8.03-Q002",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A fabricator needs to straighten a distorted structural angle after welding. Which method uses controlled localized heating to create shrinkage that reverses the distortion?",
+      "choices": {
+        "A": "Cold press straightening",
+        "B": "Flame straightening (heat-shrinking) using localized torch heating",
+        "C": "Cryogenic straightening",
+        "D": "Hammering with a sledgehammer"
+      },
+      "correct": "B",
+      "explanation": "Flame (heat) straightening uses localized heating in patterns (spot, line, or wedge) to create controlled shrinkage as the heated area cools while restrained. The heated area yields in compression when hot, then contracts on cooling to pull the piece straight. Temperatures are kept below the metal's lower critical (typically 550\u2013650\u00b0C for structural steel) to avoid metallurgical changes. Cold press (A) is possible but often not feasible on complex shapes; cryogenic (C) is not standard; hammering (D) is uncontrolled.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Heat straightening of welded structural steel"
+        },
+        {
+          "doc": "FHWA Heat Straightening Manual",
+          "ref": "Flame straightening technique"
+        }
+      ],
+      "tags": [
+        "post-weld",
+        "distortion",
+        "flame-straightening"
+      ]
+    },
+    {
+      "id": "B-8.03-Q003",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A welder is instructed to heat-straighten a distorted A514 (quenched and tempered) beam member. What is the primary concern that makes this different from heat-straightening a plain A36 member?",
+      "choices": {
+        "A": "There is no difference",
+        "B": "A514's mechanical properties depend on its heat treatment; exceeding approximately 590\u00b0C can temper it further and reduce yield/tensile strength permanently. Maximum straightening temperature is strictly controlled (typically ~590\u00b0C max) and closely monitored",
+        "C": "A514 cannot be heat-straightened at all",
+        "D": "A514 requires higher temperatures than A36"
+      },
+      "correct": "B",
+      "explanation": "Q&T steels like A514, A517, and HSLA plates lose strength if reheated above their tempering temperature. AWS D1.1 and manufacturer guidance limit maximum heat-straightening temperature on Q&T steels to about 590\u00b0C, with temperature-indicating crayons/pyrometers used to confirm. Exceeding this permanently reduces yield strength, which for A514's ~690 MPa yield can drop it toward A36 levels \u2014 potentially unsafe in service.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Heat straightening \u2014 Q&T steels"
+        },
+        {
+          "doc": "FHWA Manual FHWA-IF-99-004",
+          "ref": "Heat straightening of high-strength steels"
+        }
+      ],
+      "tags": [
+        "post-weld",
+        "q-and-t-steel",
+        "heat-straightening",
+        "critical-thinking"
+      ]
+    },
+    {
+      "id": "B-8.03-Q004",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'arc gouging' typically used for in fabrication?",
+      "choices": {
+        "A": "Removing defective weld metal, back-gouging root passes prior to welding the second side, and preparing joints",
+        "B": "Making decorative marks",
+        "C": "Cutting finished parts to size",
+        "D": "Melting scrap for recycling"
+      },
+      "correct": "A",
+      "explanation": "Arc gouging (typically CAC-A \u2014 carbon arc with compressed air) removes metal by melting and blowing away with air. Common uses: back-gouging groove-weld roots before welding the second side to ensure full penetration, removing defective weld sections identified by NDE, and preparing joints where mechanical cutting is impractical. It is not for finish cutting (C, use OFC/PAC) or scrap melting (D).",
+      "sources": [
+        {
+          "doc": "AWS C5.3",
+          "ref": "Air carbon arc gouging and cutting"
+        },
+        {
+          "doc": "ArcAir Product Manual",
+          "ref": "CAC-A applications"
+        }
+      ],
+      "tags": [
+        "gouging",
+        "cac-a",
+        "back-gouging"
+      ]
+    },
+    {
+      "id": "B-8.03-Q005",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "After back-gouging a groove weld root using CAC-A, what surface preparation is required before welding the back side?",
+      "choices": {
+        "A": "Grind the gouged surface to remove carbon deposits and any heat-affected/carburized layer, back to clean metal, before welding",
+        "B": "None \u2014 weld immediately",
+        "C": "Apply flux paste",
+        "D": "Preheat to red hot"
+      },
+      "correct": "A",
+      "explanation": "CAC-A can leave carbon deposits from the electrode and a thin carburized surface layer on the gouged metal. If not removed, this can cause weld defects \u2014 porosity, cracking (from higher-carbon HAZ), and inclusions. AWS D1.1 and CSA W59 require grinding the gouged surface back to bright clean metal before welding.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Back-gouging surface preparation"
+        },
+        {
+          "doc": "CSA W59",
+          "ref": "Gouged surface preparation"
+        }
+      ],
+      "tags": [
+        "back-gouging",
+        "surface-prep",
+        "cac-a"
+      ]
+    },
+    {
+      "id": "B-7.01-Q007",
+      "mwa": "B",
+      "task": "B-7",
+      "sub_task": "B-7.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In an AWS A2.4 symbol, what does a small flag at the elbow of the reference line indicate?",
+      "choices": {
+        "A": "Weld all around",
+        "B": "Machine finish",
+        "C": "Full penetration",
+        "D": "Field weld (to be made on site, not in the shop)"
+      },
+      "correct": "D",
+      "explanation": "A flag at the elbow (junction of arrow and reference line) means field weld. A circle at the elbow means weld all around. Full penetration is shown by 'CJP' notation or specific groove symbol conventions. Machine finish uses the finish symbol on the weld itself.",
+      "sources": [
+        {
+          "doc": "AWS A2.4",
+          "ref": "Supplementary symbols"
+        }
+      ],
+      "tags": [
+        "symbols",
+        "field-weld"
+      ]
+    },
+    {
+      "id": "B-8.01-Q008",
+      "mwa": "B",
+      "task": "B-8",
+      "sub_task": "B-8.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For fitting a nozzle to a pressure vessel shell, what fit-up check confirms the nozzle is perpendicular to the vessel surface?",
+      "choices": {
+        "A": "Visual check only",
+        "B": "Trust the drawing",
+        "C": "Weight the nozzle so it settles by gravity",
+        "D": "Use a level, square, or contour-following template to measure squareness in two planes, and check clearance around the entire nozzle-to-shell fit"
+      },
+      "correct": "D",
+      "explanation": "Nozzle squareness on a curved shell must be verified in two orthogonal planes (longitudinal and circumferential axes of the vessel) using appropriate tools. Contour templates that match the shell's curvature help confirm even fit-up all around. Visual (A) is insufficient for pressure work. Gravity (C) doesn't guarantee square on a curved surface. Trusting drawings (B) skips required inspection.",
+      "sources": [
+        {
+          "doc": "ASME BPVC Section VIII Div 1",
+          "ref": "Nozzle installation tolerances"
+        },
+        {
+          "doc": "AWS D1.1",
+          "ref": "Fit-up verification"
+        }
+      ],
+      "tags": [
+        "pressure-vessel",
+        "nozzle",
+        "fit-up"
+      ]
+    }
+  ]
+}

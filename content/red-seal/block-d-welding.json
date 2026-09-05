@@ -1,0 +1,1523 @@
+{
+  "block": "D",
+  "title": "Performs welding processes",
+  "exam_weight_pct": 44,
+  "exam_questions_on_test": 54,
+  "questions": [
+    {
+      "id": "D-13.01-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In AWS A5.1 SMAW electrode classification E7018, what does the first two digits '70' indicate?",
+      "choices": {
+        "A": "Position",
+        "B": "Coating type",
+        "C": "70,000 psi minimum tensile strength of the weld metal",
+        "D": "Amperage rating"
+      },
+      "correct": "C",
+      "explanation": "AWS A5.1: first 2 (or 3) digits = minimum tensile strength in ksi \u00d7 1000 psi. E7018 = 70 ksi minimum tensile. Third digit = position (1=all, 2=flat/horizontal). Fourth digit + third = coating/current combo (18 = low-hydrogen potassium, AC or DCEP).",
+      "sources": [
+        {
+          "doc": "AWS A5.1/A5.1M",
+          "ref": "SMAW carbon steel electrode classification"
+        }
+      ],
+      "tags": [
+        "smaw",
+        "electrode-classification"
+      ]
+    },
+    {
+      "id": "D-13.01-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which SMAW electrode is a fast-freeze cellulosic type used extensively for open-root pipe welding downhill (5G downhill)?",
+      "choices": {
+        "A": "E7018",
+        "B": "E6010",
+        "C": "E7024",
+        "D": "E308-16"
+      },
+      "correct": "B",
+      "explanation": "E6010 has a high-cellulose sodium coating, DCEP only, produces a deep-penetrating fast-freezing arc suited to open-root and out-of-position work \u2014 the standard for pipe root passes downhill in cross-country pipeline welding. E7018 (A) is low-hydrogen for structural. E7024 (C) is iron-powder heavy-deposit flat/horizontal only. E308-16 (D) is stainless.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "E6010 characteristics"
+        },
+        {
+          "doc": "API 1104",
+          "ref": "Pipeline welding practice"
+        }
+      ]
+    },
+    {
+      "id": "D-13.01-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A WPS calls for E7018 at 130 A on 3.2 mm (1/8\") electrode for a 3G groove weld. The welder finds the arc is difficult to strike and tends to stub. What is the first parameter to check?",
+      "choices": {
+        "A": "Increase amperage to 200 A",
+        "B": "Add more voltage",
+        "C": "Change to E6010",
+        "D": "Verify polarity is DCEP (electrode positive) or AC, not DCEN"
+      },
+      "correct": "D",
+      "explanation": "E7018 runs on AC or DCEP. On DCEN (electrode negative), the arc is unstable, hard to strike, and produces poor bead shape and mechanical properties. Wrong polarity is one of the most common SMAW setup errors. Amperage change (A) or process change (C) won't fix a polarity mismatch.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "E7018 polarity requirements"
+        },
+        {
+          "doc": "Miller Handbook",
+          "ref": "SMAW polarity troubleshooting"
+        }
+      ]
+    },
+    {
+      "id": "D-13.01-Q004",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What does the 'H' suffix in AWS SMAW electrode designations (e.g. E7018-H4R) indicate?",
+      "choices": {
+        "A": "High strength",
+        "B": "Horizontal position",
+        "C": "High voltage",
+        "D": "Diffusible hydrogen limit \u2014 H4 = 4 mL/100g max, H8 = 8 mL/100g max, H16 = 16 mL/100g max"
+      },
+      "correct": "D",
+      "explanation": "The optional H designator specifies maximum diffusible hydrogen in mL per 100g of deposited weld metal. H4 is the strictest (used for high-strength or crack-sensitive service), H8 is intermediate, H16 is standard. Lower diffusible hydrogen reduces risk of hydrogen-induced cracking. 'R' suffix means moisture-resistant coating.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "Optional supplemental designators H and R"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For SMAW with E7018 at 150 A, 24 V, travel speed 200 mm/min, what is the heat input in kJ/mm?",
+      "choices": {
+        "A": "0.54",
+        "B": "1.08",
+        "C": "1.80",
+        "D": "3.60"
+      },
+      "correct": "B",
+      "explanation": "HI (kJ/mm) = (V \u00d7 A \u00d7 60) / (mm/min \u00d7 1000) = (24 \u00d7 150 \u00d7 60) / (200 \u00d7 1000) = 216000/200000 = 1.08 kJ/mm. Standard formula from AWS D1.1 and CSA W59.",
+      "sources": [
+        {
+          "doc": "CSA W59 Clause 5.7",
+          "ref": "Heat input calculation"
+        },
+        {
+          "doc": "AWS D1.1 Annex",
+          "ref": "Heat input"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What welding position is designated '3G'?",
+      "choices": {
+        "A": "Vertical groove",
+        "B": "Horizontal groove",
+        "C": "Flat groove",
+        "D": "Overhead groove"
+      },
+      "correct": "A",
+      "explanation": "AWS/CSA position codes: 1G flat groove, 2G horizontal groove, 3G vertical groove, 4G overhead groove. Fillet positions use 'F': 1F, 2F, 3F, 4F. Pipe positions: 1G (rotated), 2G (fixed vertical axis), 5G (fixed horizontal axis, welded around), 6G (45\u00b0 inclined fixed).",
+      "sources": [
+        {
+          "doc": "AWS A3.0",
+          "ref": "Standard welding positions"
+        },
+        {
+          "doc": "CSA W59 Clause 4",
+          "ref": "Positions of welding"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "critical-thinking",
+      "difficulty": "hard",
+      "stem": "A SMAW E7018 weld on 25 mm A516-70 shows longitudinal cracking down the weld centreline ~24 hours after welding. Most likely cause?",
+      "choices": {
+        "A": "Insufficient amperage causing slag inclusions",
+        "B": "Excessive travel speed causing undercut",
+        "C": "Hydrogen-induced cracking from moisture in electrode coating and/or insufficient preheat",
+        "D": "Wrong polarity causing arc blow"
+      },
+      "correct": "C",
+      "explanation": "Delayed cracking hours-to-days after welding on thicker carbon steel is the signature of hydrogen-induced (cold) cracking. Sources: moist E7018 coating (must be stored in 120\u00b0C rod oven once opened), insufficient preheat, high restraint. Immediate defects like slag (A) or undercut (B) show at once, not delayed.",
+      "sources": [
+        {
+          "doc": "CSA W59 Annex E",
+          "ref": "Preheat and hydrogen control"
+        },
+        {
+          "doc": "AWS A5.1",
+          "ref": "Low-hydrogen electrode storage"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q004",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For vertical-up SMAW with E7018 on 12 mm plate, which electrode diameter is standard for the fill passes?",
+      "choices": {
+        "A": "2.5 mm (3/32\")",
+        "B": "4.0 mm (5/32\")",
+        "C": "3.2 mm (1/8\")",
+        "D": "5.0 mm (3/16\")"
+      },
+      "correct": "C",
+      "explanation": "3.2 mm E7018 is the workhorse size for vertical-up on plate 6\u201320 mm \u2014 small enough to control the puddle against gravity, large enough for reasonable deposition. 2.5 mm burns fast and requires many passes; 4.0 mm and larger cause pool sag vertical-up on plate.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "SMAW electrode size guidance"
+        },
+        {
+          "doc": "Lincoln SMAW Handbook",
+          "ref": "Electrode selection by position and thickness"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q005",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'arc blow' in SMAW?",
+      "choices": {
+        "A": "Deflection of the arc from its intended path by magnetic fields \u2014 especially when welding with DC near steel edges, corners, or the work-lead attachment point",
+        "B": "Wind blowing away shielding gas",
+        "C": "The sound of the arc",
+        "D": "Slag ejection"
+      },
+      "correct": "A",
+      "explanation": "Arc blow is arc deflection caused by uneven magnetic field distribution around the arc (residual magnetism, work-lead position, edges). Symptoms: erratic arc, poor bead placement, excessive spatter. Mitigations: switch to AC (magnetic fields alternate and self-cancel), demagnetize the workpiece, split the work-lead to two points, wrap the work lead around the workpiece, reduce arc length. SMAW is more susceptible than wire processes because of longer arc length.",
+      "sources": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Arc blow causes and remedies"
+        },
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SMAW arc characteristics"
+        }
+      ]
+    },
+    {
+      "id": "D-13.03-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For SMAW on 304 austenitic stainless steel, which electrode class is typically used?",
+      "choices": {
+        "A": "E7018",
+        "B": "E6010",
+        "C": "E308-16 or E308L-16 (low-carbon)",
+        "D": "ENiCrFe-3"
+      },
+      "correct": "C",
+      "explanation": "AWS A5.4 classifies stainless SMAW electrodes. 304 base metal is matched with 308 filler (higher chromium and nickel to compensate for dilution). The 'L' (low-carbon, <0.03%) variant is preferred where post-weld sensitization is a concern. E7018 (A) and E6010 (B) are carbon-steel electrodes. ENiCrFe-3 (D) is a nickel-based filler for Inconel or dissimilar joints.",
+      "sources": [
+        {
+          "doc": "AWS A5.4",
+          "ref": "Stainless SMAW electrode classification"
+        },
+        {
+          "doc": "Nickel Institute Publication 11007",
+          "ref": "Filler selection for austenitic stainless"
+        }
+      ]
+    },
+    {
+      "id": "D-13.03-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "SMAW on austenitic stainless with E308L-16 requires interpass temperature limits typically:",
+      "choices": {
+        "A": "\u2264 175\u00b0C to minimize time in the 450\u2013870\u00b0C sensitization range and to control distortion (austenitic SS has ~50% higher thermal expansion than carbon steel)",
+        "B": "Above 300\u00b0C",
+        "C": "No limit needed",
+        "D": "Below room temperature"
+      },
+      "correct": "A",
+      "explanation": "Austenitic SS interpass typically \u2264 175\u00b0C (some codes \u2264 150\u00b0C for critical service). Two reasons: (1) minimize time in the sensitization range (450\u2013870\u00b0C) where chromium carbides can precipitate at grain boundaries; (2) manage distortion \u2014 austenitic SS expands ~50% more than carbon steel per \u00b0C. Stringer beads and limited interpass are the standard technique.",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "Structural welding \u2014 stainless steel"
+        },
+        {
+          "doc": "ASME Section II Part C",
+          "ref": "Stainless welding practice"
+        }
+      ]
+    },
+    {
+      "id": "D-13.03-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is a common SMAW electrode used for welding grey cast iron for repair, when the joint is expected to remain machinable?",
+      "choices": {
+        "A": "E7018",
+        "B": "ENiFe-CI (nickel-iron flux-coated, per AWS A5.15)",
+        "C": "E308L",
+        "D": "E6010"
+      },
+      "correct": "B",
+      "explanation": "AWS A5.15 covers cast iron SMAW electrodes: ENi-CI (pure Ni), ENiFe-CI (Ni-Fe, most common \u2014 good machinability and colour match), and ENiCu (Ni-Cu). Cast iron cracks easily due to graphite structure and low ductility; nickel-based fillers form a soft, machinable, crack-resistant weld metal. Preheat 200\u2013320\u00b0C, low heat input, peening between passes, slow cooling. Carbon steel electrodes (A, D) form brittle white iron at the fusion boundary.",
+      "sources": [
+        {
+          "doc": "AWS A5.15",
+          "ref": "Cast iron SMAW electrodes"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Cast iron welding procedures"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q001",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A SMAW weld shows visible undercut along the toe of the cap pass. Which parameter change is most likely to fix it?",
+      "choices": {
+        "A": "Increase travel speed",
+        "B": "Change to a larger electrode",
+        "C": "Reduce amperage or reduce arc length, and slow travel slightly at the toe (or use a slight pause at each toe on weave passes)",
+        "D": "Increase arc length dramatically"
+      },
+      "correct": "C",
+      "explanation": "Undercut = the base metal at the weld toe has been melted away and not backfilled. Common causes: excessive amperage, too-long arc, travel too fast, poor angle, or weave motion that pauses at the middle instead of the toes. Reducing amperage, shortening arc, and pausing at the toes on weave beads gives molten metal time to fill in. Larger arc length (D) worsens undercut.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 6",
+          "ref": "Weld defects \u2014 undercut acceptance"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Undercut prevention"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q002",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A SMAW 5G pipe weld (fixed horizontal axis) requires which welding progression capability?",
+      "choices": {
+        "A": "Flat only",
+        "B": "The welder must weld through flat, vertical, and overhead positions in one continuous pass around the pipe (uphill or downhill depending on procedure)",
+        "C": "Overhead only",
+        "D": "Rotating the pipe"
+      },
+      "correct": "B",
+      "explanation": "5G = pipe axis horizontal, pipe fixed (no rotation). The weld progresses around the pipe, passing through flat (12 o'clock), vertical (3 or 9), and overhead (6). Welder qualification in 5G covers all three positions on plate. 6G (45\u00b0 inclined) additionally covers all positions on plate plus overhead-vertical transitions and is the most versatile qualification.",
+      "sources": [
+        {
+          "doc": "CSA W59 Table 12.4",
+          "ref": "Position qualifications"
+        },
+        {
+          "doc": "AWS D1.1 Table 4.10",
+          "ref": "Position qualifications"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q003",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'stringer bead' technique in SMAW pipe welding?",
+      "choices": {
+        "A": "A narrow bead deposited without significant side-to-side motion \u2014 preferred on high-strength, alloy, or thick pipe to control heat input",
+        "B": "A weave bead",
+        "C": "The last pass only",
+        "D": "The tack weld"
+      },
+      "correct": "A",
+      "explanation": "Stringer beads (narrow, straight-travel, no weave) keep heat input low, control interpass build-up, and are required by many pipeline and pressure specifications on high-strength or alloy pipe. Weave beads (B) increase heat input per pass and can cause grain coarsening. Multi-pass caps and hot passes use stringers stacked side-by-side rather than one wide weave.",
+      "sources": [
+        {
+          "doc": "API 1104",
+          "ref": "Pipeline welding technique"
+        },
+        {
+          "doc": "ASME B31.3",
+          "ref": "Process piping welding"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q004",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "A SMAW butt weld on 12 mm A36 plate qualified per AWS D1.1 requires a bend test. The face and root bend specimens show a 3 mm long open discontinuity on the tension surface. Is this acceptable?",
+      "choices": {
+        "A": "Yes \u2014 anything under 5 mm is fine",
+        "B": "No. AWS D1.1 clause 4 typically requires no single discontinuity exceeding 3 mm in any direction, and the sum of the greatest dimensions of discontinuities > 1 mm not to exceed 10 mm on the specimen tension surface. Right at the limit \u2014 likely fail, and always verify against the exact edition",
+        "C": "Yes \u2014 bend tests don't measure discontinuities",
+        "D": "Yes \u2014 always pass"
+      },
+      "correct": "B",
+      "explanation": "AWS D1.1 clause 4.9.3.3 (bend test acceptance) limits single discontinuity length to 3 mm max and total (of discontinuities >1 mm) to 10 mm max on tension surface. 3 mm is at the boundary \u2014 depending on other discontinuities, this may just pass or fail. Correct interpretation requires the whole rule; guessing (A, D) or dismissing (C) fails the qualification.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 4.9.3.3",
+          "ref": "Bend test acceptance criteria"
+        },
+        {
+          "doc": "CSA W47.1",
+          "ref": "Welder qualification bend test"
+        }
+      ]
+    },
+    {
+      "id": "D-14.01-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In AWS A5.18 GMAW wire classification ER70S-6, what does the 'S' indicate?",
+      "choices": {
+        "A": "Stainless",
+        "B": "Small diameter",
+        "C": "Solid wire (as opposed to composite/metal-cored)",
+        "D": "Short arc"
+      },
+      "correct": "C",
+      "explanation": "AWS A5.18: 'ER' = electrode/rod, '70' = 70 ksi minimum tensile, 'S' = solid wire, '6' = chemistry designation (S-6 has higher Mn+Si deoxidizers, tolerates mill scale, good general-purpose). Composite/metal-cored wires use 'C' instead of 'S' (per A5.18/A5.36). FCAW wires (A5.20) use 'T' for tubular.",
+      "sources": [
+        {
+          "doc": "AWS A5.18/A5.18M",
+          "ref": "GMAW solid wire classification"
+        }
+      ]
+    },
+    {
+      "id": "D-14.01-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What does the 'T-1' in AWS A5.20 FCAW wire E71T-1 indicate?",
+      "choices": {
+        "A": "Tubular (T), usability designator 1 = gas-shielded, rutile, all-position, DCEP",
+        "B": "Flat position only",
+        "C": "The wire is one metre long",
+        "D": "Type 1 electrode holder required"
+      },
+      "correct": "A",
+      "explanation": "AWS A5.20 (carbon-steel FCAW): 'E' electrode, '7' 70 ksi, '1' all positions, 'T' tubular (flux-cored), '-1' usability designator specifying shielding (gas-shielded with CO2 or 75/25), flux type (rutile), and polarity (DCEP). T-5 is basic slag, T-4 self-shielded, T-8 self-shielded low-hydrogen, etc.",
+      "sources": [
+        {
+          "doc": "AWS A5.20/A5.20M",
+          "ref": "FCAW carbon-steel wire classification"
+        }
+      ]
+    },
+    {
+      "id": "D-14.01-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For short-circuit transfer GMAW on 3 mm mild steel with 0.9 mm (0.035\") ER70S-6 wire, typical parameters are:",
+      "choices": {
+        "A": "Approximately 100 A / 18 V with 75%Ar/25%CO2 (or CO2), wire feed ~4 m/min",
+        "B": "300 A / 30 V with pure argon",
+        "C": "500 A / 40 V with helium",
+        "D": "50 A / 12 V"
+      },
+      "correct": "A",
+      "explanation": "Short-circuit (short-arc) transfer runs at low voltage (~16\u201320 V) and moderate amperage (~90\u2013120 A for 0.9 mm wire). Shielding gas is CO2 or 75/25 Ar/CO2 (spatter reduction). This mode gives low heat input suitable for thin sections and out-of-position work. Higher voltage/amperage (B) enters globular or spray transfer, which needs thicker material and flat/horizontal position.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW transfer modes"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Short-arc parameters"
+        }
+      ]
+    },
+    {
+      "id": "D-14.01-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which GMAW transfer mode uses high voltage and current to project small droplets across a long stable arc, requires argon-rich shielding (typically >80% Ar), and is limited to flat and horizontal positions?",
+      "choices": {
+        "A": "Short-circuit",
+        "B": "Globular",
+        "C": "Spray transfer",
+        "D": "Pulsed spray"
+      },
+      "correct": "C",
+      "explanation": "Spray transfer: current above the transition threshold (varies by wire diameter and shielding), high voltage, argon-rich gas. Metal transfers as fine droplets in a continuous stream. High heat input and gravity effects restrict it to flat/horizontal only. Globular (B) is between short-arc and spray \u2014 chunky drops, more spatter. Pulsed spray (D) modulates current to give spray-like transfer at lower average heat, usable in all positions.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW metal transfer modes"
+        },
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Transfer mode selection"
+        }
+      ]
+    },
+    {
+      "id": "D-14.02-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A GMAW weld with 100% CO2 shielding on mild steel shows excessive spatter compared to the same wire with 75Ar/25CO2. Explanation?",
+      "choices": {
+        "A": "CO2 is a poor conductor",
+        "B": "Nothing \u2014 CO2 gives less spatter than argon",
+        "C": "CO2 is contaminated",
+        "D": "100% CO2 promotes globular transfer with larger droplets and more spatter than argon-rich mixes. 75/25 gives more spray-like transfer at similar parameters. CO2 is cheaper and gives deeper penetration but more cleanup"
+      },
+      "correct": "D",
+      "explanation": "Pure CO2 forces globular transfer at typical voltages; 75/25 mixes can achieve spray-like or axial-spray transfer with less spatter. CO2 remains popular for structural work because it's cheap and gives deep penetration. Trade-off: more post-weld cleanup for anti-spatter spray and grinding.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW shielding gas selection"
+        },
+        {
+          "doc": "Praxair/Linde shielding gas guides",
+          "ref": "CO2 vs mixed gas performance"
+        }
+      ]
+    },
+    {
+      "id": "D-14.02-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What shielding gas is typically used for GMAW of aluminum?",
+      "choices": {
+        "A": "75Ar/25CO2",
+        "B": "100% argon (thicker sections may add helium \u2014 Ar/He mixes 25\u201375% He)",
+        "C": "100% CO2",
+        "D": "Nitrogen"
+      },
+      "correct": "B",
+      "explanation": "Aluminum GMAW uses 100% argon; helium added (25\u201375% He) increases arc energy for thicker aluminum. CO2 (C) reacts with aluminum forming defects. Nitrogen (D) causes porosity in aluminum. 75/25 (A) is for carbon steel.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "Structural welding \u2014 aluminum"
+        },
+        {
+          "doc": "Aluminum Association",
+          "ref": "GMAW shielding for aluminum"
+        }
+      ]
+    },
+    {
+      "id": "D-14.02-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GMAW on 5 mm 6061-T6 aluminum, which filler wire is a common choice?",
+      "choices": {
+        "A": "ER70S-6",
+        "B": "ER4043 (Al-5%Si) or ER5356 (Al-5%Mg), depending on service requirements",
+        "C": "ER308L",
+        "D": "Pure aluminum"
+      },
+      "correct": "B",
+      "explanation": "6061 is commonly welded with ER4043 (Al-Si, good weldability, moderate strength, minimal crack sensitivity, silver appearance) or ER5356 (Al-Mg, higher strength, better colour match after anodizing, better for structural). Filler selection depends on strength, corrosion, colour match, and anodizing requirements \u2014 see AWS D1.2 Table 5.5 for the standard selection chart.",
+      "sources": [
+        {
+          "doc": "AWS D1.2 Table 5.5",
+          "ref": "Filler alloy selection for aluminum"
+        },
+        {
+          "doc": "AWS A5.10",
+          "ref": "Aluminum filler classification"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "GMAW wire feeder delivers wire erratically \u2014 surging and stubbing \u2014 even though drive rolls are correct size and tension appears set. What is the most likely cause?",
+      "choices": {
+        "A": "Empty gas cylinder",
+        "B": "New spool of wire",
+        "C": "Wrong polarity",
+        "D": "Worn or kinked liner in the gun cable, or wrong-sized liner for the wire"
+      },
+      "correct": "D",
+      "explanation": "Erratic wire feed with correct rolls almost always traces to the liner: worn, kinked, contaminated with debris/copper flakes, or wrong ID for the wire. Symptoms: bird-nesting at drive rolls, arc surging, stubbing. Fix: replace liner, or blow it out with compressed air if lightly contaminated. Empty gas (A) causes porosity, not feed problems.",
+      "sources": [
+        {
+          "doc": "Lincoln GMAW Troubleshooting Guide",
+          "ref": "Wire feed problems"
+        },
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Wire feeder maintenance"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'burnback' in GMAW?",
+      "choices": {
+        "A": "The wire fusing to the contact tip at the end of a weld, caused by wire retract stopping before the arc extinguishes",
+        "B": "The wire feed reversing",
+        "C": "The arc reflecting off the workpiece",
+        "D": "A hot workpiece burning the operator"
+      },
+      "correct": "A",
+      "explanation": "Burnback: at end of weld, wire feeder stops but current continues briefly and the arc travels up the wire, fusing wire to contact tip. Prevented by proper burnback timer setting (extends current-off after wire-feed stops by a few ms), or by trimming the wire back after each weld. Excessive burnback ruins tips and requires frequent replacement.",
+      "sources": [
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Burnback timer and consumable life"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Contact tip protection"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For FCAW self-shielded wires (e.g. E71T-8), what shielding is provided?",
+      "choices": {
+        "A": "None from an external gas \u2014 the flux inside the wire generates a protective slag and gas shield when the arc burns",
+        "B": "External CO2 gas",
+        "C": "Argon",
+        "D": "Nitrogen"
+      },
+      "correct": "A",
+      "explanation": "Self-shielded FCAW (T-4, T-6, T-7, T-8, T-11) needs no external gas \u2014 the tubular wire's flux decomposes in the arc to form protective gas and slag. Advantages: portable (no gas bottle, no windshield needed), good for field welding. Trade-offs: some grades have lower toughness than gas-shielded FCAW, and fume levels can be higher.",
+      "sources": [
+        {
+          "doc": "AWS A5.20",
+          "ref": "Self-shielded FCAW usability designators"
+        },
+        {
+          "doc": "Lincoln Innershield Manual",
+          "ref": "Self-shielded FCAW applications"
+        }
+      ]
+    },
+    {
+      "id": "D-14.04-Q001",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A production GMAW weld shows widespread porosity across the length. Which single check most often uncovers the cause?",
+      "choices": {
+        "A": "Check for shielding gas problems: cylinder pressure, flow rate at the torch (not just at the regulator), draft in the work area, damaged gas hose, or blocked/damaged gas nozzle",
+        "B": "Increase amperage",
+        "C": "Change wire brand",
+        "D": "Reduce voltage"
+      },
+      "correct": "A",
+      "explanation": "Porosity in GMAW is nearly always a shielding-gas failure. Check: gas flow at the torch nozzle (use a flow meter that fits the nozzle) \u2014 regulator may read fine while a leak elsewhere drops flow; draft or wind removing shielding; cracked/burned gas hose; nozzle spattered shut. Only after gas checks pass do you look at wire condition, base metal cleanliness, and parameters.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GMAW porosity causes"
+        },
+        {
+          "doc": "Miller Troubleshooting Guide",
+          "ref": "Porosity checklist"
+        }
+      ]
+    },
+    {
+      "id": "D-14.04-Q002",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A FCAW weld shows worm-track (wandering surface porosity) after cooling. Root cause?",
+      "choices": {
+        "A": "Correct behaviour",
+        "B": "Amperage too low",
+        "C": "Excess moisture in flux, wrong shielding gas for the wire, or excess voltage \u2014 worm-tracks form when gas trapped under solidifying slag escapes, leaving a channel",
+        "D": "Travel speed too slow"
+      },
+      "correct": "C",
+      "explanation": "Worm-tracks are FCAW-specific porosity that appears as trails or channels on the weld face. Causes: moisture in wire (store dry, avoid opening spool until use), wrong gas (CO2 vs 75/25 for a given wire), voltage too high (long arc pulls in air). Correction: dry storage, verify wire-gas pairing per data sheet, lower voltage slightly.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "FCAW discontinuities"
+        },
+        {
+          "doc": "Hobart FCAW Guide",
+          "ref": "Worm-track prevention"
+        }
+      ]
+    },
+    {
+      "id": "D-14.04-Q003",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GMAW, 'contact-tip-to-work distance' (CTWD) is measured from:",
+      "choices": {
+        "A": "Contact tip inside the nozzle to the workpiece",
+        "B": "Nozzle to workpiece",
+        "C": "Power source to workpiece",
+        "D": "Welder's eye to workpiece"
+      },
+      "correct": "A",
+      "explanation": "CTWD (a.k.a. electrical stickout for spray, or contact tube-to-work) is from the tip of the contact tube (inside the nozzle) to the workpiece. It controls electrode extension, which controls current and heat. Longer CTWD reduces current (I\u00b2R heating in the extended wire), shorter increases it. Nozzle-to-work (B) is a different distance (visible outside the nozzle) \u2014 the two are related by nozzle-to-tip recess.",
+      "sources": [
+        {
+          "doc": "AWS A3.0",
+          "ref": "Standard welding terminology"
+        },
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "CTWD effect on parameters"
+        }
+      ]
+    },
+    {
+      "id": "D-14.04-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "For GMAW pipe welding (2G fixed vertical pipe axis, groove weld on 10 mm wall), which transfer mode is typically preferred?",
+      "choices": {
+        "A": "Spray transfer",
+        "B": "SMAW only",
+        "C": "Globular only",
+        "D": "Short-circuit for root; pulsed spray or short-circuit for fill and cap, depending on WPS"
+      },
+      "correct": "D",
+      "explanation": "2G pipe on 10 mm wall requires out-of-position welding for the root (horizontal in 2G) and controlled fill/cap. Short-circuit or a modified short-circuit mode (RMD, STT) is standard for the root \u2014 low heat, controls the puddle for open-root work. Pulsed spray or continued short-circuit is used for fill/cap depending on WPS. Pure spray (A) is flat-position only and cannot be run on a horizontal pipe axis in 2G.",
+      "sources": [
+        {
+          "doc": "ASME B31.3",
+          "ref": "Pipe welding procedures"
+        },
+        {
+          "doc": "Miller RMD/Lincoln STT product literature",
+          "ref": "Modified short-arc for pipe roots"
+        }
+      ]
+    },
+    {
+      "id": "D-15.01-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GTAW, what polarity is used for welding aluminum?",
+      "choices": {
+        "A": "DCEN (electrode negative)",
+        "B": "DCEP (electrode positive)",
+        "C": "AC (alternating current) with high-frequency stabilization",
+        "D": "Any polarity"
+      },
+      "correct": "C",
+      "explanation": "GTAW aluminum requires AC. The electrode-negative half-cycle penetrates and preserves the tungsten; the electrode-positive half-cycle provides cathodic cleaning (removes the tenacious aluminum oxide from the puddle surface). Balance and frequency of the AC are adjustable on modern inverters to optimize cleaning vs penetration. DCEP (B) melts tungsten. DCEN (A) is used for stainless and mild steel.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "GTAW aluminum \u2014 AC parameters"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Polarity selection"
+        }
+      ]
+    },
+    {
+      "id": "D-15.01-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "AWS A5.12 GTAW tungsten designation EWTh-2 refers to what?",
+      "choices": {
+        "A": "Pure tungsten",
+        "B": "Lanthanated",
+        "C": "Zirconiated",
+        "D": "2% thoriated tungsten (2% thorium oxide) \u2014 historically the most common DC electrode; superior arc starting and current-carrying capacity vs pure"
+      },
+      "correct": "D",
+      "explanation": "AWS A5.12: EWP = pure (green), EWTh-2 = 2% thoriated (red), EWCe-2 = 2% ceriated (orange), EWLa-1/1.5/2 = 1/1.5/2% lanthanated (black/gold/blue), EWZr-1 = zirconiated (brown). Thoriated has been the DC workhorse but is slightly radioactive; ceriated and lanthanated are now preferred replacements with similar or better performance and no radiation concern.",
+      "sources": [
+        {
+          "doc": "AWS A5.12/A5.12M",
+          "ref": "GTAW tungsten electrode classification"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Tungsten selection"
+        }
+      ]
+    },
+    {
+      "id": "D-15.01-Q003",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.01",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For DCEN GTAW of stainless steel with 2.4 mm (3/32\") EWTh-2 tungsten, tip geometry is typically:",
+      "choices": {
+        "A": "Balled (round)",
+        "B": "Chisel edge",
+        "C": "Pointed with a taper of approximately 2\u00d7 diameter (angle ~30\u00b0), truncated slightly to a small flat",
+        "D": "No specific shape"
+      },
+      "correct": "C",
+      "explanation": "DCEN tungsten grinding: pointed taper 2\u00d7 diameter (about 30\u00b0 included angle for 2.4 mm), with a small flat (truncated tip) to prevent point melting under current. Grind marks parallel to the electrode axis (longitudinal), not perpendicular (transverse marks focus current at the tip and cause instability). For AC on aluminum, ball or truncate the tip.",
+      "sources": [
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Tungsten grinding for DC/AC"
+        },
+        {
+          "doc": "Lincoln GTAW Guide",
+          "ref": "Tip geometry effects on arc stability"
+        }
+      ]
+    },
+    {
+      "id": "D-15.02-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For GTAW of carbon and stainless steels, what shielding gas is standard?",
+      "choices": {
+        "A": "100% CO2",
+        "B": "100% argon (Ar-He mixes for thicker stainless or aluminum)",
+        "C": "75Ar/25CO2",
+        "D": "Nitrogen"
+      },
+      "correct": "B",
+      "explanation": "GTAW shielding: 100% argon is the workhorse for carbon and stainless. Helium added (25\u201375%) increases arc energy for thicker material or higher travel speed. Pure helium is rarely used (harder starting). Never CO2 or oxygen-bearing gases \u2014 they oxidize the tungsten and contaminate the puddle. Backing/purge gas for open-root stainless is typically argon or nitrogen (with H2 optional for austenitics).",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "GTAW shielding for stainless"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Shielding gas selection"
+        }
+      ]
+    },
+    {
+      "id": "D-15.02-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "GTAW of stainless pipe with open root requires a back-purge. If the purge is not adequate, what defect appears on the ID (root) surface?",
+      "choices": {
+        "A": "Undercut",
+        "B": "Nothing visible",
+        "C": "Porosity only",
+        "D": "Heat tint from sugar/sugaring \u2014 excessive oxidation of the hot molten root by ambient air, ranging from straw tint to heavy black scale. The oxidized surface has depleted chromium and corrodes preferentially in service"
+      },
+      "correct": "D",
+      "explanation": "Without purge, the hot stainless root oxidizes rapidly \u2014 light straw (thin, may be acceptable in some services), yellow, red, blue, purple, and finally black (heaviest, rejectable in most). AWS D18.2 and ASTM A967 include colour standards for acceptable heat tint. Sugaring (heavy oxidation) is always rejectable. Prevention: adequate purge (typically 5\u201310 volume changes before welding, 1\u20132 L/min during) with argon or nitrogen.",
+      "sources": [
+        {
+          "doc": "AWS D18.2",
+          "ref": "Heat tint acceptance in stainless"
+        },
+        {
+          "doc": "Nickel Institute 11007",
+          "ref": "Purging practices"
+        }
+      ]
+    },
+    {
+      "id": "D-15.02-Q003",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.02",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which AWS spec covers GTAW filler rods for stainless steel (e.g. ER308L, ER316L)?",
+      "choices": {
+        "A": "AWS A5.1",
+        "B": "AWS A5.9 (bare stainless steel rods and electrodes)",
+        "C": "AWS A5.10 (aluminum)",
+        "D": "AWS A5.20 (FCAW carbon)"
+      },
+      "correct": "B",
+      "explanation": "AWS A5.9 covers bare stainless steel wire and rod for GMAW, GTAW, and SAW. Common: ER308L (for 304), ER316L (for 316), ER309L (for dissimilar or overlay onto carbon), ER347 (stabilized). 'L' = low-carbon (<0.03%) for sensitization control.",
+      "sources": [
+        {
+          "doc": "AWS A5.9/A5.9M",
+          "ref": "Stainless bare filler classification"
+        }
+      ]
+    },
+    {
+      "id": "D-15.03-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.03",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A GTAW weld on stainless shows dark inclusions along the toe and reduced ductility. On inspection the tungsten tip is contaminated. What is the most likely error?",
+      "choices": {
+        "A": "Shielding gas too high",
+        "B": "Wrong colour tungsten",
+        "C": "The tungsten touched the filler rod or workpiece during welding, transferring tungsten into the puddle and, conversely, transferring molten metal onto the tungsten. Fix: regrind or replace tungsten, and maintain correct arc gap (~1\u00d7 electrode diameter)",
+        "D": "Amperage too low"
+      },
+      "correct": "C",
+      "explanation": "Tungsten inclusions come from contact with the puddle or filler rod. They act as hard particles in the weld, initiating cracks and reducing fatigue life. AWS D1.6 and ASME IX include tungsten inclusions as rejectable defects on radiography. Prevention: never touch the tungsten to the puddle (dip-and-lift filler technique), maintain proper arc gap, use HF or lift-arc start rather than scratch start.",
+      "sources": [
+        {
+          "doc": "AWS D1.6",
+          "ref": "GTAW weld defects \u2014 tungsten inclusions"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Tungsten contamination prevention"
+        }
+      ]
+    },
+    {
+      "id": "D-15.03-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.03",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GTAW on 1.6 mm (16 gauge) stainless sheet, DCEN, argon shielding at 8 L/min, what is a typical current setting range?",
+      "choices": {
+        "A": "10 A",
+        "B": "No current \u2014 use gas only",
+        "C": "300 A",
+        "D": "50\u201380 A (rule of thumb: ~40\u201350 A per mm of thickness for stainless GTAW)"
+      },
+      "correct": "D",
+      "explanation": "Stainless GTAW rule of thumb: ~40\u201350 A per mm of thickness. 1.6 mm \u2192 65\u201380 A. Rules of thumb are starting points; final value tuned by observing puddle behaviour. Too low won't establish a good puddle; too high burns through thin sheet and causes wide HAZ. Manufacturer parameter charts refine these values by joint type and technique.",
+      "sources": [
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Current selection for stainless"
+        },
+        {
+          "doc": "Lincoln GTAW Guide",
+          "ref": "Parameters for thin stainless"
+        }
+      ]
+    },
+    {
+      "id": "D-15.04-Q001",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "application",
+      "difficulty": "hard",
+      "stem": "A GTAW 6G qualification pipe test on 6\" schedule 80 carbon steel is being welded with ER70S-2 root, then hot pass, fill, and cap. What is the primary purpose of the 'walking-the-cup' technique in the fill and cap passes?",
+      "choices": {
+        "A": "Just tradition",
+        "B": "The gas cup rests on and rocks between the joint sidewalls, giving the welder a consistent stand-off, arc length, weave rhythm, and hands-free stability \u2014 critical for out-of-position pipe work",
+        "C": "It's the only allowed technique",
+        "D": "To scratch-start the arc"
+      },
+      "correct": "B",
+      "explanation": "'Walking the cup' means the gas cup physically rides on the joint sidewalls or previous bead and rocks side to side as the welder advances. Advantages: constant arc length (cup stand-off is fixed by geometry), consistent oscillation rate, less operator fatigue for long pipe welds, and reliable technique in 5G/6G out-of-position work. Freehand is used where geometry doesn't permit cup contact.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "GTAW pipe welding techniques"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Walk-the-cup technique"
+        }
+      ]
+    },
+    {
+      "id": "D-15.04-Q002",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GTAW, 'pulsed current' means:",
+      "choices": {
+        "A": "The current alternates between a high peak (melting) and a low background (freezing/solidifying) at a controlled rate \u2014 used to control heat input, reduce distortion on thin material, and give an overlapping-dime bead appearance",
+        "B": "AC current",
+        "C": "The current oscillates in the mains supply",
+        "D": "Random current spikes"
+      },
+      "correct": "A",
+      "explanation": "Pulsed GTAW: peak current for melting, background for cooling. Frequency, peak, background, and duty cycle are adjustable. Benefits: lower total heat input than continuous current at the same peak, less distortion on thin sections, better control on aluminum and thin stainless, and the characteristic overlapping-ripple bead. Modern inverter power sources make pulsed GTAW routine.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GTAW pulsed current"
+        },
+        {
+          "doc": "Miller Dynasty/Syncrowave Manual",
+          "ref": "Pulse parameters"
+        }
+      ]
+    },
+    {
+      "id": "D-15.04-Q003",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For GTAW aluminum, why is 'cathodic cleaning' important?",
+      "choices": {
+        "A": "It's not important",
+        "B": "During the electrode-positive half of AC, ion bombardment breaks up and removes the tenacious aluminum-oxide film that would otherwise prevent fusion \u2014 this cleaning is why AC (not DCEN) is used for aluminum",
+        "C": "It cleans the tungsten",
+        "D": "It removes shielding gas"
+      },
+      "correct": "B",
+      "explanation": "Aluminum surface is always covered by Al2O3 (aluminum oxide) with a melting point (~2050\u00b0C) far above aluminum (660\u00b0C). Without removal, this oxide prevents fusion. During DCEP portion of AC, positive ions bombard the workpiece and mechanically disrupt the oxide layer \u2014 visible as the frosty 'clean band' beside the weld. On modern inverters, AC balance controls the ratio of cleaning to penetration.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "GTAW aluminum \u2014 oxide removal"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "Cathodic cleaning explanation"
+        }
+      ]
+    },
+    {
+      "id": "D-15.04-Q004",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GTAW of nickel alloys (e.g. Inconel 625 with ERNiCrMo-3), which technique adjustments compared to stainless are typical?",
+      "choices": {
+        "A": "None \u2014 treat exactly like stainless",
+        "B": "No filler rod",
+        "C": "Higher amperage and heavy weave",
+        "D": "Lower travel speed, tighter arc gap, cleaner joint prep, and use small stringer beads with limited weave \u2014 nickel alloys are 'sluggish' (short puddle life, poor wetting) and more sensitive to impurities than stainless"
+      },
+      "correct": "D",
+      "explanation": "Nickel alloys weld sluggishly compared to stainless: puddle wets poorly, freezes fast, and demands tight technique. Standard practice: meticulous joint cleaning (grease/paint/scale = defects), stringer beads with slight weave (max ~2\u00d7 wire diameter), tight arc, matched filler (ERNiCrMo-3 for Inconel 625), and interpass < 100\u00b0C for many alloys. Contamination with sulfur or lead causes hot cracking.",
+      "sources": [
+        {
+          "doc": "Nickel Institute Publication 11 007",
+          "ref": "Welding nickel alloys"
+        },
+        {
+          "doc": "Special Metals Inconel 625 Weldability",
+          "ref": "GTAW technique for Inconel"
+        }
+      ]
+    },
+    {
+      "id": "D-16.01-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In SAW (submerged arc welding), what does 'submerged' refer to?",
+      "choices": {
+        "A": "The welder wears a diving suit",
+        "B": "The wire is under the workpiece",
+        "C": "The workpiece is under water",
+        "D": "The arc is completely covered ('submerged') under a blanket of granular flux fed onto the joint ahead of the welding wire \u2014 no arc is visible during welding"
+      },
+      "correct": "D",
+      "explanation": "SAW deposits granular flux ahead of the wire; the arc burns beneath the flux blanket. This gives high deposition rates (no radiation losses, no atmospheric losses), no visible arc, minimal fume/spatter, and high current tolerance. Trade-off: mechanized/automated only (flat/horizontal groove and fillet), no visibility of the arc for the operator.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW process description"
+        },
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "SAW principles"
+        }
+      ]
+    },
+    {
+      "id": "D-16.01-Q002",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.01",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "AWS A5.17 covers SAW wire and flux for what base material?",
+      "choices": {
+        "A": "Aluminum",
+        "B": "Copper",
+        "C": "Stainless steel",
+        "D": "Carbon steel (A5.23 for low-alloy, A5.9 for stainless bare, A5.14 for nickel bare)"
+      },
+      "correct": "D",
+      "explanation": "A5.17: SAW carbon steel wire (EL/EM/EH prefixes) and matching flux. A5.23: SAW low-alloy. A5.9: SAW stainless (bare wire, same as GTAW rods, classified by nominal deposit composition). Flux/wire pairing determines deposited chemistry \u2014 always specify both.",
+      "sources": [
+        {
+          "doc": "AWS A5.17/A5.17M",
+          "ref": "SAW carbon steel wire and flux"
+        }
+      ]
+    },
+    {
+      "id": "D-16.02-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "SAW deposition rate is typically much higher than SMAW because:",
+      "choices": {
+        "A": "SAW uses more expensive equipment",
+        "B": "SAW uses smaller electrodes",
+        "C": "SAW is done underwater",
+        "D": "SAW runs at higher currents (500\u20131000+ A vs 200 A typical SMAW), has near-100% deposition efficiency, and eliminates arc radiation losses since the arc is submerged. Deposition rates of 5\u201320 kg/h vs 1\u20133 kg/h for SMAW"
+      },
+      "correct": "D",
+      "explanation": "SAW's advantages come from (1) very high current handling (submerged arc allows currents that would radiate away most heat if exposed), (2) minimal spatter/stub loss (efficiency 95%+ vs SMAW ~60%), and (3) mechanized consistency. Typical deposition: 5\u201310 kg/h single-wire, 10\u201320+ kg/h tandem or twin-wire. This is why SAW dominates thick-plate pressure vessel and structural work.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW deposition rates"
+        },
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "Productivity comparison"
+        }
+      ]
+    },
+    {
+      "id": "D-16.03-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "SAW fluxes are broadly classified as:",
+      "choices": {
+        "A": "Wet and dry",
+        "B": "Fused (glassy, low-moisture, less influence on chemistry) and Bonded/agglomerated (baked binder, can carry alloys/deoxidizers, more moisture-sensitive)",
+        "C": "Hot and cold",
+        "D": "Fast and slow"
+      },
+      "correct": "B",
+      "explanation": "Two main flux types. Fused (Type F): pre-melted, ground \u2014 hard, glassy particles, low moisture absorption, easy handling. Bonded/agglomerated (Type B or Type A): raw ingredients bonded with a silicate binder and baked \u2014 can include alloy additions and deoxidizers, but more moisture-sensitive (require drying per manufacturer instructions, e.g. 300\u00b0C for 1 hour). Correct flux storage and re-drying is essential for hydrogen control.",
+      "sources": [
+        {
+          "doc": "AWS A5.17",
+          "ref": "SAW flux classification"
+        },
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "Flux types and handling"
+        }
+      ]
+    },
+    {
+      "id": "D-16.04-Q001",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.04",
+      "type": "critical-thinking",
+      "difficulty": "medium",
+      "stem": "A SAW weld on a pressure vessel shell shows excessive convexity and hard slag that will not detach easily. Which parameter adjustment is most likely to help?",
+      "choices": {
+        "A": "Increase travel speed",
+        "B": "Change to a different metal",
+        "C": "Adjust voltage \u2014 voltage low relative to current gives narrow, ropy, convex beads with tight-adhering slag. Increasing voltage widens the bead and improves slag release; also check flux depth and correct wire-to-flux ratio",
+        "D": "Add more flux"
+      },
+      "correct": "C",
+      "explanation": "SAW bead profile is voltage-dependent. Low voltage = narrow, convex, ropy bead with tight slag. Correct voltage = flatter bead, slag lifts freely (self-releasing on cooling). Excess voltage = wide flat bead, undercut, and potentially cracking. Flux depth also matters: too shallow allows arc breakthrough; too deep chokes the arc and worsens bead shape.",
+      "sources": [
+        {
+          "doc": "Lincoln SAW Handbook",
+          "ref": "Bead shape vs voltage"
+        },
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW parameter effects"
+        }
+      ]
+    },
+    {
+      "id": "D-13.02-Q006",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For SMAW pipe root pass with E6010 downhill, typical current polarity is:",
+      "choices": {
+        "A": "AC only",
+        "B": "DCEP (electrode positive)",
+        "C": "DCEN (electrode negative)",
+        "D": "Any"
+      },
+      "correct": "B",
+      "explanation": "E6010 requires DCEP for its characteristic deep-penetrating arc. Cellulose coating decomposes to form CO/CO2/H2 shielding; DCEP concentrates arc heat at the tip for the fast-freezing puddle needed on open-root pipe.",
+      "sources": [
+        {
+          "doc": "AWS A5.1",
+          "ref": "E6010 polarity"
+        },
+        {
+          "doc": "API 1104",
+          "ref": "Pipeline root technique"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q005",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In SMAW, what is 'incomplete fusion'?",
+      "choices": {
+        "A": "Weld metal did not fuse completely with the base metal or previous bead (lack of bonding at the interface) \u2014 a rejectable defect on almost all codes",
+        "B": "The weld colour doesn't match",
+        "C": "The weld is too small",
+        "D": "The weld is too shiny"
+      },
+      "correct": "A",
+      "explanation": "Incomplete fusion (formerly 'lack of fusion' or 'cold lap') = the weld metal did not achieve metallurgical bonding with the base metal or a prior pass. Causes: insufficient heat, wrong angle (electrode pointing at previous bead not sidewall), arc directed away from cold metal, oxide/scale not cleaned between passes. Detected by UT, RT, or destructive testing. AWS D1.1 and CSA W59 reject any incomplete fusion on the joint.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 6",
+          "ref": "Weld defect definitions"
+        },
+        {
+          "doc": "CSA W59 Clause 11",
+          "ref": "Acceptance criteria"
+        }
+      ]
+    },
+    {
+      "id": "D-14.04-Q005",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "Which defect appears as a linear crack originating at the weld crater when the arc is broken abruptly?",
+      "choices": {
+        "A": "Crater crack",
+        "B": "Undercut",
+        "C": "Porosity",
+        "D": "Sugaring"
+      },
+      "correct": "A",
+      "explanation": "Crater cracks form when the weld pool solidifies from all sides toward the crater, concentrating shrinkage stress at the last liquid. Cracks often radiate in a star pattern. Prevention: use a crater-fill routine (taper current down as you back into the crater, or restart the arc to fill it), or grind out the crater and cap it. Some codes prohibit crater cracks on production welds entirely.",
+      "sources": [
+        {
+          "doc": "AWS D1.1",
+          "ref": "Crater cracks \u2014 acceptance and prevention"
+        },
+        {
+          "doc": "Miller/Lincoln GMAW Guides",
+          "ref": "Crater-fill function"
+        }
+      ]
+    },
+    {
+      "id": "D-14.04-Q006",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "A GMAW weld shows convex 'stacked coin' appearance and lack of penetration. Voltage was set 4 V lower than the WPS. Root cause?",
+      "choices": {
+        "A": "Voltage too low \u2014 short-circuit transfer with excessive shorts per second, cold puddle, narrow convex bead, and reduced penetration. Correct: increase voltage to WPS value or slightly above",
+        "B": "Voltage too high",
+        "C": "Amperage too high",
+        "D": "Gas flow too high"
+      },
+      "correct": "A",
+      "explanation": "In short-circuit GMAW, voltage sets arc length and shorts/second rate. Voltage too low: many shorts per second, cold flat puddle, ropy convex bead, poor penetration. Voltage too high: fewer shorts, splashy transfer, more spatter. Optimum voltage produces smooth crackling sound and even bead. WPS voltage is set for a reason \u2014 verify polarity, contact tip, and grounding first, but assume WPS parameters are correct.",
+      "sources": [
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Short-arc voltage tuning"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Bead shape diagnostics"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "In GMAW drive rolls, what tension setting is generally correct?",
+      "choices": {
+        "A": "Maximum tension always",
+        "B": "Zero tension",
+        "C": "Just enough to feed the wire without slipping, but not so much it deforms the wire or crushes it \u2014 a common test is to feed wire against a solid object; the drive rolls should slip before the wire deforms",
+        "D": "Set by weight of the spool"
+      },
+      "correct": "C",
+      "explanation": "Excess tension: deforms/flattens wire (increases friction in liner, hastens liner and tip wear, causes feed problems). Insufficient tension: slippage, erratic feed. Correct test: feed wire against a firm surface (e.g. brick); rolls should slip before wire deforms/coils. This is manufacturer-specified in all GMAW machine manuals.",
+      "sources": [
+        {
+          "doc": "Miller GMAW Handbook",
+          "ref": "Drive roll tension setting"
+        },
+        {
+          "doc": "Lincoln GMAW Guide",
+          "ref": "Wire feeder setup"
+        }
+      ]
+    },
+    {
+      "id": "D-13.04-Q006",
+      "mwa": "D",
+      "task": "D-13",
+      "sub_task": "D-13.04",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "SMAW acceptable undercut per AWS D1.1 (structural) for statically loaded connections is typically:",
+      "choices": {
+        "A": "Any depth",
+        "B": "\u2264 1 mm depth generally; for material \u2265 25 mm, up to 2 mm may be acceptable when the length is limited per code \u2014 always verify current edition and specific joint type",
+        "C": "5 mm always",
+        "D": "10 mm"
+      },
+      "correct": "B",
+      "explanation": "AWS D1.1 clause 6 gives detailed acceptance criteria. Undercut general limit for statically loaded is ~1 mm (1/32\"); for thicker material some allowances exist. Cyclically loaded (fatigue) service has stricter limits. Always look up the current edition's table and the exact joint/loading category before signing off.",
+      "sources": [
+        {
+          "doc": "AWS D1.1 Clause 6.9",
+          "ref": "Undercut acceptance criteria"
+        },
+        {
+          "doc": "CSA W59 Clause 11",
+          "ref": "Undercut limits"
+        }
+      ]
+    },
+    {
+      "id": "D-15.04-Q005",
+      "mwa": "D",
+      "task": "D-15",
+      "sub_task": "D-15.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "What is 'HF start' (high-frequency start) in GTAW?",
+      "choices": {
+        "A": "A high-voltage, high-frequency spark jumps the gap between electrode and workpiece, ionizing the gas so the main arc can strike without the tungsten touching the work \u2014 preserves the tungsten and prevents contamination",
+        "B": "The welder starts high in the air",
+        "C": "Fast startup time on the machine",
+        "D": "A radio in the welding hood"
+      },
+      "correct": "A",
+      "explanation": "HF start creates an ionized path across the arc gap so the main arc initiates without tungsten-to-work contact. Prevents tungsten inclusions and contamination that come from scratch/touch starts. Note: HF radiates radio-frequency noise and can interfere with electronics \u2014 some workplaces prefer 'lift-arc' start (brief contact with a controlled release) instead for that reason.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "GTAW arc starting methods"
+        },
+        {
+          "doc": "Miller GTAW Handbook",
+          "ref": "HF vs lift-arc starting"
+        }
+      ]
+    },
+    {
+      "id": "D-14.02-Q004",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.02",
+      "type": "application",
+      "difficulty": "medium",
+      "stem": "For GMAW spray transfer on mild steel with 1.2 mm (0.045 in) ER70S-6 wire, which shielding gas is required to actually achieve spray transfer?",
+      "choices": {
+        "A": "100% CO2",
+        "B": "Nitrogen",
+        "C": "100% helium",
+        "D": "Argon-rich mixture with at least ~80% argon (e.g. 90Ar/10CO2 or 98Ar/2O2) so the arc column can sustain axial spray"
+      },
+      "correct": "D",
+      "explanation": "True axial spray transfer requires an argon-rich shielding (typically \u2265 80% Ar). Pure CO2 (A) forces globular transfer regardless of parameters. Helium (C) or nitrogen (B) are not standard for carbon-steel GMAW. Common spray-capable mixes: 90/10, 95/5, and 98Ar/2O2. Above the transition current (which depends on wire diameter, e.g. ~220 A for 0.9 mm and ~275 A for 1.2 mm), transfer becomes axial spray with fine droplets.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "Spray transfer shielding requirements"
+        },
+        {
+          "doc": "Praxair/Linde Shielding Gas Guide",
+          "ref": "Ar/CO2 transition currents"
+        }
+      ]
+    },
+    {
+      "id": "D-14.03-Q005",
+      "mwa": "D",
+      "task": "D-14",
+      "sub_task": "D-14.03",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "For GMAW of aluminum, which wire feed system is generally preferred to avoid feeding problems (bird-nesting)?",
+      "choices": {
+        "A": "Standard push feeder with steel liner",
+        "B": "No feeder",
+        "C": "Push-pull feeder or spool gun with Teflon/nylon liner and U-groove aluminum-specific drive rolls",
+        "D": "Gravity feed"
+      },
+      "correct": "C",
+      "explanation": "Aluminum wire is soft and buckles under drive-roll pressure in a long cable. Push-only systems > 3\u20134 m usually bird-nest. Push-pull feeders (small motor at the gun assists the main feeder) or spool guns (spool mounted on the gun itself) eliminate long push distances. Liner must be low-friction (Teflon or nylon), and drive rolls use U-groove (not V-groove or knurled) to grip without deforming the wire. Standard steel liner on push feeder (A) causes rapid bird-nesting on aluminum.",
+      "sources": [
+        {
+          "doc": "AWS D1.2",
+          "ref": "Aluminum GMAW equipment"
+        },
+        {
+          "doc": "Miller MigGun/SpoolMate documentation",
+          "ref": "Aluminum feeding configurations"
+        }
+      ]
+    },
+    {
+      "id": "D-16.04-Q002",
+      "mwa": "D",
+      "task": "D-16",
+      "sub_task": "D-16.04",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "SAW is typically limited to which welding positions?",
+      "choices": {
+        "A": "All positions",
+        "B": "Flat groove (1G) and horizontal fillet (2F) \u2014 the flux blanket must sit on the joint, so out-of-position welding is generally not possible",
+        "C": "Overhead only",
+        "D": "Vertical only"
+      },
+      "correct": "B",
+      "explanation": "SAW's granular flux must rest on the joint under gravity, so it is confined to flat and near-flat positions: 1G groove, 1F fillet, 2F horizontal fillet, and pipe in the 1G rolled position. Specialty 'strip' cladding and circumferential vessel welding use rotating positioners to keep the joint horizontal. True out-of-position SAW does not exist.",
+      "sources": [
+        {
+          "doc": "AWS Handbook Vol 2",
+          "ref": "SAW position limitations"
+        }
+      ]
+    }
+  ]
+}
