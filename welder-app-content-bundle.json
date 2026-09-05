@@ -3,7 +3,7 @@
     "schema": "redseal-ready.content-bundle.v1",
     "trade": "welder",
     "jurisdiction": "Canada (Alberta AIT + Red Seal)",
-    "generated_at": "2026-09-05T13:30:48.748887+00:00",
+    "generated_at": "2026-09-05T22:46:55.447260+00:00",
     "source_repo": "github.com/Jacalv01/redseal-ready",
     "lesson_count": 64,
     "question_count": 169,
@@ -24,7 +24,10 @@
       "Every technical claim cited to allowed sources (RSOS, AIT, CSA W47.1/W59/B51, AWS, CWB, Modern Welding, Miller/Lincoln/ESAB/Hypertherm/ArcAir, TWI, ASME, WHMIS)",
       "No exam questions reconstructed from real Red Seal exam (protected content)",
       "No fabricated specs without cited source"
-    ]
+    ],
+    "calculator_count": 6,
+    "exam_trap_count": 35,
+    "visual_asset_count": 5
   },
   "index": [
     {
@@ -570,6 +573,66 @@
       "exam_weight_pct": 44,
       "exam_questions_on_test": 54,
       "questions": 57
+    },
+    {
+      "kind": "calculator",
+      "id": "bend-allowance",
+      "title": "Sheet Metal Bend Allowance"
+    },
+    {
+      "kind": "calculator",
+      "id": "deposit-rate",
+      "title": "Filler Consumption & Arc Time"
+    },
+    {
+      "kind": "calculator",
+      "id": "heat-input",
+      "title": "Weld Heat Input"
+    },
+    {
+      "kind": "calculator",
+      "id": "hex-flats-corners",
+      "title": "Hexagon \u2014 Across Flats \u2194 Across Corners"
+    },
+    {
+      "kind": "calculator",
+      "id": "mitre-angle",
+      "title": "Pipe Mitre Elbow Angle"
+    },
+    {
+      "kind": "calculator",
+      "id": "sling-load",
+      "title": "Sling Load per Leg"
+    },
+    {
+      "kind": "exam_traps_collection",
+      "title": "Common Red Seal Welder Exam Traps",
+      "count": 35
+    },
+    {
+      "kind": "visual_asset",
+      "id": "gmaw-transfer-modes",
+      "path": "assets/visuals/gmaw-transfer-modes.svg"
+    },
+    {
+      "kind": "visual_asset",
+      "id": "joint-types",
+      "path": "assets/visuals/joint-types.svg"
+    },
+    {
+      "kind": "visual_asset",
+      "id": "polarity-dcep-dcen",
+      "path": "assets/visuals/polarity-dcep-dcen.svg"
+    },
+    {
+      "kind": "visual_asset",
+      "id": "smaw-arc-anatomy",
+      "path": "assets/visuals/smaw-arc-anatomy.svg"
+    },
+    {
+      "kind": "visual_asset",
+      "id": "weld-positions-plate",
+      "path": "assets/visuals/weld-positions-plate.svg"
     }
   ],
   "lessons": {
@@ -16395,5 +16458,1029 @@
         }
       ]
     }
-  }
+  },
+  "calculators": [
+    {
+      "id": "bend-allowance",
+      "title": "Sheet Metal Bend Allowance",
+      "subtitle": "Length of metal consumed inside a press-brake bend",
+      "formula_display": "BA = \u03b8 \u00d7 (R + K \u00d7 T)  (\u03b8 in radians)",
+      "formula_expr": "(angle_deg * PI / 180) * (R + K * T)",
+      "inputs": [
+        {
+          "id": "T",
+          "label": "Material thickness",
+          "units": "mm",
+          "type": "number",
+          "min": 0.5,
+          "max": 25,
+          "step": 0.1,
+          "default": 10
+        },
+        {
+          "id": "R",
+          "label": "Inside bend radius",
+          "units": "mm",
+          "type": "number",
+          "min": 0.5,
+          "max": 100,
+          "step": 0.5,
+          "default": 10,
+          "help": "Rule of thumb: R \u2248 T for mild steel, R \u2248 2T for aluminum"
+        },
+        {
+          "id": "angle_deg",
+          "label": "Bend angle",
+          "units": "\u00b0",
+          "type": "number",
+          "min": 1,
+          "max": 180,
+          "step": 1,
+          "default": 90
+        },
+        {
+          "id": "K",
+          "label": "K-factor (neutral-axis position)",
+          "units": "ratio",
+          "type": "select",
+          "default": 0.44,
+          "options": [
+            {
+              "value": 0.33,
+              "label": "0.33 \u2014 very tight bend, R < T"
+            },
+            {
+              "value": 0.4,
+              "label": "0.40 \u2014 tight bend, R = T (aluminum)"
+            },
+            {
+              "value": 0.44,
+              "label": "0.44 \u2014 standard, R = T (mild steel)"
+            },
+            {
+              "value": 0.5,
+              "label": "0.50 \u2014 generous bend, R > 2T"
+            }
+          ]
+        }
+      ],
+      "output": {
+        "units": "mm",
+        "decimals": 2
+      },
+      "notes": "Flat blank length = length of legs (measured to bend line) + bend allowance. Subtract material stretch on multiple bends. Verify against your press brake's tested values \u2014 K-factor drifts with material batch and tooling.",
+      "citations": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Bend allowance formulas"
+        },
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Sheet metal layout"
+        }
+      ],
+      "linked_lessons": [
+        "period2/section2/topic-b-pattern-development"
+      ],
+      "example": {
+        "inputs": {
+          "T": 10,
+          "R": 10,
+          "angle_deg": 90,
+          "K": 0.44
+        },
+        "expected_output": 22.62
+      }
+    },
+    {
+      "id": "deposit-rate",
+      "title": "Filler Consumption & Arc Time",
+      "subtitle": "How much wire to buy and how long the welding will take",
+      "formula_display": "Purchase = Deposit \u00f7 Efficiency  \u00b7  Arc time = Deposit \u00f7 Deposition rate",
+      "formula_expr": "purchase = deposit_kg / (efficiency_pct / 100); arc_time_h = deposit_kg / rate_kg_per_h",
+      "inputs": [
+        {
+          "id": "deposit_kg",
+          "label": "Deposit weight required",
+          "units": "kg",
+          "type": "number",
+          "min": 0.1,
+          "max": 5000,
+          "step": 0.5,
+          "default": 25,
+          "help": "Calculate from weld cross-section \u00d7 length \u00d7 material density (7.85 g/cm\u00b3 steel, 2.70 aluminum)"
+        },
+        {
+          "id": "efficiency_pct",
+          "label": "Deposition efficiency",
+          "units": "%",
+          "type": "select",
+          "default": 60,
+          "options": [
+            {
+              "value": 55,
+              "label": "SMAW covered electrode \u2014 55%"
+            },
+            {
+              "value": 60,
+              "label": "SMAW average \u2014 60%"
+            },
+            {
+              "value": 65,
+              "label": "SMAW iron-powder (E7024) \u2014 65%"
+            },
+            {
+              "value": 80,
+              "label": "FCAW gas-shielded \u2014 80%"
+            },
+            {
+              "value": 75,
+              "label": "FCAW self-shielded \u2014 75%"
+            },
+            {
+              "value": 90,
+              "label": "GMAW \u2014 90%"
+            },
+            {
+              "value": 95,
+              "label": "GTAW (rod usage) \u2014 95%"
+            },
+            {
+              "value": 98,
+              "label": "SAW \u2014 98%"
+            }
+          ]
+        },
+        {
+          "id": "rate_kg_per_h",
+          "label": "Deposition rate",
+          "units": "kg/hr",
+          "type": "number",
+          "min": 0.5,
+          "max": 30,
+          "step": 0.5,
+          "default": 3,
+          "help": "Typical: SMAW 1\u20133, GTAW 0.5\u20131.5, GMAW short-arc 2\u20134, GMAW spray 4\u20138, FCAW 3\u20137, SAW single-wire 5\u201315"
+        },
+        {
+          "id": "operator_factor_pct",
+          "label": "Operator factor (arc-on / total shift)",
+          "units": "%",
+          "type": "select",
+          "default": 30,
+          "options": [
+            {
+              "value": 20,
+              "label": "20% \u2014 manual SMAW field work"
+            },
+            {
+              "value": 30,
+              "label": "30% \u2014 typical SMAW shop"
+            },
+            {
+              "value": 40,
+              "label": "40% \u2014 FCAW/GMAW shop"
+            },
+            {
+              "value": 60,
+              "label": "60% \u2014 mechanized / SAW"
+            },
+            {
+              "value": 100,
+              "label": "100% \u2014 arc time only, no labour uplift"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "id": "purchase_kg",
+          "label": "Filler to purchase",
+          "units": "kg",
+          "decimals": 1
+        },
+        {
+          "id": "arc_time_h",
+          "label": "Arc-on time",
+          "units": "hr",
+          "decimals": 1
+        },
+        {
+          "id": "labour_h",
+          "label": "Total labour hours (arc time \u00f7 operator factor)",
+          "units": "hr",
+          "decimals": 1
+        }
+      ],
+      "notes": "Buy 10\u201315% more filler than calculated for scrap, spatter, and end-of-spool loss. Operator factor drops fast on out-of-position work and pipe welding. For quoting, ask your shop for actual historical operator factors rather than trusting rules of thumb.",
+      "citations": [
+        {
+          "doc": "Lincoln Electric Procedure Handbook",
+          "ref": "Deposition rates and operator factor tables"
+        },
+        {
+          "doc": "AWS Handbook Vol 1",
+          "ref": "Consumable estimating"
+        }
+      ],
+      "linked_lessons": [
+        "period2/section2/topic-e-project-estimating"
+      ]
+    },
+    {
+      "id": "heat-input",
+      "title": "Weld Heat Input",
+      "subtitle": "kJ per mm \u2014 controls HAZ hardness, distortion, and hydrogen retention",
+      "formula_display": "HI = (V \u00d7 A \u00d7 60) / (Travel Speed \u00d7 1000)",
+      "formula_expr": "(V * A * 60) / (S * 1000)",
+      "inputs": [
+        {
+          "id": "V",
+          "label": "Arc voltage",
+          "units": "V",
+          "type": "number",
+          "min": 10,
+          "max": 45,
+          "step": 0.5,
+          "default": 24,
+          "help": "Typical: SMAW 20\u201330, GMAW short-arc 16\u201322, GMAW spray 26\u201334, GTAW 8\u201320, SAW 26\u201340"
+        },
+        {
+          "id": "A",
+          "label": "Welding current",
+          "units": "A",
+          "type": "number",
+          "min": 20,
+          "max": 1200,
+          "step": 5,
+          "default": 150,
+          "help": "Read from the machine display or a clamp meter on the work lead"
+        },
+        {
+          "id": "S",
+          "label": "Travel speed",
+          "units": "mm/min",
+          "type": "number",
+          "min": 30,
+          "max": 1500,
+          "step": 10,
+          "default": 200,
+          "help": "Time a known length of bead. Speed = length \u00f7 time."
+        }
+      ],
+      "output": {
+        "units": "kJ/mm",
+        "decimals": 2,
+        "bands": [
+          {
+            "max": 0.8,
+            "label": "Low",
+            "color": "blue",
+            "note": "Fast cooling \u2014 may need preheat on higher-carbon or thicker steels"
+          },
+          {
+            "max": 2.5,
+            "label": "Typical",
+            "color": "green",
+            "note": "Common range for SMAW/GMAW/FCAW on structural steel"
+          },
+          {
+            "max": 5.0,
+            "label": "High",
+            "color": "yellow",
+            "note": "Larger HAZ, more distortion \u2014 verify WPS allows it"
+          },
+          {
+            "max": 999,
+            "label": "Very high",
+            "color": "red",
+            "note": "Typical of SAW or heavy multi-pass \u2014 check WPS max heat input"
+          }
+        ]
+      },
+      "notes": "Some codes (ASME IX, CSA W59) require heat input tracking as an essential variable, especially on quenched-and-tempered or high-strength low-alloy steels. Exceeding the qualified HI range invalidates the WPS.",
+      "citations": [
+        {
+          "doc": "CSA W59 Clause 5.7",
+          "ref": "Heat input calculation"
+        },
+        {
+          "doc": "AWS D1.1 Annex",
+          "ref": "Heat input formula"
+        }
+      ],
+      "linked_lessons": [
+        "period1/section3/topic-a-smaw-equipment",
+        "period2/section3/topic-a-smaw-groove-welds-mild-steel"
+      ],
+      "example": {
+        "inputs": {
+          "V": 24,
+          "A": 150,
+          "S": 200
+        },
+        "expected_output": 1.08
+      }
+    },
+    {
+      "id": "hex-flats-corners",
+      "title": "Hexagon \u2014 Across Flats \u2194 Across Corners",
+      "subtitle": "Convert between hex dimensioning conventions",
+      "formula_display": "C = F / cos(30\u00b0) = F \u00d7 2/\u221a3   \u00b7   F = C \u00d7 cos(30\u00b0) = C \u00d7 \u221a3/2",
+      "modes": [
+        {
+          "id": "F_to_C",
+          "label": "Across flats \u2192 Across corners",
+          "input": {
+            "id": "F",
+            "label": "Across flats (F)",
+            "units_selectable": [
+              "mm",
+              "in"
+            ],
+            "default": 200,
+            "units": "mm"
+          },
+          "output": {
+            "id": "C",
+            "label": "Across corners (C)",
+            "formula_expr": "F / cos(30 * PI / 180)",
+            "decimals": 2
+          }
+        },
+        {
+          "id": "C_to_F",
+          "label": "Across corners \u2192 Across flats",
+          "input": {
+            "id": "C",
+            "label": "Across corners (C)",
+            "units_selectable": [
+              "mm",
+              "in"
+            ],
+            "default": 231,
+            "units": "mm"
+          },
+          "output": {
+            "id": "F",
+            "label": "Across flats (F)",
+            "formula_expr": "C * cos(30 * PI / 180)",
+            "decimals": 2
+          }
+        }
+      ],
+      "notes": "Structural drawings can specify a hex bar/nut/head by either dimension depending on the drafter. Always confirm which convention the drawing uses before ordering stock or cutting.",
+      "citations": [
+        {
+          "doc": "Machinery's Handbook",
+          "ref": "Hexagon geometry \u2014 across flats vs corners"
+        }
+      ],
+      "linked_lessons": [
+        "period1/section2/topic-e-geometric-formulas"
+      ],
+      "examples": [
+        {
+          "mode": "F_to_C",
+          "input_value": 200,
+          "expected_output": 230.94
+        },
+        {
+          "mode": "C_to_F",
+          "input_value": 231,
+          "expected_output": 200.05
+        }
+      ]
+    },
+    {
+      "id": "mitre-angle",
+      "title": "Pipe Mitre Elbow Angle",
+      "subtitle": "Cut angle per section for multi-piece mitred elbows",
+      "formula_display": "Mitre angle per cut = Total elbow angle \u00f7 (2 \u00d7 Number of pieces)",
+      "formula_expr": "total_deg / (2 * pieces)",
+      "inputs": [
+        {
+          "id": "total_deg",
+          "label": "Total elbow angle",
+          "units": "\u00b0",
+          "type": "select",
+          "default": 90,
+          "options": [
+            {
+              "value": 45,
+              "label": "45\u00b0 elbow"
+            },
+            {
+              "value": 60,
+              "label": "60\u00b0 elbow"
+            },
+            {
+              "value": 90,
+              "label": "90\u00b0 elbow"
+            },
+            {
+              "value": 135,
+              "label": "135\u00b0 elbow"
+            },
+            {
+              "value": 180,
+              "label": "180\u00b0 return"
+            }
+          ]
+        },
+        {
+          "id": "pieces",
+          "label": "Number of pieces",
+          "units": "",
+          "type": "select",
+          "default": 2,
+          "options": [
+            {
+              "value": 2,
+              "label": "2 pieces (roughest)"
+            },
+            {
+              "value": 3,
+              "label": "3 pieces"
+            },
+            {
+              "value": 4,
+              "label": "4 pieces"
+            },
+            {
+              "value": 6,
+              "label": "6 pieces (smoothest)"
+            }
+          ]
+        }
+      ],
+      "output": {
+        "units": "\u00b0 per cut from perpendicular to pipe axis",
+        "decimals": 2
+      },
+      "notes": "More pieces = smoother flow but more welds. Common practice: 3-piece 90\u00b0 elbow for medium pressure water/oil, 4-piece or standard forged fitting for higher pressure. ASME B31.3 restricts mitre bends on pressurized process piping \u2014 check the code before using.",
+      "citations": [
+        {
+          "doc": "Modern Welding (Bowditch)",
+          "ref": "Pipe layout \u2014 mitre elbow calculation"
+        },
+        {
+          "doc": "ASME B31.3",
+          "ref": "Mitre bend restrictions"
+        }
+      ],
+      "linked_lessons": [
+        "period3/section3/topic-c-piping-drawings"
+      ],
+      "examples": [
+        {
+          "inputs": {
+            "total_deg": 90,
+            "pieces": 2
+          },
+          "expected_output": 22.5
+        },
+        {
+          "inputs": {
+            "total_deg": 90,
+            "pieces": 4
+          },
+          "expected_output": 11.25
+        }
+      ]
+    },
+    {
+      "id": "sling-load",
+      "title": "Sling Load per Leg",
+      "subtitle": "Angle-adjusted tension in each leg of a multi-leg sling",
+      "formula_display": "Load per leg = (Total load \u00f7 Legs) \u00f7 cos(\u03b8/2)",
+      "formula_expr": "(load_kg / legs) / cos((angle_deg / 2) * PI / 180)",
+      "inputs": [
+        {
+          "id": "load_kg",
+          "label": "Total load",
+          "units": "kg",
+          "type": "number",
+          "min": 10,
+          "max": 50000,
+          "step": 10,
+          "default": 500
+        },
+        {
+          "id": "legs",
+          "label": "Number of sling legs",
+          "units": "",
+          "type": "select",
+          "default": 2,
+          "options": [
+            {
+              "value": 1,
+              "label": "1 (vertical)"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "id": "angle_deg",
+          "label": "Included angle between legs at the hook",
+          "units": "\u00b0",
+          "type": "number",
+          "min": 0,
+          "max": 120,
+          "step": 5,
+          "default": 60,
+          "help": "0\u00b0 = legs vertical (parallel) \u2014 no angle penalty. 60\u00b0 = each leg has 30\u00b0 from vertical. Above 60\u00b0 gets dangerous fast."
+        }
+      ],
+      "output": {
+        "units": "kg per leg",
+        "decimals": 1,
+        "bands": [
+          {
+            "max_angle": 30,
+            "color": "green",
+            "note": "Safe angle"
+          },
+          {
+            "max_angle": 60,
+            "color": "yellow",
+            "note": "Standard \u2014 verify WLL"
+          },
+          {
+            "max_angle": 90,
+            "color": "orange",
+            "note": "High tension \u2014 check sling WLL carefully"
+          },
+          {
+            "max_angle": 180,
+            "color": "red",
+            "note": "DO NOT exceed 120\u00b0 included angle per ASME B30.9"
+          }
+        ]
+      },
+      "notes": "Load per leg increases rapidly with angle. At 120\u00b0 included angle, each leg carries roughly the full load. Always compare the calculated leg load to the sling's Working Load Limit (WLL) for the actual hitch used (vertical, choker, or basket).",
+      "citations": [
+        {
+          "doc": "ASME B30.9",
+          "ref": "Slings \u2014 load calculations and angle factors"
+        },
+        {
+          "doc": "Alberta OHS Code Part 21",
+          "ref": "Rigging"
+        }
+      ],
+      "linked_lessons": [
+        "period1/section1/topic-c-climbing-material-handling-rigging-hoisting"
+      ],
+      "example": {
+        "inputs": {
+          "load_kg": 500,
+          "legs": 2,
+          "angle_deg": 60
+        },
+        "expected_output": 288.7
+      }
+    }
+  ],
+  "exam_traps": {
+    "meta": {
+      "title": "Common Red Seal Welder Exam Traps",
+      "description": "Frequent trick patterns on the interprovincial welder exam. Each trap has a wrong assumption, the correct rule, and a memory hook.",
+      "count": 35,
+      "sources": [
+        "Red Seal Occupational Standard for Welder (2023)",
+        "AWS A2.4 \u00b7 A5.1 \u00b7 A5.18 \u00b7 A5.20 \u00b7 A5.9 \u00b7 A5.12 \u00b7 A5.15",
+        "CSA W59 \u00b7 W47.1 \u00b7 W117.2",
+        "Instructor feedback compiled from AIT/NAIT/SAIT program reviews"
+      ]
+    },
+    "traps": [
+      {
+        "id": "polarity-e7018",
+        "topic": "SMAW polarity",
+        "when": "Any question about E7018 or other low-hydrogen SMAW electrode setup",
+        "wrong_assumption": "E7018 runs on any polarity",
+        "correct_rule": "E7018 runs on AC or DCEP (electrode positive) ONLY. Never DCEN.",
+        "memory_hook": "The '8' in E7018 \u2192 8 is even \u2192 electrode POSITIVE (AC or DC+). If an answer says DCEN with E7018, it's wrong.",
+        "linked_questions": [
+          "D-13.01-Q003"
+        ],
+        "linked_lessons": [
+          "period1/section3/topic-a-smaw-equipment"
+        ]
+      },
+      {
+        "id": "polarity-e6010",
+        "topic": "SMAW polarity",
+        "when": "Any question about E6010 (cellulose electrode)",
+        "wrong_assumption": "E6010 can run on AC or DCEN",
+        "correct_rule": "E6010 runs on DCEP ONLY. Not AC, not DCEN.",
+        "memory_hook": "E6010 = deep penetration = electrons hitting the work = DCEP.",
+        "linked_lessons": [
+          "period1/section3/topic-b-mild-steel-electrodes"
+        ]
+      },
+      {
+        "id": "polarity-gtaw-aluminum",
+        "topic": "GTAW polarity",
+        "when": "Any GTAW aluminum question",
+        "wrong_assumption": "GTAW aluminum uses DCEN like stainless",
+        "correct_rule": "GTAW aluminum uses AC. The AC positive half-cycle provides cathodic cleaning that breaks up the aluminum oxide layer.",
+        "memory_hook": "Aluminum oxide melts hotter than aluminum \u2014 needs AC cleaning action to be weldable.",
+        "linked_lessons": [
+          "period2/section4/topic-e-gtaw-on-aluminum"
+        ]
+      },
+      {
+        "id": "polarity-gmaw",
+        "topic": "GMAW polarity",
+        "when": "Any GMAW question",
+        "wrong_assumption": "GMAW uses whatever polarity",
+        "correct_rule": "GMAW uses DCEP for standard steel welding. FCAW self-shielded (T-4, T-6, T-8) uses DCEN. Gas-shielded FCAW (T-1) uses DCEP.",
+        "memory_hook": "Wire process default = DCEP. Only self-shielded FCAW breaks the rule.",
+        "linked_lessons": [
+          "period1/section4/topic-a-wire-feed-equipment-power-sources"
+        ]
+      },
+      {
+        "id": "position-3g",
+        "topic": "Weld position",
+        "when": "Position designation questions",
+        "wrong_assumption": "3G is horizontal groove",
+        "correct_rule": "1G flat groove \u00b7 2G horizontal groove \u00b7 3G VERTICAL groove \u00b7 4G overhead groove. Fillets use F: 1F flat, 2F horizontal, 3F vertical, 4F overhead.",
+        "memory_hook": "Count up like climbing a wall: 1 flat, 2 horizontal, 3 vertical (climbing), 4 overhead (above your head).",
+        "linked_lessons": [
+          "period1/section2/topic-f-joint-and-weld-types"
+        ]
+      },
+      {
+        "id": "position-pipe-5g-6g",
+        "topic": "Pipe welding position",
+        "when": "Pipe qualification questions",
+        "wrong_assumption": "5G is inclined pipe",
+        "correct_rule": "Pipe: 1G ROTATED (roll while welding, always flat), 2G FIXED vertical axis (horizontal weld), 5G FIXED horizontal axis (weld around, through flat/vertical/overhead), 6G FIXED 45\u00b0 inclined (all positions plus transitions). 6G qualifies the widest range of production work.",
+        "memory_hook": "6G = 6 = the number of position transitions welder must handle = most versatile qualification.",
+        "linked_lessons": [
+          "period3/section4/topic-b-smaw-mild-steel-pipe"
+        ]
+      },
+      {
+        "id": "electrode-number-meaning",
+        "topic": "Electrode classification",
+        "when": "Any AWS electrode classification question",
+        "wrong_assumption": "The first digit is the amperage",
+        "correct_rule": "AWS A5.1: First TWO digits (or three for E1XX) = minimum tensile strength in KSI \u00d7 1000. E7018 = 70,000 psi. Third digit = position (1 = all). Last two digits together = coating and current type.",
+        "memory_hook": "E70XX = 70 ksi tensile. The 70 is the strength, not the amperage.",
+        "linked_lessons": [
+          "period1/section3/topic-b-mild-steel-electrodes"
+        ]
+      },
+      {
+        "id": "electrode-h-suffix",
+        "topic": "Electrode classification",
+        "when": "Questions about H4/H8/H16 designators",
+        "wrong_assumption": "H means 'hot'",
+        "correct_rule": "H = diffusible hydrogen limit in mL per 100 g of deposited weld metal. H4 = 4 mL max (strictest). H8 = 8. H16 = 16 (loosest). R = moisture-resistant coating.",
+        "memory_hook": "Lower H number = LESS hydrogen = MORE crack-resistant. H4 is strictest.",
+        "linked_lessons": [
+          "period1/section3/topic-b-mild-steel-electrodes"
+        ]
+      },
+      {
+        "id": "e7018-storage",
+        "topic": "Consumable storage",
+        "when": "SMAW low-hydrogen storage or hydrogen cracking questions",
+        "wrong_assumption": "E7018 storage at room temperature is fine",
+        "correct_rule": "Once opened, E7018 must go into a rod oven at ~120\u00b0C (250\u00b0F). Moisture in the flux becomes hydrogen in the arc, which causes delayed cracking hours to days after welding.",
+        "memory_hook": "Low-hydrogen = keep it DRY. Hot rod oven, always.",
+        "linked_lessons": [
+          "period1/section3/topic-b-mild-steel-electrodes"
+        ]
+      },
+      {
+        "id": "flame-neutral-vs-carburizing",
+        "topic": "Oxyfuel flame types",
+        "when": "Any oxy-fuel flame question",
+        "wrong_assumption": "Any flame works for cutting",
+        "correct_rule": "Three flames: NEUTRAL (equal O2/fuel, ONE bright cone, standard for cutting and welding), CARBURIZING/reducing (fuel-rich, feather at tip, for brazing/hardening), OXIDIZING (O2-rich, sharp short hissing cone, only for brass or fast OFC). Standard OFC preheat = neutral.",
+        "memory_hook": "One clean cone = neutral. Feather = fuel-rich. Sharp hiss = O2-rich.",
+        "linked_lessons": [
+          "period1/section1/topic-f-oxyfuel-equipment-cutting"
+        ]
+      },
+      {
+        "id": "ofc-stainless-impossible",
+        "topic": "OFC material limits",
+        "when": "'Which process for material X' questions",
+        "wrong_assumption": "OFC cuts any metal",
+        "correct_rule": "OFC only cuts CARBON STEEL and low-alloy steel. Does NOT cut stainless (chromium oxide blocks the reaction), aluminum (oxide melts hotter than metal), copper (thermal conductivity too high), or cast iron (graphite disrupts oxidation). Stainless/aluminum \u2192 use PAC (plasma).",
+        "memory_hook": "OFC = OXidation of iron. If the metal doesn't oxidize better than it melts, OFC can't cut it.",
+        "linked_lessons": [
+          "period1/section1/topic-f-oxyfuel-equipment-cutting"
+        ]
+      },
+      {
+        "id": "shielding-gmaw-aluminum",
+        "topic": "Shielding gas",
+        "when": "GMAW aluminum shielding gas question",
+        "wrong_assumption": "75Ar/25CO2 works for aluminum",
+        "correct_rule": "Aluminum requires 100% argon (helium may be added for thicker sections). CO2 reacts with aluminum and creates defects. Never use CO2-containing gas on aluminum.",
+        "memory_hook": "Aluminum = pure Ar. CO2 poisons aluminum welds.",
+        "linked_lessons": [
+          "period2/section5/topic-a-gmaw-on-aluminum"
+        ]
+      },
+      {
+        "id": "shielding-gtaw-purge",
+        "topic": "Stainless GTAW",
+        "when": "Open-root stainless pipe welding",
+        "wrong_assumption": "Back-purge is optional",
+        "correct_rule": "Open-root stainless requires an argon (or N2) back-purge on the ID. Without it, the hot root oxidizes \u2192 straw/gold/blue/purple/black heat tint. Sugaring (heavy black scale) is always rejectable.",
+        "memory_hook": "Purple = last chance. Black = failed inspection.",
+        "linked_lessons": [
+          "period2/section4/topic-f-gtaw-on-stainless-steel"
+        ]
+      },
+      {
+        "id": "heat-input-formula",
+        "topic": "Heat input calculation",
+        "when": "Any HI calc question",
+        "wrong_assumption": "Forget the \u00d760 conversion",
+        "correct_rule": "HI (kJ/mm) = (V \u00d7 A \u00d7 60) \u00f7 (mm/min \u00d7 1000). The \u00d760 converts seconds to minutes. Common mistake: dropping the \u00d760 gives an answer 60\u00d7 too small.",
+        "memory_hook": "V \u00d7 A gives WATTS. To get kJ/mm you need the \u00d760 (min to sec) and \u00f71000 (J to kJ).",
+        "linked_lessons": [
+          "period1/section3/topic-a-smaw-equipment"
+        ]
+      },
+      {
+        "id": "sling-angle-load",
+        "topic": "Rigging",
+        "when": "Sling load per leg questions",
+        "wrong_assumption": "Sling load per leg = total load \u00f7 number of legs",
+        "correct_rule": "Load per leg = (Total \u00f7 Legs) \u00f7 cos(\u03b8/2), where \u03b8 is the INCLUDED angle between legs. At 60\u00b0 included angle, each leg is ~15% higher than the simple division. At 120\u00b0 each leg carries the full load.",
+        "memory_hook": "More angle = more load. Never exceed 120\u00b0 included angle per ASME B30.9.",
+        "linked_lessons": [
+          "period1/section1/topic-c-climbing-material-handling-rigging-hoisting"
+        ]
+      },
+      {
+        "id": "throat-not-leg",
+        "topic": "Fillet weld sizing",
+        "when": "Fillet weld strength/size questions",
+        "wrong_assumption": "Fillet strength is calculated on the leg",
+        "correct_rule": "Fillet weld strength = throat \u00d7 length \u00d7 filler shear strength. For 90\u00b0 equal-leg fillet, throat = leg \u00d7 0.707. Doubling the leg does NOT double strength \u2014 it doubles throat too but also doubles heat and cost.",
+        "memory_hook": "Leg is what you SEE. Throat is what WORKS. Multiply by 0.707 for 90\u00b0 fillet.",
+        "linked_lessons": [
+          "period1/section2/topic-a-weld-symbols"
+        ]
+      },
+      {
+        "id": "aws-symbol-arrow-side",
+        "topic": "Welding symbols",
+        "when": "Any welding symbol interpretation",
+        "wrong_assumption": "Above the line = arrow side",
+        "correct_rule": "AWS A2.4: symbol BELOW the reference line = ARROW side. Symbol ABOVE the line = OTHER side. Symbols on both sides = weld both sides. This one has bitten every welder at least once.",
+        "memory_hook": "Below = Below the arrow = Arrow side (both start with 'A'). Above = Away from arrow = Other side.",
+        "linked_lessons": [
+          "period1/section2/topic-a-weld-symbols"
+        ]
+      },
+      {
+        "id": "aws-symbol-flag-circle",
+        "topic": "Welding symbols",
+        "when": "Weld-all-around vs field weld symbols",
+        "wrong_assumption": "The circle and the flag mean the same thing",
+        "correct_rule": "Circle at the elbow = WELD ALL AROUND (perimeter of the joint). FLAG at the elbow = FIELD WELD (to be made on site, not in shop).",
+        "memory_hook": "Circle = round the joint (all around). Flag = flag on the site (field).",
+        "linked_lessons": [
+          "period1/section2/topic-a-weld-symbols"
+        ]
+      },
+      {
+        "id": "deposition-efficiency-direction",
+        "topic": "Estimating",
+        "when": "Filler purchase calculations",
+        "wrong_assumption": "Purchase = Deposit \u00d7 Efficiency",
+        "correct_rule": "Purchase = Deposit \u00f7 Efficiency. If you deposit 25 kg and efficiency is 60% (SMAW), you need 25 \u00f7 0.60 = 41.7 kg of electrodes. Multiplying gives an answer that's less than the deposit \u2014 clearly wrong.",
+        "memory_hook": "If you throw away half your consumable, you need TWICE the deposit weight. Always DIVIDE, never multiply.",
+        "linked_lessons": [
+          "period2/section2/topic-e-project-estimating"
+        ]
+      },
+      {
+        "id": "operator-factor",
+        "topic": "Estimating",
+        "when": "Labour hour estimation",
+        "wrong_assumption": "Labour hours = arc-on hours",
+        "correct_rule": "Labour hours = arc-on hours \u00f7 operator factor. SMAW operator factor is typically 20-30% (lots of stub changes, chipping, positioning). So 8 hours of arc-on time is really ~30 hours of shift time.",
+        "memory_hook": "Divide by operator factor because you can't arc 100% of the shift.",
+        "linked_lessons": [
+          "period2/section2/topic-e-project-estimating"
+        ]
+      },
+      {
+        "id": "preheat-formula",
+        "topic": "Preheat",
+        "when": "Preheat requirement questions",
+        "wrong_assumption": "Preheat is optional if the metal is thick",
+        "correct_rule": "Preheat is REQUIRED as thickness and carbon-equivalent increase. CSA W59 Annex E and AWS D1.1 Annex I give the minimums by material group and thickness. Skipping preheat on thick carbon steel with low-hydrogen electrodes still risks cracking.",
+        "memory_hook": "Thicker + higher CE = more preheat. Never assume; check the table.",
+        "linked_lessons": [
+          "period3/section2/topic-a-heat-treatment"
+        ]
+      },
+      {
+        "id": "interpass-max",
+        "topic": "Interpass temperature",
+        "when": "Q&T steel or stainless questions",
+        "wrong_assumption": "Only minimum preheat matters",
+        "correct_rule": "MAX interpass temperature matters too. Q&T steels (A514/A517) lose strength if held above ~590\u00b0C. Austenitic stainless keeps interpass \u2264175\u00b0C to avoid sensitization. Check the WPS both directions.",
+        "memory_hook": "Preheat is a floor; interpass is a ceiling. Both violate the WPS.",
+        "linked_lessons": [
+          "period3/section2/topic-a-heat-treatment"
+        ]
+      },
+      {
+        "id": "tungsten-grinding-direction",
+        "topic": "GTAW tungsten prep",
+        "when": "Tungsten grinding questions",
+        "wrong_assumption": "Grind perpendicular to tungsten axis",
+        "correct_rule": "Grind LONGITUDINAL (parallel to tungsten axis). Perpendicular grind marks focus current at the tip, causing arc instability. Also: pointed 2\u00d7 diameter for DC, balled/truncated for AC.",
+        "memory_hook": "Long strokes along the tungsten, like grinding a pencil.",
+        "linked_lessons": [
+          "period2/section4/topic-b-gtaw-electrodes-fillers-gases"
+        ]
+      },
+      {
+        "id": "tungsten-inclusion",
+        "topic": "GTAW defects",
+        "when": "Tungsten inclusion questions",
+        "wrong_assumption": "Tungsten inclusions are acceptable",
+        "correct_rule": "Tungsten inclusions are REJECTABLE per AWS D1.6 and most codes. Caused by tungsten touching the puddle or filler rod. Fix: regrind, use dip-and-lift filler technique, maintain arc gap ~1\u00d7 electrode diameter.",
+        "memory_hook": "Never touch. Even 1 touch = a defect and 5 minutes of rework.",
+        "linked_lessons": [
+          "period2/section4/topic-a-gtaw-process"
+        ]
+      },
+      {
+        "id": "crater-crack",
+        "topic": "Weld defects",
+        "when": "Crater crack questions",
+        "wrong_assumption": "Crater cracks fix themselves",
+        "correct_rule": "Crater cracks come from breaking the arc abruptly at the end of a weld. Molten metal solidifies from all sides toward the crater, concentrating shrinkage stress. Fix: taper down current (crater-fill), or restart the arc briefly to fill the crater.",
+        "memory_hook": "Don't drop the arc. Ease off the trigger like a car brake.",
+        "linked_lessons": [
+          "period1/section1/topic-g-weld-faults"
+        ]
+      },
+      {
+        "id": "hydrogen-cracking-delayed",
+        "topic": "Weld defects",
+        "when": "Cracking questions on thick carbon steel",
+        "wrong_assumption": "All weld cracks appear immediately",
+        "correct_rule": "Hydrogen-induced (cold) cracking appears HOURS TO DAYS after welding. Signature: longitudinal cracks on thicker carbon steel with low-hydrogen electrodes, most often in the HAZ. Prevention: dry E7018, correct preheat, low H4 electrodes.",
+        "memory_hook": "Delayed crack = hydrogen. Immediate crack = usually solidification/hot cracking.",
+        "linked_lessons": [
+          "period1/section1/topic-g-weld-faults"
+        ]
+      },
+      {
+        "id": "cac-a-carbon-grind",
+        "topic": "CAC-A gouging",
+        "when": "Back-gouging questions before welding",
+        "wrong_assumption": "Weld directly after CAC-A gouging",
+        "correct_rule": "CAC-A leaves carbon deposits and a carburized layer on the gouged surface. AWS D1.1 clause 5.15 and CSA W59 require GRINDING to bright metal before welding. Skipping this causes porosity, hard HAZ, and hydrogen cracking.",
+        "memory_hook": "Gouge \u2192 grind \u2192 weld. Never gouge \u2192 weld.",
+        "linked_lessons": [
+          "period3/section1/topic-b-oxyfuel-cutting-advanced-mild-steel"
+        ]
+      },
+      {
+        "id": "smaw-arc-blow",
+        "topic": "SMAW troubleshooting",
+        "when": "Arc deflection questions",
+        "wrong_assumption": "Arc blow is caused by wind",
+        "correct_rule": "Arc blow is MAGNETIC arc deflection, most common with DC and near edges/corners/work-lead attachment. Fixes: switch to AC (self-cancelling fields), demagnetize, split the work lead, wrap the lead, shorten the arc.",
+        "memory_hook": "SMAW arc blow = magnetic, not atmospheric. AC solves it because the field alternates.",
+        "linked_lessons": [
+          "period1/section3/topic-a-smaw-equipment"
+        ]
+      },
+      {
+        "id": "gmaw-porosity-check-gas",
+        "topic": "GMAW troubleshooting",
+        "when": "GMAW porosity questions",
+        "wrong_assumption": "Porosity means wrong amperage",
+        "correct_rule": "GMAW porosity is almost always a shielding-gas failure. Check FIRST: flow AT THE TORCH (not just regulator), draft/wind, cracked hose, spatter-blocked nozzle. Only after gas checks pass do you look at wire, base metal, or parameters.",
+        "memory_hook": "Porosity = gas problem until proven otherwise.",
+        "linked_lessons": [
+          "period1/section4/topic-d-wire-feed-maintenance-troubleshooting"
+        ]
+      },
+      {
+        "id": "ctwd-vs-stickout",
+        "topic": "GMAW terminology",
+        "when": "GMAW distance questions",
+        "wrong_assumption": "CTWD and nozzle-to-work are the same",
+        "correct_rule": "CTWD = Contact-Tip-to-Work Distance, measured from the tip inside the nozzle. Nozzle-to-work is a different, shorter distance visible outside the nozzle. Longer CTWD = lower current (I\u00b2R heating in the extended wire).",
+        "memory_hook": "CTWD is HIDDEN. Nozzle-to-work is VISIBLE. Don't confuse them in troubleshooting.",
+        "linked_lessons": [
+          "period1/section4/topic-a-wire-feed-equipment-power-sources"
+        ]
+      },
+      {
+        "id": "spray-transfer-gas-requirement",
+        "topic": "GMAW spray transfer",
+        "when": "Spray transfer questions",
+        "wrong_assumption": "Any gas can achieve spray transfer",
+        "correct_rule": "Spray transfer needs \u226580% argon shielding AND current above the transition threshold. Pure CO2 forces globular transfer regardless of parameters. Spray is also restricted to flat/horizontal positions.",
+        "memory_hook": "Spray = Ar-rich gas + high current + flat/horizontal. Miss any one and you don't get spray.",
+        "linked_lessons": [
+          "period1/section4/topic-a-wire-feed-equipment-power-sources"
+        ]
+      },
+      {
+        "id": "saw-position",
+        "topic": "SAW limitations",
+        "when": "SAW position questions",
+        "wrong_assumption": "SAW can be done in any position",
+        "correct_rule": "SAW is limited to FLAT and near-flat positions (1G, 1F, 2F) because the granular flux must sit on the joint by gravity. True out-of-position SAW doesn't exist. Pipe SAW uses rotating positioners.",
+        "memory_hook": "Flux is a POWDER. Powder doesn't stick to vertical walls or ceilings.",
+        "linked_lessons": [
+          "period1/section4/topic-e-submerged-arc-welding"
+        ]
+      },
+      {
+        "id": "hex-flats-vs-corners",
+        "topic": "Layout math",
+        "when": "Hex bar/nut dimension questions",
+        "wrong_assumption": "Flats = corners",
+        "correct_rule": "For a regular hex: C = F / cos(30\u00b0) = F \u00d7 1.155. C is always LARGER than F. Drawings can spec either \u2014 confirm which convention before cutting stock.",
+        "memory_hook": "Corner is Cornered farther out. C > F, by ~15%.",
+        "linked_lessons": [
+          "period1/section2/topic-e-geometric-formulas"
+        ]
+      },
+      {
+        "id": "mitre-elbow-count",
+        "topic": "Pipe layout",
+        "when": "Mitre elbow angle calc",
+        "wrong_assumption": "Mitre angle = total elbow angle \u00f7 pieces",
+        "correct_rule": "Mitre angle per CUT = total \u00f7 (2 \u00d7 pieces). A 2-piece 90\u00b0 elbow has ONE cut at 45\u00b0 (not 90\u00b0 / 2 = 45\u00b0 coincidentally, but derived from the doubling). A 3-piece 90\u00b0 elbow has cuts at 22.5\u00b0, not 30\u00b0.",
+        "memory_hook": "Each cut is shared between two adjacent pieces \u2014 hence the 2\u00d7 in the denominator.",
+        "linked_lessons": [
+          "period3/section3/topic-c-piping-drawings"
+        ]
+      },
+      {
+        "id": "wps-filler-substitution",
+        "topic": "WPS compliance",
+        "when": "Filler metal substitution questions",
+        "wrong_assumption": "Stronger filler is always OK to substitute",
+        "correct_rule": "Filler metal classification is an ESSENTIAL VARIABLE in most codes. Even substituting a 'stronger' or 'better' filler can invalidate the WPS qualification. Always check with the welding supervisor or engineer; may require re-qualification.",
+        "memory_hook": "'Better' is not the same as 'qualified'. Never substitute without approval.",
+        "linked_lessons": [
+          "period3/section1/topic-a-codes-standards-red-seal-certification"
+        ]
+      }
+    ]
+  },
+  "visuals": [
+    {
+      "id": "gmaw-transfer-modes",
+      "path": "assets/visuals/gmaw-transfer-modes.svg",
+      "bytes": 6923
+    },
+    {
+      "id": "joint-types",
+      "path": "assets/visuals/joint-types.svg",
+      "bytes": 4988
+    },
+    {
+      "id": "polarity-dcep-dcen",
+      "path": "assets/visuals/polarity-dcep-dcen.svg",
+      "bytes": 5161
+    },
+    {
+      "id": "smaw-arc-anatomy",
+      "path": "assets/visuals/smaw-arc-anatomy.svg",
+      "bytes": 6384
+    },
+    {
+      "id": "weld-positions-plate",
+      "path": "assets/visuals/weld-positions-plate.svg",
+      "bytes": 6493
+    }
+  ]
 }

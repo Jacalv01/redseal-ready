@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "title": "Common Red Seal Welder Exam Traps",
+    "description": "Frequent trick patterns on the interprovincial welder exam. Each trap has a wrong assumption, the correct rule, and a memory hook.",
+    "count": 35,
+    "sources": [
+      "Red Seal Occupational Standard for Welder (2023)",
+      "AWS A2.4 · A5.1 · A5.18 · A5.20 · A5.9 · A5.12 · A5.15",
+      "CSA W59 · W47.1 · W117.2",
+      "Instructor feedback compiled from AIT/NAIT/SAIT program reviews"
+    ]
+  },
+  "traps": [
+    {
+      "id": "polarity-e7018",
+      "topic": "SMAW polarity",
+      "when": "Any question about E7018 or other low-hydrogen SMAW electrode setup",
+      "wrong_assumption": "E7018 runs on any polarity",
+      "correct_rule": "E7018 runs on AC or DCEP (electrode positive) ONLY. Never DCEN.",
+      "memory_hook": "The '8' in E7018 → 8 is even → electrode POSITIVE (AC or DC+). If an answer says DCEN with E7018, it's wrong.",
+      "linked_questions": ["D-13.01-Q003"],
+      "linked_lessons": ["period1/section3/topic-a-smaw-equipment"]
+    },
+    {
+      "id": "polarity-e6010",
+      "topic": "SMAW polarity",
+      "when": "Any question about E6010 (cellulose electrode)",
+      "wrong_assumption": "E6010 can run on AC or DCEN",
+      "correct_rule": "E6010 runs on DCEP ONLY. Not AC, not DCEN.",
+      "memory_hook": "E6010 = deep penetration = electrons hitting the work = DCEP.",
+      "linked_lessons": ["period1/section3/topic-b-mild-steel-electrodes"]
+    },
+    {
+      "id": "polarity-gtaw-aluminum",
+      "topic": "GTAW polarity",
+      "when": "Any GTAW aluminum question",
+      "wrong_assumption": "GTAW aluminum uses DCEN like stainless",
+      "correct_rule": "GTAW aluminum uses AC. The AC positive half-cycle provides cathodic cleaning that breaks up the aluminum oxide layer.",
+      "memory_hook": "Aluminum oxide melts hotter than aluminum — needs AC cleaning action to be weldable.",
+      "linked_lessons": ["period2/section4/topic-e-gtaw-on-aluminum"]
+    },
+    {
+      "id": "polarity-gmaw",
+      "topic": "GMAW polarity",
+      "when": "Any GMAW question",
+      "wrong_assumption": "GMAW uses whatever polarity",
+      "correct_rule": "GMAW uses DCEP for standard steel welding. FCAW self-shielded (T-4, T-6, T-8) uses DCEN. Gas-shielded FCAW (T-1) uses DCEP.",
+      "memory_hook": "Wire process default = DCEP. Only self-shielded FCAW breaks the rule.",
+      "linked_lessons": ["period1/section4/topic-a-wire-feed-equipment-power-sources"]
+    },
+    {
+      "id": "position-3g",
+      "topic": "Weld position",
+      "when": "Position designation questions",
+      "wrong_assumption": "3G is horizontal groove",
+      "correct_rule": "1G flat groove · 2G horizontal groove · 3G VERTICAL groove · 4G overhead groove. Fillets use F: 1F flat, 2F horizontal, 3F vertical, 4F overhead.",
+      "memory_hook": "Count up like climbing a wall: 1 flat, 2 horizontal, 3 vertical (climbing), 4 overhead (above your head).",
+      "linked_lessons": ["period1/section2/topic-f-joint-and-weld-types"]
+    },
+    {
+      "id": "position-pipe-5g-6g",
+      "topic": "Pipe welding position",
+      "when": "Pipe qualification questions",
+      "wrong_assumption": "5G is inclined pipe",
+      "correct_rule": "Pipe: 1G ROTATED (roll while welding, always flat), 2G FIXED vertical axis (horizontal weld), 5G FIXED horizontal axis (weld around, through flat/vertical/overhead), 6G FIXED 45° inclined (all positions plus transitions). 6G qualifies the widest range of production work.",
+      "memory_hook": "6G = 6 = the number of position transitions welder must handle = most versatile qualification.",
+      "linked_lessons": ["period3/section4/topic-b-smaw-mild-steel-pipe"]
+    },
+    {
+      "id": "electrode-number-meaning",
+      "topic": "Electrode classification",
+      "when": "Any AWS electrode classification question",
+      "wrong_assumption": "The first digit is the amperage",
+      "correct_rule": "AWS A5.1: First TWO digits (or three for E1XX) = minimum tensile strength in KSI × 1000. E7018 = 70,000 psi. Third digit = position (1 = all). Last two digits together = coating and current type.",
+      "memory_hook": "E70XX = 70 ksi tensile. The 70 is the strength, not the amperage.",
+      "linked_lessons": ["period1/section3/topic-b-mild-steel-electrodes"]
+    },
+    {
+      "id": "electrode-h-suffix",
+      "topic": "Electrode classification",
+      "when": "Questions about H4/H8/H16 designators",
+      "wrong_assumption": "H means 'hot'",
+      "correct_rule": "H = diffusible hydrogen limit in mL per 100 g of deposited weld metal. H4 = 4 mL max (strictest). H8 = 8. H16 = 16 (loosest). R = moisture-resistant coating.",
+      "memory_hook": "Lower H number = LESS hydrogen = MORE crack-resistant. H4 is strictest.",
+      "linked_lessons": ["period1/section3/topic-b-mild-steel-electrodes"]
+    },
+    {
+      "id": "e7018-storage",
+      "topic": "Consumable storage",
+      "when": "SMAW low-hydrogen storage or hydrogen cracking questions",
+      "wrong_assumption": "E7018 storage at room temperature is fine",
+      "correct_rule": "Once opened, E7018 must go into a rod oven at ~120°C (250°F). Moisture in the flux becomes hydrogen in the arc, which causes delayed cracking hours to days after welding.",
+      "memory_hook": "Low-hydrogen = keep it DRY. Hot rod oven, always.",
+      "linked_lessons": ["period1/section3/topic-b-mild-steel-electrodes"]
+    },
+    {
+      "id": "flame-neutral-vs-carburizing",
+      "topic": "Oxyfuel flame types",
+      "when": "Any oxy-fuel flame question",
+      "wrong_assumption": "Any flame works for cutting",
+      "correct_rule": "Three flames: NEUTRAL (equal O2/fuel, ONE bright cone, standard for cutting and welding), CARBURIZING/reducing (fuel-rich, feather at tip, for brazing/hardening), OXIDIZING (O2-rich, sharp short hissing cone, only for brass or fast OFC). Standard OFC preheat = neutral.",
+      "memory_hook": "One clean cone = neutral. Feather = fuel-rich. Sharp hiss = O2-rich.",
+      "linked_lessons": ["period1/section1/topic-f-oxyfuel-equipment-cutting"]
+    },
+    {
+      "id": "ofc-stainless-impossible",
+      "topic": "OFC material limits",
+      "when": "'Which process for material X' questions",
+      "wrong_assumption": "OFC cuts any metal",
+      "correct_rule": "OFC only cuts CARBON STEEL and low-alloy steel. Does NOT cut stainless (chromium oxide blocks the reaction), aluminum (oxide melts hotter than metal), copper (thermal conductivity too high), or cast iron (graphite disrupts oxidation). Stainless/aluminum → use PAC (plasma).",
+      "memory_hook": "OFC = OXidation of iron. If the metal doesn't oxidize better than it melts, OFC can't cut it.",
+      "linked_lessons": ["period1/section1/topic-f-oxyfuel-equipment-cutting"]
+    },
+    {
+      "id": "shielding-gmaw-aluminum",
+      "topic": "Shielding gas",
+      "when": "GMAW aluminum shielding gas question",
+      "wrong_assumption": "75Ar/25CO2 works for aluminum",
+      "correct_rule": "Aluminum requires 100% argon (helium may be added for thicker sections). CO2 reacts with aluminum and creates defects. Never use CO2-containing gas on aluminum.",
+      "memory_hook": "Aluminum = pure Ar. CO2 poisons aluminum welds.",
+      "linked_lessons": ["period2/section5/topic-a-gmaw-on-aluminum"]
+    },
+    {
+      "id": "shielding-gtaw-purge",
+      "topic": "Stainless GTAW",
+      "when": "Open-root stainless pipe welding",
+      "wrong_assumption": "Back-purge is optional",
+      "correct_rule": "Open-root stainless requires an argon (or N2) back-purge on the ID. Without it, the hot root oxidizes → straw/gold/blue/purple/black heat tint. Sugaring (heavy black scale) is always rejectable.",
+      "memory_hook": "Purple = last chance. Black = failed inspection.",
+      "linked_lessons": ["period2/section4/topic-f-gtaw-on-stainless-steel"]
+    },
+    {
+      "id": "heat-input-formula",
+      "topic": "Heat input calculation",
+      "when": "Any HI calc question",
+      "wrong_assumption": "Forget the ×60 conversion",
+      "correct_rule": "HI (kJ/mm) = (V × A × 60) ÷ (mm/min × 1000). The ×60 converts seconds to minutes. Common mistake: dropping the ×60 gives an answer 60× too small.",
+      "memory_hook": "V × A gives WATTS. To get kJ/mm you need the ×60 (min to sec) and ÷1000 (J to kJ).",
+      "linked_lessons": ["period1/section3/topic-a-smaw-equipment"]
+    },
+    {
+      "id": "sling-angle-load",
+      "topic": "Rigging",
+      "when": "Sling load per leg questions",
+      "wrong_assumption": "Sling load per leg = total load ÷ number of legs",
+      "correct_rule": "Load per leg = (Total ÷ Legs) ÷ cos(θ/2), where θ is the INCLUDED angle between legs. At 60° included angle, each leg is ~15% higher than the simple division. At 120° each leg carries the full load.",
+      "memory_hook": "More angle = more load. Never exceed 120° included angle per ASME B30.9.",
+      "linked_lessons": ["period1/section1/topic-c-climbing-material-handling-rigging-hoisting"]
+    },
+    {
+      "id": "throat-not-leg",
+      "topic": "Fillet weld sizing",
+      "when": "Fillet weld strength/size questions",
+      "wrong_assumption": "Fillet strength is calculated on the leg",
+      "correct_rule": "Fillet weld strength = throat × length × filler shear strength. For 90° equal-leg fillet, throat = leg × 0.707. Doubling the leg does NOT double strength — it doubles throat too but also doubles heat and cost.",
+      "memory_hook": "Leg is what you SEE. Throat is what WORKS. Multiply by 0.707 for 90° fillet.",
+      "linked_lessons": ["period1/section2/topic-a-weld-symbols"]
+    },
+    {
+      "id": "aws-symbol-arrow-side",
+      "topic": "Welding symbols",
+      "when": "Any welding symbol interpretation",
+      "wrong_assumption": "Above the line = arrow side",
+      "correct_rule": "AWS A2.4: symbol BELOW the reference line = ARROW side. Symbol ABOVE the line = OTHER side. Symbols on both sides = weld both sides. This one has bitten every welder at least once.",
+      "memory_hook": "Below = Below the arrow = Arrow side (both start with 'A'). Above = Away from arrow = Other side.",
+      "linked_lessons": ["period1/section2/topic-a-weld-symbols"]
+    },
+    {
+      "id": "aws-symbol-flag-circle",
+      "topic": "Welding symbols",
+      "when": "Weld-all-around vs field weld symbols",
+      "wrong_assumption": "The circle and the flag mean the same thing",
+      "correct_rule": "Circle at the elbow = WELD ALL AROUND (perimeter of the joint). FLAG at the elbow = FIELD WELD (to be made on site, not in shop).",
+      "memory_hook": "Circle = round the joint (all around). Flag = flag on the site (field).",
+      "linked_lessons": ["period1/section2/topic-a-weld-symbols"]
+    },
+    {
+      "id": "deposition-efficiency-direction",
+      "topic": "Estimating",
+      "when": "Filler purchase calculations",
+      "wrong_assumption": "Purchase = Deposit × Efficiency",
+      "correct_rule": "Purchase = Deposit ÷ Efficiency. If you deposit 25 kg and efficiency is 60% (SMAW), you need 25 ÷ 0.60 = 41.7 kg of electrodes. Multiplying gives an answer that's less than the deposit — clearly wrong.",
+      "memory_hook": "If you throw away half your consumable, you need TWICE the deposit weight. Always DIVIDE, never multiply.",
+      "linked_lessons": ["period2/section2/topic-e-project-estimating"]
+    },
+    {
+      "id": "operator-factor",
+      "topic": "Estimating",
+      "when": "Labour hour estimation",
+      "wrong_assumption": "Labour hours = arc-on hours",
+      "correct_rule": "Labour hours = arc-on hours ÷ operator factor. SMAW operator factor is typically 20-30% (lots of stub changes, chipping, positioning). So 8 hours of arc-on time is really ~30 hours of shift time.",
+      "memory_hook": "Divide by operator factor because you can't arc 100% of the shift.",
+      "linked_lessons": ["period2/section2/topic-e-project-estimating"]
+    },
+    {
+      "id": "preheat-formula",
+      "topic": "Preheat",
+      "when": "Preheat requirement questions",
+      "wrong_assumption": "Preheat is optional if the metal is thick",
+      "correct_rule": "Preheat is REQUIRED as thickness and carbon-equivalent increase. CSA W59 Annex E and AWS D1.1 Annex I give the minimums by material group and thickness. Skipping preheat on thick carbon steel with low-hydrogen electrodes still risks cracking.",
+      "memory_hook": "Thicker + higher CE = more preheat. Never assume; check the table.",
+      "linked_lessons": ["period3/section2/topic-a-heat-treatment"]
+    },
+    {
+      "id": "interpass-max",
+      "topic": "Interpass temperature",
+      "when": "Q&T steel or stainless questions",
+      "wrong_assumption": "Only minimum preheat matters",
+      "correct_rule": "MAX interpass temperature matters too. Q&T steels (A514/A517) lose strength if held above ~590°C. Austenitic stainless keeps interpass ≤175°C to avoid sensitization. Check the WPS both directions.",
+      "memory_hook": "Preheat is a floor; interpass is a ceiling. Both violate the WPS.",
+      "linked_lessons": ["period3/section2/topic-a-heat-treatment"]
+    },
+    {
+      "id": "tungsten-grinding-direction",
+      "topic": "GTAW tungsten prep",
+      "when": "Tungsten grinding questions",
+      "wrong_assumption": "Grind perpendicular to tungsten axis",
+      "correct_rule": "Grind LONGITUDINAL (parallel to tungsten axis). Perpendicular grind marks focus current at the tip, causing arc instability. Also: pointed 2× diameter for DC, balled/truncated for AC.",
+      "memory_hook": "Long strokes along the tungsten, like grinding a pencil.",
+      "linked_lessons": ["period2/section4/topic-b-gtaw-electrodes-fillers-gases"]
+    },
+    {
+      "id": "tungsten-inclusion",
+      "topic": "GTAW defects",
+      "when": "Tungsten inclusion questions",
+      "wrong_assumption": "Tungsten inclusions are acceptable",
+      "correct_rule": "Tungsten inclusions are REJECTABLE per AWS D1.6 and most codes. Caused by tungsten touching the puddle or filler rod. Fix: regrind, use dip-and-lift filler technique, maintain arc gap ~1× electrode diameter.",
+      "memory_hook": "Never touch. Even 1 touch = a defect and 5 minutes of rework.",
+      "linked_lessons": ["period2/section4/topic-a-gtaw-process"]
+    },
+    {
+      "id": "crater-crack",
+      "topic": "Weld defects",
+      "when": "Crater crack questions",
+      "wrong_assumption": "Crater cracks fix themselves",
+      "correct_rule": "Crater cracks come from breaking the arc abruptly at the end of a weld. Molten metal solidifies from all sides toward the crater, concentrating shrinkage stress. Fix: taper down current (crater-fill), or restart the arc briefly to fill the crater.",
+      "memory_hook": "Don't drop the arc. Ease off the trigger like a car brake.",
+      "linked_lessons": ["period1/section1/topic-g-weld-faults"]
+    },
+    {
+      "id": "hydrogen-cracking-delayed",
+      "topic": "Weld defects",
+      "when": "Cracking questions on thick carbon steel",
+      "wrong_assumption": "All weld cracks appear immediately",
+      "correct_rule": "Hydrogen-induced (cold) cracking appears HOURS TO DAYS after welding. Signature: longitudinal cracks on thicker carbon steel with low-hydrogen electrodes, most often in the HAZ. Prevention: dry E7018, correct preheat, low H4 electrodes.",
+      "memory_hook": "Delayed crack = hydrogen. Immediate crack = usually solidification/hot cracking.",
+      "linked_lessons": ["period1/section1/topic-g-weld-faults"]
+    },
+    {
+      "id": "cac-a-carbon-grind",
+      "topic": "CAC-A gouging",
+      "when": "Back-gouging questions before welding",
+      "wrong_assumption": "Weld directly after CAC-A gouging",
+      "correct_rule": "CAC-A leaves carbon deposits and a carburized layer on the gouged surface. AWS D1.1 clause 5.15 and CSA W59 require GRINDING to bright metal before welding. Skipping this causes porosity, hard HAZ, and hydrogen cracking.",
+      "memory_hook": "Gouge → grind → weld. Never gouge → weld.",
+      "linked_lessons": ["period3/section1/topic-b-oxyfuel-cutting-advanced-mild-steel"]
+    },
+    {
+      "id": "smaw-arc-blow",
+      "topic": "SMAW troubleshooting",
+      "when": "Arc deflection questions",
+      "wrong_assumption": "Arc blow is caused by wind",
+      "correct_rule": "Arc blow is MAGNETIC arc deflection, most common with DC and near edges/corners/work-lead attachment. Fixes: switch to AC (self-cancelling fields), demagnetize, split the work lead, wrap the lead, shorten the arc.",
+      "memory_hook": "SMAW arc blow = magnetic, not atmospheric. AC solves it because the field alternates.",
+      "linked_lessons": ["period1/section3/topic-a-smaw-equipment"]
+    },
+    {
+      "id": "gmaw-porosity-check-gas",
+      "topic": "GMAW troubleshooting",
+      "when": "GMAW porosity questions",
+      "wrong_assumption": "Porosity means wrong amperage",
+      "correct_rule": "GMAW porosity is almost always a shielding-gas failure. Check FIRST: flow AT THE TORCH (not just regulator), draft/wind, cracked hose, spatter-blocked nozzle. Only after gas checks pass do you look at wire, base metal, or parameters.",
+      "memory_hook": "Porosity = gas problem until proven otherwise.",
+      "linked_lessons": ["period1/section4/topic-d-wire-feed-maintenance-troubleshooting"]
+    },
+    {
+      "id": "ctwd-vs-stickout",
+      "topic": "GMAW terminology",
+      "when": "GMAW distance questions",
+      "wrong_assumption": "CTWD and nozzle-to-work are the same",
+      "correct_rule": "CTWD = Contact-Tip-to-Work Distance, measured from the tip inside the nozzle. Nozzle-to-work is a different, shorter distance visible outside the nozzle. Longer CTWD = lower current (I²R heating in the extended wire).",
+      "memory_hook": "CTWD is HIDDEN. Nozzle-to-work is VISIBLE. Don't confuse them in troubleshooting.",
+      "linked_lessons": ["period1/section4/topic-a-wire-feed-equipment-power-sources"]
+    },
+    {
+      "id": "spray-transfer-gas-requirement",
+      "topic": "GMAW spray transfer",
+      "when": "Spray transfer questions",
+      "wrong_assumption": "Any gas can achieve spray transfer",
+      "correct_rule": "Spray transfer needs ≥80% argon shielding AND current above the transition threshold. Pure CO2 forces globular transfer regardless of parameters. Spray is also restricted to flat/horizontal positions.",
+      "memory_hook": "Spray = Ar-rich gas + high current + flat/horizontal. Miss any one and you don't get spray.",
+      "linked_lessons": ["period1/section4/topic-a-wire-feed-equipment-power-sources"]
+    },
+    {
+      "id": "saw-position",
+      "topic": "SAW limitations",
+      "when": "SAW position questions",
+      "wrong_assumption": "SAW can be done in any position",
+      "correct_rule": "SAW is limited to FLAT and near-flat positions (1G, 1F, 2F) because the granular flux must sit on the joint by gravity. True out-of-position SAW doesn't exist. Pipe SAW uses rotating positioners.",
+      "memory_hook": "Flux is a POWDER. Powder doesn't stick to vertical walls or ceilings.",
+      "linked_lessons": ["period1/section4/topic-e-submerged-arc-welding"]
+    },
+    {
+      "id": "hex-flats-vs-corners",
+      "topic": "Layout math",
+      "when": "Hex bar/nut dimension questions",
+      "wrong_assumption": "Flats = corners",
+      "correct_rule": "For a regular hex: C = F / cos(30°) = F × 1.155. C is always LARGER than F. Drawings can spec either — confirm which convention before cutting stock.",
+      "memory_hook": "Corner is Cornered farther out. C > F, by ~15%.",
+      "linked_lessons": ["period1/section2/topic-e-geometric-formulas"]
+    },
+    {
+      "id": "mitre-elbow-count",
+      "topic": "Pipe layout",
+      "when": "Mitre elbow angle calc",
+      "wrong_assumption": "Mitre angle = total elbow angle ÷ pieces",
+      "correct_rule": "Mitre angle per CUT = total ÷ (2 × pieces). A 2-piece 90° elbow has ONE cut at 45° (not 90° / 2 = 45° coincidentally, but derived from the doubling). A 3-piece 90° elbow has cuts at 22.5°, not 30°.",
+      "memory_hook": "Each cut is shared between two adjacent pieces — hence the 2× in the denominator.",
+      "linked_lessons": ["period3/section3/topic-c-piping-drawings"]
+    },
+    {
+      "id": "wps-filler-substitution",
+      "topic": "WPS compliance",
+      "when": "Filler metal substitution questions",
+      "wrong_assumption": "Stronger filler is always OK to substitute",
+      "correct_rule": "Filler metal classification is an ESSENTIAL VARIABLE in most codes. Even substituting a 'stronger' or 'better' filler can invalidate the WPS qualification. Always check with the welding supervisor or engineer; may require re-qualification.",
+      "memory_hook": "'Better' is not the same as 'qualified'. Never substitute without approval.",
+      "linked_lessons": ["period3/section1/topic-a-codes-standards-red-seal-certification"]
+    }
+  ]
+}

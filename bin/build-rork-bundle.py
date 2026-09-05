@@ -62,7 +62,39 @@ def scan_red_seal() -> dict:
     }
 
 
-def build_index(lessons: dict, red_seal: dict) -> list[dict]:
+def scan_calculators() -> list[dict]:
+    calcs = []
+    calc_dir = CONTENT / "calculators"
+    if not calc_dir.exists():
+        return calcs
+    for f in sorted(calc_dir.glob("*.json")):
+        calcs.append(json.loads(f.read_text()))
+    return calcs
+
+
+def scan_exam_traps() -> dict:
+    trap_file = CONTENT / "exam-traps.json"
+    if not trap_file.exists():
+        return {}
+    return json.loads(trap_file.read_text())
+
+
+def scan_visuals() -> list[dict]:
+    """Return {id, path, filename} for each SVG asset."""
+    visual_dir = ROOT / "assets" / "visuals"
+    out = []
+    if not visual_dir.exists():
+        return out
+    for f in sorted(visual_dir.glob("*.svg")):
+        out.append({
+            "id": f.stem,
+            "path": str(f.relative_to(ROOT)),
+            "bytes": f.stat().st_size,
+        })
+    return out
+
+
+def build_index(lessons: dict, red_seal: dict, calculators: list, exam_traps: dict, visuals: list) -> list[dict]:
     idx = []
     for period, sections in lessons.items():
         for section, topics in sections.items():
@@ -88,6 +120,24 @@ def build_index(lessons: dict, red_seal: dict) -> list[dict]:
             "exam_weight_pct": bank["exam_weight_pct"],
             "exam_questions_on_test": bank["exam_questions_on_test"],
             "questions": len(bank["questions"]),
+        })
+    for c in calculators:
+        idx.append({
+            "kind": "calculator",
+            "id": c["id"],
+            "title": c["title"],
+        })
+    if exam_traps:
+        idx.append({
+            "kind": "exam_traps_collection",
+            "title": exam_traps.get("meta", {}).get("title", "Exam Traps"),
+            "count": len(exam_traps.get("traps", [])),
+        })
+    for v in visuals:
+        idx.append({
+            "kind": "visual_asset",
+            "id": v["id"],
+            "path": v["path"],
         })
     return idx
 
@@ -122,12 +172,21 @@ def build_meta(lessons: dict, red_seal: dict) -> dict:
 def build_bundle() -> dict:
     lessons = scan_lessons()
     red_seal = scan_red_seal()
+    calculators = scan_calculators()
+    exam_traps = scan_exam_traps()
+    visuals = scan_visuals()
     bundle = {
         "meta": build_meta(lessons, red_seal),
-        "index": build_index(lessons, red_seal),
+        "index": build_index(lessons, red_seal, calculators, exam_traps, visuals),
         "lessons": lessons,
         "red_seal": red_seal,
+        "calculators": calculators,
+        "exam_traps": exam_traps,
+        "visuals": visuals,
     }
+    bundle["meta"]["calculator_count"] = len(calculators)
+    bundle["meta"]["exam_trap_count"] = len(exam_traps.get("traps", []))
+    bundle["meta"]["visual_asset_count"] = len(visuals)
     return bundle
 
 
@@ -160,7 +219,30 @@ def bundle_to_markdown(bundle: dict) -> str:
                 parts.append(payload["markdown"])
                 parts.append("\n")
 
-    parts.append("---\n\n# Part 2 — Red Seal question bank\n")
+    parts.append("---\n\n# Part 2 — Calculators\n")
+    if bundle.get("calculators"):
+        for c in bundle["calculators"]:
+            parts.append(f"\n### `{c['id']}` — {c['title']}\n")
+            parts.append(f"_{c.get('subtitle', '')}_\n")
+            parts.append(f"**Formula:** `{c.get('formula_display', c.get('formula_expr', ''))}`\n")
+            if 'notes' in c:
+                parts.append(f"\n{c['notes']}\n")
+
+    parts.append("\n---\n\n# Part 3 — Common exam traps\n")
+    if bundle.get("exam_traps"):
+        for trap in bundle["exam_traps"].get("traps", []):
+            parts.append(f"\n### ⚠ {trap['topic']} — {trap['id']}")
+            parts.append(f"\n**When:** {trap['when']}")
+            parts.append(f"\n**Wrong assumption:** {trap['wrong_assumption']}")
+            parts.append(f"\n**Correct rule:** {trap['correct_rule']}")
+            parts.append(f"\n**Memory hook:** {trap['memory_hook']}\n")
+
+    parts.append("\n---\n\n# Part 4 — Visual assets\n")
+    if bundle.get("visuals"):
+        for v in bundle["visuals"]:
+            parts.append(f"- `{v['path']}` ({v['bytes']} bytes)")
+
+    parts.append("\n---\n\n# Part 5 — Red Seal question bank\n")
     parts.append("\n## Blueprint\n")
     rsos = bundle["red_seal"]["rsos_blueprint"]
     parts.append(f"- Exam total: {rsos['exam']['total_questions']} MCQ")
