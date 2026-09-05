@@ -1,0 +1,31 @@
+{
+  "id": "hex-flats-corners",
+  "title": "Hexagon — Across Flats ↔ Across Corners",
+  "subtitle": "Convert between hex dimensioning conventions",
+  "formula_display": "C = F / cos(30°) = F × 2/√3   ·   F = C × cos(30°) = C × √3/2",
+  "modes": [
+    {
+      "id": "F_to_C",
+      "label": "Across flats → Across corners",
+      "input": { "id": "F", "label": "Across flats (F)", "units_selectable": ["mm", "in"], "default": 200, "units": "mm" },
+      "output": { "id": "C", "label": "Across corners (C)", "formula_expr": "F / cos(30 * PI / 180)", "decimals": 2 }
+    },
+    {
+      "id": "C_to_F",
+      "label": "Across corners → Across flats",
+      "input": { "id": "C", "label": "Across corners (C)", "units_selectable": ["mm", "in"], "default": 231, "units": "mm" },
+      "output": { "id": "F", "label": "Across flats (F)", "formula_expr": "C * cos(30 * PI / 180)", "decimals": 2 }
+    }
+  ],
+  "notes": "Structural drawings can specify a hex bar/nut/head by either dimension depending on the drafter. Always confirm which convention the drawing uses before ordering stock or cutting.",
+  "citations": [
+    { "doc": "Machinery's Handbook", "ref": "Hexagon geometry — across flats vs corners" }
+  ],
+  "linked_lessons": [
+    "period1/section2/topic-e-geometric-formulas"
+  ],
+  "examples": [
+    { "mode": "F_to_C", "input_value": 200, "expected_output": 230.94 },
+    { "mode": "C_to_F", "input_value": 231, "expected_output": 200.05 }
+  ]
+}

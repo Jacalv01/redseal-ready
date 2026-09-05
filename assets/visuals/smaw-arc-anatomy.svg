@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">SMAW arc anatomy cross-section</title>
+  <desc id="desc">Cross-section of a shielded metal arc weld showing the electrode core wire, flux coating, arc gap, gas shield produced by burning coating, molten weld pool on the base metal, solidified slag layer, and heat-affected zone.</desc>
+
+  <defs>
+    <linearGradient id="arcCore" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="50%" stop-color="#F6E05E"/>
+      <stop offset="100%" stop-color="#DD6B20"/>
+    </linearGradient>
+    <radialGradient id="gasShield" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#F6E05E" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#F6E05E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="molten" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#DD6B20"/>
+    </linearGradient>
+    <linearGradient id="baseMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </linearGradient>
+    <linearGradient id="haz" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#C53030" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#C53030" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#F7FAFC"/>
+
+  <!-- Base metal -->
+  <rect x="60" y="380" width="680" height="180" fill="url(#baseMetal)"/>
+  <line x1="60" y1="380" x2="740" y2="380" stroke="#1A202C" stroke-width="2"/>
+
+  <!-- HAZ (heat affected zone) - subtle glow band under weld -->
+  <ellipse cx="400" cy="420" rx="220" ry="55" fill="url(#haz)"/>
+
+  <!-- Molten weld pool -->
+  <ellipse cx="400" cy="385" rx="130" ry="30" fill="url(#molten)"/>
+  <path d="M 270 385 Q 400 350 530 385 Q 400 415 270 385 Z" fill="none" stroke="#7B341E" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Slag layer on left half (previous pass, cooled) -->
+  <path d="M 130 385 Q 260 370 260 385 L 260 400 Q 200 405 130 400 Z"
+        fill="#805AD5" opacity="0.75" stroke="#44337A" stroke-width="1"/>
+
+  <!-- Gas shield ellipse -->
+  <ellipse cx="400" cy="330" rx="180" ry="90" fill="url(#gasShield)"/>
+
+  <!-- Electrode: flux coating (outer) -->
+  <rect x="378" y="80" width="44" height="200" fill="#8B7355" rx="4"/>
+  <!-- Electrode: core wire (inner) -->
+  <rect x="390" y="80" width="20" height="220" fill="#A0AEC0" rx="2"/>
+
+  <!-- Coating burn-back at the tip (shorter than core) -->
+  <rect x="378" y="80" width="44" height="200" fill="none" stroke="#5D4E37" stroke-width="1"/>
+
+  <!-- Arc: bright bell from electrode tip to work -->
+  <path d="M 395 300 Q 340 355 300 385 L 500 385 Q 460 355 405 300 Z"
+        fill="url(#arcCore)"/>
+  <path d="M 396 300 Q 350 350 320 380 L 480 380 Q 450 350 404 300 Z"
+        fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- Sparks / spatter -->
+  <circle cx="560" cy="360" r="3" fill="#DD6B20"/>
+  <circle cx="580" cy="345" r="2" fill="#DD6B20"/>
+  <circle cx="235" cy="365" r="3" fill="#DD6B20"/>
+  <circle cx="220" cy="350" r="2" fill="#DD6B20"/>
+  <circle cx="605" cy="330" r="2" fill="#F6E05E"/>
+
+  <!-- Callouts: numbered circles + leader lines -->
+  <!-- 1: Electrode core wire -->
+  <line x1="400" y1="150" x2="150" y2="140" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="140" cy="140" r="16" fill="#2D3748"/>
+  <text x="140" y="146" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">1</text>
+
+  <!-- 2: Flux coating -->
+  <line x1="422" y1="200" x2="640" y2="180" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="655" cy="180" r="16" fill="#2D3748"/>
+  <text x="655" y="186" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">2</text>
+
+  <!-- 3: Arc -->
+  <line x1="400" y1="340" x2="150" y2="270" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="140" cy="270" r="16" fill="#2D3748"/>
+  <text x="140" y="276" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">3</text>
+
+  <!-- 4: Gas shield -->
+  <line x1="560" y1="290" x2="670" y2="270" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="685" cy="270" r="16" fill="#2D3748"/>
+  <text x="685" y="276" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">4</text>
+
+  <!-- 5: Molten weld pool -->
+  <line x1="470" y1="395" x2="655" y2="440" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="670" cy="440" r="16" fill="#2D3748"/>
+  <text x="670" y="446" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">5</text>
+
+  <!-- 6: Slag layer (solidified) -->
+  <line x1="200" y1="390" x2="120" y2="435" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="105" cy="435" r="16" fill="#2D3748"/>
+  <text x="105" y="441" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">6</text>
+
+  <!-- 7: Heat-affected zone (HAZ) -->
+  <line x1="580" y1="430" x2="680" y2="490" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="695" cy="490" r="16" fill="#2D3748"/>
+  <text x="695" y="496" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">7</text>
+
+  <!-- 8: Base metal -->
+  <line x1="400" y1="520" x2="120" y2="530" stroke="#2D3748" stroke-width="1.5"/>
+  <circle cx="105" cy="530" r="16" fill="#2D3748"/>
+  <text x="105" y="536" text-anchor="middle" fill="white" font-family="system-ui" font-size="18" font-weight="bold">8</text>
+
+  <!-- Legend -->
+  <rect x="20" y="20" width="220" height="90" fill="white" stroke="#CBD5E0" rx="4"/>
+  <text x="30" y="42" font-family="system-ui" font-size="12" font-weight="bold" fill="#2D3748">Legend</text>
+  <text x="30" y="60" font-family="system-ui" font-size="11" fill="#4A5568">1 Core wire   5 Molten pool</text>
+  <text x="30" y="76" font-family="system-ui" font-size="11" fill="#4A5568">2 Flux coating  6 Slag</text>
+  <text x="30" y="92" font-family="system-ui" font-size="11" fill="#4A5568">3 Arc      7 HAZ</text>
+  <text x="30" y="105" font-family="system-ui" font-size="11" fill="#4A5568">4 Gas shield  8 Base metal</text>
+</svg>

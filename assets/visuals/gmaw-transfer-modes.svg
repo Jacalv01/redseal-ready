@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">GMAW metal transfer modes comparison</title>
+  <desc id="desc">Illustration of the four GMAW metal transfer modes: short-circuit, globular, spray, and pulsed spray, with typical droplet size, voltage/current range, and application notes.</desc>
+
+  <rect x="0" y="0" width="800" height="500" fill="#F7FAFC"/>
+  <text x="400" y="35" text-anchor="middle" font-family="system-ui" font-size="22" font-weight="bold" fill="#2D3748">GMAW Metal Transfer Modes</text>
+
+  <defs>
+    <linearGradient id="wireGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A0AEC0"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </linearGradient>
+    <linearGradient id="workGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </linearGradient>
+    <radialGradient id="dropGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#DD6B20"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Frame per mode -->
+  <!-- 1: Short-circuit -->
+  <g transform="translate(50,80)">
+    <text x="80" y="0" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="bold" fill="#2D3748">Short-Circuit</text>
+    <rect x="70" y="20" width="20" height="80" fill="url(#wireGrad)"/>
+    <!-- Wire touching pool -->
+    <rect x="70" y="100" width="20" height="20" fill="#DD6B20"/>
+    <rect x="0" y="120" width="160" height="30" fill="url(#workGrad)"/>
+    <ellipse cx="80" cy="120" rx="45" ry="8" fill="#DD6B20"/>
+    <!-- Info -->
+    <text x="80" y="185" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="bold" fill="#4A5568">16–22 V · 90–200 A</text>
+    <text x="80" y="200" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Gas: CO₂ or 75/25</text>
+    <text x="80" y="215" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Thin material</text>
+    <text x="80" y="230" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">All positions</text>
+  </g>
+
+  <!-- 2: Globular -->
+  <g transform="translate(230,80)">
+    <text x="80" y="0" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="bold" fill="#2D3748">Globular</text>
+    <rect x="70" y="20" width="20" height="55" fill="url(#wireGrad)"/>
+    <!-- Big irregular drop -->
+    <circle cx="80" cy="90" r="14" fill="url(#dropGrad)"/>
+    <circle cx="76" cy="112" r="6" fill="#DD6B20" opacity="0.75"/>
+    <rect x="0" y="120" width="160" height="30" fill="url(#workGrad)"/>
+    <ellipse cx="80" cy="120" rx="40" ry="7" fill="#DD6B20"/>
+    <text x="80" y="185" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="bold" fill="#4A5568">22–28 V · 200–275 A</text>
+    <text x="80" y="200" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Gas: CO₂ or Ar-mix</text>
+    <text x="80" y="215" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Heavy spatter</text>
+    <text x="80" y="230" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Flat/horizontal</text>
+  </g>
+
+  <!-- 3: Spray -->
+  <g transform="translate(410,80)">
+    <text x="80" y="0" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="bold" fill="#2D3748">Spray</text>
+    <rect x="70" y="20" width="20" height="45" fill="url(#wireGrad)"/>
+    <!-- Fine axial droplet stream -->
+    <circle cx="80" cy="70" r="3" fill="#FBBF24"/>
+    <circle cx="80" cy="80" r="3" fill="#FBBF24"/>
+    <circle cx="80" cy="90" r="3" fill="#FBBF24"/>
+    <circle cx="80" cy="100" r="3" fill="#DD6B20"/>
+    <circle cx="80" cy="110" r="3" fill="#DD6B20"/>
+    <rect x="0" y="120" width="160" height="30" fill="url(#workGrad)"/>
+    <ellipse cx="80" cy="120" rx="50" ry="8" fill="#DD6B20"/>
+    <text x="80" y="185" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="bold" fill="#4A5568">26–34 V · 275–400 A</text>
+    <text x="80" y="200" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Gas: ≥80% Ar</text>
+    <text x="80" y="215" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Thicker plate</text>
+    <text x="80" y="230" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Flat/horizontal only</text>
+  </g>
+
+  <!-- 4: Pulsed Spray -->
+  <g transform="translate(590,80)">
+    <text x="80" y="0" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="bold" fill="#2D3748">Pulsed Spray</text>
+    <rect x="70" y="20" width="20" height="50" fill="url(#wireGrad)"/>
+    <!-- Pulsed: one droplet per pulse, larger, spaced -->
+    <circle cx="80" cy="80" r="5" fill="#FBBF24"/>
+    <circle cx="80" cy="95" r="5" fill="#DD6B20"/>
+    <circle cx="80" cy="110" r="5" fill="#DD6B20"/>
+    <rect x="0" y="120" width="160" height="30" fill="url(#workGrad)"/>
+    <ellipse cx="80" cy="120" rx="45" ry="7" fill="#DD6B20"/>
+    <text x="80" y="185" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="bold" fill="#4A5568">Peak &gt;300 A pulsed</text>
+    <text x="80" y="200" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Gas: ≥80% Ar</text>
+    <text x="80" y="215" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">Low avg heat input</text>
+    <text x="80" y="230" text-anchor="middle" font-family="system-ui" font-size="10" fill="#4A5568">All positions</text>
+  </g>
+
+  <!-- Comparison bar: heat input relative -->
+  <g transform="translate(80,360)">
+    <text x="320" y="0" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="bold" fill="#2D3748">Relative Heat Input to Workpiece</text>
+    <rect x="30" y="15" width="120" height="20" fill="#3182CE"/>
+    <text x="90" y="30" text-anchor="middle" font-family="system-ui" font-size="11" fill="white">Short-arc: low</text>
+    <rect x="180" y="15" width="120" height="20" fill="#38B2AC"/>
+    <text x="240" y="30" text-anchor="middle" font-family="system-ui" font-size="11" fill="white">Globular: med</text>
+    <rect x="330" y="15" width="120" height="20" fill="#DD6B20"/>
+    <text x="390" y="30" text-anchor="middle" font-family="system-ui" font-size="11" fill="white">Spray: high</text>
+    <rect x="480" y="15" width="120" height="20" fill="#38B2AC"/>
+    <text x="540" y="30" text-anchor="middle" font-family="system-ui" font-size="11" fill="white">Pulsed: med</text>
+  </g>
+
+  <text x="400" y="470" text-anchor="middle" font-family="system-ui" font-size="11" font-style="italic" fill="#718096">Transition current where globular becomes spray depends on wire diameter and shielding gas.</text>
+</svg>

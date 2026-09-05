@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Plate welding positions 1G through 4G and 1F through 4F</title>
+  <desc id="desc">Diagram of the four plate welding positions for groove welds (1G flat, 2G horizontal, 3G vertical, 4G overhead) and the four positions for fillet welds (1F, 2F, 3F, 4F).</desc>
+
+  <rect x="0" y="0" width="800" height="600" fill="#F7FAFC"/>
+  <text x="400" y="35" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">Plate Welding Positions</text>
+  <text x="200" y="65" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="bold" fill="#4A5568">Groove welds (G)</text>
+  <text x="600" y="65" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="bold" fill="#4A5568">Fillet welds (F)</text>
+
+  <!-- Style defs -->
+  <defs>
+    <linearGradient id="plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Groove side (LEFT) -->
+  <!-- 1G Flat -->
+  <g transform="translate(50,100)">
+    <rect x="0" y="60" width="140" height="20" fill="url(#plate)"/>
+    <rect x="150" y="60" width="140" height="20" fill="url(#plate)"/>
+    <rect x="130" y="52" width="30" height="12" fill="#DD6B20" rx="3"/>
+    <text x="145" y="20" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">1G</text>
+    <text x="145" y="100" text-anchor="middle" font-family="system-ui" font-size="12" fill="#4A5568">Flat — plates horizontal, weld face up</text>
+  </g>
+
+  <!-- 2G Horizontal -->
+  <g transform="translate(50,220)">
+    <rect x="60" y="0" width="20" height="70" fill="url(#plate)"/>
+    <rect x="60" y="80" width="20" height="70" fill="url(#plate)"/>
+    <rect x="52" y="68" width="12" height="14" fill="#DD6B20" rx="3"/>
+    <text x="145" y="30" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">2G</text>
+    <text x="145" y="55" font-family="system-ui" font-size="12" fill="#4A5568">Horizontal — plates vertical,</text>
+    <text x="145" y="72" font-family="system-ui" font-size="12" fill="#4A5568">weld axis horizontal</text>
+  </g>
+
+  <!-- 3G Vertical -->
+  <g transform="translate(50,410)">
+    <rect x="60" y="0" width="20" height="150" fill="url(#plate)"/>
+    <rect x="80" y="0" width="20" height="150" fill="url(#plate)"/>
+    <line x1="80" y1="0" x2="80" y2="150" stroke="#DD6B20" stroke-width="5"/>
+    <text x="150" y="55" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">3G</text>
+    <text x="150" y="80" font-family="system-ui" font-size="12" fill="#4A5568">Vertical — weld axis vertical,</text>
+    <text x="150" y="96" font-family="system-ui" font-size="12" fill="#4A5568">uphill or downhill progression</text>
+  </g>
+
+  <!-- 4G Overhead -->
+  <g transform="translate(220,100)">
+    <rect x="0" y="30" width="140" height="20" fill="url(#plate)"/>
+    <rect x="150" y="30" width="140" height="20" fill="url(#plate)"/>
+    <rect x="130" y="48" width="30" height="12" fill="#DD6B20" rx="3"/>
+    <text x="140" y="20" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">4G</text>
+    <text x="140" y="80" text-anchor="middle" font-family="system-ui" font-size="12" fill="#4A5568">Overhead — plates horizontal,</text>
+    <text x="140" y="96" text-anchor="middle" font-family="system-ui" font-size="12" fill="#4A5568">welder underneath</text>
+  </g>
+
+  <!-- Vertical divider -->
+  <line x1="400" y1="80" x2="400" y2="570" stroke="#CBD5E0" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Fillet side (RIGHT) -->
+  <!-- 1F Flat fillet -->
+  <g transform="translate(430,100)">
+    <rect x="0" y="60" width="200" height="20" fill="url(#plate)"/>
+    <rect x="100" y="10" width="20" height="50" fill="url(#plate)"/>
+    <polygon points="100,60 120,60 120,50 90,60" fill="#DD6B20"/>
+    <polygon points="120,60 100,60 130,60 130,50" fill="#DD6B20"/>
+    <text x="180" y="30" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">1F</text>
+    <text x="180" y="55" font-family="system-ui" font-size="12" fill="#4A5568">Flat fillet — tee rotated 45°,</text>
+    <text x="180" y="72" font-family="system-ui" font-size="12" fill="#4A5568">weld face-up</text>
+  </g>
+
+  <!-- 2F Horizontal fillet -->
+  <g transform="translate(430,230)">
+    <rect x="0" y="80" width="200" height="20" fill="url(#plate)"/>
+    <rect x="100" y="0" width="20" height="80" fill="url(#plate)"/>
+    <polygon points="100,80 120,80 120,60 100,80" fill="#DD6B20"/>
+    <text x="180" y="30" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">2F</text>
+    <text x="180" y="55" font-family="system-ui" font-size="12" fill="#4A5568">Horizontal fillet — tee flat,</text>
+    <text x="180" y="72" font-family="system-ui" font-size="12" fill="#4A5568">weld axis horizontal</text>
+  </g>
+
+  <!-- 3F Vertical fillet -->
+  <g transform="translate(430,360)">
+    <rect x="0" y="0" width="20" height="150" fill="url(#plate)"/>
+    <rect x="20" y="60" width="120" height="20" fill="url(#plate)"/>
+    <polygon points="20,60 40,60 40,80 20,80" fill="#DD6B20"/>
+    <text x="180" y="55" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">3F</text>
+    <text x="180" y="80" font-family="system-ui" font-size="12" fill="#4A5568">Vertical fillet — tee upright,</text>
+    <text x="180" y="96" font-family="system-ui" font-size="12" fill="#4A5568">weld axis vertical</text>
+  </g>
+
+  <!-- 4F Overhead fillet -->
+  <g transform="translate(600,100)">
+    <rect x="0" y="30" width="150" height="20" fill="url(#plate)"/>
+    <rect x="70" y="50" width="20" height="50" fill="url(#plate)"/>
+    <polygon points="70,50 90,50 70,70" fill="#DD6B20"/>
+    <text x="30" y="20" font-family="system-ui" font-size="20" font-weight="bold" fill="#2D3748">4F</text>
+    <text x="80" y="120" text-anchor="middle" font-family="system-ui" font-size="12" fill="#4A5568">Overhead fillet — tee below,</text>
+    <text x="80" y="136" text-anchor="middle" font-family="system-ui" font-size="12" fill="#4A5568">welder underneath</text>
+  </g>
+
+  <text x="400" y="590" text-anchor="middle" font-family="system-ui" font-size="12" font-style="italic" fill="#718096">Orange = weld metal / bead. Grey = base metal.</text>
+</svg>

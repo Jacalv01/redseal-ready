@@ -1,0 +1,75 @@
+{
+  "id": "deposit-rate",
+  "title": "Filler Consumption & Arc Time",
+  "subtitle": "How much wire to buy and how long the welding will take",
+  "formula_display": "Purchase = Deposit ÷ Efficiency  ·  Arc time = Deposit ÷ Deposition rate",
+  "formula_expr": "purchase = deposit_kg / (efficiency_pct / 100); arc_time_h = deposit_kg / rate_kg_per_h",
+  "inputs": [
+    {
+      "id": "deposit_kg",
+      "label": "Deposit weight required",
+      "units": "kg",
+      "type": "number",
+      "min": 0.1,
+      "max": 5000,
+      "step": 0.5,
+      "default": 25,
+      "help": "Calculate from weld cross-section × length × material density (7.85 g/cm³ steel, 2.70 aluminum)"
+    },
+    {
+      "id": "efficiency_pct",
+      "label": "Deposition efficiency",
+      "units": "%",
+      "type": "select",
+      "default": 60,
+      "options": [
+        { "value": 55, "label": "SMAW covered electrode — 55%" },
+        { "value": 60, "label": "SMAW average — 60%" },
+        { "value": 65, "label": "SMAW iron-powder (E7024) — 65%" },
+        { "value": 80, "label": "FCAW gas-shielded — 80%" },
+        { "value": 75, "label": "FCAW self-shielded — 75%" },
+        { "value": 90, "label": "GMAW — 90%" },
+        { "value": 95, "label": "GTAW (rod usage) — 95%" },
+        { "value": 98, "label": "SAW — 98%" }
+      ]
+    },
+    {
+      "id": "rate_kg_per_h",
+      "label": "Deposition rate",
+      "units": "kg/hr",
+      "type": "number",
+      "min": 0.5,
+      "max": 30,
+      "step": 0.5,
+      "default": 3,
+      "help": "Typical: SMAW 1–3, GTAW 0.5–1.5, GMAW short-arc 2–4, GMAW spray 4–8, FCAW 3–7, SAW single-wire 5–15"
+    },
+    {
+      "id": "operator_factor_pct",
+      "label": "Operator factor (arc-on / total shift)",
+      "units": "%",
+      "type": "select",
+      "default": 30,
+      "options": [
+        { "value": 20, "label": "20% — manual SMAW field work" },
+        { "value": 30, "label": "30% — typical SMAW shop" },
+        { "value": 40, "label": "40% — FCAW/GMAW shop" },
+        { "value": 60, "label": "60% — mechanized / SAW" },
+        { "value": 100, "label": "100% — arc time only, no labour uplift" }
+      ]
+    }
+  ],
+  "outputs": [
+    { "id": "purchase_kg", "label": "Filler to purchase", "units": "kg", "decimals": 1 },
+    { "id": "arc_time_h", "label": "Arc-on time", "units": "hr", "decimals": 1 },
+    { "id": "labour_h", "label": "Total labour hours (arc time ÷ operator factor)", "units": "hr", "decimals": 1 }
+  ],
+  "notes": "Buy 10–15% more filler than calculated for scrap, spatter, and end-of-spool loss. Operator factor drops fast on out-of-position work and pipe welding. For quoting, ask your shop for actual historical operator factors rather than trusting rules of thumb.",
+  "citations": [
+    { "doc": "Lincoln Electric Procedure Handbook", "ref": "Deposition rates and operator factor tables" },
+    { "doc": "AWS Handbook Vol 1", "ref": "Consumable estimating" }
+  ],
+  "linked_lessons": [
+    "period2/section2/topic-e-project-estimating"
+  ]
+}

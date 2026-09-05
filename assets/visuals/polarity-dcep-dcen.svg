@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">DCEP vs DCEN polarity comparison</title>
+  <desc id="desc">Comparison of DC electrode positive versus DC electrode negative showing electron flow direction and 70/30 heat distribution between electrode and workpiece.</desc>
+
+  <rect x="0" y="0" width="800" height="500" fill="#F7FAFC"/>
+
+  <!-- DCEP side (LEFT) -->
+  <g transform="translate(0,0)">
+    <text x="200" y="40" text-anchor="middle" font-family="system-ui" font-size="22" font-weight="bold" fill="#2D3748">DCEP · Electrode Positive</text>
+    <text x="200" y="62" text-anchor="middle" font-family="system-ui" font-size="14" fill="#4A5568">Deep penetration, hot electrode</text>
+
+    <!-- Electrode -->
+    <rect x="180" y="100" width="40" height="130" fill="#A0AEC0"/>
+    <text x="200" y="120" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="white">+</text>
+
+    <!-- Arc -->
+    <path d="M 190 240 Q 165 290 155 340 L 245 340 Q 235 290 210 240 Z" fill="#F6E05E" opacity="0.9"/>
+
+    <!-- Workpiece -->
+    <rect x="60" y="340" width="280" height="80" fill="#4A5568"/>
+    <text x="200" y="395" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="white">−</text>
+
+    <!-- Heat distribution bars -->
+    <rect x="60" y="440" width="196" height="18" fill="#DD6B20"/>
+    <text x="158" y="454" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="bold" fill="white">70% heat → electrode</text>
+    <rect x="256" y="440" width="84" height="18" fill="#F6AD55"/>
+    <text x="298" y="454" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="bold" fill="white">30%</text>
+
+    <!-- Electron flow arrows: from work (−) up to electrode (+) -->
+    <g stroke="#3182CE" stroke-width="2" fill="none">
+      <path d="M 170 320 L 170 260" marker-end="url(#arrow-up)"/>
+      <path d="M 200 320 L 200 260" marker-end="url(#arrow-up)"/>
+      <path d="M 230 320 L 230 260" marker-end="url(#arrow-up)"/>
+    </g>
+    <text x="120" y="290" font-family="system-ui" font-size="11" fill="#3182CE" font-weight="bold">e⁻ flow</text>
+
+    <!-- Penetration profile -->
+    <path d="M 200 340 Q 175 385 200 415 Q 225 385 200 340 Z" fill="#DD6B20" opacity="0.4" stroke="#DD6B20" stroke-width="1.5"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="400" y1="80" x2="400" y2="470" stroke="#CBD5E0" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- DCEN side (RIGHT) -->
+  <g transform="translate(400,0)">
+    <text x="200" y="40" text-anchor="middle" font-family="system-ui" font-size="22" font-weight="bold" fill="#2D3748">DCEN · Electrode Negative</text>
+    <text x="200" y="62" text-anchor="middle" font-family="system-ui" font-size="14" fill="#4A5568">Shallow penetration, cold electrode</text>
+
+    <!-- Electrode -->
+    <rect x="180" y="100" width="40" height="130" fill="#A0AEC0"/>
+    <text x="200" y="120" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="white">−</text>
+
+    <!-- Arc -->
+    <path d="M 190 240 Q 165 290 155 340 L 245 340 Q 235 290 210 240 Z" fill="#F6E05E" opacity="0.9"/>
+
+    <!-- Workpiece -->
+    <rect x="60" y="340" width="280" height="80" fill="#4A5568"/>
+    <text x="200" y="395" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="white">+</text>
+
+    <!-- Heat distribution bars -->
+    <rect x="60" y="440" width="84" height="18" fill="#F6AD55"/>
+    <text x="102" y="454" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="bold" fill="white">30%</text>
+    <rect x="144" y="440" width="196" height="18" fill="#DD6B20"/>
+    <text x="242" y="454" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="bold" fill="white">70% heat → work</text>
+
+    <!-- Electron flow arrows: from electrode (−) down to work (+) -->
+    <g stroke="#3182CE" stroke-width="2" fill="none">
+      <path d="M 170 260 L 170 320" marker-end="url(#arrow-down)"/>
+      <path d="M 200 260 L 200 320" marker-end="url(#arrow-down)"/>
+      <path d="M 230 260 L 230 320" marker-end="url(#arrow-down)"/>
+    </g>
+    <text x="120" y="290" font-family="system-ui" font-size="11" fill="#3182CE" font-weight="bold">e⁻ flow</text>
+
+    <!-- Penetration profile: wider, shallower -->
+    <path d="M 200 340 Q 155 370 200 395 Q 245 370 200 340 Z" fill="#DD6B20" opacity="0.4" stroke="#DD6B20" stroke-width="1.5"/>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-up" markerWidth="10" markerHeight="10" refX="5" refY="0" orient="auto">
+      <polygon points="0,10 5,0 10,10" fill="#3182CE"/>
+    </marker>
+    <marker id="arrow-down" markerWidth="10" markerHeight="10" refX="5" refY="10" orient="auto">
+      <polygon points="0,0 5,10 10,0" fill="#3182CE"/>
+    </marker>
+  </defs>
+
+  <!-- Bottom rule -->
+  <text x="400" y="490" text-anchor="middle" font-family="system-ui" font-size="12" font-style="italic" fill="#4A5568">Rule: electrons flow from − to +. Heat concentrates on the positive side.</text>
+</svg>

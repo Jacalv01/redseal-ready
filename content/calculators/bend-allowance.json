@@ -1,0 +1,69 @@
+{
+  "id": "bend-allowance",
+  "title": "Sheet Metal Bend Allowance",
+  "subtitle": "Length of metal consumed inside a press-brake bend",
+  "formula_display": "BA = θ × (R + K × T)  (θ in radians)",
+  "formula_expr": "(angle_deg * PI / 180) * (R + K * T)",
+  "inputs": [
+    {
+      "id": "T",
+      "label": "Material thickness",
+      "units": "mm",
+      "type": "number",
+      "min": 0.5,
+      "max": 25,
+      "step": 0.1,
+      "default": 10
+    },
+    {
+      "id": "R",
+      "label": "Inside bend radius",
+      "units": "mm",
+      "type": "number",
+      "min": 0.5,
+      "max": 100,
+      "step": 0.5,
+      "default": 10,
+      "help": "Rule of thumb: R ≈ T for mild steel, R ≈ 2T for aluminum"
+    },
+    {
+      "id": "angle_deg",
+      "label": "Bend angle",
+      "units": "°",
+      "type": "number",
+      "min": 1,
+      "max": 180,
+      "step": 1,
+      "default": 90
+    },
+    {
+      "id": "K",
+      "label": "K-factor (neutral-axis position)",
+      "units": "ratio",
+      "type": "select",
+      "default": 0.44,
+      "options": [
+        { "value": 0.33, "label": "0.33 — very tight bend, R < T" },
+        { "value": 0.40, "label": "0.40 — tight bend, R = T (aluminum)" },
+        { "value": 0.44, "label": "0.44 — standard, R = T (mild steel)" },
+        { "value": 0.50, "label": "0.50 — generous bend, R > 2T" }
+      ]
+    }
+  ],
+  "output": {
+    "units": "mm",
+    "decimals": 2
+  },
+  "notes": "Flat blank length = length of legs (measured to bend line) + bend allowance. Subtract material stretch on multiple bends. Verify against your press brake's tested values — K-factor drifts with material batch and tooling.",
+  "citations": [
+    { "doc": "Machinery's Handbook", "ref": "Bend allowance formulas" },
+    { "doc": "Modern Welding (Bowditch)", "ref": "Sheet metal layout" }
+  ],
+  "linked_lessons": [
+    "period2/section2/topic-b-pattern-development"
+  ],
+  "example": {
+    "inputs": { "T": 10, "R": 10, "angle_deg": 90, "K": 0.44 },
+    "expected_output": 22.62
+  }
+}

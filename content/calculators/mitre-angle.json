@@ -1,0 +1,52 @@
+{
+  "id": "mitre-angle",
+  "title": "Pipe Mitre Elbow Angle",
+  "subtitle": "Cut angle per section for multi-piece mitred elbows",
+  "formula_display": "Mitre angle per cut = Total elbow angle ÷ (2 × Number of pieces)",
+  "formula_expr": "total_deg / (2 * pieces)",
+  "inputs": [
+    {
+      "id": "total_deg",
+      "label": "Total elbow angle",
+      "units": "°",
+      "type": "select",
+      "default": 90,
+      "options": [
+        { "value": 45, "label": "45° elbow" },
+        { "value": 60, "label": "60° elbow" },
+        { "value": 90, "label": "90° elbow" },
+        { "value": 135, "label": "135° elbow" },
+        { "value": 180, "label": "180° return" }
+      ]
+    },
+    {
+      "id": "pieces",
+      "label": "Number of pieces",
+      "units": "",
+      "type": "select",
+      "default": 2,
+      "options": [
+        { "value": 2, "label": "2 pieces (roughest)" },
+        { "value": 3, "label": "3 pieces" },
+        { "value": 4, "label": "4 pieces" },
+        { "value": 6, "label": "6 pieces (smoothest)" }
+      ]
+    }
+  ],
+  "output": {
+    "units": "° per cut from perpendicular to pipe axis",
+    "decimals": 2
+  },
+  "notes": "More pieces = smoother flow but more welds. Common practice: 3-piece 90° elbow for medium pressure water/oil, 4-piece or standard forged fitting for higher pressure. ASME B31.3 restricts mitre bends on pressurized process piping — check the code before using.",
+  "citations": [
+    { "doc": "Modern Welding (Bowditch)", "ref": "Pipe layout — mitre elbow calculation" },
+    { "doc": "ASME B31.3", "ref": "Mitre bend restrictions" }
+  ],
+  "linked_lessons": [
+    "period3/section3/topic-c-piping-drawings"
+  ],
+  "examples": [
+    { "inputs": { "total_deg": 90, "pieces": 2 }, "expected_output": 22.5 },
+    { "inputs": { "total_deg": 90, "pieces": 4 }, "expected_output": 11.25 }
+  ]
+}

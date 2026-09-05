@@ -1,0 +1,65 @@
+{
+  "id": "heat-input",
+  "title": "Weld Heat Input",
+  "subtitle": "kJ per mm — controls HAZ hardness, distortion, and hydrogen retention",
+  "formula_display": "HI = (V × A × 60) / (Travel Speed × 1000)",
+  "formula_expr": "(V * A * 60) / (S * 1000)",
+  "inputs": [
+    {
+      "id": "V",
+      "label": "Arc voltage",
+      "units": "V",
+      "type": "number",
+      "min": 10,
+      "max": 45,
+      "step": 0.5,
+      "default": 24,
+      "help": "Typical: SMAW 20–30, GMAW short-arc 16–22, GMAW spray 26–34, GTAW 8–20, SAW 26–40"
+    },
+    {
+      "id": "A",
+      "label": "Welding current",
+      "units": "A",
+      "type": "number",
+      "min": 20,
+      "max": 1200,
+      "step": 5,
+      "default": 150,
+      "help": "Read from the machine display or a clamp meter on the work lead"
+    },
+    {
+      "id": "S",
+      "label": "Travel speed",
+      "units": "mm/min",
+      "type": "number",
+      "min": 30,
+      "max": 1500,
+      "step": 10,
+      "default": 200,
+      "help": "Time a known length of bead. Speed = length ÷ time."
+    }
+  ],
+  "output": {
+    "units": "kJ/mm",
+    "decimals": 2,
+    "bands": [
+      { "max": 0.8, "label": "Low", "color": "blue", "note": "Fast cooling — may need preheat on higher-carbon or thicker steels" },
+      { "max": 2.5, "label": "Typical", "color": "green", "note": "Common range for SMAW/GMAW/FCAW on structural steel" },
+      { "max": 5.0, "label": "High", "color": "yellow", "note": "Larger HAZ, more distortion — verify WPS allows it" },
+      { "max": 999, "label": "Very high", "color": "red", "note": "Typical of SAW or heavy multi-pass — check WPS max heat input" }
+    ]
+  },
+  "notes": "Some codes (ASME IX, CSA W59) require heat input tracking as an essential variable, especially on quenched-and-tempered or high-strength low-alloy steels. Exceeding the qualified HI range invalidates the WPS.",
+  "citations": [
+    { "doc": "CSA W59 Clause 5.7", "ref": "Heat input calculation" },
+    { "doc": "AWS D1.1 Annex", "ref": "Heat input formula" }
+  ],
+  "linked_lessons": [
+    "period1/section3/topic-a-smaw-equipment",
+    "period2/section3/topic-a-smaw-groove-welds-mild-steel"
+  ],
+  "example": {
+    "inputs": { "V": 24, "A": 150, "S": 200 },
+    "expected_output": 1.08
+  }
+}

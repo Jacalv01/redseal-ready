@@ -1,0 +1,65 @@
+{
+  "id": "sling-load",
+  "title": "Sling Load per Leg",
+  "subtitle": "Angle-adjusted tension in each leg of a multi-leg sling",
+  "formula_display": "Load per leg = (Total load ÷ Legs) ÷ cos(θ/2)",
+  "formula_expr": "(load_kg / legs) / cos((angle_deg / 2) * PI / 180)",
+  "inputs": [
+    {
+      "id": "load_kg",
+      "label": "Total load",
+      "units": "kg",
+      "type": "number",
+      "min": 10,
+      "max": 50000,
+      "step": 10,
+      "default": 500
+    },
+    {
+      "id": "legs",
+      "label": "Number of sling legs",
+      "units": "",
+      "type": "select",
+      "default": 2,
+      "options": [
+        { "value": 1, "label": "1 (vertical)" },
+        { "value": 2, "label": "2" },
+        { "value": 3, "label": "3" },
+        { "value": 4, "label": "4" }
+      ]
+    },
+    {
+      "id": "angle_deg",
+      "label": "Included angle between legs at the hook",
+      "units": "°",
+      "type": "number",
+      "min": 0,
+      "max": 120,
+      "step": 5,
+      "default": 60,
+      "help": "0° = legs vertical (parallel) — no angle penalty. 60° = each leg has 30° from vertical. Above 60° gets dangerous fast."
+    }
+  ],
+  "output": {
+    "units": "kg per leg",
+    "decimals": 1,
+    "bands": [
+      { "max_angle": 30, "color": "green", "note": "Safe angle" },
+      { "max_angle": 60, "color": "yellow", "note": "Standard — verify WLL" },
+      { "max_angle": 90, "color": "orange", "note": "High tension — check sling WLL carefully" },
+      { "max_angle": 180, "color": "red", "note": "DO NOT exceed 120° included angle per ASME B30.9" }
+    ]
+  },
+  "notes": "Load per leg increases rapidly with angle. At 120° included angle, each leg carries roughly the full load. Always compare the calculated leg load to the sling's Working Load Limit (WLL) for the actual hitch used (vertical, choker, or basket).",
+  "citations": [
+    { "doc": "ASME B30.9", "ref": "Slings — load calculations and angle factors" },
+    { "doc": "Alberta OHS Code Part 21", "ref": "Rigging" }
+  ],
+  "linked_lessons": [
+    "period1/section1/topic-c-climbing-material-handling-rigging-hoisting"
+  ],
+  "example": {
+    "inputs": { "load_kg": 500, "legs": 2, "angle_deg": 60 },
+    "expected_output": 288.7
+  }
+}
