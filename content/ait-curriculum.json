@@ -1,0 +1,1008 @@
+{
+  "source": "Alberta AIT Welder Curriculum Guide 012 (2026)",
+  "source_url": "https://tradesecrets.alberta.ca/SOURCES/PDFS/CURRICULUM_GUIDES/012_OUTLINE.PDF",
+  "isbn": "978-1-4601-6513-3",
+  "extracted": "2026-09-04",
+  "periods": [
+    {
+      "number": 1,
+      "total_hours": 240,
+      "sections": [
+        {
+          "number": 1,
+          "title": "Foundational Skills, Safety and Procedures",
+          "hours": 70,
+          "weight_pct": 29,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Welder Apprenticeship Training Program Orientation",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to explain how welder apprenticeship training works in Alberta, including curriculum and attendance expectations, contract and portfolio responsibilities, employment sectors, and external organizations affecting the trade.",
+              "objectives": [
+                "Explain the Welder curriculum guide learning outcomes and objectives.",
+                "Describe the responsibilities for the contract of apprenticeship and competency portfolio by the apprentice, sponsor and Alberta Apprenticeship and Industry Training.",
+                "Identify industrial, commercial and construction fields that provide employment opportunities for welders.",
+                "Define the role of external organizations that affect the welding trade. This section establishes entry-level readiness for welding work by covering apprenticeship orientation, OHS safety and regulations, rigging/material handling, and hazardous materials/fire protection, then building hands-on skills in oxyfuel equipment setup and cutting, tool use, arc cutting/gouging, and weld fault identification."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Climbing and Material Handling: Lifting, Rigging and Hoisting",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to apply correct climbing, lifting, rigging, and hoisting practices by following material handling and storage procedures, calculating load weight and centre of gravity, verifying sling and rope capacity limits, and using lifting and rigging equipment.",
+              "objectives": [
+                "Climbing, lifting, rigging and hoisting safety.",
+                "Identify procedures for handling and storing materials.",
+                "Determine weight and centre of gravity of loads.",
+                "Identify the load limits of wire rope and synthetic slings.",
+                "Describe the use of plate clamps and cable clips."
+              ]
+            },
+            {
+              "letter": "D",
+              "title": "Hazardous Materials and Fire Protection",
+              "hours": 2,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to safely apply hazardous materials and fire protection practices by using handling, storage, transport, and venting procedures, and by identifying fire hazards/classes and using appropriate fire protection equipment.",
+              "objectives": [
+                "Describe handling, storing and transporting procedures for hazardous material.",
+                "Describe venting procedures when working with hazardous materials.",
+                "Describe hazards, classes, procedures and equipment related to fire protection."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "Welding Safety",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to apply safe work practices during welding and cutting operations to identify hazards, select and use PPE, apply controls for welding fumes and gases, use electrical safety precautions, and follow procedures for work in confined spaces or potentially dangerous enclosures.",
+              "objectives": [
+                "Identify hazards for welding and cutting operations.",
+                "Identify the use of personal protective equipment for welding and cutting operations.",
+                "Explain the hazards and controls involved with welding fumes and gases.",
+                "Explain the effects of electricity and precautions used to prevent injury.",
+                "Describe the procedure for welding or cutting in confined spaces or potentially dangerous enclosures."
+              ]
+            },
+            {
+              "letter": "F",
+              "title": "Oxyfuel Equipment and Cutting",
+              "hours": 37,
+              "weight_pct": 15,
+              "outcome": "Upon successful completion, learners will be able to assemble, adjust, operate, shut down, and maintain oxyfuel equipment; perform hand-held and machine oxyfuel cuts on mild steel plate, pipe, and structural shapes.",
+              "objectives": [
+                "Identify causes and preventive measures for backfires, flashbacks and burn backs.",
+                "Describe how to operate a hand-held oxyfuel cutting torch on mild steel plate and structural shapes.",
+                "Describe the characteristics and handling procedures for oxygen and fuel gases.",
+                "Describe the functions of oxyfuel equipment components.",
+                "Explain the procedure for placement, set-up and shutting down of oxyfuel equipment.",
+                "Demonstrate the use, care and maintenance of oxyfuel equipment components.",
+                "Describe pressure and flame adjustments.",
+                "Perform straight line, bevel, and shape cutting on mild steel.",
+                "Pierce and cut holes in mild steel plate.",
+                "Cope 3/8 in. mild steel to fit a 100 mm (4 in.) C shape.",
+                "Perform cuts on structural shapes.",
+                "Operate a machine oxyfuel cutting torch on mild steel plate and pipe."
+              ]
+            },
+            {
+              "letter": "G",
+              "title": "Weld Faults",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to define classifications of weld faults, identify weld faults, their causes, and methods of prevention.",
+              "objectives": [
+                "Define the classifications of weld faults.",
+                "Identify weld faults, their causes and methods of prevention."
+              ]
+            },
+            {
+              "letter": "H",
+              "title": "Hand Tools",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to describe required safety precautions and identify layout, measuring, clamping, cutting, and other hand tools.",
+              "objectives": [
+                "Describe safety precautions for hand tools.",
+                "Identify the layout and measuring tools and their uses.",
+                "Identify clamping tools and their uses.",
+                "Identify cutting tools and their uses.",
+                "Identify the other hand tools used by welders."
+              ]
+            },
+            {
+              "letter": "I",
+              "title": "Power Tools",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to demonstrate the operation of grinders, describe the operation of drills, metal forming/shaping, metal cutting tools, and the use of power positioners.",
+              "objectives": [
+                "Demonstrate the operation of grinders.",
+                "Describe the operation of drills.",
+                "Describe the operation of metal forming and shaping tools.",
+                "Describe the operation for metal cutting tools.",
+                "Describe the use of power positioners."
+              ]
+            },
+            {
+              "letter": "J",
+              "title": "Arc Cutting and Gouging",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to apply safe work practices during cutting operations to identify hazards, select and use PPE.",
+              "objectives": [
+                "Describe the plasma arc cutting process and equipment.",
+                "Demonstrate plasma arc cutting.",
+                "Describe the carbon arc cutting process and equipment.",
+                "Demonstrate carbon arc cutting."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Drafting, Drawings and Specifications",
+          "hours": 40,
+          "weight_pct": 17,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Weld Symbols",
+              "hours": 6,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to explain the purpose of welding symbols, define and interpret weld, welding, and supplementary symbols; interpret NDT symbols.",
+              "objectives": [
+                "Explain the purpose of welding symbols.",
+                "Define weld, welding, and supplementary symbols.",
+                "Interpret weld, welding, and supplementary symbols.",
+                "Identify the dimensioning of welding symbols.",
+                "Interpret NDT symbols."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Fractions",
+              "hours": 8,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to identify key fraction terms and concepts, use practical fractions on a tape measure, and solve fraction problems.",
+              "objectives": [
+                "Identify terms and concepts used with fractions.",
+                "Use practical fractions on a tape measure.",
+                "Solve problems using fractions."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Decimals",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to convert fractions to decimals, and decimals to fractions to solve practical problems.",
+              "objectives": [
+                "Round decimal fractions to specified place values.",
+                "Add, subtract, multiply and divide decimal fractions.",
+                "Convert fractions to decimals.",
+                "Convert decimal inches and decimal feet, to feet and inch fractions with a practical denominator.",
+                "Solve decimal fraction calculations. This section covers weld and Non-Destructive Testing (NDT) symbols, essential trades math and measurement, and basic joint and weld types for interpreting fabrication requirements."
+              ]
+            },
+            {
+              "letter": "D",
+              "title": "Ratios, Percentage and Measurement Systems",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to solve problems using ratios, proportions, and percentages; identify and convert between fractions, decimals, percentages, and units of measure.",
+              "objectives": [
+                "Convert between fractions, decimals and percentages.",
+                "Solve percentage problems.",
+                "Calculate ratio problems: two quantities in the form of a ratio and two ratios in the form of a proportion.",
+                "Identify metric units of measure.",
+                "Convert imperial units: feet to inches, square inches to square feet, and cubic measures to gallons.",
+                "Convert between units of measure."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "Geometric Formulas",
+              "hours": 12,
+              "weight_pct": 5,
+              "outcome": "Upon successful completion, learners will be able to apply geometric formulas and perform calculations to solve problems.",
+              "objectives": [
+                "Identify formulas and solve problems for perimeter, area and volume.",
+                "Calculate the weight of a solid.",
+                "Calculate the capacity of a container in gallons and liters."
+              ]
+            },
+            {
+              "letter": "F",
+              "title": "Joint and Weld Types",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify joint and weld types; describe weld dimensions and variations.",
+              "objectives": [
+                "Identify the five basic joints.",
+                "Describe the types of welds and their dimensions.",
+                "Identify joint and weld type variations."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Shielded Metal Arc Welding (SMAW)",
+          "hours": 43,
+          "weight_pct": 18,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "SMAW Equipment",
+              "hours": 8,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to identify SMAW equipment and power sources and explain key concepts.",
+              "objectives": [
+                "Define SMAW related terms.",
+                "Identify welding cables and accessories for welding power sources.",
+                "Identify the effect of arc length on amperage and voltage.",
+                "Describe AC and AC-DC rectified power sources.",
+                "Describe AC and DC generator power sources.",
+                "Describe multi-process inverter power sources."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Mild Steel Electrodes",
+              "hours": 5,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify and select mild steel SMAW electrodes.",
+              "objectives": [
+                "Define the terms associated with SMAW electrodes.",
+                "Identify the CSA and AWS classification and specifications for SMAW electrodes.",
+                "Identify the types and functions of SMAW electrode coatings.",
+                "Describe the functions of the slag.",
+                "Describe care, handling and storage procedures for these electrodes.",
+                "Identify mild steel SMAW electrodes and their applications."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "SMAW Fillet Welds on Mild Steel",
+              "hours": 30,
+              "weight_pct": 13,
+              "outcome": "Upon successful completion, learners will be able to perform SMAW welds on mild steel in the required positions.",
+              "objectives": [
+                "Perform surface welds in the flat position using E4310 (E6010) and E4918 (E7018) electrodes.",
+                "Perform fillet welds in the 1F, 2F, 3F and 4F positions using E4310 (E6010) and E4918 (E7018) electrodes. This section covers SMAW equipment and electrodes, then builds hands-on skills to produce welds on mild steel in the required positions."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Gas Metal Arc Welding (GMAW), Flux-Cored Arc Welding (FCAW),",
+          "hours": null,
+          "weight_pct": null,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Wire Feed Welding Equipment Power Sources",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to identify and describe wire feed welding equipment.",
+              "objectives": [
+                "Describe the principles of operation of wire feed welding equipment.",
+                "Identify the components of a wire feed welding equipment set-up.",
+                "Describe wire feed welding equipment power sources and wire feeders.",
+                "Identify advantages and disadvantages of wire feed processes."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Wire Feed Welding Filler Metals and Feeders",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to identify and describe wire feed consumables and feeder components.",
+              "objectives": [
+                "Identify wire feed welding equipment filler metals.",
+                "Describe the modes of metal transfer.",
+                "Describe wire feed drive systems and gun and cable accessories.",
+                "Describe wire feed operating variables."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Wire Feed Welding Shielding Gases",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to identify shielding gases and supply systems for wire feed processes.",
+              "objectives": [
+                "Identify shielding gases for wire feed processes.",
+                "Identify shielding gas supply systems. This section covers wire-feed welding setup and troubleshooting and builds hands-on skills to perform GMAW/FCAW/MCAW welds on mild steel in required positions."
+              ]
+            },
+            {
+              "letter": "D",
+              "title": "Wire Feed Welding Maintenance and Troubleshooting",
+              "hours": 6,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to set up, maintain, and troubleshoot wire feed welding equipment.",
+              "objectives": [
+                "Demonstrate the set-up and maintenance required for wire feed drive systems and gun assemblies.",
+                "Perform corrective measures for malfunctioning wire process equipment.",
+                "Describe the effects of angle and inclination."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "Submerged Arc Welding (SAW)",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to identify and describe the components, consumables, and operation of the SAW process.",
+              "objectives": [
+                "Describe the operating principles of SAW.",
+                "Identify the components of SAW.",
+                "Describe SAW power sources and equipment.",
+                "Describe SAW operating variables.",
+                "Identify SAW filler metals and fluxes.",
+                "Identify advantages and disadvantages of SAW."
+              ]
+            },
+            {
+              "letter": "F",
+              "title": "GMAW on Mild Steel",
+              "hours": 30,
+              "weight_pct": 12,
+              "outcome": "Upon successful completion, learners will be able to perform GMAW welds on mild steel.",
+              "objectives": [
+                "Perform stringer and weave beads in the flat and horizontal positions.",
+                "Perform welds in 1F, 2F, and 3F positions.",
+                "Perform welds in 1G, 2G, 3G positions."
+              ]
+            },
+            {
+              "letter": "G",
+              "title": "FCAW and MCAW on Mild Steel",
+              "hours": 30,
+              "weight_pct": 12,
+              "outcome": "Upon successful completion, learners will be able to perform FCAW and demonstrate MCAW welding on mild steel. === PAGE 25 === PERIOD ONE - 22 - Classification: Public",
+              "objectives": []
+            },
+            {
+              "letter": "G",
+              "title": "FCAW and MCAW on Mild Steel",
+              "hours": 30,
+              "weight_pct": 12,
+              "outcome": null,
+              "objectives": [
+                "Perform stringer and weave beads in the flat and horizontal positions using FCAW on mild steel plate.",
+                "Perform welds in 1F, 2F and 3F positions using FCAW process.",
+                "Demonstrate MCAW process.",
+                "Perform welds in 1GF, 2G, 3GF and 4GF joint configurations using FCAW process with a backing plate."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "total_hours": 240,
+      "sections": [
+        {
+          "number": 1,
+          "title": "Foundational Skills, Safety, Procedures and Properties of Metals",
+          "hours": null,
+          "weight_pct": null,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Distortion",
+              "hours": 2,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to identify the types, causes, and control methods of welding distortion.",
+              "objectives": [
+                "Identify how heat and temperature relate to distortion.",
+                "Identify the three types of distortion, their causes and control of each type. This section covers welding skills, metal properties, and an overview of other processes."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Oxyfuel Cutting on Mild Steel Plate",
+              "hours": 20,
+              "weight_pct": 8,
+              "outcome": "Upon successful completion, learners will be able to perform oxyfuel cutting on mild steel plate.",
+              "objectives": [
+                "Perform piercing and cutting of an elliptical opening.",
+                "Perform a cope on 10 mm (3/8 in.) mild steel to fit a 100 mm (4 in.) C shape and complete a 30\u00b0 bevel."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Other Processes",
+              "hours": 2,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to describe other welding-related processes and their applications.",
+              "objectives": [
+                "Describe robotics, handheld laser beam welding, resistance spot welding, thermite, friction stir welding, and 3D metal printing."
+              ]
+            },
+            {
+              "letter": "D",
+              "title": "Metal Identification",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to identify and describe metals by their physical and mechanical properties.",
+              "objectives": [
+                "Identify metals by physical and mechanical properties.",
+                "Describe chip, spark, file hardness and flame tests.",
+                "Describe the mechanical properties of metals.",
+                "Describe the physical properties of metals."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "Hardfacing",
+              "hours": 2,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to describe and identify hardfacing applications, procedures, and consumables.",
+              "objectives": [
+                "Describe the hardfacing process and applications.",
+                "Identify the types of wear.",
+                "Identify filler metals for hardfacing.",
+                "Identify the problems associated with hardfacing and how to avoid them.",
+                "Describe the procedures for applying hardfacing materials with filler wires."
+              ]
+            },
+            {
+              "letter": "F",
+              "title": "Aluminum and Aluminum Welding",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to describe aluminum properties and welding principles, including alloy designations.",
+              "objectives": [
+                "Describe the physical and chemical properties of aluminum versus steel.",
+                "Describe how physical and chemical properties affect the welding of aluminum.",
+                "Describe the Aluminum Association numerical designation for casting alloys and wrought aluminum.",
+                "Describe the effects of welding on heat treatable and non-heat treatable alloys.",
+                "Identify the filler metals used for welding aluminum."
+              ]
+            },
+            {
+              "letter": "G",
+              "title": "Production of Metals",
+              "hours": 3,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to describe the production processes and types of iron and steel.",
+              "objectives": [
+                "Describe the production processes for iron and steel.",
+                "Describe the types of iron and steel."
+              ]
+            },
+            {
+              "letter": "H",
+              "title": "Carbon and Alloy Steels and Alloy Steel Filler Metals",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify and describe carbon and alloy steels and their properties.",
+              "objectives": [
+                "Identify the carbon content and the uses for low, medium and high carbon steel.",
+                "Describe the effects of carbon content on the weldability of steel.",
+                "Identify the effects of elements in the properties of carbon steel.",
+                "Identify the alloying elements in alloy steels.",
+                "Identify the types, properties and weldability of low alloy steels.",
+                "Identify the properties and weldability of high strength low alloy steels.",
+                "Identify alloy steel filler material classifications using AWS and CSA specifications.",
+                "Identify low alloy steel filler metals and their applications."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Drafting, Drawings and Specifications",
+          "hours": 51,
+          "weight_pct": 21,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Drawing Interpretation",
+              "hours": 2,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to interpret drawings.",
+              "objectives": [
+                "Identify the alphabet of lines.",
+                "Describe the purpose of drawings.",
+                "Identify elements and information found on drawings.",
+                "Interpret symbols, views and sections used on drawings.",
+                "Identify metric and imperial dimensioning."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Pattern Development",
+              "hours": 22,
+              "weight_pct": 8,
+              "outcome": "Upon successful completion, learners will be able to identify and describe drawing tools and methods for pattern development; perform layouts.",
+              "objectives": [
+                "Describe the principles of scale drawings.",
+                "Describe the principles of perspective, oblique and isometric drawings.",
+                "Describe and sketch orthographic projection.",
+                "Develop an orthographic drawing to scale.",
+                "Describe drawing tools.",
+                "Describe the parts of geometric shapes and angles.",
+                "Perform layouts."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Layout",
+              "hours": 12,
+              "weight_pct": 5,
+              "outcome": "Upon successful completion, learners will be able to identify, describe, and perform layout procedures.",
+              "objectives": [
+                "Describe layout abbreviations and symbols.",
+                "Describe layout tools and mark-up methods.",
+                "Describe templates.",
+                "Describe the procedure for plate utilization.",
+                "Identify pipe sizes and schedules. This section builds skills to create and interpret drawings, apply layout methods, and complete job estimates."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Layout",
+              "hours": 12,
+              "weight_pct": 5,
+              "outcome": null,
+              "objectives": []
+            },
+            {
+              "letter": "D",
+              "title": "Estimating Principles",
+              "hours": 6,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to demonstrate skills related to estimating.",
+              "objectives": [
+                "Convert angular measurements to linear dimensions.",
+                "Calculate the cost of steel."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "Project Estimating",
+              "hours": 9,
+              "weight_pct": 4,
+              "outcome": "Upon successful completion, learners will be able to develop a project estimate.",
+              "objectives": [
+                "Determine total costs for a project.",
+                "Develop a project estimate."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Shielded Metal Arc Welding (SMAW)",
+          "hours": 40,
+          "weight_pct": 17,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "SMAW Groove Welds on Mild Steel",
+              "hours": 40,
+              "weight_pct": 17,
+              "outcome": "Upon successful completion, learners will be able to perform SMAW groove welds on mild steel.",
+              "objectives": [
+                "Perform welds in the 1G, 2G, 3G using E4310 (E6010) root and E4918 (E7018) fill and cap.",
+                "Perform welds in the 1GF, 2G, 3GF using E4918 (E7018) with backing plate. This section develops hands-on skills in SMAW groove welding on mild steel."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Gas Tungsten Arc Welding (GTAW)",
+          "hours": 56,
+          "weight_pct": 23,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "The GTAW Process",
+              "hours": 5,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify and describe GTAW procedures and fundamentals.",
+              "objectives": [
+                "Describe the GTAW process and applications.",
+                "Describe advantages and disadvantages of the GTAW process.",
+                "Identify hazards and protective measures associated with GTAW.",
+                "Describe single-phase and three-phase power.",
+                "Identify components of a GTAW workstation.",
+                "Describe types of GTAW power sources.",
+                "Identify AC, DC, and high frequency welding currents used in GTAW.",
+                "Describe torch assemblies.",
+                "Describe gas regulators and flow meters."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "GTAW Electrodes, Filler Metals and Shielding Gases",
+              "hours": 7,
+              "weight_pct": 3,
+              "outcome": "Upon successful completion, learners will be able to identify and describe GTAW electrodes, filler metals, and shielding gases.",
+              "objectives": [
+                "Identify electrode designations and explain their applications.",
+                "Identify the function of the filler metals in GTAW.",
+                "Identify filler metals by AWS and CSA designations and explain their applications.",
+                "Describe the care and preparation of electrodes and filler metals.",
+                "Identify the function of the electrode in GTAW.",
+                "Describe the types and applications of shielding gases used in GTAW.",
+                "Describe the advantages and disadvantages of various shielding gases."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "GTAW Equipment Maintenance and Troubleshooting",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to troubleshoot and maintain GTAW equipment. This section introduces GTAW fundamentals, equipment, consumables, and troubleshooting; develop hands-on skills. === PAGE 32 === PERIOD TWO - 29 - Classification: Public",
+              "objectives": []
+            },
+            {
+              "letter": "C",
+              "title": "GTAW Equipment Maintenance and Troubleshooting",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": null,
+              "objectives": [
+                "Describe the set up and maintenance of GTAW equipment.",
+                "Determine and solve power source output current problems.",
+                "Determine and solve GTAW torch and cable assembly problems.",
+                "Determine and solve shielding gas coverage problems."
+              ]
+            },
+            {
+              "letter": "D",
+              "title": "GTAW on Mild Steel",
+              "hours": 30,
+              "weight_pct": 12,
+              "outcome": "Upon successful completion, learners will be able to perform GTAW on mild steel.",
+              "objectives": [
+                "Perform touch start, lift start and high frequency methods.",
+                "Perform stringer beads in the flat position on mild steel gauge plate.",
+                "Perform joint preparation for GTAW on mild steel gauge plate.",
+                "Perform 1F, 2F, 3F welds on mild steel gauge plate.",
+                "Perform 1G, 2G, 3G welds on plate and 2G, 5G welds on pipe."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "GTAW on Aluminum",
+              "hours": 5,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to perform GTAW on aluminum.",
+              "objectives": [
+                "Perform stringer beads in the flat position on aluminum gauge plate.",
+                "Perform 1F, 2F, 3F welds on aluminum gauge plate."
+              ]
+            },
+            {
+              "letter": "F",
+              "title": "GTAW on Stainless Steel",
+              "hours": 5,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to perform GTAW on stainless steel.",
+              "objectives": [
+                "Perform 2F, 3F welds on stainless steel gauge plate."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Gas Metal Arc Welding (GMAW), Flux-Cored Arc Welding (FCAW),",
+          "hours": null,
+          "weight_pct": null,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "GMAW on Aluminum",
+              "hours": 2,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to perform GMAW on aluminum.",
+              "objectives": [
+                "Perform stringer and weave beads in the flat and horizontal positions.",
+                "Perform 1F, 2F, 3F welds."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "GMAW, FCAW and MCAW Groove Welds on Mild Steel",
+              "hours": 40,
+              "weight_pct": 17,
+              "outcome": "Upon successful completion, learners will be able to perform GMAW, FCAW, and MCAW groove welds on mild steel.",
+              "objectives": [
+                "Perform 1G, 2G, 3G welds on mild steel using GMAW root, and FCAW or MCAW fill and cap.",
+                "Demonstrate welds with MCAW.",
+                "Perform 3G GMAW root and 4G fill and cap with FCAW."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "GMAW, FCAW and MCAW on Mild Steel Pipe",
+              "hours": 12,
+              "weight_pct": 5,
+              "outcome": "Upon successful completion, learners will be able to perform GMAW, FCAW, MCAW pipe welding.",
+              "objectives": [
+                "Perform 2G weld on pipe using GMAW.",
+                "Perform 1GR weld on pipe using a GMAW root pass and FCAW or MCAW fill and cap.",
+                "Perform 2G weld on pipe using GMAW root pass and FCAW fill and cap.",
+                "Perform 5G weld on pipe using a downhill root pass, and an uphill fill and cap. This section introduces GMAW, FCAW, MCAW with hands-on welding on aluminum and mild steel plate and pipe."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "total_hours": 240,
+      "sections": [
+        {
+          "number": 1,
+          "title": "Foundational Skills, Safety and Procedures",
+          "hours": 44,
+          "weight_pct": 18,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Codes, Standards and Red Seal Certification",
+              "hours": 12,
+              "weight_pct": 5,
+              "outcome": "Upon successful completion, learners will be able to identify and describe welding codes and standards and use Red Seal resources to prepare for the Interprovincial exam.",
+              "objectives": [
+                "Define the terms code, standard and specification.",
+                "Identify the advantages of standardization.",
+                "Identify agencies that set codes and standards.",
+                "Identify the codes that govern welding.",
+                "Describe the welding procedure qualification.",
+                "Describe the welder performance qualification.",
+                "Use the Red Seal Occupational Standard (RSOS) to prepare for an Interprovincial examination. This section builds core readiness for welder training in the workplace, including codes, standards, and Red Seal exam preparation; develop oxyfuel cutting skills on mild steel, and introduce workplace coaching practices."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Oxyfuel Cutting on Mild Steel",
+              "hours": 30,
+              "weight_pct": 13,
+              "outcome": "Upon successful completion, learners will be able to perform oxyfuel cutting procedures on mild steel.",
+              "objectives": [
+                "Perform oxyfuel bevel cutting on mild steel.",
+                "Perform piercing, cutting, and coping on mild steel."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Workplace Coaching Skills",
+              "hours": 2,
+              "weight_pct": 0,
+              "outcome": "Upon successful completion, learners will be able to describe and apply the workplace coaching process.",
+              "objectives": [
+                "Describe the process and skills for coaching an apprentice, including setting expectations, demonstrating tasks, observing performance, and providing feedback. ."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Properties of Metals",
+          "hours": 26,
+          "weight_pct": 11,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Heat Treatment",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to define and describe heat treatment fundamentals.",
+              "objectives": [
+                "Define heat-affected zones in metals.",
+                "Describe the difference between heat and temperature.",
+                "Describe the three forms of heat transfer.",
+                "Describe the effects of expansion and contraction.",
+                "Describe the purpose and effects of preheat and postheat.",
+                "Describe the practices of heat treatment.",
+                "Describe the principle of temperature-indicating devices. This section provides an overview of metal properties, metallurgy, and testing methods."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Stainless Steel",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify and describe stainless steels and related welding procedures.",
+              "objectives": [
+                "Describe stainless steel.",
+                "Identify types of stainless steel and their properties.",
+                "Identify the AISI numbering system of stainless steel.",
+                "Identify carbide precipitation and ways of overcoming this problem.",
+                "Identify the major types of stainless steel filler materials and AWS specifications.",
+                "Describe handling and storage of stainless steel electrodes and filler materials.",
+                "Describe the handling procedures and preparation for welding stainless steel."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Nickel Alloys and Clad Steels",
+              "hours": 4,
+              "weight_pct": 1,
+              "outcome": "Upon successful completion, learners will be able to describe nickel alloys, clad steels, and select filler metals.",
+              "objectives": [
+                "Describe nickel and its alloys.",
+                "Describe clad steels and their advantages.",
+                "Select filler metals in AWS specifications.",
+                "Describe preparation and welding procedures for clad steels."
+              ]
+            },
+            {
+              "letter": "D",
+              "title": "Applied Metallurgy and Metal Identification",
+              "hours": 6,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify space-lattice types and describe grain growth and grain structure associated with welding.",
+              "objectives": [
+                "Identify space-lattice types in metals.",
+                "Describe dendritic grain growth.",
+                "Describe grain structure differences in metals.",
+                "Identify changes in grain structure that result from welding.",
+                "Interpret information supplied on mill test reports."
+              ]
+            },
+            {
+              "letter": "E",
+              "title": "Non-Destructive Testing",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify and describe NDT methods and their uses. === PAGE 37 === PERIOD THREE - 34 - Classification: Public",
+              "objectives": []
+            },
+            {
+              "letter": "E",
+              "title": "Non-Destructive Testing",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": null,
+              "objectives": [
+                "Identify NDT.",
+                "Describe visual inspection techniques."
+              ]
+            },
+            {
+              "letter": "F",
+              "title": "Destructive Testing (DT)",
+              "hours": 4,
+              "weight_pct": 2,
+              "outcome": "Upon successful completion, learners will be able to identify and describe DT methods.",
+              "objectives": [
+                "Identify types of DT.",
+                "Describe DT methods."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Drafting, Drawings and Specifications",
+          "hours": 48,
+          "weight_pct": 20,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "Structural Drawings",
+              "hours": 16,
+              "weight_pct": 6,
+              "outcome": "Upon successful completion, learners will be able to analyze, identify, and interpret structural drawings.",
+              "objectives": [
+                "Interpret abbreviations used on drawings.",
+                "Identify site plans, benchmarks and orientation.",
+                "Identify structural shapes and how they are specified.",
+                "Identify types of structural drawings.",
+                "Extract dimensions and other information from drawings.",
+                "Interpret bill of materials for drawings.",
+                "Interpret drawings."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "Pressure Vessel Drawings",
+              "hours": 16,
+              "weight_pct": 7,
+              "outcome": "Upon successful completion, learners will be able to analyze, identify, and interpret pressure vessel drawings. This section focuses on interpreting structural, pressure vessel, and piping drawings. === PAGE 38 === PERIOD THREE - 35 - Classification: Public",
+              "objectives": []
+            },
+            {
+              "letter": "B",
+              "title": "Pressure Vessel Drawings",
+              "hours": 16,
+              "weight_pct": 7,
+              "outcome": null,
+              "objectives": [
+                "Identify external and internal vessel components.",
+                "Identify material compositions as per code requirements on mill certification.",
+                "Interpret vessel drawings."
+              ]
+            },
+            {
+              "letter": "C",
+              "title": "Piping Drawings",
+              "hours": 16,
+              "weight_pct": 7,
+              "outcome": "Upon successful completion, learners will be able to analyze, identify, and interpret piping drawings.",
+              "objectives": [
+                "Describe the purpose of a spool sheet.",
+                "Interpret symbols that represent individual components on a spool sheet.",
+                "Interpret position and orientation of piping systems from an isometric drawing.",
+                "Interpret component sizes in a piping system from a spool sheet.",
+                "Develop isometric drawings from orthographic projections.",
+                "Develop a material list for a piping system.",
+                "Interpret pipe drawings."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Shielded Metal Arc Welding (SMAW)",
+          "hours": 82,
+          "weight_pct": 34,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "SMAW on Mild Steel",
+              "hours": 50,
+              "weight_pct": 21,
+              "outcome": "Upon successful completion, learners will be able to perform SMAW groove welds on mild steel plate.",
+              "objectives": [
+                "Perform 2G, 3G, 45\u00b0 overhead and 4G welds using E4310 (E6010) for the root pass and E4918 (E7018) for the fill and cap.",
+                "Perform 4GF weld using E4918 (E7018) with backing according to CSA Standard W47.1. This section develops SMAW groove weld skills on mild steel plate and pipe."
+              ]
+            },
+            {
+              "letter": "B",
+              "title": "SMAW on Mild Steel Pipe",
+              "hours": 32,
+              "weight_pct": 13,
+              "outcome": "Upon successful completion, learners will be able to perform SMAW groove welds on mild steel pipe.",
+              "objectives": [
+                "Demonstrate preparation, fit up, and tack weld pipe.",
+                "Perform feathering on tack welds.",
+                "Perform groove weld on 150 mm (6 in.) schedule 80 pipe in the 2G-5G positions using an E4310 (E6010) root and E4918 (E7018) fill and cap.",
+                "Perform groove weld on pipe in the 5G position downhill."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Gas Tungsten Arc Welding (GTAW)",
+          "hours": 40,
+          "weight_pct": 17,
+          "topics": [
+            {
+              "letter": "A",
+              "title": "GTAW on Mild Steel Plate and Pipe",
+              "hours": 40,
+              "weight_pct": 17,
+              "outcome": "Upon successful completion, learners will be able to prepare, fit-up, and weld using GTAW and SMAW on mild steel plate and pipe.",
+              "objectives": [
+                "Demonstrate preparation and fit-up for GTAW.",
+                "Perform 1G and 2G welds on mild steel plate.",
+                "Perform 3G weld on mild steel plate using GTAW root and SMAW E4918 (E7018) fill and cap, uphill for all passes.",
+                "Perform 2G, 5G and 6G welds on mild steel pipe. This section develops GTAW skills on mild steel plate and pipe."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
